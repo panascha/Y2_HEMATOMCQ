@@ -1,4 +1,168 @@
 var quizdata = {
+    "Hbtyping": [
+        {
+            "problem": "1. ผู้ป่วยชายอายุ 30 ปี ตรวจสุขภาพประจำปี ไม่มีอาการผิดปกติ CBC: Hb 14.5 g/dL, MCV 89 fL. ผล Hb typing คือ: Hb A2: 2.7%, Hb F: 0.8%, Hb A: 96.5%. ผลนี้เข้าได้กับภาวะใดมากที่สุด?",
+            "img": "",
+            "choices": "Normal///β-thalassemia trait///α-thalassemia trait///Hb E trait///Homozygous Hb E",
+            "answer": "Normal",
+            "select": "",
+            "explain": "ค่า CBC และ MCV อยู่ในเกณฑ์ปกติ ผล Hb typing พบ Hb A เป็นสัดส่วนหลัก และมี HbA2 (< 3.5%) และ HbF (< 2%) อยู่ในระดับปกติ ซึ่งเป็นลักษณะของคนปกติ (genotype αα/αα, ββ)",
+            "state": false
+        },
+        {
+            "problem": "2. หญิงตั้งครรภ์อายุ 25 ปี ตรวจคัดกรองธาลัสซีเมีย พบ CBC: Hb 10.8 g/dL, MCV 64 fL. ผล Hb typing คือ: Hb A2: 5.8%, Hb F: 1.2%, Hb A: 93.0%. ผลนี้เข้าได้กับภาวะใดมากที่สุด?",
+            "img": "",
+            "choices": "Normal///β-thalassemia trait///α-thalassemia trait///Hb E trait///Iron deficiency anemia",
+            "answer": "β-thalassemia trait",
+            "select": "",
+            "explain": "ลักษณะสำคัญคือ Microcytic anemia (MCV ต่ำมาก) ร่วมกับผล Hb typing ที่มีระดับ Hb A2 สูงกว่า 3.5% ซึ่งเป็นตัวบ่งชี้ที่ชัดเจนของ β-thalassemia trait (พาหะเบต้าธาลัสซีเมีย)",
+            "state": false
+        },
+        {
+            "problem": "3. ชายอายุ 28 ปี ไม่มีอาการ มาตรวจเลือดเพื่อเตรียมมีบุตร CBC: Hb 13.5 g/dL, MCV 75 fL. ผล Hb typing คือ: Hb A2: 2.4%, Hb F: 0.5%, Hb A: 97.1%. ผลนี้เข้าได้กับภาวะใดมากที่สุด?",
+            "img": "",
+            "choices": "Normal///β-thalassemia trait///α-thalassemia trait///Hb E trait///Cannot be determined",
+            "answer": "α-thalassemia trait",
+            "select": "",
+            "explain": "ผู้ป่วยมีภาวะ Microcytosis (MCV < 80 fL) แต่ผล Hb typing ปกติ (Hb A2 และ Hb F ไม่สูง) ซึ่งเป็นลักษณะคลาสสิกของ α-thalassemia trait (มักเป็น α-thal 1 trait (--/αα) หรือ α-thal 2 trait (-α/αα)) การวินิจฉัยยืนยันต้องทำด้วย DNA analysis",
+            "state": false
+        },
+        {
+            "problem": "4. นักศึกษาแพทย์หญิงอายุ 22 ปี จากภาคอีสาน ตรวจเลือดตัวเอง พบ CBC: Hb 12.5 g/dL, MCV 78 fL. ผล Hb typing คือ: Hb A2/E: 29.5%, Hb F: 0.5%, Hb A: 70.0%. แปลผลอย่างไร?",
+            "img": "",
+            "choices": "β-thalassemia trait///Homozygous Hb E///Hb E trait///β-thal/Hb E disease///α-thalassemia trait",
+            "answer": "Hb E trait",
+            "select": "",
+            "explain": "ลักษณะเด่นคือการพบ Hb E ประมาณ 25-30% (ถูกรายงานใน peak เดียวกับ Hb A2) และมี Hb A เป็นส่วนใหญ่ ผู้ที่เป็นพาหะ Hb E (AE) มักไม่มีอาการ หรือมี microcytosis เล็กน้อย",
+            "state": false
+        },
+        {
+            "problem": "5. ทารกแรกเกิด มีอาการซีด ตัวเหลือง ตับม้ามโต CBC: Hb 7.0 g/dL. ผล Hb typing พบ fast-moving hemoglobin ที่ตำแหน่ง Hb Bart's 25% และที่เหลือเป็น Hb F. ผลนี้เข้าได้กับภาวะใด?",
+            "img": "",
+            "choices": "Hb H disease///Hydrops fetalis (Hb Bart's disease)///β-thalassemia major///β-thalassemia trait///Normal newborn",
+            "answer": "Hb H disease",
+            "select": "",
+            "explain": "Hb H disease (--/-α) ในทารกแรกเกิด นอกจากจะมี Hb F เป็นหลักแล้ว ยังสามารถตรวจพบ Hb Bart's (γ4) ได้ประมาณ 20-40% ซึ่งจะหายไปและถูกแทนที่ด้วย Hb H (β4) เมื่อโตขึ้น ส่วน Hydrops fetalis จะพบ Hb Bart's เกือบ 100% และมักเสียชีวิตในครรภ์",
+            "state": false
+        },
+        {
+            "problem": "6. เด็กหญิงอายุ 8 ปี จากขอนแก่น มีอาการซีดเรื้อรัง ม้ามโตเล็กน้อย CBC: Hb 9.8 g/dL, MCV 65 fL. ผล Hb typing คือ: Hb A2/E: 95.5%, Hb F: 4.5%, Hb A: 0%. ผลนี้คือโรคอะไร?",
+            "img": "",
+            "choices": "β-thalassemia major///β-thalassemia/Hb E disease///Homozygous Hb E///Hb E trait///Hb H disease",
+            "answer": "Homozygous Hb E",
+            "select": "",
+            "explain": "การตรวจไม่พบ Hb A เลย และมี Hb E เป็นสัดส่วนเกือบทั้งหมด (>90%) บ่งชี้ว่าเป็นโรค Homozygous Hb E (EE) ผู้ป่วยมักมีอาการซีดเล็กน้อยถึงปานกลางและมีเม็ดเลือดแดงขนาดเล็กมาก (marked microcytosis)",
+            "state": false
+        },
+        {
+            "problem": "7. ผู้ป่วยชายอายุ 15 ปี มีอาการซีดเหลืองรุนแรง ใบหน้ามีลักษณะเฉพาะ (thalassemic facie) ตับม้ามโตมาก ต้องรับเลือดเป็นประจำ ผล Hb typing คือ: Hb A2/E: 48.0%, Hb F: 52.0%, Hb A: 0%. ผลนี้คือโรคอะไร?",
+            "img": "",
+            "choices": "Homozygous Hb E///Hb E trait///β-thalassemia/Hb E disease///β-thalassemia major///Hb H disease",
+            "answer": "β-thalassemia/Hb E disease",
+            "select": "",
+            "explain": "เป็นโรคธาลัสซีเมียที่รุนแรงและพบบ่อยที่สุดในไทย ลักษณะจำเพาะคือ ไม่พบ Hb A เลย แต่พบ Hb F และ Hb E ในสัดส่วนที่ใกล้เคียงกัน (โดยทั่วไปสัดส่วนอาจเป็น F>E หรือ E>F) ผู้ป่วยมักมีอาการรุนแรงคล้าย β-thalassemia major",
+            "state": false
+        },
+        {
+            "problem": "8. ผู้ป่วยหญิงอายุ 12 ปี ซีดเรื้อรัง ซีดลงชัดเจนเวลาเป็นไข้ มีม้ามโตปานกลาง CBC: Hb 8.5 g/dL, MCV 62 fL, RDW 23%. ผล Hb typing พบ Hb A, A2, F และมี Hb ชนิดผิดปกติ (fast-moving) ที่ 8% ซึ่งเข้าได้กับ Hb H. ผลนี้คือโรคอะไร?",
+            "img": "",
+            "choices": "α-thalassemia trait///β-thalassemia major///β-thalassemia/Hb E disease///Hb H disease///Homozygous Hb E",
+            "answer": "Hb H disease",
+            "select": "",
+            "explain": "การพบ Hb H (β4) ซึ่งเป็น fast-moving hemoglobin ประมาณ 5-30% เป็นตัวยืนยันการวินิจฉัย Hb H disease (--/-α) ผู้ป่วยจะมีภาวะ microcytic anemia ที่อาการหลากหลายตั้งแต่น้อยถึงปานกลาง และมักมีภาวะเม็ดเลือดแดงแตกง่ายเมื่อมีภาวะกระตุ้น",
+            "state": false
+        },
+        {
+            "problem": "9. เด็กชายอายุ 2 ปี มีประวัติซีดรุนแรงตั้งแต่ 6 เดือนแรก ตับม้ามโตมาก ต้องรับเลือดทุกเดือน ผล Hb typing (ก่อนรับเลือด) คือ: Hb F: 98%, Hb A2: 2.0%, Hb A: 0%. ผลนี้คือโรคอะไร?",
+            "img": "",
+            "choices": "β-thalassemia major///β-thalassemia/Hb E disease///Homozygous Hb E///Hb H disease///Hereditary persistence of fetal hemoglobin (HPFH)",
+            "answer": "β-thalassemia major",
+            "select": "",
+            "explain": "ลักษณะคลาสสิกของ β-thalassemia major (β0/β0) คือ สร้างสายเบต้าไม่ได้เลย ทำให้ไม่พบ Hb A เลย และร่างกายจะพยายามสร้าง Hb F มาชดเชย ทำให้ตรวจพบ Hb F ในระดับที่สูงมาก (>95%) ผู้ป่วยมีอาการซีดรุนแรงและต้องพึ่งพาการรับเลือด (transfusion-dependent)",
+            "state": false
+        },
+        {
+            "problem": "10. ทารกเสียชีวิตในครรภ์ (hydrops fetalis) เมื่ออายุครรภ์ 32 สัปดาห์ ผลการตรวจเลือดจากสายสะดือพบ Hb ชนิดเดียวที่เป็น fast-moving hemoglobin เกือบ 100%. ฮีโมโกลบินที่ตรวจพบคือชนิดใด?",
+            "img": "",
+            "choices": "Hb H (beta4)///Hb Bart's (gamma4)///Hb F (alpha2gamma2)///Hb A (alpha2beta2)///Hb Portland (zeta2gamma2)",
+            "answer": "Hb Bart's (gamma4)",
+            "select": "",
+            "explain": "ภาวะนี้คือ Hb Bart's disease หรือ Hydrops fetalis (--/--) ซึ่งเกิดจากการขาด alpha-globin gene ทั้ง 4 ตำแหน่ง ทำให้ไม่สามารถสร้าง alpha chain ได้เลย gamma chain ที่มีมากในทารกจึงมารวมตัวกันเองเป็น Hb Bart's (γ4) ซึ่งไม่สามารถขนส่งออกซิเจนได้ ทำให้ทารกเสียชีวิตในครรภ์",
+            "state": false
+        },
+        {
+            "problem": "11. ผู้ป่วยชายอายุ 40 ปี ไม่มีอาการ ตรวจเลือดพบ CBC: Hb 13.0 g/dL, MCV 85 fL. ผล Hb typing คือ: Hb F: 15%, Hb A2: 1.5%, Hb A: 83.5%. ภาวะใดที่เป็นไปได้มากที่สุด?",
+            "img": "",
+            "choices": "β-thalassemia major///δβ-thalassemia trait///Hereditary Persistence of Fetal Hemoglobin (HPFH)///β-thalassemia trait///Normal",
+            "answer": "Hereditary Persistence of Fetal Hemoglobin (HPFH)",
+            "select": "",
+            "explain": "การพบ Hb F สูงอย่างเด่นชัด (โดยทั่วไป 10-30%) ในผู้ใหญ่ที่ไม่มีอาการและค่าเลือดอื่นๆ เกือบปกติ เป็นลักษณะของ HPFH ซึ่งเป็นภาวะที่ไม่รุนแรง[1][2] ต่างจาก δβ-thalassemia trait ที่มักมี microcytosis และ Hb F สูงในระดับ 5-20%[3][4]",
+            "state": false
+        },
+        {
+            "problem": "13. เด็กชายอายุ 10 ปี มีอาการซีด ม้ามโตกว่าปกติเล็กน้อย CBC: Hb 9.5 g/dL, MCV 68 fL. ผล Hb typing พบ Hb H 10%, Hb A, A2, F และพบ Hb ผิดปกติที่เคลื่อนที่ช้า (slow-moving) ปริมาณน้อยมาก ประมาณ 1-2%. ภาวะใดน่าจะเป็นไปได้มากที่สุด?",
+            "img": "",
+            "choices": "Hb H disease (--/-α)///Hb H-Constant Spring disease (--/αCSα)///Homozygous Hb Constant Spring///β-thalassemia/Hb E disease///α-thalassemia trait",
+            "answer": "Hb H-Constant Spring disease (--/αCSα)",
+            "select": "",
+            "explain": "ภาวะนี้เป็นรูปแบบหนึ่งของ Hb H disease ที่รุนแรงกว่าปกติ[7] เกิดจากการมี deletion ของ α-globin gene 2 ตำแหน่ง ร่วมกับมี non-deletional mutation คือ Hb Constant Spring (CS)[8][9] ผล typing จะพบทั้ง Hb H และ Hb CS (ซึ่งมีปริมาณน้อยและเคลื่อนที่ช้า)[9] ทำให้อาการรุนแรงกว่า Hb H disease ทั่วไป[8][10]",
+            "state": false
+        },
+        {
+            "problem": "14. ชายอายุ 25 ปี ไม่มีอาการ ตรวจเลือดพบ CBC: Hb 14.0 g/dL, MCV 79 fL. ผล Hb typing ปกติ แต่สังเกตเห็น peak เล็กๆ ของ Hb ผิดปกติประมาณ 1% ในตำแหน่ง slow-moving. ควรสงสัยภาวะใด?",
+            "img": "",
+            "choices": "Normal///Hb E trait///β-thalassemia trait///α-thalassemia trait (deletional)///Hb Constant Spring trait (αα/αCSα)",
+            "answer": "Hb Constant Spring trait (αα/αCSα)",
+            "select": "",
+            "explain": "พาหะของ Hb Constant Spring (Hb CS) มักไม่มีอาการหรือมี microcytosis เล็กน้อย[9] ลักษณะสำคัญในการตรวจ Hb typing คือการพบ Hb CS ซึ่งเป็น slow-moving hemoglobin ในปริมาณที่น้อยมาก (มักจะ <2%)[11] ซึ่งบางครั้งอาจตรวจไม่พบได้ง่ายๆ[11]",
+            "state": false
+        },
+        {
+            "problem": "17. ผู้ป่วยเด็ก มีอาการซีดรุนแรง ต้องรับเลือดสม่ำเสมอ ผล Hb typing พบ Hb A2/E 5.5% และที่เหลือเกือบทั้งหมดเป็น Hb F. ไม่พบ Hb A เลย. พ่อเป็นพาหะ Hb E, แม่เป็นพาหะธาลัสซีเมียชนิดใด?",
+            "img": "",
+            "choices": "α-thalassemia 1 trait///β0-thalassemia trait///δβ-thalassemia trait///Hb Constant Spring trait///Normal",
+            "answer": "β0-thalassemia trait",
+            "select": "",
+            "explain": "ผู้ป่วยเป็นโรค β-thalassemia/Hb E disease ซึ่งเป็นชนิดที่รุนแรง การไม่พบ Hb A เลย แสดงว่าแม่มียีน β0-thalassemia ซึ่งไม่สร้างสายเบต้าเลย เมื่อเข้าคู่กับยีน Hb E จากพ่อ ทำให้เกิดโรคที่มีอาการรุนแรง[15] ผล typing จะพบ Hb F และ Hb E เป็นหลัก",
+            "state": false
+        },
+        {
+            "problem": "21. ผู้ป่วยมีอาการซีดเล็กน้อย ตรวจพบ Microcytosis (MCV 70 fL). ผล Hb typing คือ Hb A2/E: 28%, Hb A: 70%, และพบ Hb Bart's 2%. ผลนี้ชี้ถึงภาวะใด?",
+            "img": "",
+            "choices": "Hb E trait///β-thalassemia trait///α-thalassemia trait///Compound Hb E trait and α-thalassemia 1 trait///Homozygous Hb E",
+            "answer": "Compound Hb E trait and α-thalassemia 1 trait",
+            "select": "",
+            "explain": "ผู้ป่วยมีลักษณะของ Hb E trait (Hb E ~25-30%) แต่การพบ Hb Bart's ในผู้ใหญ่ (แม้ปริมาณน้อย) เป็นตัวบ่งชี้ว่ามีภาวะ α-thalassemia ร่วมด้วยเสมอ (โดยเฉพาะ α-thalassemia 1 trait) การมีสองภาวะร่วมกันมักทำให้ค่า MCV ต่ำลงกว่าการมี Hb E trait เพียงอย่างเดียว",
+            "state": false
+        },
+        {
+            "problem": "22. ผู้ป่วยหญิงอายุ 18 ปี ตรวจเลือดก่อนเข้ามหาวิทยาลัย CBC: Hb 12.1 g/dL, MCV 82 fL. ผล Hb typing: Hb F 100%, ไม่พบ Hb A และ Hb A2. ผู้ป่วยไม่มีอาการซีดเลย. ภาวะใดอธิบายผลเลือดนี้ได้ดีที่สุด?",
+            "img": "",
+            "choices": "β-thalassemia major///Homozygous δβ-thalassemia///Homozygous HPFH///β-thalassemia/Hb E disease///Lab error",
+            "answer": "Homozygous HPFH",
+            "select": "",
+            "explain": "การพบ Hb F 100% ในผู้ใหญ่ที่ไม่แสดงอาการ เป็นลักษณะเฉพาะของ Homozygous Hereditary Persistence of Fetal Hemoglobin (HPFH)[6] ร่างกายยังคงสร้าง Hb F ต่อไปในวัยผู้ใหญ่ ซึ่งสามารถทดแทนการขาด Hb A ได้อย่างสมบูรณ์ ทำให้ไม่มีอาการซีด[1][6] ต่างจาก Homozygous δβ-thalassemia ที่มักมีซีดเล็กน้อย[3]",
+            "state": false
+        },
+        {
+            "problem": "23. ทารกแรกเกิด มีอาการซีดเล็กน้อย ผล Hb typing พบ Hb F 80%, Hb A 10%, และ Hb Bart's 10%. ผลนี้น่าจะเข้าได้กับภาวะใด?",
+            "img": "",
+            "choices": "Normal newborn///α-thalassemia 1 trait (--/αα)///α-thalassemia 2 trait (-α/αα)///Hb H disease (--/-α)///Hydrops fetalis (--/--)",
+            "answer": "α-thalassemia 1 trait (--/αα)",
+            "select": "",
+            "explain": "ในทารกแรกเกิดที่เป็น α-thalassemia 1 trait (ขาด 2 α-globin genes) จะสามารถตรวจพบ Hb Bart's ได้ในระดับ 5-15% ส่วนทารกปกติอาจพบได้ในปริมาณเล็กน้อย (<2%) หรือไม่พบเลย และทารกที่เป็น α-thalassemia 2 trait (ขาด 1 α-globin gene) จะพบ Hb Bart's ประมาณ 1-5%",
+            "state": false
+        },
+        {
+            "problem": "25. ชายไทยอายุ 33 ปี ตรวจสุขภาพ, CBC: Hb 11.5 g/dL, MCV 60 fL. ผล Hb typing: Hb A2/E 88%, Hb F 12%, ไม่พบ Hb A. ผลนี้เข้าได้กับภาวะใด?",
+            "img": "",
+            "choices": "β-thalassemia/Hb E disease///Homozygous Hb E///Homozygous Hb E with co-existing α-thalassemia///β-thalassemia major///Hb E trait",
+            "answer": "Homozygous Hb E with co-existing α-thalassemia",
+            "select": "",
+            "explain": "โดยทั่วไป Homozygous Hb E (EE) จะมี Hb E >90% และ Hb F <5-7% การที่ผู้ป่วยมี Hb F สูงถึง 12% และมี microcytosis ที่รุนแรงมาก (MCV 60 fL) แต่มีอาการเพียงเล็กน้อย ชวนให้สงสัยว่ามีภาวะ α-thalassemia ร่วมด้วย ซึ่งการมี α-thalassemia จะช่วยปรับสมดุลของการสร้าง globin chain ทำให้ระดับ Hb F สูงขึ้นและอาการทางคลินิกดีขึ้นกว่าที่ควรจะเป็น",
+            "state": false
+        }
+    ],
     "HL51MCQ1": [
         {
             problem: "1. Which of the following sign that suggest intravascular hemolysis than extravascular hemolysis?",
