@@ -7368,7 +7368,13 @@
             };
 
             const submitQuestion = () => {
-                if (current_question.state) return; // Already answered
+                if (current_question.state) {
+                    $feedback.addClass("warning").html("ฮันแน่แอบแก้คำตอบ หัก 1 คะแนน");
+                    score--;
+                    $score.text(`คะแนน: ${score}/${currentQuestions.length}`);
+                    return; // Already answered
+                }
+
 
                 const selectedAnswer = $choices.find("button.selected").text();
                 if (!selectedAnswer) {
