@@ -479,7 +479,7 @@
     .fab-container {
     position: fixed;
     right: 2%;
-    bottom: 30%; /* เพิ่มระยะห่างจากขอบล่าง */
+    bottom: 0%; /* เพิ่มระยะห่างจากขอบล่าง */
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -574,6 +574,9 @@
             height: auto;
             border-radius: var(--border-radius);
         }
+    .fab-container {
+        bottom: 50%; /* ขยับเข้ามาใกล้ขอบล่างขึ้น */
+    }
 
     .fab {
         width: 56px;   /* ลดขนาดความกว้างของปุ่ม */
