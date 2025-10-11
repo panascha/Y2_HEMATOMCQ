@@ -64,57 +64,21 @@ var quizdata = {
             "state": false
         },
         {
-            "problem": "8. ผู้ป่วยหญิงอายุ 12 ปี ซีดเรื้อรัง ซีดลงชัดเจนเวลาเป็นไข้ มีม้ามโตปานกลาง CBC: Hb 8.5 g/dL, MCV 62 fL, RDW 23%. ผล Hb typing พบ Hb A, A2, F และมี Hb ชนิดผิดปกติ (fast-moving) ที่ 8% ซึ่งเข้าได้กับ Hb H. ผลนี้คือโรคอะไร?",
-            "img": "",
-            "choices": "α-thalassemia trait///β-thalassemia major///β-thalassemia/Hb E disease///Hb H disease///Homozygous Hb E",
-            "answer": "Hb H disease",
-            "select": "",
-            "explain": "การพบ Hb H (β4) ซึ่งเป็น fast-moving hemoglobin ประมาณ 5-30% เป็นตัวยืนยันการวินิจฉัย Hb H disease (--/-α) ผู้ป่วยจะมีภาวะ microcytic anemia ที่อาการหลากหลายตั้งแต่น้อยถึงปานกลาง และมักมีภาวะเม็ดเลือดแดงแตกง่ายเมื่อมีภาวะกระตุ้น",
-            "state": false
-        },
-        {
-            "problem": "9. เด็กชายอายุ 2 ปี มีประวัติซีดรุนแรงตั้งแต่ 6 เดือนแรก ตับม้ามโตมาก ต้องรับเลือดทุกเดือน ผล Hb typing (ก่อนรับเลือด) คือ: Hb F: 98%, Hb A2: 2.0%, Hb A: 0%. ผลนี้คือโรคอะไร?",
-            "img": "",
+                        "problem": "9. เด็กชายอายุ 2 ปี มีประวัติซีดรุนแรงตั้งแต่ 6 เดือนแรก ตับม้ามโตมาก ต้องรับเลือดทุกเดือน ผล Hb typing (ก่อนรับเลือด) คือ: Hb F: 98%, Hb A2: 2.0%, Hb A: 0%. ผลนี้คือโรคอะไร?",
+                        "img": "",
             "choices": "β-thalassemia major///β-thalassemia/Hb E disease///Homozygous Hb E///Hb H disease///Hereditary persistence of fetal hemoglobin (HPFH)",
             "answer": "β-thalassemia major",
             "select": "",
-            "explain": "ลักษณะคลาสสิกของ β-thalassemia major (β0/β0) คือ สร้างสายเบต้าไม่ได้เลย ทำให้ไม่พบ Hb A เลย และร่างกายจะพยายามสร้าง Hb F มาชดเชย ทำให้ตรวจพบ Hb F ในระดับที่สูงมาก (>95%) ผู้ป่วยมีอาการซีดรุนแรงและต้องพึ่งพาการรับเลือด (transfusion-dependent)",
+            "explain": "ลักษณะคลาสสิกของ β-thalassemia maj   or (β0/β0) คือ สร้างสายเบต้าไม่ได้เลย ทำให้ไม่พบ Hb A เลย และร่างกายจะพยายามสร้าง Hb F มาชดเชย ทำให้ตรวจพบ Hb F ในระดับที่สูงมาก (>95%) ผู้ป่วยมีอาการซีดรุนแรงและต้องพึ่งพาการรับเลือด (transfusion-dependent)",
             "state": false
         },
         {
-            "problem": "10. ทารกเสียชีวิตในครรภ์ (hydrops fetalis) เมื่ออายุครรภ์ 32 สัปดาห์ ผลการตรวจเลือดจากสายสะดือพบ Hb ชนิดเดียวที่เป็น fast-moving hemoglobin เกือบ 100%. ฮีโมโกลบินที่ตรวจพบคือชนิดใด?",
+            "problem": "11. ผู้ป่วยชายอายุ 20 ปี มีภาวะซีดเรื้อรังและม้ามโต ผล CBC: Hb 9.2 g/dL, MCV 63 fL. การย้อมพิเศษ (supravital stain) พบเม็ดเลือดแดงติดสีเป็นจุดเล็กๆ กระจายทั่วเซลล์คล้ายลูกกอล์ฟ (golf ball appearance). ผล Hb typing ระบุว่ามี Hb H 12%. วินิจฉัยคืออะไร?",
             "img": "",
-            "choices": "Hb H (beta4)///Hb Bart's (gamma4)///Hb F (alpha2gamma2)///Hb A (alpha2beta2)///Hb Portland (zeta2gamma2)",
-            "answer": "Hb Bart's (gamma4)",
+            "choices": "β-thalassemia major///Hb H disease///β-thalassemia/Hb E disease///Homozygous Hb E///α-thalassemia trait",
+            "answer": "Hb H disease",
             "select": "",
-            "explain": "ภาวะนี้คือ Hb Bart's disease หรือ Hydrops fetalis (--/--) ซึ่งเกิดจากการขาด alpha-globin gene ทั้ง 4 ตำแหน่ง ทำให้ไม่สามารถสร้าง alpha chain ได้เลย gamma chain ที่มีมากในทารกจึงมารวมตัวกันเองเป็น Hb Bart's (γ4) ซึ่งไม่สามารถขนส่งออกซิเจนได้ ทำให้ทารกเสียชีวิตในครรภ์",
-            "state": false
-        },
-        {
-            "problem": "11. ผู้ป่วยชายอายุ 40 ปี ไม่มีอาการ ตรวจเลือดพบ CBC: Hb 13.0 g/dL, MCV 85 fL. ผล Hb typing คือ: Hb F: 15%, Hb A2: 1.5%, Hb A: 83.5%. ภาวะใดที่เป็นไปได้มากที่สุด?",
-            "img": "",
-            "choices": "β-thalassemia major///δβ-thalassemia trait///Hereditary Persistence of Fetal Hemoglobin (HPFH)///β-thalassemia trait///Normal",
-            "answer": "Hereditary Persistence of Fetal Hemoglobin (HPFH)",
-            "select": "",
-            "explain": "การพบ Hb F สูงอย่างเด่นชัด (โดยทั่วไป 10-30%) ในผู้ใหญ่ที่ไม่มีอาการและค่าเลือดอื่นๆ เกือบปกติ เป็นลักษณะของ HPFH ซึ่งเป็นภาวะที่ไม่รุนแรง[1][2] ต่างจาก δβ-thalassemia trait ที่มักมี microcytosis และ Hb F สูงในระดับ 5-20%[3][4]",
-            "state": false
-        },
-        {
-            "problem": "13. เด็กชายอายุ 10 ปี มีอาการซีด ม้ามโตกว่าปกติเล็กน้อย CBC: Hb 9.5 g/dL, MCV 68 fL. ผล Hb typing พบ Hb H 10%, Hb A, A2, F และพบ Hb ผิดปกติที่เคลื่อนที่ช้า (slow-moving) ปริมาณน้อยมาก ประมาณ 1-2%. ภาวะใดน่าจะเป็นไปได้มากที่สุด?",
-            "img": "",
-            "choices": "Hb H disease (--/-α)///Hb H-Constant Spring disease (--/αCSα)///Homozygous Hb Constant Spring///β-thalassemia/Hb E disease///α-thalassemia trait",
-            "answer": "Hb H-Constant Spring disease (--/αCSα)",
-            "select": "",
-            "explain": "ภาวะนี้เป็นรูปแบบหนึ่งของ Hb H disease ที่รุนแรงกว่าปกติ[7] เกิดจากการมี deletion ของ α-globin gene 2 ตำแหน่ง ร่วมกับมี non-deletional mutation คือ Hb Constant Spring (CS)[8][9] ผล typing จะพบทั้ง Hb H และ Hb CS (ซึ่งมีปริมาณน้อยและเคลื่อนที่ช้า)[9] ทำให้อาการรุนแรงกว่า Hb H disease ทั่วไป[8][10]",
-            "state": false
-        },
-        {
-            "problem": "14. ชายอายุ 25 ปี ไม่มีอาการ ตรวจเลือดพบ CBC: Hb 14.0 g/dL, MCV 79 fL. ผล Hb typing ปกติ แต่สังเกตเห็น peak เล็กๆ ของ Hb ผิดปกติประมาณ 1% ในตำแหน่ง slow-moving. ควรสงสัยภาวะใด?",
-            "img": "",
-            "choices": "Normal///Hb E trait///β-thalassemia trait///α-thalassemia trait (deletional)///Hb Constant Spring trait (αα/αCSα)",
-            "answer": "Hb Constant Spring trait (αα/αCSα)",
-            "select": "",
-            "explain": "พาหะของ Hb Constant Spring (Hb CS) มักไม่มีอาการหรือมี microcytosis เล็กน้อย[9] ลักษณะสำคัญในการตรวจ Hb typing คือการพบ Hb CS ซึ่งเป็น slow-moving hemoglobin ในปริมาณที่น้อยมาก (มักจะ <2%)[11] ซึ่งบางครั้งอาจตรวจไม่พบได้ง่ายๆ[11]",
+            "explain": "การพบภาวะ microcytic anemia ร่วมกับม้ามโต และลักษณะเฉพาะของเม็ดเลือดแดงที่ย้อมติดสีพิเศษเห็นเป็น golf ball inclusions (ซึ่งก็คือ Heinz bodies ที่เกิดจากตะกอนของ β4 tetramers) เป็นลักษณะจำเพาะของโรค Hb H. ผล Hb typing ที่ยืนยันการมีอยู่ของ Hb H (ปกติ 5-30%) ช่วยยืนยันการวินิจฉัย",
             "state": false
         },
         {
@@ -152,14 +116,529 @@ var quizdata = {
             "select": "",
             "explain": "ในทารกแรกเกิดที่เป็น α-thalassemia 1 trait (ขาด 2 α-globin genes) จะสามารถตรวจพบ Hb Bart's ได้ในระดับ 5-15% ส่วนทารกปกติอาจพบได้ในปริมาณเล็กน้อย (<2%) หรือไม่พบเลย และทารกที่เป็น α-thalassemia 2 trait (ขาด 1 α-globin gene) จะพบ Hb Bart's ประมาณ 1-5%",
             "state": false
+        }
+    ],
+    "HL52FMT": [
+        {
+            "problem": "1. A 64-year-old woman is admitted with fever, confusion, and hypotension. Her vital signs are: BP: 82/48 mmHg, HR: 115 bpm RR: 26/min, Body Temp: 39.2°C, Serum lactate: 4.0 mmol/L She is diagnosed with septic shock and receives a 30 mL/kg IV crystalloid bolus over 1 hour. After resuscitation, her MAP remains 58 mmHg. Which of the following is the most appropriate next step in her management?",
+            "img": "",
+            "choices": "Perform ultrasound to assess IVC variability///Begin corticosteroids immediately///Give vasopressin as first-line vasopressor///Start norepinephrine immediately///Administer a second 30 mL/kg fluid bolus",
+            "answer": "Start norepinephrine immediately",
+            "select": "",
+            "explain": "ผู้ป่วยได้รับการวินิจฉัยว่าเป็น Septic shock และได้รับ initial fluid resuscitation (crystalloid bolus) แล้ว แต่ความดันยังคงต่ำ (MAP < 65 mmHg) ซึ่งเรียกว่า refractory shock ตามแนวทางการรักษาของ Surviving Sepsis Campaign ขั้นตอนต่อไปคือการเริ่มให้ยา vasopressor เพื่อเพิ่มความดันเลือด โดยยาตัวแรกที่แนะนำ (first-line) คือ norepinephrine",
+            "state": false
         },
         {
-            "problem": "25. ชายไทยอายุ 33 ปี ตรวจสุขภาพ, CBC: Hb 11.5 g/dL, MCV 60 fL. ผล Hb typing: Hb A2/E 88%, Hb F 12%, ไม่พบ Hb A. ผลนี้เข้าได้กับภาวะใด?",
-            "img": "",
-            "choices": "β-thalassemia/Hb E disease///Homozygous Hb E///Homozygous Hb E with co-existing α-thalassemia///β-thalassemia major///Hb E trait",
-            "answer": "Homozygous Hb E with co-existing α-thalassemia",
+            "problem": "2. The diagram shows two distinct lymphatic drainage regions of the body. What is the clinical difference between these two areas?",
+            "img": "https://drive.google.com/open?id=1mSPlR6K-aO8mpS3MmhWkK3N67H70tYc5&usp=drive_copy",
+            "choices": "The cisterna chyli is present in the unshaded area///The unshaded area has no lymph nodes///Each area has different kinds of lymph nodes///Different areas contain different types of lymph///The areas drain into different lymphatic ducts before entering the circulation",
+            "answer": "The areas drain into different lymphatic ducts before entering the circulation",
             "select": "",
-            "explain": "โดยทั่วไป Homozygous Hb E (EE) จะมี Hb E >90% และ Hb F <5-7% การที่ผู้ป่วยมี Hb F สูงถึง 12% และมี microcytosis ที่รุนแรงมาก (MCV 60 fL) แต่มีอาการเพียงเล็กน้อย ชวนให้สงสัยว่ามีภาวะ α-thalassemia ร่วมด้วย ซึ่งการมี α-thalassemia จะช่วยปรับสมดุลของการสร้าง globin chain ทำให้ระดับ Hb F สูงขึ้นและอาการทางคลินิกดีขึ้นกว่าที่ควรจะเป็น",
+            "explain": "แผนภาพแสดงให้เห็นถึงบริเวณการระบายน้ำเหลือง 2 ส่วนหลักของร่างกาย ส่วนที่แรเงา (Right drainage area) คือบริเวณศีรษะและคอด้านขวา แขนขวา และทรวงอกขวา จะระบายน้ำเหลืองเข้าสู่ Right lymphatic duct ส่วนที่ไม่ได้แรเงา (Left drainage area) ซึ่งเป็นส่วนที่ใหญ่กว่าของร่างกาย จะระบายน้ำเหลืองเข้าสู่ Thoracic duct ดังนั้นความแตกต่างที่สำคัญคือทั้งสองบริเวณระบายน้ำเหลืองเข้าสู่ท่อน้ำเหลืองหลักคนละท่อก่อนจะไหลเข้าสู่ระบบไหลเวียนเลือด",
+            "state": false
+        },
+        {
+            "problem": "3. A 28-year-old man presents with acute febrile illness, headache, rash, and severe joint pain. His platelet count is 150,000/mm, and hematocrit is normal. Which clinical feature helps differentiate chikungunya from dengue?",
+            "img": "",
+            "choices": "Positive tourniquet test///Prominent polyarthritis and joint swelling///Severe thrombocytopenia///Presence of hemorrhagic manifestations///Elevated hematocrit",
+            "answer": "Prominent polyarthritis and joint swelling",
+            "select": "",
+            "explain": "แม้ว่าไข้เลือดออก (Dengue) และชิคุนกุนยา (Chikungunya) จะมีอาการเริ่มต้นคล้ายกัน เช่น ไข้ ปวดศีรษะ และผื่น แต่ลักษณะเด่นที่ช่วยแยกโรคชิคุนกุนยาคืออาการปวดข้ออย่างรุนแรง (severe polyarthritis) และข้อบวม (joint swelling) ซึ่งมักเป็นอาการเด่นและรุนแรงกว่าในไข้เลือดออก ในขณะที่ไข้เลือดออกมักจะพบภาวะเกล็ดเลือดต่ำรุนแรง (severe thrombocytopenia) และการรั่วของพลาสมา (elevated hematocrit) ได้บ่อยกว่า",
+            "state": false
+        },
+        {
+            "problem": "4. A 60-year-old man is taking an oral antiplatelet agent that reversibly blocks P2Y12 receptors and provides rapid platelet inhibition. Which of the following drugs was most likely prescribed?",
+            "img": "",
+            "choices": "Aspirin///Abciximab///Ticagrelor///Clopidogrel///Tirofiban",
+            "answer": "Ticagrelor",
+            "select": "",
+            "explain": "Ticagrelor เป็นยาในกลุ่ม P2Y12 receptor inhibitors ที่มีคุณสมบัติเด่นคือจับกับตัวรับแบบผันกลับได้ (reversibly) และออกฤทธิ์ได้รวดเร็ว (rapid onset) เนื่องจากไม่ใช่ prodrug ต่างจาก Clopidogrel ซึ่งจับแบบไม่ผันกลับ (irreversibly) และเป็น prodrug ที่ต้องใช้เวลาในการเปลี่ยนเป็น active form ก่อนจึงจะออกฤทธิ์ได้ ส่วน Aspirin ยับยั้ง COX-1 และ Abciximab/Tirofiban เป็นยาฉีดในกลุ่ม GP IIb/IIIa inhibitors",
+            "state": false
+        },
+        {
+            "problem": "5. What species of Plasmodium can cause relapse fever?",
+            "img": "",
+            "choices": "Plasmodium falciparum, P. knowlesi///Plasmodium ovale, P. vivax///Plasmodium vivax, P. knowlesi///Plasmodium malariae, P. vivax///Plasmodium knowlesi, P. malariae",
+            "answer": "Plasmodium ovale, P. vivax",
+            "select": "",
+            "explain": "การกลับมาเป็นไข้มาลาเรียซ้ำ (relapse) เกิดจากเชื้อมาลาเรียระยะพักตัวที่เรียกว่า hypnozoites ในเซลล์ตับ ซึ่งสามารถกลับมาเจริญเติบโตใหม่ได้ในภายหลัง เชื้อมาลาเรียที่มีระยะนี้คือ Plasmodium vivax และ Plasmodium ovale เท่านั้น ส่วน P. falciparum, P. malariae, และ P. knowlesi ไม่มีระยะ hypnozoites",
+            "state": false
+        },
+        {
+            "problem": "6. Which of the following drugs is appropriate for stimulation of granulocytes, monocytes, and early progenitors in a patient undergoing bone marrow transplantation?",
+            "img": "",
+            "choices": "Oprelvekin///Sargramostim///Romiplostim///Filgrastim///Epoetin alfa",
+            "answer": "Sargramostim",
+            "select": "",
+            "explain": "Sargramostim คือ Granulocyte-Macrophage Colony-Stimulating Factor (GM-CSF) ซึ่งเป็นยาที่กระตุ้นการสร้างและเจริญเติบโตของเซลล์เม็ดเลือดขาวหลายสายพันธุ์ ทั้ง granulocytes (เช่น neutrophils), monocytes, และเซลล์ต้นกำเนิดระยะแรกๆ (early progenitors) จึงเหมาะสำหรับผู้ป่วยที่ปลูกถ่ายไขกระดูก ในขณะที่ Filgrastim (G-CSF) จะจำเพาะต่อการกระตุ้นสาย neutrophils มากกว่า และ Epoetin alfa ใช้กระตุ้นการสร้างเม็ดเลือดแดง",
+            "state": false
+        },
+        {
+            "problem": "7. A 23-year-old student develops cellulitis after a leg injury. Which white blood cell is the earliest responder and most abundant in the pus?",
+            "img": "",
+            "choices": "Basophil///Neutrophil///Monocyte///Eosinophil///Lymphocyte",
+            "answer": "Neutrophil",
+            "select": "",
+            "explain": "ในการติดเชื้อแบคทีเรียเฉียบพลัน (acute bacterial infection) เช่น cellulitis เม็ดเลือดขาวชนิดแรกที่ตอบสนองและเคลื่อนที่ไปยังบริเวณที่ติดเชื้อ (earliest responder) คือ Neutrophil ซึ่งทำหน้าที่กำจัดเชื้อโรคด้วยกระบวนการ phagocytosis หนอง (pus) ที่เกิดขึ้นจึงประกอบด้วยซากของ Neutrophils ที่ตายแล้วเป็นส่วนใหญ่",
+            "state": false
+        },
+        {
+            "problem": "8. A technician would like to extract human genomic DNA from a blood sample. Which part of the blood should be used for the DNA extraction?",
+            "img": "",
+            "choices": "Plasma///Buffy coat///Packed red blood cell///Serum///Platelet concentration",
+            "answer": "Buffy coat",
+            "select": "",
+            "explain": "Genomic DNA อยู่ในนิวเคลียสของเซลล์ เม็ดเลือดแดง (Packed red blood cell) และเกล็ดเลือดไม่มีนิวเคลียส ส่วน Plasma และ Serum เป็นส่วนของเหลวที่ไม่มีเซลล์ เมื่อนำเลือดไปปั่นเหวี่ยง จะเกิดชั้นบางๆ สีขาวขุ่นคั่นระหว่างชั้นพลาสมาและเม็ดเลือดแดง เรียกว่า Buffy coat ซึ่งประกอบด้วยเม็ดเลือดขาว (leukocytes) และเกล็ดเลือด เนื่องจากเม็ดเลือดขาวมีนิวเคลียส Buffy coat จึงเป็นแหล่งที่ดีที่สุดในการสกัด genomic DNA",
+            "state": false
+        },
+        {
+            "problem": "9. A 56-year-old man presents with ST-elevation myocardial infarction (STEMI). Before undergoing PCI procedure, he is given abciximab. Which is the mechanism of action of abciximab?",
+            "img": "",
+            "choices": "Inhibits GP IIb/IIIa on platelet///Promotes fibrinolysis///Blocks ADP receptors on platelets///Inhibits cyclooxygenase///Inhibits phosphodiesterase",
+            "answer": "Inhibits GP IIb/IIIa on platelet",
+            "select": "",
+            "explain": "Abciximab เป็นยาต้านเกล็ดเลือดในกลุ่ม Glycoprotein (GP) IIb/IIIa inhibitors โดยยาจะไปจับกับ GP IIb/IIIa receptor บนผิวของเกล็ดเลือด ซึ่งเป็นตัวรับสุดท้ายในกระบวนการเกาะกลุ่มของเกล็ดเลือด (final common pathway for platelet aggregation) การยับยั้งตัวรับนี้จะขัดขวางไม่ให้ fibrinogen มาจับเพื่อเชื่อมเกล็ดเลือดเข้าด้วยกัน ทำให้ไม่สามารถเกิดการเกาะกลุ่มกันได้",
+            "state": false
+        },
+        {
+            "problem": "10. Which one is an anticoagulant factor that interfere the clotting cascade of extrinsic pathway?",
+            "img": "",
+            "choices": "Thrombin///Thrombomodulin///Tissue factor pathway inhibitor///Protein C///Protein S",
+            "answer": "Tissue factor pathway inhibitor",
+            "select": "",
+            "explain": "Extrinsic pathway ของการแข็งตัวของเลือดเริ่มต้นจาก Tissue factor (TF) ทำงานร่วมกับ Factor VIIa ซึ่ง Tissue factor pathway inhibitor (TFPI) เป็นโปรตีนที่ทำหน้าที่เป็นสารต้านการแข็งตัวของเลือดตามธรรมชาติ (natural anticoagulant) ที่จำเพาะต่อวิถีนี้ โดย TFPI จะยับยั้ง Factor Xa และยับยั้ง TF-VIIa complex โดยตรง",
+            "state": false
+        },
+        {
+            "problem": "11. A 62-year-old man with atrial fibrillation is receiving warfarin for stroke prevention. Which of the following factors can alter the anticoagulant effects of warfarin?",
+            "img": "",
+            "choices": "A diet high in vitamin K-rich foods may promote warfarin action.///CYP2C9*3 polymorphism decrease anticoagulant effect of warfarin.///VKORC1 -1639 AA genotype increases warfarin sensitivity.///Chronic kidney disease may decrease warfarin activity.///Concurrent use with rifampin may increase bleeding risk.",
+            "answer": "VKORC1 -1639 AA genotype increases warfarin sensitivity.",
+            "select": "",
+            "explain": "VKORC1 เป็นเอนไซม์เป้าหมายของยา warfarin การมี polymorphism ชนิด -1639 AA genotype ทำให้การสร้างเอนไซม์ VKORC1 ลดลง ส่งผลให้ผู้ป่วยไวต่อยา warfarin มากขึ้น (increased warfarin sensitivity) และต้องการขนาดยาที่ต่ำกว่าคนทั่วไปในการควบคุมระดับการแข็งตัวของเลือด ส่วน Vitamin K จะต้านฤทธิ์ warfarin และ Rifampin จะเร่งการกำจัดยา warfarin ทำให้ฤทธิ์ลดลง",
+            "state": false
+        },
+        {
+            "problem": "12. Referring to the graph below, if N (the solid curve) is the normal oxygen dissociation curve for hemoglobin, which curve represents the oxygen dissociation curve of the predominant form of hemoglobin in respiratory alkalosis patients?",
+            "img": "https://drive.google.com/open?id=1ciedHiip-J4rgPaN0PIa8CqbHWcStphI&usp=drive_copy",
+            "choices": "C///A///N///D///B",
+            "answer": "A",
+            "select": "",
+            "explain": "ภาวะ Respiratory alkalosis คือภาวะที่เลือดเป็นด่าง (pH สูง) และมีระดับคาร์บอนไดออกไซด์ต่ำ (PCO2 ต่ำ) ซึ่งปัจจัยทั้งสองนี้ทำให้ Oxygen-hemoglobin dissociation curve เคลื่อนไปทางซ้าย (Left shift) หรือที่เรียกว่า Bohr effect ซึ่งหมายความว่าฮีโมโกลบินจะมีความสามารถในการจับกับออกซิเจนได้ดีขึ้น (increased affinity) แต่จะปล่อยออกซิเจนให้แก่เนื้อเยื่อได้ยากขึ้น กราฟ A แสดงถึงภาวะนี้",
+            "state": false
+        },
+        {
+            "problem": "13. A patient with glucose-6-phosphate dehydrogenase (G-6-PD) deficiency got acute hemolysis after an antibiotic, norfloxacin, treatment. The patient noticed his dark Coca-Cola colored urine. Which of the following molecule best explains the dark urine?",
+            "img": "",
+            "choices": "Urinary tract infection caused urinary bladder inflammation///Bilirubin in urine///Oxidized urea///Hemoglobin in urine///Substances from norfloxacin excreted to the urine",
+            "answer": "Hemoglobin in urine",
+            "select": "",
+            "explain": "ในผู้ป่วย G6PD deficiency เมื่อได้รับยาที่เป็นตัวกระตุ้น (oxidative stress) เช่น norfloxacin จะทำให้เม็ดเลือดแดงแตกอย่างเฉียบพลัน (acute intravascular hemolysis) ส่งผลให้มีฮีโมโกลบิน (hemoglobin) ถูกปล่อยออกมาในกระแสเลือดจำนวนมาก เมื่อปริมาณฮีโมโกลบินอิสระเกินกว่าที่โปรตีน haptoglobin จะจับได้หมด ฮีโมโกลบินส่วนเกินจะถูกกรองผ่านไตและขับออกมาในปัสสาวะ (hemoglobinuria) ทำให้ปัสสาวะมีสีเข้มคล้ายน้ำโคล่า",
+            "state": false
+        },
+        {
+            "problem": "14. A 17-year-old girl presents with a history of heavy menstrual bleeding since menarche. She also reports frequent nosebleeds and easy bruising. Family history reveals that her mother has a bleeding disorder. Laboratory studies show normal platelet count, normal PT, but prolonged aPTT. Bleeding time is markedly increase. Which of the following is the most likely diagnosis?",
+            "img": "",
+            "choices": "Disseminated intravascular coagulation (DIC)///Von Willebrand disease///Factor VII deficiency///Immune thrombocytopenic purpura (ITP)///Hemophilia",
+            "answer": "Von Willebrand disease",
+            "select": "",
+            "explain": "ผู้ป่วยมีลักษณะที่ชี้ถึงความผิดปกติของการห้ามเลือดทั้ง 2 ระบบ คือ 1. Primary hemostasis ผิดปกติ (สังเกตจาก Bleeding time ที่ยาวนานขึ้นมาก และอาการเลือดออกตามเยื่อบุ) และ 2. Secondary hemostasis ผิดปกติ (สังเกตจาก aPTT ที่ยาวนาน) โดยที่จำนวนเกล็ดเลือดปกติ โรคที่อธิบายความผิดปกติทั้งหมดนี้ได้ดีที่สุดคือ Von Willebrand disease เนื่องจาก von Willebrand factor (vWF) มีหน้าที่ทั้งในการช่วยให้เกล็ดเลือดยึดเกาะกัน (platelet adhesion) และเป็นโปรตีนพาหะของ Factor VIII (ซึ่งอยู่ใน intrinsic pathway)",
+            "state": false
+        },
+        {
+            "problem": "15. A 54-year-old man presented with right lower quadrant abdominal pain. Physical and laboratory investigations revealed appendicitis. After appendectomy, histopathological examination showed granulomatous inflammation predominantly composed of eosinophils and Schistosoma ova. Which one is the patient at risk for this parasitic infection?",
+            "img": "",
+            "choices": "Swimming in a natural water///Drinking unclean water///Eating raw snail///Eating raw vegetable///Waking barefoot",
+            "answer": "Swimming in a natural water",
+            "select": "",
+            "explain": "พยาธิใบไม้ในเลือด (Schistosoma) มีวงจรชีวิตที่ซับซ้อน โดยระยะติดต่อสู่คนคือ cercariae ซึ่งอาศัยอยู่ในหอยน้ำจืดและจะถูกปล่อยออกมาในแหล่งน้ำธรรมชาติ คนจะติดเชื้อเมื่อพยาธิระยะนี้ไชเข้าทางผิวหนังที่สัมผัสกับน้ำที่มีเชื้อปนเปื้อน เช่น การว่ายน้ำ เล่นน้ำ หรือเดินลุยน้ำในแหล่งน้ำธรรมชาติ",
+            "state": false
+        },
+        {
+            "problem": "16. All donated blood should be tested with HIV-Antigen and HIV antibody combo screening test first. If blood donated is negative for this test, what would be the further investigation for safety blood transfusion?",
+            "img": "",
+            "choices": "HIV proviral DNA///Require secondary sample///p24-Ag///HIV RNA///Nucleic acid testing for HIV",
+            "answer": "Nucleic acid testing for HIV",
+            "select": "",
+            "explain": "การตรวจคัดกรองเลือดบริจาคด้วยวิธี antigen/antibody combo test อาจยังให้ผลลบได้หากผู้บริจาคเพิ่งติดเชื้อและยังอยู่ในช่วง window period เพื่อเพิ่มความปลอดภัยสูงสุดและลดความเสี่ยงนี้ การตรวจคัดกรองเลือดบริจาคจึงจำเป็นต้องมีการตรวจด้วยวิธี Nucleic acid testing (NAT) เพิ่มเติม ซึ่งเป็นการตรวจหาสารพันธุกรรมของเชื้อไวรัส (HIV RNA) โดยตรง ทำให้สามารถตรวจพบการติดเชื้อได้เร็วกว่าวิธีอื่น",
+            "state": false
+        },
+        {
+            "problem": "17. In which lymphoid organ is the structure shown in the picture found?",
+            "img": "https://drive.google.com/open?id=18hFjQLLaKL8BCyds2capRpeJwL-jQwi2&usp=drive_copy",
+            "choices": "Spleen, composed of red and white pulp///Bone marrow, the site of hematopoiesis///Tonsil, with large, partially encapsulated lymphoid masses///Thymus, which lacks germinal centers///Lymph node, with follicles around medullary cords and sinuses",
+            "answer": "Thymus, which lacks germinal centers",
+            "select": "",
+            "explain": "ภาพที่เห็นคือโครงสร้างที่เรียกว่า Hassall's corpuscle ซึ่งมีลักษณะเฉพาะคือเป็นกลุ่มของ thymic epithelial cells ที่เรียงตัวกันเป็นชั้นๆ คล้ายหัวหอม โครงสร้างนี้พบได้เฉพาะในส่วน medulla ของต่อมไทมัส (Thymus) เท่านั้น ซึ่งเป็นอวัยวะที่สำคัญในการพัฒนาของ T-lymphocytes",
+            "state": false
+        },
+        {
+            "problem": "18. Which of the following adverse effects is characteristic of antimalarial drug chloroquine?",
+            "img": "",
+            "choices": "Hepatopathy///Cardiopathy///Neuropathy///Retinopathy///Nephropathy",
+            "answer": "Retinopathy",
+            "select": "",
+            "explain": "ผลข้างเคียงที่จำเพาะและมีความสำคัญทางคลินิกของยา Chloroquine โดยเฉพาะเมื่อใช้เป็นเวลานานหรือในขนาดสูง คือความเป็นพิษต่อจอประสาทตา (Retinopathy) ซึ่งอาจทำให้เกิดความเสียหายต่อการมองเห็นอย่างถาวรได้ จึงจำเป็นต้องมีการเฝ้าระวังและตรวจตาเป็นระยะในผู้ที่ใช้ยานี้",
+            "state": false
+        },
+        {
+            "problem": "19. A 34-year-old woman presents with fatigue and dyspnea on exertion. She reports heavy menstrual bleeding for the past year. On examination, her conjunctivae are pale without jaundice. Her nails show koilonychia. Atrophic glossitis is found. Liver and spleen are impalpable. Cardiovascular and respiratory exams are unremarkable. Laboratory findings show: Hb9.2 g/dl, MCV 70 fL (normal: 80–100 fL). Which of the following is the most likely diagnosis?",
+            "img": "",
+            "choices": "Iron deficiency anemia///Sideroblastic anemia///Anemia of chronic disease///Vitamin B12 deficiency///Thalassemia minor",
+            "answer": "Iron deficiency anemia",
+            "select": "",
+            "explain": "ผู้ป่วยมีอาการของภาวะโลหิตจาง (fatigue, dyspnea, pale conjunctivae) ร่วมกับประวัติการเสียเลือดเรื้อรังที่ชัดเจน (heavy menstrual bleeding) การตรวจร่างกายพบอาการแสดงที่จำเพาะต่อการขาดธาตุเหล็กคือ koilonychia (เล็บรูปช้อน) และ atrophic glossitis (ลิ้นเลี่ยน) ร่วมกับผลเลือดที่แสดงภาวะ microcytic anemia (Hb ต่ำ และ MCV < 80 fL) ทำให้การวินิจฉัยภาวะโลหิตจางจากการขาดธาตุเหล็ก (Iron deficiency anemia) มีความเป็นไปได้สูงสุด",
+            "state": false
+        },
+        {
+            "problem": "20. A 28-year-old woman presents with fever, rash, and myalgia for 6 days. A well-black crust skin lesion is noted in her groin area. Her lab results show thrombocytopenia, elevated transaminases, and mild leukocytosis. Which of the following tests is most specific for confirming the diagnosis of scrub typhus in this patient?",
+            "img": "",
+            "choices": "Peripheral smear for malarial parasite///IFA for Orientia tsutsugamushi///ELISA for Dengue IgM///Weil-Felix test///Widal test",
+            "answer": "IFA for Orientia tsutsugamushi",
+            "select": "",
+            "explain": "อาการทางคลินิกของผู้ป่วย โดยเฉพาะการพบแผลลักษณะคล้ายรอยไหม้จากบุหรี่จี้ (eschar) ร่วมกับไข้และผื่น เป็นลักษณะที่จำเพาะอย่างยิ่งของโรคสครับไทฟัส (Scrub typhus) ซึ่งเกิดจากเชื้อ Orientia tsutsugamushi การตรวจทางห้องปฏิบัติการเพื่อยืนยันการวินิจฉัยที่เป็นมาตรฐานและมีความจำเพาะสูงสุดคือการตรวจหาแอนติบอดีต่อเชื้อด้วยวิธี Indirect Immunofluorescence Assay (IFA)",
+            "state": false
+        },
+        {
+            "problem": "21. A 62-year-old man on intravenous heparin for DVT develops a marked drop in platelets and a new leg thrombus after 5 days of therapy. Which of the following best explain this adverse effect?",
+            "img": "",
+            "choices": "Kidney stones///Cardiac arrhythmias///Liver damage///Hemorrhagic stroke///Thrombocytopenia",
+            "answer": "Thrombocytopenia",
+            "select": "",
+            "explain": "อาการของผู้ป่วยเป็นลักษณะคลาสสิกของ Heparin-Induced Thrombocytopenia (HIT) ซึ่งเป็นภาวะแทรกซ้อนที่รุนแรงจากการใช้ยา heparin โดยร่างกายจะสร้างแอนติบอดีต่อ heparin-platelet factor 4 complex ซึ่งแอนติบอดีนี้จะไปกระตุ้นเกล็ดเลือด ทำให้เกิดภาวะลิ่มเลือดอุดตันใหม่ (new thrombosis) และในขณะเดียวกันก็ทำให้เกล็ดเลือดถูกทำลายจนมีจำนวนลดลงอย่างรวดเร็ว (thrombocytopenia) ซึ่งเป็นลักษณะที่ขัดแย้งกัน (paradoxical event)",
+            "state": false
+        },
+        {
+            "problem": "22. A 65-year-old woman with type 2 diabetes mellitus is admitted with pneumonia. Sputum culture: Streptococcus pneumoniae. CBC: Hb 10 g/dl, Hct 30%, WBC 18,300 cells/µL, Platelet 285,000 /µL. Which of the following is the most likely finding of WBC in this patient?",
+            "img": "",
+            "choices": "Lymphocytosis///Neutrophilia///Pseudo-Pelger-Huët anomaly///Atypical lymphocyte///Hypersegmented neutrophils",
+            "answer": "Neutrophilia",
+            "select": "",
+            "explain": "การติดเชื้อแบคทีเรียเฉียบพลัน (acute bacterial infection) เช่น ปอดอักเสบจากเชื้อ Streptococcus pneumoniae ร่างกายจะตอบสนองโดยการเพิ่มการสร้างและปล่อยเม็ดเลือดขาวชนิด Neutrophil ออกสู่กระแสเลือดเพื่อต่อสู้กับการติดเชื้อ ทำให้ผลการตรวจ CBC พบภาวะเม็ดเลือดขาวสูง (Leukocytosis) โดยมีสัดส่วนของ Neutrophil สูงเป็นหลัก เรียกว่า Neutrophilia",
+            "state": false
+        },
+        {
+            "problem": "23. Most of the iron in human plasma binds to which plasma protein?",
+            "img": "",
+            "choices": "Hepcidin///Transferrin///Globulin///Ferroportin///Albumin",
+            "answer": "Transferrin",
+            "select": "",
+            "explain": "Transferrin เป็นโปรตีนในพลาสมาที่ทำหน้าที่หลักในการจับกับธาตุเหล็ก (iron) และขนส่งไปยังส่วนต่างๆ ของร่างกาย เช่น ไขกระดูกเพื่อใช้ในการสร้างเม็ดเลือดแดง หรือตับและม้ามเพื่อการเก็บสะสม โดย Transferrin จะช่วยให้ธาตุเหล็กที่ละลายน้ำได้ไม่ดีสามารถเดินทางในกระแสเลือดได้อย่างปลอดภัยและมีประสิทธิภาพ",
+            "state": false
+        },
+        {
+            "problem": "24. A 72-year-old man with COPD has chronic hypoxemia (SaO2 86%). Which cell type is the primary oxygen sensor that triggers increased erythropoietin production?",
+            "img": "",
+            "choices": "Peritubular interstitial fibroblast-like cells in the renal cortex///Proximal tubular epithelial cells///Hepatocytes in zone 3 of the liver acinus///Juxtaglomerular apparatus cells///Macula densa cells",
+            "answer": "Peritubular interstitial fibroblast-like cells in the renal cortex",
+            "select": "",
+            "explain": "ในภาวะพร่องออกซิเจนเรื้อรัง (chronic hypoxemia) ร่างกายจะตอบสนองโดยการสร้างฮอร์โมน Erythropoietin (EPO) เพิ่มขึ้นเพื่อกระตุ้นการสร้างเม็ดเลือดแดง เซลล์หลักที่ทำหน้าที่เป็นตัวตรวจจับระดับออกซิเจน (oxygen sensor) และผลิต EPO ในผู้ใหญ่คือ Peritubular interstitial fibroblast-like cells ซึ่งเป็นเซลล์ที่อยู่ในเนื้อเยื่อของไตบริเวณ renal cortex",
+            "state": false
+        },
+        {
+            "problem": "25. A 70-year-old man presents with sudden severe back pain after lifting a light object. X-ray of the spine shows compression fracture of a vertebral body with multiple lytic bone lesions. Laboratory findings: anemia and elevated total serum protein. Which of the following is the most likely diagnosis?",
+            "img": "",
+            "choices": "Osteosarcoma///Paget disease of bone///Metastatic carcinoma///Multiple myeloma///Osteoporosis",
+            "answer": "Multiple myeloma",
+            "select": "",
+            "explain": "กลุ่มอาการของผู้ป่วยรายนี้เป็นลักษณะคลาสสิกของโรค Multiple Myeloma ซึ่งเป็นมะเร็งของพลาสมาเซลล์ในไขกระดูก ได้แก่ 1. กระดูกพรุนและถูกทำลายเป็นหย่อมๆ (multiple lytic bone lesions) ทำให้เกิดอาการปวดกระดูกและกระดูกหักง่าย (pathologic fracture) 2. ภาวะโลหิตจาง (anemia) จากการที่เซลล์มะเร็งไปแทนที่ไขกระดูกปกติ 3. ระดับโปรตีนในเลือดสูง (elevated total serum protein) จากการที่เซลล์มะเร็งสร้าง M-protein ซึ่งเป็น monoclonal immunoglobulin จำนวนมาก",
+            "state": false
+        },
+        {
+            "problem": "26. Which of the following is the condition associated with this finding from methylene blue staining?",
+            "img": "https://drive.google.com/open?id=14lkydIehuX2ahKUsl35BxaAcMiVykzG9&usp=drive_copy",
+            "choices": "Iron deficiency anemia///G6PD deficiency///Folate deficiency///Hereditary spherocytosis///Hemoglobin H disease",
+            "answer": "Hemoglobin H disease",
+            "select": "",
+            "explain": "ภาพจากการย้อมพิเศษด้วย supravital stain (เช่น brilliant cresyl blue หรือ methylene blue) แสดงให้เห็นเม็ดเลือดแดงที่มีลักษณะเป็นจุดเล็กๆ กระจายทั่วเซลล์คล้ายลูกกอล์ฟ (golf ball appearance) ซึ่งเกิดจากการตกตะกอนของ Hemoglobin H (HbH) ที่ไม่เสถียร (เกิดจาก beta-globin chains 4 สายรวมตัวกัน) ลักษณะนี้เป็นสิ่งที่พบได้จำเพาะในโรค Hemoglobin H disease ซึ่งเป็นกลุ่มย่อยของ Alpha-thalassemia",
+            "state": false
+        },
+        {
+            "problem": "27. A 65-year-old man with pneumonia develops confusion and hypotension. His labs show lactate 3.2 mmol/L and WBC 18,000 cells/µL. According to the Sepsis-3 definition, which of the following best defines sepsis?",
+            "img": "",
+            "choices": "Infection plus SIRS criteria ≥2///Bacteremia with shock///Infection plus evidence of organ dysfunction///Fever, tachycardia, and hypotension///Infection with WBC >12,000 or <4,000",
+            "answer": "Infection plus evidence of organ dysfunction",
+            "select": "",
+            "explain": "ตามนิยามสากล Sepsis-3 (ปี 2016) ภาวะ Sepsis หมายถึงภาวะที่การทำงานของอวัยวะล้มเหลวที่อาจเป็นอันตรายถึงชีวิต ซึ่งเกิดจากการที่ร่างกายตอบสนองต่อการติดเชื้ออย่างผิดปกติ (life-threatening organ dysfunction caused by a dysregulated host response to infection) ในผู้ป่วยรายนี้มีการติดเชื้อ (pneumonia) ร่วมกับหลักฐานของ organ dysfunction หลายระบบ เช่น ระบบประสาท (confusion), ระบบไหลเวียนเลือด (hypotension), และ metabolic (lactate สูง)",
+            "state": false
+        },
+        {
+            "problem": "28. A 26-year-old Extern accidentally sustains a needle-stick injury while drawing blood from a known HIV-positive patient with a high viral load. The exposure is from a hollow-bore needle that penetrated the skin. The intern presents to the emergency department 1 hour after the incident. Which of the following is the most appropriate next step?",
+            "img": "",
+            "choices": "Wait for his HIV ELISA result before starting therapy///No action needed if the source patient is on ART///Start 2-drug PEP regimen after baseline testing///Observe and test for HIV after 3 weeks///Start 3-drug PEP regimen immediately",
+            "answer": "Start 3-drug PEP regimen immediately",
+            "select": "",
+            "explain": "กรณีนี้ถือเป็นการสัมผัสเชื้อ HIV ที่มีความเสี่ยงสูงมาก (เข็มมีรู, ผู้ป่วยต้นทางมีเชื้อปริมาณมาก) ตามแนวทางปฏิบัติสากลจะต้องเริ่มให้ยาต้านไวรัสเพื่อป้องกันการติดเชื้อ (Post-Exposure Prophylaxis หรือ PEP) โดยเร็วที่สุดเท่าที่จะทำได้ (as soon as possible) โดยไม่ต้องรอผลเลือดของบุคลากรที่สัมผัส และเนื่องจากเป็นความเสี่ยงสูงจึงแนะนำให้ใช้สูตรยา 3 ชนิด (3-drug PEP regimen) เป็นเวลา 28 วัน",
+            "state": false
+        },
+        {
+            "problem": "29. A 20-year-old woman presents with painless cervical lymphadenopathy. She also reports night sweats and weight loss. Chest X-ray shows a mediastinal mass. Lymph node biopsy reveals Reed-Sternberg-Hodgkin cells in a background of fibrosis. Which of the following is the most likely diagnosis?",
+            "img": "",
+            "choices": "Classic Hodgkin lymphoma///Diffuse large B-cell lymphoma///Thymoma///T-lymphoblastic lymphoma///Follicular lymphoma",
+            "answer": "Classic Hodgkin lymphoma",
+            "select": "",
+            "explain": "การวินิจฉัยโรคนี้มีความชัดเจนจากหลายองค์ประกอบ ได้แก่ 1. อาการ B symptoms (เหงื่อออกกลางคืน, น้ำหนักลด) 2. ต่อมน้ำเหลืองโตที่คอโดยไม่เจ็บ และมีก้อนในช่องอก (mediastinal mass) ในผู้ป่วยอายุน้อย 3. ผลการตรวจชิ้นเนื้อ (biopsy) ที่พบเซลล์จำเพาะคือ Reed-Sternberg cells ซึ่งเป็น pathognomonic finding (ลักษณะที่บ่งชี้โรคโดยเฉพาะ) ของโรค Hodgkin lymphoma",
+            "state": false
+        },
+        {
+            "problem": "30. A 30-year-old man has watery diarrhea after eating raw freshwater fish. Laboratory test shows parasite ova in stool. Which blood cell is most likely elevated?",
+            "img": "",
+            "choices": "B lymphocyte///Monocyte///Basophil///Eosinophil///T lymphocyte",
+            "answer": "Eosinophil",
+            "select": "",
+            "explain": "การติดเชื้อพยาธิ (parasitic infection) โดยเฉพาะกลุ่มพยาธิตัวกลมและตัวแบน (helminthic infections) ซึ่งมักมาจากการบริโภคอาหารดิบ เช่น ปลา freshwater ดิบ จะกระตุ้นระบบภูมิคุ้มกันของร่างกายให้ตอบสนองโดยการเพิ่มจำนวนเม็ดเลือดขาวชนิด Eosinophil ในกระแสเลือดอย่างเด่นชัด ซึ่งเรียกว่าภาวะ Eosinophilia",
+            "state": false
+        },
+        {
+            "problem": "31. Which of the following is the condition associated with prolonged bleeding time?",
+            "img": "",
+            "choices": "Congenital platelet disorders///Vitamin K deficiency///Factor XII deficiency///Acute liver failure///Hemophilia",
+            "answer": "Congenital platelet disorders",
+            "select": "",
+            "explain": "Bleeding time เป็นการทดสอบการทำงานของ primary hemostasis ซึ่งเกี่ยวข้องกับการทำงานของเกล็ดเลือด (platelet function) และหลอดเลือด การที่ bleeding time ยาวนานผิดปกติจึงบ่งชี้ถึงความผิดปกติในกระบวนการนี้ ซึ่งอาจเกิดจากจำนวนเกล็ดเลือดต่ำ (thrombocytopenia) หรือการทำงานของเกล็ดเลือดผิดปกติ (platelet dysfunction) เช่นในกลุ่มโรค congenital platelet disorders (เช่น Glanzmann thrombasthenia, Bernard-Soulier syndrome)",
+            "state": false
+        },
+        {
+            "problem": "32. A 28-year-old pregnant woman, blood group O Rh(D)-negative, has an IAT positive screen. Which best explains the test and its clinical relevance?",
+            "img": "",
+            "choices": "Used primarily for diagnosing PNH (CD55/CD59 deficiency)///Detects in-vivo coating of patient RBCs with antibody or complement///Measures strength of IgM agglutination at 4 °C///Detects free antibodies in serum capable of reacting with reagent RBCs in-vitro///Cannot detect clinically significant alloantibodies",
+            "answer": "Detects free antibodies in serum capable of reacting with reagent RBCs in-vitro",
+            "select": "",
+            "explain": "Indirect Antiglobulin Test (IAT) หรือ antibody screening test เป็นการตรวจหาแอนติบอดีที่ลอยอยู่อย่างอิสระในซีรัมของผู้ป่วย (free antibodies) ว่าสามารถทำปฏิกิริยากับเม็ดเลือดแดงตัวอย่าง (reagent RBCs) ที่ทราบชนิดของแอนติเจนได้หรือไม่ (in-vitro) ในหญิงตั้งครรภ์ Rh(D)-negative การมี IAT positive บ่งชี้ว่าอาจมีการสร้าง alloantibody (เช่น anti-D) ซึ่งอาจข้ามรกไปทำลายเม็ดเลือดแดงของทารกและทำให้เกิด Hemolytic disease of the fetus and newborn (HDFN) ได้",
+            "state": false
+        },
+        {
+            "problem": "33. A 46-year-old man who lives in Khon Kaen Province came to the hospital with a 2-day history of high fever, chills, and generalized malaise. Which of the following information would be most useful for the clinician to consider malaria infection?",
+            "img": "",
+            "choices": "He collected mushrooms in the forest near his house.///He has experienced episodes of fever and chills.///He has experienced mosquito bites.///He traveled to Tak Province 2 weeks ago.///His house is located near a rice field.",
+            "answer": "He traveled to Tak Province 2 weeks ago.",
+            "select": "",
+            "explain": "แม้ว่าอาการไข้สูงหนาวสั่นจะเข้าได้กับมาลาเรีย แต่การวินิจฉัยต้องอาศัยประวัติทางระบาดวิทยา (epidemiological history) ที่สำคัญ จังหวัดขอนแก่นไม่ใช่พื้นที่ระบาดของมาลาเรีย แต่จังหวัดตากเป็นพื้นที่ที่มีการระบาดสูง (endemic area) การมีประวัติเดินทางไปยังพื้นที่ระบาดภายในช่วงระยะฟักตัวของโรค (ประมาณ 1-4 สัปดาห์) เป็นข้อมูลที่สำคัญที่สุดที่ทำให้แพทย์นึกถึงและตรวจหาเชื้อมาลาเรีย",
+            "state": false
+        },
+        {
+            "problem": "34. Which substance, released from the dense granules of activated platelets, causes vasoconstriction at the site of injury, thereby helping to reduce blood flow?",
+            "img": "",
+            "choices": "Prostaglandin I2 (PGI2)///Thromboxane A2 (TXA2)///Adenosine diphosphate (ADP)///Nitric Oxide (NO)///Serotonin (5-HT)",
+            "answer": "Serotonin (5-HT)",
+            "select": "",
+            "explain": "เมื่อเกล็ดเลือดถูกกระตุ้น (activated) จะมีการหลั่งสารต่างๆ ออกมาจาก granules ภายในเซลล์ โดยสาร Serotonin (5-HT) และ Thromboxane A2 (TXA2) จะถูกหลั่งออกมาและมีฤทธิ์ทำให้หลอดเลือดหดตัว (vasoconstriction) บริเวณที่บาดเจ็บ ซึ่งช่วยลดการไหลเวียนของเลือดมายังบริเวณนั้นและช่วยในการห้ามเลือด อย่างไรก็ตาม Serotonin ถูกเก็บไว้ใน dense granules ในขณะที่ TXA2 ถูกสร้างขึ้นใหม่จาก arachidonic acid เมื่อเกล็ดเลือดถูกกระตุ้น ใน choice นี้ Serotonin คือคำตอบที่ถูก",
+            "state": false
+        },
+        {
+            "problem": "35. A 12-year-old boy presents with a rapidly enlarging jaw mass. Biopsy shows sheets of medium-sized lymphoid cells with high mitotic activity and numerous tingible-body macrophages, creating a “starry sky” appearance. Which of the following genetic abnormalities is most characteristic of this disease?",
+            "img": "",
+            "choices": "t(8;14) → c-MYC overexpression///t(9;22) → BCR-ABL1 fusion///t(15;17) → PML-RARA fusion///t(14;18) → BCL2 overexpression///t(11;14) → Cyclin D1 overexpression",
+            "answer": "t(8;14) → c-MYC overexpression",
+            "select": "",
+            "explain": "ลักษณะทางคลินิก (ก้อนที่ขากรรไกรโตเร็วในเด็ก) และผลทางพยาธิวิทยา (starry sky appearance) เป็นลักษณะคลาสสิกของ Burkitt lymphoma ซึ่งเป็นมะเร็งต่อมน้ำเหลืองชนิด B-cell ที่มีความรุนแรงสูง โรคนี้มีความเกี่ยวข้องทางพันธุกรรมที่จำเพาะคือการย้ายตำแหน่งของโครโมโซม (translocation) ระหว่างโครโมโซมคู่ที่ 8 และ 14 หรือ t(8;14) ซึ่งทำให้เกิดการแสดงออกของ c-MYC oncogene มากเกินไป (overexpression) ส่งผลให้เซลล์มีการแบ่งตัวอย่างรวดเร็วและควบคุมไม่ได้",
+            "state": false
+        },
+        {
+            "problem": "36. Ten minutes after starting PRBCs transfusion, a patient develops fever, flank pain, hypotension, and dark urine. Which is the best next step management after stop transfusion?",
+            "img": "",
+            "choices": "Give acetaminophen and slow the rate///Give furosemide and continue transfusion///Administer IV steroids and restart if stable///Order echocardiogram///Maintain IV with saline; workup for blood incompatibility",
+            "answer": "Maintain IV with saline; workup for blood incompatibility",
+            "select": "",
+            "explain": "อาการที่เกิดขึ้นอย่างเฉียบพลันหลังเริ่มให้เลือด (ไข้, ปวดเอว, ความดันตก, ปัสสาวะสีเข้ม) บ่งชี้ถึงภาวะ Acute Hemolytic Transfusion Reaction (AHTR) ซึ่งเป็นภาวะฉุกเฉินทางการแพทย์ สิ่งที่ต้องทำทันทีคือ 1. หยุดการให้เลือดทันที 2. รักษาประคับประคองผู้ป่วย เช่น ให้สารน้ำทางหลอดเลือดดำ (IV saline) เพื่อรักษาความดันโลหิตและป้องกันภาวะไตวาย 3. ส่งเลือดและปัสสาวะเพื่อตรวจหาสาเหตุของ incompatibility (เช่น ตรวจ clerical check, DAT, repeat crossmatch)",
+            "state": false
+        },
+        {
+            "problem": "37. A 62-year-old man with GI blood loss starts to mount an erythropoietic response. Which erythroid-derived signal most directly suppresses hepatic hepcidin, increasing iron export from enterocytes and macrophages?",
+            "img": "",
+            "choices": "Hepatocyte growth factor (HGF)///Interleukin-6///Transferrin receptor 2 (TfR2) signaling///Erythroferrone (ERFE)///Bone morphogenetic protein 6 (BMP6)",
+            "answer": "Erythroferrone (ERFE)",
+            "select": "",
+            "explain": "เมื่อมีการเสียเลือด ร่างกายจะตอบสนองโดยการเพิ่มการสร้างเม็ดเลือดแดง (erythropoiesis) ซึ่งต้องการธาตุเหล็กจำนวนมาก เซลล์เม็ดเลือดแดงตัวอ่อน (erythroblasts) ในไขกระดูกจะหลั่งฮอร์โมนที่ชื่อว่า Erythroferrone (ERFE) ซึ่งจะเดินทางไปยังตับและทำหน้าที่ยับยั้งการสร้าง hepcidin การที่ hepcidin ลดลงจะทำให้มีการดูดซึมธาตุเหล็กจากลำไส้และปล่อยธาตุเหล็กจากแหล่งเก็บสะสม (macrophages) เพิ่มขึ้น เพื่อนำไปใช้ในการสร้างเม็ดเลือดแดง",
+            "state": false
+        },
+        {
+            "problem": "38. A 13-year-old girl with thalassemia has been receiving regular blood transfusions. She is subsequently found to have hemochromatosis. Which of the following drugs is most appropriate to manage her iron overload?",
+            "img": "",
+            "choices": "Ferumoxytol///Deferasirox///Pegfilgrastim///Idarucizumab///Eltrombopag",
+            "answer": "Deferasirox",
+            "select": "",
+            "explain": "ผู้ป่วยธาลัสซีเมียที่ได้รับเลือดเป็นประจำจะมีความเสี่ยงต่อภาวะธาตุเหล็กเกิน (iron overload หรือ secondary hemochromatosis) ซึ่งเป็นอันตรายต่ออวัยวะต่างๆ การรักษาคือการให้ยาขับธาตุเหล็ก (iron chelating agent) ซึ่ง Deferasirox เป็นยาขับธาตุเหล็กชนิดรับประทานที่นิยมใช้ในปัจจุบันเพื่อจัดการกับภาวะนี้",
+            "state": false
+        },
+        {
+            "problem": "39. Which of the following anti-HIV drug is classified as integrase transfer strand inhibitor?",
+            "img": "",
+            "choices": "Abacavir (ABC)///Dolutegravir (DTG)///Atasanavir///Lamivudine (3TC)///Tenofovir disoproxil fumarate (TDF)",
+            "answer": "Dolutegravir (DTG)",
+            "select": "",
+            "explain": "ยาต้านไวรัส HIV มีหลายกลุ่มตามกลไกการออกฤทธิ์ Dolutegravir (DTG) จัดอยู่ในกลุ่ม Integrase Strand Transfer Inhibitors (INSTIs) ซึ่งทำหน้าที่ยับยั้งเอนไซม์ integrase ของไวรัส ทำให้ไวรัสไม่สามารถแทรกสารพันธุกรรมของตัวเองเข้ากับ DNA ของ host cell ได้ ส่วน Abacavir, Lamivudine, Tenofovir เป็นกลุ่ม NRTIs และ Atasanavir เป็นกลุ่ม Protease Inhibitor",
+            "state": false
+        },
+        {
+            "problem": "40. A 58-year-old man with suspected G6PD deficiency presents with acute hemolysis after dapsone. Pulse ox is low; co-oximetry shows methemoglobinemia 18%. Which management is contraindicated (or likely ineffective) in this patient?",
+            "img": "",
+            "choices": "Stop the offending drug and hydrate///Ascorbic acid (vitamin C) as adjunct///Transfusion if hemodynamically unstable///Methylene blue IV///High-flow oxygen and supportive care",
+            "answer": "Methylene blue IV",
+            "select": "",
+            "explain": "ผู้ป่วยมีภาวะ methemoglobinemia (เกิดจากยา dapsone) ร่วมกับ G6PD deficiency การรักษามาตรฐานของ methemoglobinemia คือการให้ Methylene blue IV อย่างไรก็ตาม Methylene blue ต้องการเอนไซม์ G6PD ในการเปลี่ยนให้อยู่ในรูป reduced form เพื่อที่จะไปลด methemoglobin ได้ ในผู้ป่วยที่ขาด G6PD การให้ Methylene blue จึงไม่มีประสิทธิภาพและอาจทำให้เม็ดเลือดแดงแตกมากขึ้น (hemolysis) ได้ ดังนั้นจึงเป็นข้อห้ามใช้",
+            "state": false
+        },
+        {
+            "problem": "41. A 54-year-old man (blood group B, RhD+) requires plasma during massive transfusion; only limited inventory is available. Which plasma group is universally safest for ABO compatibility?",
+            "img": "",
+            "choices": "Group A plasma///Any group if RhD matched///Group O plasma///Group AB plasma///Group B plasma only",
+            "answer": "Group AB plasma",
+            "select": "",
+            "explain": "หลักการให้พลาสมาจะตรงข้ามกับการให้เม็ดเลือดแดง พลาสมาของหมู่ AB ไม่มีทั้ง anti-A และ anti-B antibodies จึงสามารถให้กับผู้ป่วยได้ทุกหมู่เลือด (A, B, AB, O) โดยไม่ทำให้เม็ดเลือดแดงของผู้ป่วยจับกลุ่มกัน ดังนั้น พลาสมาหมู่ AB จึงถือเป็น universal donor สำหรับพลาสมา",
+            "state": false
+        },
+        {
+            "problem": "42. A 47-year-old man originally from the Caribbean presents with several months of skin lesions, generalized lymphadenopathy, and hypercalcemia. Blood smear shows atypical lymphocytes with multilobulated (“flower-shaped”) nuclei. HTLV-1 antibodies are detected in the serum. Which of the following conditions is most strongly associated with this virus?",
+            "img": "",
+            "choices": "Adult T-cell leukemia/lymphoma///Chronic lymphocytic leukemia///Hairy cell leukemia///Hodgkin lymphoma///Burkitt lymphoma",
+            "answer": "Adult T-cell leukemia/lymphoma",
+            "select": "",
+            "explain": "การติดเชื้อไวรัส Human T-lymphotropic virus type 1 (HTLV-1) ซึ่งพบมากในบางพื้นที่เช่น แคริบเบียน ญี่ปุ่น เป็นสาเหตุหลักของโรค Adult T-cell leukemia/lymphoma (ATLL) ซึ่งมีลักษณะทางคลินิกที่สำคัญคือ skin lesions, lymphadenopathy, hypercalcemia และการพบเซลล์มะเร็ง T-cell ที่มีนิวเคลียสลักษณะเหมือนดอกไม้ (flower cells) ในเลือด",
+            "state": false
+        },
+        {
+            "problem": "43. Which of the following is the x-linked inheritance?",
+            "img": "",
+            "choices": "Congenital platelet disorders///Vitamin K deficiency///von Willebrand disease///Immune thrombocytopenia///Hemophilia",
+            "answer": "Hemophilia",
+            "select": "",
+            "explain": "Hemophilia A (ขาด Factor VIII) และ Hemophilia B (ขาด Factor IX) เป็นโรคเลือดออกผิดปกติทางพันธุกรรมที่ถ่ายทอดแบบ X-linked recessive inheritance ซึ่งหมายความว่ายีนที่ผิดปกติอยู่บนโครโมโซม X ทำให้โรคนี้มักแสดงอาการในเพศชาย ส่วนเพศหญิงมักเป็นพาหะของโรค",
+            "state": false
+        },
+        {
+            "problem": "44. Which of the following best describes the primary role of von Willebrand Factor (vWF) in initiating primary hemostasis after a blood vessel injury?",
+            "img": "",
+            "choices": "Convert fibrinogen to fibrin///Break down fibrin clots///Mediates platelet adhesion to collagen///Cofactor for Factor VII activation///Inhibits platelet aggregation",
+            "answer": "Mediates platelet adhesion to collagen",
+            "select": "",
+            "explain": "ในกระบวนการห้ามเลือดระยะแรก (primary hemostasis) เมื่อหลอดเลือดได้รับบาดเจ็บและเนื้อเยื่อใต้ชั้น endothelium (subendothelial collagen) ถูกเปิดออก von Willebrand Factor (vWF) จะทำหน้าที่เป็นสะพานเชื่อมระหว่าง collagen ที่ถูกเปิดออกกับ GP Ib receptor บนผิวของเกล็ดเลือด ทำให้เกิดการยึดเกาะของเกล็ดเลือด (platelet adhesion) ซึ่งเป็นขั้นตอนแรกที่สำคัญอย่างยิ่ง",
+            "state": false
+        },
+        {
+            "problem": "45. A 28-year-old man presents on day 2 of high fever, myalgia, and headache. He is suspected of having dengue. Which of the following is the most appropriate diagnostic test at this stage?",
+            "img": "",
+            "choices": "Dengue IgM///Heterophile Antibody///Dengue PCR///Dengue IgG///NS1 antigen test",
+            "answer": "NS1 antigen test",
+            "select": "",
+            "explain": "ในช่วง 1-5 วันแรกของการติดเชื้อไข้เลือดออก (febrile phase) ร่างกายจะยังไม่สร้างแอนติบอดี (IgM/IgG) ในปริมาณที่ตรวจพบได้ แต่จะสามารถตรวจพบส่วนประกอบของเชื้อไวรัสที่เรียกว่า Non-structural protein 1 (NS1) antigen ได้ในกระแสเลือด ดังนั้นในช่วง 2 วันแรกของไข้ การตรวจ NS1 antigen test หรือ Dengue PCR (ซึ่งตรวจหาสารพันธุกรรมของไวรัส) จะมีความไวสูงสุดในการวินิจฉัย",
+            "state": false
+        },
+        {
+            "problem": "46. A 24-year-old Thai male exsanguinating trauma patient, unknown blood group, needs immediate packed red blood cells (PRBCs). He is hemodynamically unstable after aggressively IV fluid. Which initial RBC is most appropriate?",
+            "img": "",
+            "choices": "Group O RhD-positive, leukoreduced, uncrossmatched///Group AB RhD-negative, uncrossmatched///Group O RhD-negative, leukoreduced, crossmatched at IAT phase///Group O RhD-positive, irradiated PRBCS///Group A RhD-negative, crossmatch-compatible",
+            "answer": "Group O RhD-positive, leukoreduced, uncrossmatched",
+            "select": "",
+            "explain": "ในภาวะฉุกเฉินที่ผู้ป่วยเสียเลือดมากและไม่ทราบหมู่เลือด จะต้องให้เลือดหมู่ O ซึ่งเป็น universal donor เนื่องจากไม่มี A และ B antigen บนผิวเม็ดเลือดแดง สำหรับผู้ป่วยชายชาวไทยซึ่งประชากรส่วนใหญ่เป็น RhD-positive การให้เลือด O RhD-positive สามารถทำได้และมีความเสี่ยงต่ำมาก การให้เลือดโดยไม่ต้องรอผล crossmatch (uncrossmatched) เป็นสิ่งจำเป็นในสถานการณ์เร่งด่วนนี้",
+            "state": false
+        },
+        {
+            "problem": "47. A 17-year-old student presents with sore throat, fever, and fatigue for 1 week. On exam, he has bilateral tonsillar enlargement with white exudates, tender posterior cervical lymphadenopathy, and mild splenomegaly. A rapid strep test is negative, but he was recently prescribed amoxicillin, after which he developed a generalized maculopapular rash. Which of the following is the most likely diagnosis?",
+            "img": "",
+            "choices": "Cytomegalovirus mononucleosis///Infectious mononucleosis (EBV)///Herpes simplex virus pharyngitis///Acute HIV infection///Group A Streptococcal pharyngitis",
+            "answer": "Infectious mononucleosis (EBV)",
+            "select": "",
+            "explain": "กลุ่มอาการของผู้ป่วย (ไข้, เจ็บคอ, ต่อมน้ำเหลืองที่คอโต, ม้ามโต) เป็นลักษณะคลาสสิกของโรค Infectious Mononucleosis ซึ่งส่วนใหญ่เกิดจากเชื้อ Epstein-Barr Virus (EBV) สิ่งที่ช่วยสนับสนุนการวินิจฉัยอย่างมากคือการเกิดผื่น maculopapular rash หลังจากได้รับยา amoxicillin ซึ่งพบได้บ่อยในผู้ป่วย EBV infection",
+            "state": false
+        },
+        {
+            "problem": "48. What is the mechanism of action of antimalarial agent atovaquone?",
+            "img": "",
+            "choices": "Inhibit heme polymerase///Interrupt protein synthesis///Increase malarial intracellular ROS///Interfere with folic acid metabolism///Block electron transportation in mitochondria",
+            "answer": "Block electron transportation in mitochondria",
+            "select": "",
+            "explain": "Atovaquone เป็นยาต้านมาลาเรียที่ออกฤทธิ์โดยการยับยั้งการทำงานของ cytochrome bc1 complex ในกระบวนการ electron transport chain ของไมโตคอนเดรียในเชื้อมาลาเรีย ซึ่งเป็นการขัดขวางการสร้างพลังงาน (ATP synthesis) และการสังเคราะห์ pyrimidine ของเชื้อ ทำให้เชื้อตายในที่สุด",
+            "state": false
+        },
+        {
+                        "problem": "49. Which of the following is the cause of eosinophilia?",
+                        "img": "",
+                        "choices": "Myelodysplastic syndrome///Cytomegalovirus retinitis///Pulmonary tuberculosis///Pulmonary nocardiasis///Strongyloides infestation",
+                        "answer": "Strongyloides infestation",
+                        "select": "",
+                        "explain": "ภาวะ Eosinophilia หรือการมีจำนวนเม็ดเลือดขาวชนิด Eosinophil สูงในเลือด มีสาเหตุได้หลายอย่าง แต่สาเหตุที่พบบ่อยและสำคัญที่สุดอย่างหนึ่งคือการติดเชื้อพยาธิ โดยเฉพาะพยาธิที่บุกรุกเนื้อเยื่อ (tissue-invasive helminths) เช่น พยาธิเส้นด้าย Strongyloides stercoralis",
+                        "state": false
+                    },
+                    {
+                        "problem": "50. A 12-year-old boy from Surat Thani Province presented with a high fever (39°C). Physical examination revealed neck stiffness, heart and lungs sounded normal. The clinician suspected for filaria infection. What is the best time to collect blood for detection of microfilariae?",
+                        "img": "",
+                        "choices": "10.00 a.m. - 02.00 p.m.///10.00 p.m. – 02.00 a.m.///06.00 a.m. - 10.00 a.m.///01.00 p.m. – 05.00 p.m.///10.00 a.m. - 01.00 a.m.",
+                        "answer": "10.00 p.m. – 02.00 a.m.",
+                        "select": "",
+                        "explain": "เชื้อพยาธิฟิลาเรียหรือพยาธิโรคเท้าช้าง (Wuchereria bancrofti และ Brugia malayi) ที่เป็นสาเหตุส่วนใหญ่ในภูมิภาคเอเชียตะวันออกเฉียงใต้ มีลักษณะพิเศษคือตัวอ่อน (microfilariae) จะออกมาปรากฏในกระแสเลือดส่วนปลาย (peripheral blood) เป็นจำนวนมากที่สุดในช่วงเวลากลางคืน หรือที่เรียกว่า nocturnal periodicity ดังนั้นช่วงเวลาที่ดีที่สุดในการเจาะเลือดเพื่อตรวจหาเชื้อคือช่วงกลางดึก ประมาณ 22.00 น. ถึง 02.00 น.",
+                        "state": false
+                    },
+                    {
+                        "problem": "51. A 65-year-old receives incompatible PRBCs and develops DIC within an hour. Which is the most common cause of acute hemolytic transfusion reaction (AHTR)?",
+                        "img": "",
+                        "choices": "Bacterial contamination of unit///Alloantibody to Kidd (Jk) antigen///Clerical/identification error///Storage lesion of RBCs///IgA deficiency with anti-IgA",
+                        "answer": "Clerical/identification error",
+                        "select": "",
+                        "explain": "สาเหตุที่พบบ่อยที่สุดของ Acute Hemolytic Transfusion Reaction (AHTR) ซึ่งเป็นภาวะแทรกซ้อนที่รุนแรงที่สุดจากการให้เลือด คือความผิดพลาดของมนุษย์ (human error) เช่น การระบุตัวผู้ป่วยผิดพลาด การติดป้ายชื่อที่ถุงเลือดผิด หรือการหยิบเลือดผิดถุงให้ผู้ป่วยผิดคน ซึ่งนำไปสู่การให้เลือดที่เข้ากันไม่ได้ตามระบบ ABO (ABO incompatibility)",
+                        "state": false
+                    },
+                    {
+                        "problem": "52. A 45-year-old man had high grade of fever, headache myalgia for 5 days. Physical exam. Black crust at perineum. BT 39 C, BP 110/60 mmHg, PR 109/min, RR 20/min CBC: Hct 40%, WBC 6,500 cells/mm PMN 65%, L 23%, mo 2% platelet count 170,000/mm What is the pathogenesis of this disease ?",
+                        "img": "",
+                        "choices": "Vascular injury///Autoantibody///Direct invasion///T-cell apoptosis///Antibody enhancement",
+                        "answer": "Vascular injury",
+                        "select": "",
+                        "explain": "อาการของผู้ป่วย โดยเฉพาะไข้สูงและแผล eschar (black crust) บ่งชี้ถึงโรคในกลุ่ม Rickettsial disease เช่น Scrub typhus พยาธิกำเนิดหลักของโรคกลุ่มนี้คือเชื้อจะเข้าไปเจริญในเซลล์บุผนังหลอดเลือด (endothelial cells) ทำให้เกิดการอักเสบของหลอดเลือดขนาดเล็กทั่วร่างกาย (systemic vasculitis) ซึ่งนำไปสู่การรั่วของสารน้ำออกนอกหลอดเลือดและอาการแสดงต่างๆ ของโรค",
+                        "state": false
+                    },
+                    {
+                        "problem": "53. A 16-year-old boy is brought to the clinic by his mother because of repeated episodes of painful swelling in his knees and elbows over the past year. The mother reports that minor trauma often leads to prolonged bleeding. His maternal uncle had a history of frequent joint bleeds requiring hospitalization. On examination, the patient has swollen, tender knees with decreased range of motion. There is no petechiae or splenomegaly. Laboratory results show normal platelet count and normal bleeding time, but markedly prolonged activated partial thromboplastin time (aPTT). Which of the following is the most likely diagnosis in this patient?",
+                        "img": "",
+                        "choices": "Vitamin K deficiency///Immune thrombocytopenic purpura (ITP)///Hemophilia///Acquired factor VIII inhibitor///von Willebrand disease",
+                        "answer": "Hemophilia",
+                        "select": "",
+                        "explain": "ผู้ป่วยมีลักษณะที่บ่งชี้ถึงโรค Hemophilia อย่างชัดเจน ได้แก่ 1. ประวัติเลือดออกในข้อ (hemarthrosis) ซ้ำๆ 2. ประวัติครอบครัวที่สอดคล้องกับการถ่ายทอดทางพันธุกรรมแบบ X-linked (มีประวัติในลุงฝั่งแม่) 3. ผลการตรวจทางห้องปฏิบัติการที่แสดงความผิดปกติของ secondary hemostasis ใน intrinsic pathway (aPTT ยาวนานผิดปกติ) โดยที่ primary hemostasis ปกติ (platelet count และ bleeding time ปกติ)",
+                        "state": false
+                    },
+                    {
+                        "problem": "54. Which of the following pair of drug and ADR are correct?",
+                        "img": "",
+                        "choices": "AZT - Peripheral neuropathy///Abacavir - Bone marrow suppression///Efavirenz - Lipodystrophy///TDF - Nephrotoxicity///Saquinavir - Cardiotoxicity",
+                        "answer": "TDF - Nephrotoxicity",
+                        "select": "",
+                        "explain": "Tenofovir disoproxil fumarate (TDF) เป็นยาต้านไวรัสในกลุ่ม NRTI ที่มีผลข้างเคียงที่สำคัญและเป็นที่รู้จักกันดีคือความเป็นพิษต่อไต (Nephrotoxicity) ซึ่งอาจทำให้เกิดภาวะ Fanconi syndrome หรือไตวายเฉียบพลันได้ จึงต้องมีการติดตามการทำงานของไตในผู้ที่ใช้ยานี้ ส่วน AZT (Zidovudine) ทำให้เกิด bone marrow suppression และ Efavirenz ทำให้เกิดอาการทางระบบประสาท",
+                        "state": false
+                    },
+                    {
+                        "problem": "55. Which one of the following substances need heparin to accelerate its anticoagulant effect?",
+                        "img": "",
+                        "choices": "Thrombomodulin///Tissue factor pathway inhibitor///Prostacyclin///Antithrombin III///Nitric oxide",
+                        "answer": "Antithrombin III",
+                        "select": "",
+                        "explain": "Heparin ออกฤทธิ์ต้านการแข็งตัวของเลือดโดยการไปจับกับ Antithrombin III (AT III) ซึ่งเป็นโปรตีนยับยั้งการแข็งตัวของเลือดตามธรรมชาติ การจับกันนี้จะทำให้โครงสร้างของ AT III เปลี่ยนแปลงไปและสามารถยับยั้ง clotting factors ต่างๆ (โดยเฉพาะ Thrombin (Factor IIa) และ Factor Xa) ได้รวดเร็วและมีประสิทธิภาพมากขึ้นหลายพันเท่า ดังนั้น heparin จึงทำหน้าที่เป็น catalyst หรือตัวเร่งปฏิกิริยาของ Antithrombin III",
+                        "state": false
+                    },
+                    {
+                        "problem": "56. Which myeloproliferative neoplasm has the highest incidence of JAK2 V617F mutation?",
+                        "img": "",
+                        "choices": "Primary myelofibrosis///Polycythemia vera///Chronic myelogenous leukemia///Essential thrombocythemia///Chronic neutrophilic leukemia",
+                        "answer": "Polycythemia vera",
+                        "select": "",
+                        "explain": "JAK2 V617F mutation เป็นการกลายพันธุ์ที่สำคัญในกลุ่มโรค Myeloproliferative Neoplasms (MPNs) โดยพบได้บ่อยที่สุดในโรค Polycythemia vera (PV) ซึ่งพบได้มากกว่า 95% ของผู้ป่วย นอกจากนี้ยังพบได้ประมาณ 50-60% ในผู้ป่วย Essential thrombocythemia (ET) และ Primary myelofibrosis (PMF) ส่วน CML เกี่ยวข้องกับ BCR-ABL1 fusion gene",
+                        "state": false
+                    },
+                    {
+                        "problem": "57. A 32-year-old woman presents with recurrent miscarriages at 12–14 weeks of gestation. She also reports a past history of deep vein thrombosis. Laboratory studies reveal isolated aPTT prolonged and mixing test uncorrectable. Which of the following is the most likely diagnosis?",
+                        "img": "",
+                        "choices": "Dysregulation of female sex hormone///Inherited thrombophilia///Intrauterine tumor///Antiphospholipid syndrome (APS)///Systemic lupus erythematosus (SLE)",
+                        "answer": "Antiphospholipid syndrome (APS)",
+                        "select": "",
+                        "explain": "ผู้ป่วยมีประวัติที่เข้าได้กับเกณฑ์การวินิจฉัย Antiphospholipid syndrome (APS) ทั้งทางคลินิก (ภาวะลิ่มเลือดอุดตัน DVT และภาวะแทรกซ้อนทางสูติกรรม recurrent miscarriages) และทางห้องปฏิบัติการ โดยการพบ aPTT ที่ยาวนานผิดปกติและไม่สามารถแก้ไขได้ด้วยการทำ mixing test (uncorrectable) บ่งชี้ว่ามี inhibitor อยู่ในเลือด ซึ่งในบริบทนี้คือ lupus anticoagulant ซึ่งเป็นหนึ่งใน antiphospholipid antibodies",
+                        "state": false
+                    },
+                    {
+                        "problem": "58. Which of the following is the condition associated with hypochromic microcytic anemia?",
+                        "img": "",
+                        "choices": "Hereditary spherocytosis///Myelodysplastic anemia///G6PD deficiency///Acute leukemia///Homozygous hemoglobin E disease",
+                        "answer": "Homozygous hemoglobin E disease",
+                        "select": "",
+            "explain": "Hypochromic microcytic anemia คือภาวะโลหิตจางที่เม็ดเลือดแดงมีขนาดเล็ก (microcytic, MCV < 80) และติดสีจาง (hypochromic, MCH/MCHC ต่ำ) ซึ่งเกิดจากความผิดปกติในการสังเคราะห์ฮีโมโกลบิน สาเหตุที่พบบ่อยได้แก่ การขาดธาตุเหล็ก, ธาลัสซีเมีย, และภาวะโลหิตจางจากโรคเรื้อรัง Homozygous hemoglobin E disease เป็น hemoglobinopathy ชนิดหนึ่งซึ่งจัดอยู่ในกลุ่มธาลัสซีเมีย ทำให้มีการสร้างเม็ดเลือดแดงที่มีลักษณะเป็น hypochromic microcytic",
             "state": false
         }
     ],
@@ -228,13 +707,13 @@ var quizdata = {
             state: false
         },
         {
-            problem: "9. ให้คำแนะนำคนเป็น thalassemia ข้อใดเหมาะสมที่สุด",
-            img: "",
-            choices: "ให้เลือดเมื่อ Hb ต่ำกว่า 7 g/dL///กิน folic acid เสริมทุกวัน///งดอาหารที่มีธาตุเหล็กสูง///ควรได้รับยาขับธาตุเหล็กเมื่อจำเป็น///ตรวจคัดกรองคู่สมรสก่อนมีบุตร",
-            answer: "กิน folic acid เสริมทุกวัน",
-            select: "",
-            explain: "ผู้ป่วยธาลัสซีเมียมีการสร้างเม็ดเลือดแดงที่ผิดปกติและเม็ดเลือดแดงแตกง่ายกว่าปกติ (chronic hemolysis) ทำให้ไขกระดูกต้องทำงานหนักเพื่อสร้างเม็ดเลือดแดงใหม่ตลอดเวลา ซึ่งกระบวนการนี้ต้องใช้ Folic acid เป็นจำนวนมาก การให้ Folic acid เสริมทุกวันจึงเป็นคำแนะนำพื้นฐานที่สำคัญเพื่อป้องกันภาวะขาดโฟเลตซ้อน ส่วนคำแนะนำอื่นๆ ก็มีความสำคัญแต่ขึ้นอยู่กับชนิดและความรุนแรงของโรค เช่น การให้เลือด, การให้ยาขับเหล็ก, หรือการวางแผนครอบครัว",
-            state: false
+            "problem": "9. คำแนะนำสำหรับผู้ป่วยธาลัสซีเมีย (Thalassemia) ในข้อใดเหมาะสมที่สุด?",
+            "img": "",
+            "choices": "ให้เลือดเมื่อ Hb ต่ำกว่า 7 g/dL///ไม่ควรกิน Folic acid เสริมทุกวัน///งดอาหารที่มีธาตุเหล็กสูงทุกชนิด///ตรวจคัดกรองคู่สมรสก่อนมีบุตรเพื่อวางแผนครอบครัว///ควรได้รับยาขับธาตุเหล็กเมื่อ Ferritin สูงกว่า 500 ng/mL",
+            "answer": "ตรวจคัดกรองคู่สมรสก่อนมีบุตรเพื่อวางแผนครอบครัว",
+            "select": "",
+            "explain": "คำแนะนำที่เหมาะสมและครอบคลุมที่สุดสำหรับผู้ป่วยธาลัสซีเมียทุกคน (ทั้งชนิดรุนแรงและชนิดพาหะ) คือการตรวจคัดกรองคู่สมรสก่อนมีบุตร (Carrier screening for partner) เพื่อประเมินความเสี่ยงที่บุตรจะเป็นโรคธาลัสซีเมียชนิดรุนแรง และวางแผนครอบครัวได้อย่างเหมาะสม ส่วนข้ออื่นๆ อาจถูกต้องในบางสถานการณ์ แต่ไม่ครอบคลุมเท่าข้อนี้: การให้เลือดเมื่อ Hb < 7 เป็นแนวทางสำหรับ Thalassemia major; การกิน Folic acid เป็นสิ่งจำเป็น; การ 'งด' อาหารธาตุเหล็กสูงอาจเข้มงวดเกินไป ควรใช้คำว่า 'หลีกเลี่ยง'; และเกณฑ์การให้ยาขับเหล็ก (Iron chelating agent) คือเมื่อ Ferritin > 1,000 ng/mL ดังนั้น การวางแผนครอบครัวจึงเป็นคำแนะนำที่เป็นสากลและสำคัญที่สุด",
+            "state": false
         },
         {
             problem: "10. Emergency room, a 42-year-old man has a rash on his face, hand and arm after gardening. The doctor determines that he encountered a poisonous plant. Which specific cell releasing agents that cause rash?",
@@ -3001,190 +3480,190 @@ var quizdata = {
         explain: "ผู้ป่วยมีอาการและอาการแสดงที่ชัดเจนของภาวะขาดธาตุเหล็ก (Iron Deficiency Anemia - IDA) ได้แก่ อ่อนเพลีย, ลิ้นเลี่ยนแดงอักเสบ (atrophic glossitis), และเล็บรูปช้อน (spoon-shaped nails หรือ koilonychia). ภาพ blood smear จะพบเม็ดเลือดแดงมีขนาดเล็กและติดสีจาง (microcytic, hypochromic anemia). การตรวจทางห้องปฏิบัติการที่จำเพาะที่สุดสำหรับภาวะนี้คือการตรวจระดับ ferritin ในเลือด ซึ่งจะลดลงอย่างมาก เนื่องจาก ferritin เป็นโปรตีนที่ใช้เก็บสะสมธาตุเหล็กในร่างกาย. ส่วนค่า TIBC จะสูงขึ้น และ transferrin saturation จะลดลง.",
         state: false
     }, {
-            problem: "2. A 3-year-old Thai girl presented for fatigue and weakness. Physical examination: mild jaundice and hepatosplenomegaly. CBC: Hb 6.5 g/dL, Hct 19 %, MCV 65 fL. WBC and platelets are normal. Blood smear as shown in the picture. Hemoglobin typing: Hb A2F. There is no evidence of abnormal bleeding. What is the most likely diagnosis?",
-            img: "https://drive.google.com/open?id=1CL07Kx4MpNfqOZIKc1Kpt9jv__Tm5JgI&usp=drive_copy",
-            choices: "Alpha thalassemia trait///Beta thalassemia trait///Homozygous beta thalassemia///Autoimmune hemolytic anemia (AIHA)///Hereditary ovalocytosis",
-            answer: "Homozygous beta thalassemia",
-            select: "",
-            explain: "เด็กหญิงไทยมีภาวะซีดรุนแรงชนิดเม็ดเลือดแดงขนาดเล็ก (severe microcytic anemia) ร่วมกับอาการตัวเหลืองและตับม้ามโต ซึ่งบ่งชี้ถึงภาวะเม็ดเลือดแดงแตกเรื้อรัง. ผลการตรวจชนิดฮีโมโกลบิน (Hemoglobin typing) พบเพียง Hb A2 และ Hb F โดยไม่พบ Hb A เลย แสดงว่าร่างกายไม่สามารถสร้างสายเบต้าโกลบิน (beta-globin chain) ได้เลย ซึ่งเป็นลักษณะเฉพาะของโรค Homozygous beta thalassemia หรือที่เรียกว่า Beta-thalassemia major (Cooley's anemia).",
-            state: false
-        }, {
-            problem: "3. A 25-year-old male presents with fatigue 2 months. Physical examination: jaundice, pale, splenomegaly. Laboratory: CBC Hb 8.4 g/dL, Hct 25.2 %, WBC 7,300 /cu.mm, platelet 100,000 /cu.mm, reticulocyte count 5%. Blood smear shown in figure. The patient also has a family history of similar symptoms. Which disorder is most likely responsible for these symptoms?",
-            img: "https://drive.google.com/open?id=1v17BaDiCkp58EgPpbyjW_RbxfCUgumT4&usp=drive_copy",
-            choices: "Hereditary spherocytosis///G6PD deficiency///Sickle cell disease///Thalassemia///Autoimmune hemolytic anemia",
-            answer: "Hereditary spherocytosis",
-            select: "",
-            explain: "ผู้ป่วยมีอาการของภาวะเม็ดเลือดแดงแตกเรื้อรัง (chronic hemolysis) ได้แก่ ซีด, เหลือง, ม้ามโต และมี reticulocyte count สูงเพื่อชดเชย. ภาพ blood smear แสดงเม็ดเลือดแดงรูปร่างกลม หนา และไม่มีรอยบุ๋มตรงกลาง (lacking central pallor) ซึ่งเป็นลักษณะของ Spherocytes. การมีประวัติคนในครอบครัวมีอาการคล้ายกันทำให้ยิ่งสนับสนุนการวินิจฉัยโรคทางพันธุกรรม. ลักษณะทั้งหมดนี้เข้าได้กับโรค Hereditary Spherocytosis มากที่สุด.",
-            state: false
-        }, {
-            problem: "4. A 60-year-old female with a history of rheumatoid arthritis presents with fatigue. Physical examination: weakness, pale, anicteric sclerae, multiple joints swelling. Laboratory test: CBC Hb 8.5 g/dL, Hct 25.5 %, WBC 7,300 /cu.mm, platelet 150,000 /cu.mm, MCV 81 fL. Which of the following molecules should be increased in the serum?",
-            img: "",
-            choices: "Erythropoietin///Transferrin saturation///Hepcidin///Haptoglobin///Hemopexin",
-            answer: "Hepcidin",
-            select: "",
-            explain: "ผู้ป่วยมีประวัติเป็นโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis) ซึ่งเป็นโรคที่มีการอักเสบเรื้อรัง (chronic inflammatory disease). ภาวะซีดที่พบร่วมกับโรคเหล่านี้เรียกว่า Anemia of Chronic Disease (ACD) หรือ Anemia of Inflammation. กลไกสำคัญเกิดจากการอักเสบไปกระตุ้นให้ตับสร้างโปรตีนที่ชื่อว่า Hepcidin เพิ่มขึ้น. Hepcidin จะไปยับยั้งการดูดซึมธาตุเหล็กจากลำไส้และขัดขวางการนำเหล็กที่สะสมในร่างกายออกมาใช้ ทำให้เกิดภาวะซีดแม้ว่าจะมีธาตุเหล็กสะสมในร่างกายเพียงพอก็ตาม.",
-            state: false
-        }, {
-            problem: "5. A 55-year-old vegetarian male presents with fatigue, pale skin, and a sore, red tongue for 1 month. The patient also reports experiencing tingling and numbness in the extremities. Blood smear shown in figure. Which of the following nutrition deficiencies is most likely responsible for these symptoms?",
-            img: "https://drive.google.com/open?id=1btWgwuuh-b4xx88osiZFc3mmj-7YHkit&usp=drive_copy",
-            choices: "Protein deficiency///Vitamin C deficiency///Vitamin B9 deficiency///Vitamin B12 deficiency///Iron deficiency",
-            answer: "Vitamin B12 deficiency",
-            select: "",
-            explain: "ผู้ป่วยเป็นมังสวิรัติ (vegetarian) ซึ่งมีความเสี่ยงต่อการขาดวิตามิน B12 เนื่องจากวิตามินนี้พบได้ในผลิตภัณฑ์จากสัตว์เป็นหลัก. อาการที่ปรากฏ ได้แก่ อาการซีด, ลิ้นอักเสบแดง (glossitis), และที่สำคัญคืออาการทางระบบประสาท เช่น ชาตามปลายมือปลายเท้า (tingling and numbness). ภาพ blood smear จะพบเม็ดเลือดแดงขนาดใหญ่ (macrocytic anemia) และ hypersegmented neutrophils. การมีอาการทางระบบประสาทร่วมด้วยเป็นลักษณะเด่นที่ช่วยแยกภาวะขาดวิตามิน B12 ออกจากภาวะขาดโฟเลต (Vitamin B9).",
-            state: false
-        }, {
-            problem: "6. A 30-year-old woman presents with anemia, jaundice, and splenomegaly. Laboratory tests reveal a positive direct antiglobulin test (Coombs' test) and the presence of IgG antibodies on the surface of her red blood cells. Anti-nuclear antibody (ANA) negative, Anti- dsDNA negative. Blood smear as shown in the picture. Which type of anemia is most likely responsible for these symptoms?",
-            img: "https://drive.google.com/open?id=1hOCF14n5rgGqDVhiccIfUWiqFGskNWcA&usp=drive_copy",
-            choices: "Warm antibody AIHA///G6PD deficiency///Cold agglutinin disease///Paroxysmal nocturnal hemoglobinuria///Thalassemia",
-            answer: "Warm antibody AIHA",
-            select: "",
-            explain: "การที่ผล Direct antiglobulin test (DAT หรือ Coombs' test) ให้ผลบวก หมายความว่ามีแอนติบอดีมาจับอยู่บนผิวของเม็ดเลือดแดงของผู้ป่วย ทำให้เม็ดเลือดแดงถูกทำลายและเกิดภาวะซีด. ภาวะนี้เรียกว่า Autoimmune Hemolytic Anemia (AIHA). การตรวจพบว่าเป็นแอนติบอดีชนิด IgG ซึ่งทำงานได้ดีที่สุดที่อุณหภูมิร่างกาย (37°C) จะบ่งชี้ว่าเป็นชนิด Warm antibody AIHA.",
-            state: false
-        }, {
-            problem: "7. A 70-year-old woman with type O blood receives a unit of packed red cell component before surgery. She develops fever (39°C), chills, and back pain shortly after the transfusion is started. Physical examination: normal breath sound. Investigations: CBC: Hb 7 g/dL, WBC 15,000 cells/μL, Plt: 80,000 cells/μL. Coagulation profile: Prolong PT and aPTT, elevated LDH. Blood bank investigation: Direct anti-globulin test (DAT): Positive. Which of the following is the most likely diagnosis?",
-            img: "",
-            choices: "Delayed hemolytic transfusion reaction///Acute hemolytic transfusion reaction (AHTR)///Transfusion-related acute lung injury (TRALI)///Bacteria contamination///Febrile Nonhemolytic Transfusion Reaction (FNHTR)",
-            answer: "Acute hemolytic transfusion reaction (AHTR)",
-            select: "",
-            explain: "การเกิดไข้, หนาวสั่น, และปวดหลังอย่างรวดเร็วระหว่างการให้เลือด เป็นอาการคลาสสิกของปฏิกิริยาการให้เลือดที่รุนแรง. การตรวจพบหลักฐานของเม็ดเลือดแดงแตกในหลอดเลือด (intravascular hemolysis) เช่น LDH สูง, และภาวะเลือดแข็งตัวผิดปกติทั่วร่างกาย (DIC) ที่แสดงออกด้วยเกล็ดเลือดต่ำและค่า PT, aPTT ยาวขึ้น บ่งชี้อย่างชัดเจนถึง Acute Hemolytic Transfusion Reaction (AHTR). ซึ่งเป็นภาวะฉุกเฉินที่มักเกิดจากความไม่เข้ากันของหมู่เลือด ABO.",
-            state: false
-        }, {
-            problem: "8. A 30-year-old female presents with fever and fatigue for 3 days. Physical examination: Confusion, weakness, purpura on the skin. Laboratory: CBC Hb 7 g/dL, Hct 27%, WBC 12,000 cell/mm³, platelet 20,000 /mm³, normal PT, aPTT, elevated levels of LDH, decreased haptoglobin levels. One week later, a special test showed decrease serum ADAMTS13. Blood smear shows in the figure. What condition is most likely responsible for these symptoms?",
-            img: "https://drive.google.com/open?id=1HLQlRRRCcfRJf1WKTx1Dn9CNBuzd2PAe&usp=drive_copy",
-            choices: "Immune thrombocytopenic purpura (ITP)///Hemolytic uremic syndrome (HUS)///Thrombotic thrombocytopenic purpura (TTP)///Disseminated intravascular coagulation (DIC)///Malaria infection",
-            answer: "Thrombotic thrombocytopenic purpura (TTP)",
-            select: "",
-            explain: "ผู้ป่วยมีอาการครบ 5 อย่าง (pentad) ของโรค Thrombotic Thrombocytopenic Purpura (TTP) คือ 1) เกล็ดเลือดต่ำ (thrombocytopenia) ทำให้มี purpura, 2) ภาวะซีดจากเม็ดเลือดแดงแตกชนิด microangiopathic (MAHA) ซึ่งจะพบ schistocytes ใน blood smear และ LDH สูง, 3) อาการทางระบบประสาท (confusion), 4) ไตทำงานผิดปกติ, และ 5) ไข้. การตรวจพบระดับเอนไซม์ ADAMTS13 ที่ลดลงเป็นการยืนยันการวินิจฉัย TTP.",
-            state: false
-        }, {
-            problem: "9. A 60-year-old female presents with fever and fatigue for 2 weeks. Physical examination: BT 38 C, pale conjunctivae, anicteric sclerae, petechiae at all extremities, no hepatosplenomegaly. Laboratory tests: CBC Hb 8, Hct 24 %, WBC 3,300 cell/mm³, PMN 40%, Lymphocyte 50%, Monocyte 10%, platelet 20,000 /mm³. What is most likely diagnosis?",
-            img: "",
-            choices: "Anemic of chronic disease///Hemolytic anemia///Aplastic anemia///Acute leukemia///Megaloblastic anemia",
-            answer: "Acute leukemia",
-            select: "",
-            explain: "ผู้ป่วยมีภาวะเม็ดเลือดต่ำทั้งสามชนิด (pancytopenia) ได้แก่ ซีด (Hb 8), เม็ดเลือดขาวต่ำ (WBC 3,300), และเกล็ดเลือดต่ำ (platelet 20,000). อาการไข้, อ่อนเพลีย, และจุดเลือดออก (petechiae) ที่เกิดจากเกล็ดเลือดต่ำ เป็นอาการที่พบบ่อยในโรคของไขกระดูก. ในผู้ใหญ่ที่มาด้วยภาวะ pancytopenia เฉียบพลัน โรคที่ต้องนึกถึงเป็นอันดับแรกคือ Acute leukemia ซึ่งเซลล์มะเร็งเม็ดเลือดขาว (blast cells) เพิ่มจำนวนขึ้นในไขกระดูกจนไปเบียดบังการสร้างเซลล์เม็ดเลือดปกติ.",
-            state: false
-        }, {
-            problem: "10. A 35-year-old male presents with symptoms of fatigue, dark urine, abdominal pain. The symptoms showed on and off for 2 months. Laboratory tests reveal hemolytic anemia, elevated LDH levels. Flow cytometry showed decreased CD55 and CD59 on red blood cells. What is the diagnosis of this patient?",
-            img: "",
-            choices: "Hereditary spherocytosis///Sickle cell anemia///Paroxysmal nocturnal hemoglobinuria (PNH)///Autoimmune hemolytic anemia (AIHA)///G6PD deficiency",
-            answer: "Paroxysmal nocturnal hemoglobinuria (PNH)",
-            select: "",
-            explain: "อาการคลาสสิกของโรค Paroxysmal Nocturnal Hemoglobinuria (PNH) ประกอบด้วย ภาวะซีดจากเม็ดเลือดแดงแตกเรื้อรัง (chronic hemolysis), ภาวะลิ่มเลือดอุดตัน (thrombosis), และไขกระดูกทำงานล้มเหลว. อาการปัสสาวะสีเข้ม (hemoglobinuria) โดยเฉพาะในตอนเช้า เป็นที่มาของชื่อโรค. การวินิจฉัยที่แม่นยำที่สุดคือการใช้เทคนิค Flow cytometry เพื่อตรวจหาการขาดโปรตีนบนผิวเซลล์เม็ดเลือดที่เรียกว่า GPI-anchored proteins เช่น CD55 และ CD59.",
-            state: false
-        }, {
-            problem: "1. An 18-month-old boy is brought to a hospital for routine vaccination. Physical examination: normal body weight and height with markedly pale conjunctivae and anicteric sclerae. No hepatosplenomegaly. CBC: Hb 5.7 g/dL Hct 16% WBC 7,500 /cu.mm (PMN 60% L 40%), platelet 650,000 /cu.mm MCV 48 fL MCH 14 pg MCHC 28 g/dL RDW 18%, reticulocyte count 0.8%. Which of the following is the most likely mechanism of anemia in this patient?",
-            img: "",
-            choices: "Ineffective erythropoiesis///Decreased RBC production///Intravascular hemolysis///Extravascular hemolysis///Extramedullary hematopoiesis",
-            answer: "Decreased RBC production",
-            select: "",
-            explain: "เด็กมีภาวะซีดรุนแรงชนิดเม็ดเลือดแดงขนาดเล็ก (severe microcytic anemia). แต่ค่า reticulocyte count ซึ่งเป็นตัวบ่งชี้การสร้างเม็ดเลือดแดงใหม่จากไขกระดูกกลับมีค่าต่ำมาก (0.8%). ค่าที่ต่ำเช่นนี้ในขณะที่มีภาวะซีดรุนแรง (inappropriately low response) บ่งชี้ว่าไขกระดูกไม่สามารถสร้างเม็ดเลือดแดงออกมาได้เพียงพอ. ภาวะเกล็ดเลือดสูง (thrombocytosis) เป็นสิ่งที่พบร่วมได้บ่อยในภาวะขาดธาตุเหล็กอย่างรุนแรง. ดังนั้นกลไกหลักคือการสร้างเม็ดเลือดแดงลดลง (Decreased RBC production).",
-            state: false
-        }, {
-            problem: "2. A 2-year-old boy presents with acute fever and dyspnea. Physical examination: pale conjunctivae with icteric sclerae, injected pharynx, and splenomegaly. CBC: Hb 7 g/dL, Hct 20%, MCV 45 fL, MCH 24 pg, MCHC 28 g/dL, RDW 27%, WBC 7,500 /cu.mm, platelet 300,000 /cu.mm and reticulocyte count 10%. Supravital stain: positive inclusion bodies. The antenatal laboratory results are as follows; Mother: Hb 10.8 g/dL MCV 55 fL Hb typing EE, E 85%. Father: Hb 13.7 g/dL MCV 64 fL Hb typing A2A, A2 2.4%. Which of the following is the diagnosis of this patient?",
-            img: "",
-            choices: "Hemoglobin H disease///Hemoglobin H disease with homozygous hemoglobin E///Hemoglobin H disease with heterozygous hemoglobin E///Beta thalassemia hemoglobin E (β⁰/βE)///Beta thalassemia hemoglobin E (β+/βE)",
-            answer: "Hemoglobin H disease with heterozygous hemoglobin E",
-            select: "",
-            explain: "เด็กมีภาวะซีดรุนแรงและเม็ดเลือดแดงแตก. Supravital stain พบ inclusion bodies ซึ่งเป็นลักษณะของ Hemoglobin H (HbH). HbH disease เกิดจากการขาด alpha-globin gene 3 ยีน (--/-α). จากข้อมูลพ่อแม่: แม่มีภาวะ Homozygous Hb E (βE/βE) ดูจาก MCV 55 และ Hb E 85%. พ่อมี MCV 64 และ Hb typing ปกติ เข้าได้กับ α-thalassemia-1 trait (--/αα). ถ้าแม่เป็นพาหะ α-thalassemia-2 trait (-α/αα) ร่วมด้วย (พบได้บ่อย) ลูกสามารถรับยีน -- จากพ่อ และ -α จากแม่ ทำให้เป็น HbH disease (--/-α). และลูกจะได้รับยีน βE จากแม่มา 1 ยีน ทำให้เป็น heterozygous hemoglobin E ด้วย. จึงสรุปได้ว่าเป็น Hemoglobin H disease with heterozygous hemoglobin E.",
-            state: false
-        }, {
-            problem: "3. A mother brings her 3-year-old boy to a hospital concerning his low body weight and height despite has been well-fed with nourishing food. Physical examination: frontal bossing and flat nasal bridge, moderate pallor, mild jaundice, and hepatosplenomegaly. CBC: Hb 6.7 g/dL, Hct 18%, MCV 49 fL, MCH 23 pg, MCHC 28 g/dL, RDW 28%, WBC 8,500 /cu.mm, platelet 250,000 /cu.mm and reticulocyte count 12.5%. Hemoglobin typing EFA2 E 35% F60% A2 5%. Which of the following is the major mechanism of anemia in this patient?",
-            img: "",
-            choices: "Decreased heme production from iron deficiency///Shortened RBC life span from intravascular hemolysis///Destruction of red cells by over-activated splenic macrophage///Ineffective erythropoiesis caused by excess unpaired alpha globin molecules///Decreased number of RBC progenitors due to absent beta globin",
-            answer: "Ineffective erythropoiesis caused by excess unpaired alpha globin molecules",
-            select: "",
-            explain: "ลักษณะใบหน้า (frontal bossing), ตับม้ามโต, และภาวะซีดรุนแรง เป็นลักษณะของโรคธาลัสซีเมียชนิดรุนแรง. ผล Hb typing ไม่พบ HbA เลย แต่พบ HbE 35% และ HbF 60% ซึ่งเป็นลักษณะเฉพาะของ β-thalassemia/Hb E disease (β⁰/βE). พยาธิกำเนิดหลักของ β-thalassemia คือการที่ร่างกายสร้างสาย beta-globin ไม่ได้หรือได้น้อยมาก ทำให้มีสาย alpha-globin ที่ไม่มีคู่เหลืออยู่เป็นจำนวนมาก. สาย alpha-globin ที่เกินมานี้จะไปจับตัวกันและตกตะกอนภายในเซลล์ตัวอ่อนเม็ดเลือดแดงในไขกระดูก ทำให้เซลล์เหล่านี้ตายก่อนที่จะเจริญเป็นเม็ดเลือดแดงที่สมบูรณ์. กระบวนการนี้เรียกว่า Ineffective erythropoiesis ซึ่งเป็นกลไกหลักที่ทำให้เกิดภาวะซีด.",
-            state: false
-        }, {
-            problem: "4. The expecting parents visit antenatal clinic for the screening of thalassemia carrier status. The results are shown below. Mother: Hb 11.5, MCV 65, Hemoglobin typing A2A, A2 5%, PCR for alpha- thal 1 Positive. Father: Hb 13.5, MCV 78, Hemoglobin typing EA, E 21%, PCR for alpha- thal 1 Positive. Which of the following is the most severe thalassemia disease that could be occurring in their baby?",
-            img: "https://drive.google.com/open?id=1YAH28kde2HRf-ymS8vdq0RC-MXFTkPQm&usp=drive_copy",
-            choices: "Beta thalassemia major///Homozygous hemoglobin E///Beta thalassemia hemoglobin E///Hemoglobin Bart's hydrops fetalis///Hemoglobin H disease with Heterozygous hemoglobin E",
-            answer: "Hemoglobin Bart's hydrops fetalis",
-            select: "",
-            explain: "วิเคราะห์ผลเลือดของพ่อแม่: แม่มี MCV ต่ำ, Hb A2 สูง (5%) และ PCR for alpha-thal 1 positive แสดงว่าเป็นพาหะของทั้ง β-thalassemia และ α-thalassemia-1 (--/αα). พ่อมี Hb E (EA, E 21%) และ PCR for alpha-thal 1 positive แสดงว่าเป็นพาหะของทั้ง Hb E และ α-thalassemia-1 (--/αα). ความเสี่ยงที่รุนแรงที่สุดที่จะเกิดกับลูกคือการที่ลูกได้รับยีน α-thalassemia-1 (--) มาจากทั้งพ่อและแม่ ทำให้มี genotype เป็น (--/--) ซึ่งไม่มียีน alpha-globin เหลืออยู่เลย. ทารกจะไม่สามารถสร้างฮีโมโกลบินที่ใช้หลังคลอดได้เลย ทำให้เกิดภาวะบวมน้ำรุนแรงและเสียชีวิตในครรภ์หรือหลังคลอดไม่นาน เรียกว่า Hemoglobin Bart's hydrops fetalis ซึ่งเป็นภาวะที่รุนแรงที่สุด.",
-            state: false
-        }, {
-            problem: "5. A 12-year-old girl presents with progressive fatigue for three months. She was diagnosed with hemoglobin H disease with hemoglobin Constant Spring at the age of six years old. She receives red cell transfusions every 1-2 months when she has symptoms of anemia. Her physical examination reveals moderately pale conjunctivae with mildly icteric sclerae and marked splenomegaly. CBC Hb 7.5 g/dL Hct 22% WBC 5,600 /cu.mm (N 70% L 30%) platelet 230,000 /cu.mm MCV 58 fL MCH 18 pg MCHC 29 g/dL RDW 26%. Which of the following is the most likely abnormal laboratory finding found in this patient?",
-            img: "",
-            choices: "High serum transferrin iron binding capacity (TIBC)///High serum haptoglobin///High hemoglobin F level///High serum hepcidin///High serum ferritin",
-            answer: "High serum ferritin",
-            select: "",
-            explain: "ผู้ป่วยเป็นโรคธาลัสซีเมียชนิด HbH-CS ซึ่งเป็นโรคที่มีการแตกของเม็ดเลือดแดงเรื้อรัง และได้รับเลือดเป็นประจำ. ทั้งสองภาวะนี้ (chronic hemolysis และ multiple transfusions) เป็นสาเหตุสำคัญที่ทำให้เกิดภาวะธาตุเหล็กเกิน (iron overload) เนื่องจากร่างกายไม่สามารถขับธาตุเหล็กส่วนเกินออกไปได้อย่างมีประสิทธิภาพ. ธาตุเหล็กที่เกินมาจะถูกเก็บสะสมในร่างกายในรูปของ Ferritin. ดังนั้น การตรวจเลือดที่จะพบว่าผิดปกติอย่างชัดเจนในผู้ป่วยรายนี้คือระดับ Serum Ferritin ที่สูงมาก.",
-            state: false
-        }, {
-            problem: "1. A 48-year-old male came to the hospital with complaint of abdominal discomfort at left upper abdomen for 3 months. PE: Liver: impalpable with 9 cm of liver span. Spleen: 12 cm below left costal margin (LCM) CBC: Hb 13, Hct 40 %, WBC 200,000 cells/mm³, PMN 50%, Myelocyte 15%, Metamyelocyte 10%, Basophil 7%, Lymphocyte 15%, Eosinophil 2%, Blast 1%, Platelets: 380,000 cells/mm³. Blood smear as figure. Which one of the following is the cytogenetic result that expected to see in this disease?",
-            img: "https://drive.google.com/open?id=1aEFRHrjeWTVPausYnwvoc2aRBCcoVqVz&usp=drive_copy",
-            choices: "t(15;17)(q24.1;q21.2)///t(9;22)(q34;q11)///t(14;18)(q32;q21)///t(11;14)(q13;q32)///t(8;14)(q24;q32)",
-            answer: "t(9;22)(q34;q11)",
-            select: "",
-            explain: "ผู้ป่วยมีอาการแน่นท้องจากม้ามโตมาก (massive splenomegaly). ผลเลือดพบเม็ดเลือดขาวสูงมาก (marked leukocytosis) โดยพบเซลล์ตัวอ่อนสาย myeloid หลายระยะ (myelocytes, metamyelocytes) ปนออกมาในเลือด หรือที่เรียกว่า 'left shift' และที่สำคัญคือมี Basophil สูง (basophilia). ลักษณะทางคลินิกและผลเลือดทั้งหมดนี้เป็นลักษณะคลาสสิกของโรค Chronic Myeloid Leukemia (CML). โรค CML มีความผิดปกติทางพันธุกรรมที่จำเพาะคือ Philadelphia chromosome ซึ่งเกิดจากการสลับที่ของโครโมโซมคู่ที่ 9 และ 22 หรือ t(9;22)(q34;q11).",
-            state: false
-        }, {
-            problem: "2. A 72-year-old man presented to the hospital with fatigue. CBC showed anemia and leukopenia. Blood smear showed the significant number of the abnormal cells as figure below. What is the most-likely diagnosis of this case?",
-            img: "https://drive.google.com/open?id=11pzKBuibcPf-8vHhvj0EnbkcBV4urhVA&usp=drive_copy",
-            choices: "Polycythemia vera///Primary myelofibrosis///Myelodysplastic neoplasm///Acute myelogenous leukemia///Chronic myelogenous leukemia",
-            answer: "Myelodysplastic neoplasm",
-            select: "",
-            explain: "ผู้ป่วยสูงอายุมาด้วยอาการอ่อนเพลียจากภาวะซีดและเม็ดเลือดขาวต่ำ. ภาพ blood smear แสดงลักษณะของ neutrophil ที่มีนิวเคลียสผิดปกติ คือมีเพียง 2 lobes และเชื่อมกันด้วยสายเล็กๆ (bilobed nucleus) ซึ่งเรียกว่า Pelger-Huët anomaly. การพบเซลล์ที่มีรูปร่างผิดปกติ (dysplasia) เช่นนี้ ร่วมกับภาวะเม็ดเลือดต่ำ (cytopenias) ในผู้สูงอายุ เป็นลักษณะที่บ่งชี้ถึงกลุ่มโรค Myelodysplastic Neoplasm (MDS) หรือ Myelodysplastic Syndrome ซึ่งเป็นโรคความผิดปกติของเซลล์ต้นกำเนิดในไขกระดูก.",
-            state: false
-        }, {
-            problem: "3. A 70-year-old man's annual checkup revealed leukocytosis. The absolute abnormal cell count (as the picture of blood smear below) is 42,000/mm³. Further investigation of flow cytometry shows positive for CD20+, CD5+, CD23+, CD10-, TdT-. 1) Mantle cell 2) Naïve B-cells 3) Memory B-cell 4) Precursor B-cell 5) Germinal center B-cell. Which is the postulate origin of the neoplastic cells in this case?",
-            img: "https://drive.google.com/open?id=1uObdrVJuHoslIoY-XfASGDJAlMfoing2&usp=drive_copy",
-            choices: "1,2///1,5///2,3///2,4///3,5",
-            answer: "2,3",
-            select: "",
-            explain: "ผู้ป่วยสูงอายุมีจำนวน lymphocyte สูงมาก และ blood smear พบเซลล์ลักษณะ mature lymphocytes และ smudge cells ซึ่งเป็นลักษณะของ Chronic Lymphocytic Leukemia (CLL). ผล Flow cytometry ที่แสดง CD20+, CD5+, CD23+ เป็น immunophenotype ที่จำเพาะสำหรับ CLL. สำหรับต้นกำเนิดของเซลล์มะเร็งใน CLL เชื่อว่ามาจากเซลล์ B-lymphocyte ที่เจริญเต็มที่แล้ว (mature B-cell) ซึ่งอาจเป็นได้ทั้ง Naïve B-cells (เซลล์ที่ยังไม่เคยถูกกระตุ้นด้วยแอนติเจน) หรือ Memory B-cells (เซลล์ที่เคยถูกกระตุ้นแล้ว). ดังนั้นข้อ 2 และ 3 จึงเป็นคำตอบที่ครอบคลุมที่สุด.",
-            state: false
-        }, {
-            problem: "4. A 12-year-old boy called his primary care physician, He initially complained of having 'white spots' on his right tonsil. The doctor prescribed him amoxicillin immediately. On the third day, the patient developed erythematous maculopapular rash entire body then he came to the clinic for further evaluation. On physical examination, His temperature was 38.0°C. The patient had two inflamed lymph nodes below the jaw, an extensive membrane covering the right tonsil with hepatosplenomegaly. No improvement was seen on the tonsils. CBC showed Hct 42% WBC 18000 cells/mm³ PMN 50% L 47% Mo3% Platelet 250000 cells/mm³. Liver enzymes are increasing. Blood smear as in the picture. What is the most likely appropriate management?",
-            img: "https://drive.google.com/open?id=1jfUmLmhyYqFVsFyZbU6oREJhyoVnXeTK&usp=drive_copy",
-            choices: "Throat swab culture///Bone marrow aspiration///Hemoculture///Anti VCA IgM///Viral hepatitis B profile",
-            answer: "Anti VCA IgM",
-            select: "",
-            explain: "เด็กมีอาการไข้, เจ็บคอ, ต่อมน้ำเหลืองโต, ตับม้ามโต และ blood smear พบ atypical lymphocytes. ประวัติที่สำคัญอย่างยิ่งคือการได้รับยา amoxicillin แล้วเกิดผื่นแดงทั่วตัว (maculopapular rash) ซึ่งเป็นปฏิกิริยาที่พบได้บ่อยมากในผู้ป่วย Infectious Mononucleosis (IM) ที่เกิดจากเชื้อ Epstein-Barr Virus (EBV). ดังนั้น การวินิจฉัยที่เหมาะสมที่สุดคือการตรวจเลือดเพื่อยืนยันการติดเชื้อ EBV ในระยะเฉียบพลัน ซึ่งก็คือการตรวจหา Anti-Viral Capsid Antigen (VCA) IgM.",
-            state: false
-        }, {
-            problem: "5. A 55-year-old male presents to the doctor with new symptoms of exertional fatigue. pain in the left hip and difficulty walking for 2 months. He is otherwise well with no significant past medical history. CBC: Hct 23 % WBC 9000 cells/mm3 PMN 65% L30% Mo 5% Platelet. 400000 cells/mm³. Bone marrow aspiration as shown in the figure. BUN 54 mg/dL Creatinine 2.7 mg/dL. What are the most benefit further investigations? 1. Serum protein electrophoresis 2. Serum calcium 3. Philadelphia chromosome 4. Heterophile antibody 5. Flow cytometry 6. Bone survey",
-            img: "https://drive.google.com/open?id=1p6Ev4ZyBxT1lkigkKwU9SrQT9VmTf_tJ&usp=drive_copy",
-            choices: "1,2,3///2,3,4///4,5,6///1,2,6///3,5,6",
-            answer: "1,2,6",
-            select: "",
-            explain: "ผู้ป่วยมีอาการที่เข้าได้กับเกณฑ์การวินิจฉัยของ Multiple Myeloma (MM) หรือ CRAB criteria: C - Calcium (ต้องตรวจ), R - Renal failure (มีภาวะไตวายจาก BUN/Cr ที่สูง), A - Anemia (ซีด, Hct 23%), B - Bone lesions (ปวดสะโพก). ภาพไขกระดูก (bone marrow aspiration) ที่แสดงเซลล์พลาสมา (plasma cells) จำนวนมากเป็นการยืนยันการวินิจฉัย. การสืบค้นเพิ่มเติมที่สำคัญสำหรับ MM ได้แก่ 1. Serum protein electrophoresis เพื่อตรวจหา M-protein, 2. Serum calcium เพื่อดูภาวะแคลเซียมในเลือดสูง, และ 6. Bone survey หรือ x-ray กระดูกทั่วร่างกายเพื่อหา Lytic bone lesions.",
-            state: false
-        }, {
-            problem: "6. A 45-year-old female came up with high grade fever and productive cough for 2 days. After admission she developed stuporus, epistaxis and coffee ground vomiting. BP 80/50 mmHg, PR 120/min, RR 24 /min. CBC: Hct 43 % WBC 12,000 cell/mm³, Platelet 250,000 cell/mm³ PMN 79%, Lymphocyte: 11%, band form10%. Blood smear: as picture. Urinalysis: numerous white cells. What is the most likely diagnosis?",
-            img: "https://drive.google.com/open?id=10rdJOm0IbD1uB8sLz1PgQ59NmDfZuwSD&usp=drive_copy",
-            choices: "ALL///CML///EBV///Sepsis///AML",
-            answer: "Sepsis",
-            select: "",
-            explain: "ผู้ป่วยมีอาการของการติดเชื้อรุนแรง (ไข้สูง, ไอ) ซึ่งลุกลามจนเกิดภาวะแทรกซ้อนที่รุนแรง ได้แก่ ภาวะช็อก (septic shock) จากความดันโลหิตต่ำและอาการซึมลง, และอาจมีภาวะเลือดแข็งตัวผิดปกติ (DIC) จากอาการเลือดออก. ผลเลือดพบเม็ดเลือดขาวสูงโดยมี neutrophil และ band form เพิ่มขึ้น (left shift). ภาพ blood smear พบ toxic granules ใน neutrophil ซึ่งเป็นลักษณะที่บ่งชี้ถึงการติดเชื้อแบคทีเรียที่รุนแรง. ทั้งหมดนี้รวมกันเป็นภาพของภาวะติดเชื้อในกระแสเลือด หรือ Sepsis.",
-            state: false
-        }, {
-            problem: "7. A 37-year-old healthy man without known underlying disease has the annual health check up at the hospital. 3. CBC: Hct 42 %, Hb 14 g/dL, WBC 8400 cell/mm³ (neutrophil 54%, lymphocyte 22%, monocyte 10%, eosinophil 13%, basophil 1%), and the platelets count is adequate. What should be a further investigation?",
-            img: "",
-            choices: "Bone marrow biopsy///Stool exam///Chest x-ray///Iron study///Skin prick test",
-            answer: "Stool exam",
-            select: "",
-            explain: "ผลเลือดของผู้ป่วยรายนี้พบว่ามีจำนวน eosinophil สูงผิดปกติ (Eosinophilia) ที่ 13%. ในคนแข็งแรงที่ไม่มีอาการอื่นๆ สาเหตุของ Eosinophilia ที่พบบ่อยและควรนึกถึงเป็นอันดับแรกๆ คือการติดเชื้อพยาธิ. ดังนั้น การสืบค้นเบื้องต้นที่ง่าย, ไม่รุกล้ำ, และเหมาะสมที่สุดคือการตรวจอุจจาระเพื่อหาไข่พยาธิ (Stool examination for parasite ova).",
-            state: false
-        }, {
-            problem: "8. A 29-year-old male came to the hospital due to a high-grade fever with acute severe multiple- joint pain for 2 days. Physical examination revealed a body temperature of 39.8 C, maculopapular rash, and joint effusions with tenderness of palpation. CBC revealed WBC 2,480 cell/mm³ (neutrophil 50%, lymphocyte 25%, monocyte 20%, eosinophil 3%, basophil 2%). A blood smear was shown in the picture. Other investigations are pending for the results. What is the most likely cause of his symptoms?",
-            img: "https://drive.google.com/open?id=1VWjZ003QJETD25ySIbCKyCxbv6JDsfaH&usp=drive_copy",
-            choices: "Bacterial arthritis///Systemic viral infection///Non-inflammatory arthritis///Gonococcal arthritis///Tuberculous arthritis",
-            answer: "Systemic viral infection",
-            select: "",
-            explain: "ผู้ป่วยมีอาการไข้สูงเฉียบพลัน, ปวดข้อหลายข้อ (polyarthritis), และผื่น. ผลเลือดพบเม็ดเลือดขาวต่ำ (leukopenia) และ blood smear พบเซลล์เม็ดเลือดขาวผิดปกติที่เรียกว่า atypical lymphocytes. กลุ่มอาการเช่นนี้เป็นลักษณะที่พบได้บ่อยมากในการติดเชื้อไวรัสทั่วร่างกาย (Systemic viral infection) เช่น ไข้เลือดออกเดงกี (Dengue fever), ชิคุนกุนยา (Chikungunya), หรือการติดเชื้อไวรัสอื่นๆ. ส่วนภาวะข้ออักเสบจากแบคทีเรียมักเป็นข้อเดียวและเม็ดเลือดขาวมักจะสูง.",
-            state: false
-        }, {
-            problem: "9. A 63-year-old female with underlying breast cancer currently receiving systemic chemotherapy comes to the hospital with a high-grade fever. She has no respiratory symptoms. Physical examination reveals a body temperature of 40.2 C, BP 100/70 mmHg, PR 90 bpm. Complete blood count shows Hct 28%, Hb 9 g/dL, WBC 1240 cells/mm³ (neutrophil 40%, lymphocyte 35, Monocyte 20%), with adequate platelets. The blood smear is shown in the picture. What should be the most appropriate treatment for this patient?",
-            img: "https://drive.google.com/open?id=1EwZwszI6L4MSfV0sysQxypcx2OwMXjDq&usp=drive_copy",
-            choices: "Paracetamol///Fluid resuscitation///Empirical antibiotics///Plasmapheresis///Leukocyte poor red cell transfusion",
-            answer: "Empirical antibiotics",
-            select: "",
-            explain: "ผู้ป่วยที่ได้รับยาเคมีบำบัดและมีไข้ สิ่งสำคัญที่สุดที่ต้องทำคือการประเมินภาวะนิวโทรฟิลต่ำ (neutropenia). Absolute Neutrophil Count (ANC) คำนวณได้จาก WBC x %Neutrophil = 1240 x 40% = 496 cells/mm³. เมื่อ ANC ต่ำกว่า 500 ถือว่าเป็น severe neutropenia. ภาวะไข้ในผู้ป่วยที่มีนิวโทรฟิลต่ำ (Febrile Neutropenia) เป็นภาวะฉุกเฉินทางการแพทย์ เนื่องจากเสี่ยงต่อการติดเชื้อรุนแรงสูงมาก. การรักษาที่ต้องให้โดยทันทีคือยาปฏิชีวนะแบบครอบคลุมเชื้อในวงกว้าง (Empirical broad-spectrum antibiotics) โดยไม่ต้องรอผลเพาะเชื้อ.",
-            state: false
-        }, {
+        problem: "2. A 3-year-old Thai girl presented for fatigue and weakness. Physical examination: mild jaundice and hepatosplenomegaly. CBC: Hb 6.5 g/dL, Hct 19 %, MCV 65 fL. WBC and platelets are normal. Blood smear as shown in the picture. Hemoglobin typing: Hb A2F. There is no evidence of abnormal bleeding. What is the most likely diagnosis?",
+        img: "https://drive.google.com/open?id=1CL07Kx4MpNfqOZIKc1Kpt9jv__Tm5JgI&usp=drive_copy",
+        choices: "Alpha thalassemia trait///Beta thalassemia trait///Homozygous beta thalassemia///Autoimmune hemolytic anemia (AIHA)///Hereditary ovalocytosis",
+        answer: "Homozygous beta thalassemia",
+        select: "",
+        explain: "เด็กหญิงไทยมีภาวะซีดรุนแรงชนิดเม็ดเลือดแดงขนาดเล็ก (severe microcytic anemia) ร่วมกับอาการตัวเหลืองและตับม้ามโต ซึ่งบ่งชี้ถึงภาวะเม็ดเลือดแดงแตกเรื้อรัง. ผลการตรวจชนิดฮีโมโกลบิน (Hemoglobin typing) พบเพียง Hb A2 และ Hb F โดยไม่พบ Hb A เลย แสดงว่าร่างกายไม่สามารถสร้างสายเบต้าโกลบิน (beta-globin chain) ได้เลย ซึ่งเป็นลักษณะเฉพาะของโรค Homozygous beta thalassemia หรือที่เรียกว่า Beta-thalassemia major (Cooley's anemia).",
+        state: false
+    }, {
+        problem: "3. A 25-year-old male presents with fatigue 2 months. Physical examination: jaundice, pale, splenomegaly. Laboratory: CBC Hb 8.4 g/dL, Hct 25.2 %, WBC 7,300 /cu.mm, platelet 100,000 /cu.mm, reticulocyte count 5%. Blood smear shown in figure. The patient also has a family history of similar symptoms. Which disorder is most likely responsible for these symptoms?",
+        img: "https://drive.google.com/open?id=1v17BaDiCkp58EgPpbyjW_RbxfCUgumT4&usp=drive_copy",
+        choices: "Hereditary spherocytosis///G6PD deficiency///Sickle cell disease///Thalassemia///Autoimmune hemolytic anemia",
+        answer: "Hereditary spherocytosis",
+        select: "",
+        explain: "ผู้ป่วยมีอาการของภาวะเม็ดเลือดแดงแตกเรื้อรัง (chronic hemolysis) ได้แก่ ซีด, เหลือง, ม้ามโต และมี reticulocyte count สูงเพื่อชดเชย. ภาพ blood smear แสดงเม็ดเลือดแดงรูปร่างกลม หนา และไม่มีรอยบุ๋มตรงกลาง (lacking central pallor) ซึ่งเป็นลักษณะของ Spherocytes. การมีประวัติคนในครอบครัวมีอาการคล้ายกันทำให้ยิ่งสนับสนุนการวินิจฉัยโรคทางพันธุกรรม. ลักษณะทั้งหมดนี้เข้าได้กับโรค Hereditary Spherocytosis มากที่สุด.",
+        state: false
+    }, {
+        problem: "4. A 60-year-old female with a history of rheumatoid arthritis presents with fatigue. Physical examination: weakness, pale, anicteric sclerae, multiple joints swelling. Laboratory test: CBC Hb 8.5 g/dL, Hct 25.5 %, WBC 7,300 /cu.mm, platelet 150,000 /cu.mm, MCV 81 fL. Which of the following molecules should be increased in the serum?",
+        img: "",
+        choices: "Erythropoietin///Transferrin saturation///Hepcidin///Haptoglobin///Hemopexin",
+        answer: "Hepcidin",
+        select: "",
+        explain: "ผู้ป่วยมีประวัติเป็นโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis) ซึ่งเป็นโรคที่มีการอักเสบเรื้อรัง (chronic inflammatory disease). ภาวะซีดที่พบร่วมกับโรคเหล่านี้เรียกว่า Anemia of Chronic Disease (ACD) หรือ Anemia of Inflammation. กลไกสำคัญเกิดจากการอักเสบไปกระตุ้นให้ตับสร้างโปรตีนที่ชื่อว่า Hepcidin เพิ่มขึ้น. Hepcidin จะไปยับยั้งการดูดซึมธาตุเหล็กจากลำไส้และขัดขวางการนำเหล็กที่สะสมในร่างกายออกมาใช้ ทำให้เกิดภาวะซีดแม้ว่าจะมีธาตุเหล็กสะสมในร่างกายเพียงพอก็ตาม.",
+        state: false
+    }, {
+        problem: "5. A 55-year-old vegetarian male presents with fatigue, pale skin, and a sore, red tongue for 1 month. The patient also reports experiencing tingling and numbness in the extremities. Blood smear shown in figure. Which of the following nutrition deficiencies is most likely responsible for these symptoms?",
+        img: "https://drive.google.com/open?id=1btWgwuuh-b4xx88osiZFc3mmj-7YHkit&usp=drive_copy",
+        choices: "Protein deficiency///Vitamin C deficiency///Vitamin B9 deficiency///Vitamin B12 deficiency///Iron deficiency",
+        answer: "Vitamin B12 deficiency",
+        select: "",
+        explain: "ผู้ป่วยเป็นมังสวิรัติ (vegetarian) ซึ่งมีความเสี่ยงต่อการขาดวิตามิน B12 เนื่องจากวิตามินนี้พบได้ในผลิตภัณฑ์จากสัตว์เป็นหลัก. อาการที่ปรากฏ ได้แก่ อาการซีด, ลิ้นอักเสบแดง (glossitis), และที่สำคัญคืออาการทางระบบประสาท เช่น ชาตามปลายมือปลายเท้า (tingling and numbness). ภาพ blood smear จะพบเม็ดเลือดแดงขนาดใหญ่ (macrocytic anemia) และ hypersegmented neutrophils. การมีอาการทางระบบประสาทร่วมด้วยเป็นลักษณะเด่นที่ช่วยแยกภาวะขาดวิตามิน B12 ออกจากภาวะขาดโฟเลต (Vitamin B9).",
+        state: false
+    }, {
+        problem: "6. A 30-year-old woman presents with anemia, jaundice, and splenomegaly. Laboratory tests reveal a positive direct antiglobulin test (Coombs' test) and the presence of IgG antibodies on the surface of her red blood cells. Anti-nuclear antibody (ANA) negative, Anti- dsDNA negative. Blood smear as shown in the picture. Which type of anemia is most likely responsible for these symptoms?",
+        img: "https://drive.google.com/open?id=1hOCF14n5rgGqDVhiccIfUWiqFGskNWcA&usp=drive_copy",
+        choices: "Warm antibody AIHA///G6PD deficiency///Cold agglutinin disease///Paroxysmal nocturnal hemoglobinuria///Thalassemia",
+        answer: "Warm antibody AIHA",
+        select: "",
+        explain: "การที่ผล Direct antiglobulin test (DAT หรือ Coombs' test) ให้ผลบวก หมายความว่ามีแอนติบอดีมาจับอยู่บนผิวของเม็ดเลือดแดงของผู้ป่วย ทำให้เม็ดเลือดแดงถูกทำลายและเกิดภาวะซีด. ภาวะนี้เรียกว่า Autoimmune Hemolytic Anemia (AIHA). การตรวจพบว่าเป็นแอนติบอดีชนิด IgG ซึ่งทำงานได้ดีที่สุดที่อุณหภูมิร่างกาย (37°C) จะบ่งชี้ว่าเป็นชนิด Warm antibody AIHA.",
+        state: false
+    }, {
+        problem: "7. A 70-year-old woman with type O blood receives a unit of packed red cell component before surgery. She develops fever (39°C), chills, and back pain shortly after the transfusion is started. Physical examination: normal breath sound. Investigations: CBC: Hb 7 g/dL, WBC 15,000 cells/μL, Plt: 80,000 cells/μL. Coagulation profile: Prolong PT and aPTT, elevated LDH. Blood bank investigation: Direct anti-globulin test (DAT): Positive. Which of the following is the most likely diagnosis?",
+        img: "",
+        choices: "Delayed hemolytic transfusion reaction///Acute hemolytic transfusion reaction (AHTR)///Transfusion-related acute lung injury (TRALI)///Bacteria contamination///Febrile Nonhemolytic Transfusion Reaction (FNHTR)",
+        answer: "Acute hemolytic transfusion reaction (AHTR)",
+        select: "",
+        explain: "การเกิดไข้, หนาวสั่น, และปวดหลังอย่างรวดเร็วระหว่างการให้เลือด เป็นอาการคลาสสิกของปฏิกิริยาการให้เลือดที่รุนแรง. การตรวจพบหลักฐานของเม็ดเลือดแดงแตกในหลอดเลือด (intravascular hemolysis) เช่น LDH สูง, และภาวะเลือดแข็งตัวผิดปกติทั่วร่างกาย (DIC) ที่แสดงออกด้วยเกล็ดเลือดต่ำและค่า PT, aPTT ยาวขึ้น บ่งชี้อย่างชัดเจนถึง Acute Hemolytic Transfusion Reaction (AHTR). ซึ่งเป็นภาวะฉุกเฉินที่มักเกิดจากความไม่เข้ากันของหมู่เลือด ABO.",
+        state: false
+    }, {
+        problem: "8. A 30-year-old female presents with fever and fatigue for 3 days. Physical examination: Confusion, weakness, purpura on the skin. Laboratory: CBC Hb 7 g/dL, Hct 27%, WBC 12,000 cell/mm³, platelet 20,000 /mm³, normal PT, aPTT, elevated levels of LDH, decreased haptoglobin levels. One week later, a special test showed decrease serum ADAMTS13. Blood smear shows in the figure. What condition is most likely responsible for these symptoms?",
+        img: "https://drive.google.com/open?id=1HLQlRRRCcfRJf1WKTx1Dn9CNBuzd2PAe&usp=drive_copy",
+        choices: "Immune thrombocytopenic purpura (ITP)///Hemolytic uremic syndrome (HUS)///Thrombotic thrombocytopenic purpura (TTP)///Disseminated intravascular coagulation (DIC)///Malaria infection",
+        answer: "Thrombotic thrombocytopenic purpura (TTP)",
+        select: "",
+        explain: "ผู้ป่วยมีอาการครบ 5 อย่าง (pentad) ของโรค Thrombotic Thrombocytopenic Purpura (TTP) คือ 1) เกล็ดเลือดต่ำ (thrombocytopenia) ทำให้มี purpura, 2) ภาวะซีดจากเม็ดเลือดแดงแตกชนิด microangiopathic (MAHA) ซึ่งจะพบ schistocytes ใน blood smear และ LDH สูง, 3) อาการทางระบบประสาท (confusion), 4) ไตทำงานผิดปกติ, และ 5) ไข้. การตรวจพบระดับเอนไซม์ ADAMTS13 ที่ลดลงเป็นการยืนยันการวินิจฉัย TTP.",
+        state: false
+    }, {
+        problem: "9. A 60-year-old female presents with fever and fatigue for 2 weeks. Physical examination: BT 38 C, pale conjunctivae, anicteric sclerae, petechiae at all extremities, no hepatosplenomegaly. Laboratory tests: CBC Hb 8, Hct 24 %, WBC 3,300 cell/mm³, PMN 40%, Lymphocyte 50%, Monocyte 10%, platelet 20,000 /mm³. What is most likely diagnosis?",
+        img: "",
+        choices: "Anemic of chronic disease///Hemolytic anemia///Aplastic anemia///Acute leukemia///Megaloblastic anemia",
+        answer: "Acute leukemia",
+        select: "",
+        explain: "ผู้ป่วยมีภาวะเม็ดเลือดต่ำทั้งสามชนิด (pancytopenia) ได้แก่ ซีด (Hb 8), เม็ดเลือดขาวต่ำ (WBC 3,300), และเกล็ดเลือดต่ำ (platelet 20,000). อาการไข้, อ่อนเพลีย, และจุดเลือดออก (petechiae) ที่เกิดจากเกล็ดเลือดต่ำ เป็นอาการที่พบบ่อยในโรคของไขกระดูก. ในผู้ใหญ่ที่มาด้วยภาวะ pancytopenia เฉียบพลัน โรคที่ต้องนึกถึงเป็นอันดับแรกคือ Acute leukemia ซึ่งเซลล์มะเร็งเม็ดเลือดขาว (blast cells) เพิ่มจำนวนขึ้นในไขกระดูกจนไปเบียดบังการสร้างเซลล์เม็ดเลือดปกติ.",
+        state: false
+    }, {
+        problem: "10. A 35-year-old male presents with symptoms of fatigue, dark urine, abdominal pain. The symptoms showed on and off for 2 months. Laboratory tests reveal hemolytic anemia, elevated LDH levels. Flow cytometry showed decreased CD55 and CD59 on red blood cells. What is the diagnosis of this patient?",
+        img: "",
+        choices: "Hereditary spherocytosis///Sickle cell anemia///Paroxysmal nocturnal hemoglobinuria (PNH)///Autoimmune hemolytic anemia (AIHA)///G6PD deficiency",
+        answer: "Paroxysmal nocturnal hemoglobinuria (PNH)",
+        select: "",
+        explain: "อาการคลาสสิกของโรค Paroxysmal Nocturnal Hemoglobinuria (PNH) ประกอบด้วย ภาวะซีดจากเม็ดเลือดแดงแตกเรื้อรัง (chronic hemolysis), ภาวะลิ่มเลือดอุดตัน (thrombosis), และไขกระดูกทำงานล้มเหลว. อาการปัสสาวะสีเข้ม (hemoglobinuria) โดยเฉพาะในตอนเช้า เป็นที่มาของชื่อโรค. การวินิจฉัยที่แม่นยำที่สุดคือการใช้เทคนิค Flow cytometry เพื่อตรวจหาการขาดโปรตีนบนผิวเซลล์เม็ดเลือดที่เรียกว่า GPI-anchored proteins เช่น CD55 และ CD59.",
+        state: false
+    }, {
+        problem: "1. An 18-month-old boy is brought to a hospital for routine vaccination. Physical examination: normal body weight and height with markedly pale conjunctivae and anicteric sclerae. No hepatosplenomegaly. CBC: Hb 5.7 g/dL Hct 16% WBC 7,500 /cu.mm (PMN 60% L 40%), platelet 650,000 /cu.mm MCV 48 fL MCH 14 pg MCHC 28 g/dL RDW 18%, reticulocyte count 0.8%. Which of the following is the most likely mechanism of anemia in this patient?",
+        img: "",
+        choices: "Ineffective erythropoiesis///Decreased RBC production///Intravascular hemolysis///Extravascular hemolysis///Extramedullary hematopoiesis",
+        answer: "Decreased RBC production",
+        select: "",
+        explain: "เด็กมีภาวะซีดรุนแรงชนิดเม็ดเลือดแดงขนาดเล็ก (severe microcytic anemia). แต่ค่า reticulocyte count ซึ่งเป็นตัวบ่งชี้การสร้างเม็ดเลือดแดงใหม่จากไขกระดูกกลับมีค่าต่ำมาก (0.8%). ค่าที่ต่ำเช่นนี้ในขณะที่มีภาวะซีดรุนแรง (inappropriately low response) บ่งชี้ว่าไขกระดูกไม่สามารถสร้างเม็ดเลือดแดงออกมาได้เพียงพอ. ภาวะเกล็ดเลือดสูง (thrombocytosis) เป็นสิ่งที่พบร่วมได้บ่อยในภาวะขาดธาตุเหล็กอย่างรุนแรง. ดังนั้นกลไกหลักคือการสร้างเม็ดเลือดแดงลดลง (Decreased RBC production).",
+        state: false
+    }, {
+        problem: "2. A 2-year-old boy presents with acute fever and dyspnea. Physical examination: pale conjunctivae with icteric sclerae, injected pharynx, and splenomegaly. CBC: Hb 7 g/dL, Hct 20%, MCV 45 fL, MCH 24 pg, MCHC 28 g/dL, RDW 27%, WBC 7,500 /cu.mm, platelet 300,000 /cu.mm and reticulocyte count 10%. Supravital stain: positive inclusion bodies. The antenatal laboratory results are as follows; Mother: Hb 10.8 g/dL MCV 55 fL Hb typing EE, E 85%. Father: Hb 13.7 g/dL MCV 64 fL Hb typing A2A, A2 2.4%. Which of the following is the diagnosis of this patient?",
+        img: "",
+        choices: "Hemoglobin H disease///Hemoglobin H disease with homozygous hemoglobin E///Hemoglobin H disease with heterozygous hemoglobin E///Beta thalassemia hemoglobin E (β⁰/βE)///Beta thalassemia hemoglobin E (β+/βE)",
+        answer: "Hemoglobin H disease with heterozygous hemoglobin E",
+        select: "",
+        explain: "เด็กมีภาวะซีดรุนแรงและเม็ดเลือดแดงแตก. Supravital stain พบ inclusion bodies ซึ่งเป็นลักษณะของ Hemoglobin H (HbH). HbH disease เกิดจากการขาด alpha-globin gene 3 ยีน (--/-α). จากข้อมูลพ่อแม่: แม่มีภาวะ Homozygous Hb E (βE/βE) ดูจาก MCV 55 และ Hb E 85%. พ่อมี MCV 64 และ Hb typing ปกติ เข้าได้กับ α-thalassemia-1 trait (--/αα). ถ้าแม่เป็นพาหะ α-thalassemia-2 trait (-α/αα) ร่วมด้วย (พบได้บ่อย) ลูกสามารถรับยีน -- จากพ่อ และ -α จากแม่ ทำให้เป็น HbH disease (--/-α). และลูกจะได้รับยีน βE จากแม่มา 1 ยีน ทำให้เป็น heterozygous hemoglobin E ด้วย. จึงสรุปได้ว่าเป็น Hemoglobin H disease with heterozygous hemoglobin E.",
+        state: false
+    }, {
+        problem: "3. A mother brings her 3-year-old boy to a hospital concerning his low body weight and height despite has been well-fed with nourishing food. Physical examination: frontal bossing and flat nasal bridge, moderate pallor, mild jaundice, and hepatosplenomegaly. CBC: Hb 6.7 g/dL, Hct 18%, MCV 49 fL, MCH 23 pg, MCHC 28 g/dL, RDW 28%, WBC 8,500 /cu.mm, platelet 250,000 /cu.mm and reticulocyte count 12.5%. Hemoglobin typing EFA2 E 35% F60% A2 5%. Which of the following is the major mechanism of anemia in this patient?",
+        img: "",
+        choices: "Decreased heme production from iron deficiency///Shortened RBC life span from intravascular hemolysis///Destruction of red cells by over-activated splenic macrophage///Ineffective erythropoiesis caused by excess unpaired alpha globin molecules///Decreased number of RBC progenitors due to absent beta globin",
+        answer: "Ineffective erythropoiesis caused by excess unpaired alpha globin molecules",
+        select: "",
+        explain: "ลักษณะใบหน้า (frontal bossing), ตับม้ามโต, และภาวะซีดรุนแรง เป็นลักษณะของโรคธาลัสซีเมียชนิดรุนแรง. ผล Hb typing ไม่พบ HbA เลย แต่พบ HbE 35% และ HbF 60% ซึ่งเป็นลักษณะเฉพาะของ β-thalassemia/Hb E disease (β⁰/βE). พยาธิกำเนิดหลักของ β-thalassemia คือการที่ร่างกายสร้างสาย beta-globin ไม่ได้หรือได้น้อยมาก ทำให้มีสาย alpha-globin ที่ไม่มีคู่เหลืออยู่เป็นจำนวนมาก. สาย alpha-globin ที่เกินมานี้จะไปจับตัวกันและตกตะกอนภายในเซลล์ตัวอ่อนเม็ดเลือดแดงในไขกระดูก ทำให้เซลล์เหล่านี้ตายก่อนที่จะเจริญเป็นเม็ดเลือดแดงที่สมบูรณ์. กระบวนการนี้เรียกว่า Ineffective erythropoiesis ซึ่งเป็นกลไกหลักที่ทำให้เกิดภาวะซีด.",
+        state: false
+    }, {
+        problem: "4. The expecting parents visit antenatal clinic for the screening of thalassemia carrier status. The results are shown below. Mother: Hb 11.5, MCV 65, Hemoglobin typing A2A, A2 5%, PCR for alpha- thal 1 Positive. Father: Hb 13.5, MCV 78, Hemoglobin typing EA, E 21%, PCR for alpha- thal 1 Positive. Which of the following is the most severe thalassemia disease that could be occurring in their baby?",
+        img: "https://drive.google.com/open?id=1YAH28kde2HRf-ymS8vdq0RC-MXFTkPQm&usp=drive_copy",
+        choices: "Beta thalassemia major///Homozygous hemoglobin E///Beta thalassemia hemoglobin E///Hemoglobin Bart's hydrops fetalis///Hemoglobin H disease with Heterozygous hemoglobin E",
+        answer: "Hemoglobin Bart's hydrops fetalis",
+        select: "",
+        explain: "วิเคราะห์ผลเลือดของพ่อแม่: แม่มี MCV ต่ำ, Hb A2 สูง (5%) และ PCR for alpha-thal 1 positive แสดงว่าเป็นพาหะของทั้ง β-thalassemia และ α-thalassemia-1 (--/αα). พ่อมี Hb E (EA, E 21%) และ PCR for alpha-thal 1 positive แสดงว่าเป็นพาหะของทั้ง Hb E และ α-thalassemia-1 (--/αα). ความเสี่ยงที่รุนแรงที่สุดที่จะเกิดกับลูกคือการที่ลูกได้รับยีน α-thalassemia-1 (--) มาจากทั้งพ่อและแม่ ทำให้มี genotype เป็น (--/--) ซึ่งไม่มียีน alpha-globin เหลืออยู่เลย. ทารกจะไม่สามารถสร้างฮีโมโกลบินที่ใช้หลังคลอดได้เลย ทำให้เกิดภาวะบวมน้ำรุนแรงและเสียชีวิตในครรภ์หรือหลังคลอดไม่นาน เรียกว่า Hemoglobin Bart's hydrops fetalis ซึ่งเป็นภาวะที่รุนแรงที่สุด.",
+        state: false
+    }, {
+        problem: "5. A 12-year-old girl presents with progressive fatigue for three months. She was diagnosed with hemoglobin H disease with hemoglobin Constant Spring at the age of six years old. She receives red cell transfusions every 1-2 months when she has symptoms of anemia. Her physical examination reveals moderately pale conjunctivae with mildly icteric sclerae and marked splenomegaly. CBC Hb 7.5 g/dL Hct 22% WBC 5,600 /cu.mm (N 70% L 30%) platelet 230,000 /cu.mm MCV 58 fL MCH 18 pg MCHC 29 g/dL RDW 26%. Which of the following is the most likely abnormal laboratory finding found in this patient?",
+        img: "",
+        choices: "High serum transferrin iron binding capacity (TIBC)///High serum haptoglobin///High hemoglobin F level///High serum hepcidin///High serum ferritin",
+        answer: "High serum ferritin",
+        select: "",
+        explain: "ผู้ป่วยเป็นโรคธาลัสซีเมียชนิด HbH-CS ซึ่งเป็นโรคที่มีการแตกของเม็ดเลือดแดงเรื้อรัง และได้รับเลือดเป็นประจำ. ทั้งสองภาวะนี้ (chronic hemolysis และ multiple transfusions) เป็นสาเหตุสำคัญที่ทำให้เกิดภาวะธาตุเหล็กเกิน (iron overload) เนื่องจากร่างกายไม่สามารถขับธาตุเหล็กส่วนเกินออกไปได้อย่างมีประสิทธิภาพ. ธาตุเหล็กที่เกินมาจะถูกเก็บสะสมในร่างกายในรูปของ Ferritin. ดังนั้น การตรวจเลือดที่จะพบว่าผิดปกติอย่างชัดเจนในผู้ป่วยรายนี้คือระดับ Serum Ferritin ที่สูงมาก.",
+        state: false
+    }, {
+        problem: "1. A 48-year-old male came to the hospital with complaint of abdominal discomfort at left upper abdomen for 3 months. PE: Liver: impalpable with 9 cm of liver span. Spleen: 12 cm below left costal margin (LCM) CBC: Hb 13, Hct 40 %, WBC 200,000 cells/mm³, PMN 50%, Myelocyte 15%, Metamyelocyte 10%, Basophil 7%, Lymphocyte 15%, Eosinophil 2%, Blast 1%, Platelets: 380,000 cells/mm³. Blood smear as figure. Which one of the following is the cytogenetic result that expected to see in this disease?",
+        img: "https://drive.google.com/open?id=1aEFRHrjeWTVPausYnwvoc2aRBCcoVqVz&usp=drive_copy",
+        choices: "t(15;17)(q24.1;q21.2)///t(9;22)(q34;q11)///t(14;18)(q32;q21)///t(11;14)(q13;q32)///t(8;14)(q24;q32)",
+        answer: "t(9;22)(q34;q11)",
+        select: "",
+        explain: "ผู้ป่วยมีอาการแน่นท้องจากม้ามโตมาก (massive splenomegaly). ผลเลือดพบเม็ดเลือดขาวสูงมาก (marked leukocytosis) โดยพบเซลล์ตัวอ่อนสาย myeloid หลายระยะ (myelocytes, metamyelocytes) ปนออกมาในเลือด หรือที่เรียกว่า 'left shift' และที่สำคัญคือมี Basophil สูง (basophilia). ลักษณะทางคลินิกและผลเลือดทั้งหมดนี้เป็นลักษณะคลาสสิกของโรค Chronic Myeloid Leukemia (CML). โรค CML มีความผิดปกติทางพันธุกรรมที่จำเพาะคือ Philadelphia chromosome ซึ่งเกิดจากการสลับที่ของโครโมโซมคู่ที่ 9 และ 22 หรือ t(9;22)(q34;q11).",
+        state: false
+    }, {
+        problem: "2. A 72-year-old man presented to the hospital with fatigue. CBC showed anemia and leukopenia. Blood smear showed the significant number of the abnormal cells as figure below. What is the most-likely diagnosis of this case?",
+        img: "https://drive.google.com/open?id=11pzKBuibcPf-8vHhvj0EnbkcBV4urhVA&usp=drive_copy",
+        choices: "Polycythemia vera///Primary myelofibrosis///Myelodysplastic neoplasm///Acute myelogenous leukemia///Chronic myelogenous leukemia",
+        answer: "Myelodysplastic neoplasm",
+        select: "",
+        explain: "ผู้ป่วยสูงอายุมาด้วยอาการอ่อนเพลียจากภาวะซีดและเม็ดเลือดขาวต่ำ. ภาพ blood smear แสดงลักษณะของ neutrophil ที่มีนิวเคลียสผิดปกติ คือมีเพียง 2 lobes และเชื่อมกันด้วยสายเล็กๆ (bilobed nucleus) ซึ่งเรียกว่า Pelger-Huët anomaly. การพบเซลล์ที่มีรูปร่างผิดปกติ (dysplasia) เช่นนี้ ร่วมกับภาวะเม็ดเลือดต่ำ (cytopenias) ในผู้สูงอายุ เป็นลักษณะที่บ่งชี้ถึงกลุ่มโรค Myelodysplastic Neoplasm (MDS) หรือ Myelodysplastic Syndrome ซึ่งเป็นโรคความผิดปกติของเซลล์ต้นกำเนิดในไขกระดูก.",
+        state: false
+    }, {
+        problem: "3. A 70-year-old man's annual checkup revealed leukocytosis. The absolute abnormal cell count (as the picture of blood smear below) is 42,000/mm³. Further investigation of flow cytometry shows positive for CD20+, CD5+, CD23+, CD10-, TdT-. 1) Mantle cell 2) Naïve B-cells 3) Memory B-cell 4) Precursor B-cell 5) Germinal center B-cell. Which is the postulate origin of the neoplastic cells in this case?",
+        img: "https://drive.google.com/open?id=1uObdrVJuHoslIoY-XfASGDJAlMfoing2&usp=drive_copy",
+        choices: "1,2///1,5///2,3///2,4///3,5",
+        answer: "2,3",
+        select: "",
+        explain: "ผู้ป่วยสูงอายุมีจำนวน lymphocyte สูงมาก และ blood smear พบเซลล์ลักษณะ mature lymphocytes และ smudge cells ซึ่งเป็นลักษณะของ Chronic Lymphocytic Leukemia (CLL). ผล Flow cytometry ที่แสดง CD20+, CD5+, CD23+ เป็น immunophenotype ที่จำเพาะสำหรับ CLL. สำหรับต้นกำเนิดของเซลล์มะเร็งใน CLL เชื่อว่ามาจากเซลล์ B-lymphocyte ที่เจริญเต็มที่แล้ว (mature B-cell) ซึ่งอาจเป็นได้ทั้ง Naïve B-cells (เซลล์ที่ยังไม่เคยถูกกระตุ้นด้วยแอนติเจน) หรือ Memory B-cells (เซลล์ที่เคยถูกกระตุ้นแล้ว). ดังนั้นข้อ 2 และ 3 จึงเป็นคำตอบที่ครอบคลุมที่สุด.",
+        state: false
+    }, {
+        problem: "4. A 12-year-old boy called his primary care physician, He initially complained of having 'white spots' on his right tonsil. The doctor prescribed him amoxicillin immediately. On the third day, the patient developed erythematous maculopapular rash entire body then he came to the clinic for further evaluation. On physical examination, His temperature was 38.0°C. The patient had two inflamed lymph nodes below the jaw, an extensive membrane covering the right tonsil with hepatosplenomegaly. No improvement was seen on the tonsils. CBC showed Hct 42% WBC 18000 cells/mm³ PMN 50% L 47% Mo3% Platelet 250000 cells/mm³. Liver enzymes are increasing. Blood smear as in the picture. What is the most likely appropriate management?",
+        img: "https://drive.google.com/open?id=1jfUmLmhyYqFVsFyZbU6oREJhyoVnXeTK&usp=drive_copy",
+        choices: "Throat swab culture///Bone marrow aspiration///Hemoculture///Anti VCA IgM///Viral hepatitis B profile",
+        answer: "Anti VCA IgM",
+        select: "",
+        explain: "เด็กมีอาการไข้, เจ็บคอ, ต่อมน้ำเหลืองโต, ตับม้ามโต และ blood smear พบ atypical lymphocytes. ประวัติที่สำคัญอย่างยิ่งคือการได้รับยา amoxicillin แล้วเกิดผื่นแดงทั่วตัว (maculopapular rash) ซึ่งเป็นปฏิกิริยาที่พบได้บ่อยมากในผู้ป่วย Infectious Mononucleosis (IM) ที่เกิดจากเชื้อ Epstein-Barr Virus (EBV). ดังนั้น การวินิจฉัยที่เหมาะสมที่สุดคือการตรวจเลือดเพื่อยืนยันการติดเชื้อ EBV ในระยะเฉียบพลัน ซึ่งก็คือการตรวจหา Anti-Viral Capsid Antigen (VCA) IgM.",
+        state: false
+    }, {
+        problem: "5. A 55-year-old male presents to the doctor with new symptoms of exertional fatigue. pain in the left hip and difficulty walking for 2 months. He is otherwise well with no significant past medical history. CBC: Hct 23 % WBC 9000 cells/mm3 PMN 65% L30% Mo 5% Platelet. 400000 cells/mm³. Bone marrow aspiration as shown in the figure. BUN 54 mg/dL Creatinine 2.7 mg/dL. What are the most benefit further investigations? 1. Serum protein electrophoresis 2. Serum calcium 3. Philadelphia chromosome 4. Heterophile antibody 5. Flow cytometry 6. Bone survey",
+        img: "https://drive.google.com/open?id=1p6Ev4ZyBxT1lkigkKwU9SrQT9VmTf_tJ&usp=drive_copy",
+        choices: "1,2,3///2,3,4///4,5,6///1,2,6///3,5,6",
+        answer: "1,2,6",
+        select: "",
+        explain: "ผู้ป่วยมีอาการที่เข้าได้กับเกณฑ์การวินิจฉัยของ Multiple Myeloma (MM) หรือ CRAB criteria: C - Calcium (ต้องตรวจ), R - Renal failure (มีภาวะไตวายจาก BUN/Cr ที่สูง), A - Anemia (ซีด, Hct 23%), B - Bone lesions (ปวดสะโพก). ภาพไขกระดูก (bone marrow aspiration) ที่แสดงเซลล์พลาสมา (plasma cells) จำนวนมากเป็นการยืนยันการวินิจฉัย. การสืบค้นเพิ่มเติมที่สำคัญสำหรับ MM ได้แก่ 1. Serum protein electrophoresis เพื่อตรวจหา M-protein, 2. Serum calcium เพื่อดูภาวะแคลเซียมในเลือดสูง, และ 6. Bone survey หรือ x-ray กระดูกทั่วร่างกายเพื่อหา Lytic bone lesions.",
+        state: false
+    }, {
+        problem: "6. A 45-year-old female came up with high grade fever and productive cough for 2 days. After admission she developed stuporus, epistaxis and coffee ground vomiting. BP 80/50 mmHg, PR 120/min, RR 24 /min. CBC: Hct 43 % WBC 12,000 cell/mm³, Platelet 250,000 cell/mm³ PMN 79%, Lymphocyte: 11%, band form10%. Blood smear: as picture. Urinalysis: numerous white cells. What is the most likely diagnosis?",
+        img: "https://drive.google.com/open?id=10rdJOm0IbD1uB8sLz1PgQ59NmDfZuwSD&usp=drive_copy",
+        choices: "ALL///CML///EBV///Sepsis///AML",
+        answer: "Sepsis",
+        select: "",
+        explain: "ผู้ป่วยมีอาการของการติดเชื้อรุนแรง (ไข้สูง, ไอ) ซึ่งลุกลามจนเกิดภาวะแทรกซ้อนที่รุนแรง ได้แก่ ภาวะช็อก (septic shock) จากความดันโลหิตต่ำและอาการซึมลง, และอาจมีภาวะเลือดแข็งตัวผิดปกติ (DIC) จากอาการเลือดออก. ผลเลือดพบเม็ดเลือดขาวสูงโดยมี neutrophil และ band form เพิ่มขึ้น (left shift). ภาพ blood smear พบ toxic granules ใน neutrophil ซึ่งเป็นลักษณะที่บ่งชี้ถึงการติดเชื้อแบคทีเรียที่รุนแรง. ทั้งหมดนี้รวมกันเป็นภาพของภาวะติดเชื้อในกระแสเลือด หรือ Sepsis.",
+        state: false
+    }, {
+        problem: "7. A 37-year-old healthy man without known underlying disease has the annual health check up at the hospital. 3. CBC: Hct 42 %, Hb 14 g/dL, WBC 8400 cell/mm³ (neutrophil 54%, lymphocyte 22%, monocyte 10%, eosinophil 13%, basophil 1%), and the platelets count is adequate. What should be a further investigation?",
+        img: "",
+        choices: "Bone marrow biopsy///Stool exam///Chest x-ray///Iron study///Skin prick test",
+        answer: "Stool exam",
+        select: "",
+        explain: "ผลเลือดของผู้ป่วยรายนี้พบว่ามีจำนวน eosinophil สูงผิดปกติ (Eosinophilia) ที่ 13%. ในคนแข็งแรงที่ไม่มีอาการอื่นๆ สาเหตุของ Eosinophilia ที่พบบ่อยและควรนึกถึงเป็นอันดับแรกๆ คือการติดเชื้อพยาธิ. ดังนั้น การสืบค้นเบื้องต้นที่ง่าย, ไม่รุกล้ำ, และเหมาะสมที่สุดคือการตรวจอุจจาระเพื่อหาไข่พยาธิ (Stool examination for parasite ova).",
+        state: false
+    }, {
+        problem: "8. A 29-year-old male came to the hospital due to a high-grade fever with acute severe multiple- joint pain for 2 days. Physical examination revealed a body temperature of 39.8 C, maculopapular rash, and joint effusions with tenderness of palpation. CBC revealed WBC 2,480 cell/mm³ (neutrophil 50%, lymphocyte 25%, monocyte 20%, eosinophil 3%, basophil 2%). A blood smear was shown in the picture. Other investigations are pending for the results. What is the most likely cause of his symptoms?",
+        img: "https://drive.google.com/open?id=1VWjZ003QJETD25ySIbCKyCxbv6JDsfaH&usp=drive_copy",
+        choices: "Bacterial arthritis///Systemic viral infection///Non-inflammatory arthritis///Gonococcal arthritis///Tuberculous arthritis",
+        answer: "Systemic viral infection",
+        select: "",
+        explain: "ผู้ป่วยมีอาการไข้สูงเฉียบพลัน, ปวดข้อหลายข้อ (polyarthritis), และผื่น. ผลเลือดพบเม็ดเลือดขาวต่ำ (leukopenia) และ blood smear พบเซลล์เม็ดเลือดขาวผิดปกติที่เรียกว่า atypical lymphocytes. กลุ่มอาการเช่นนี้เป็นลักษณะที่พบได้บ่อยมากในการติดเชื้อไวรัสทั่วร่างกาย (Systemic viral infection) เช่น ไข้เลือดออกเดงกี (Dengue fever), ชิคุนกุนยา (Chikungunya), หรือการติดเชื้อไวรัสอื่นๆ. ส่วนภาวะข้ออักเสบจากแบคทีเรียมักเป็นข้อเดียวและเม็ดเลือดขาวมักจะสูง.",
+        state: false
+    }, {
+        problem: "9. A 63-year-old female with underlying breast cancer currently receiving systemic chemotherapy comes to the hospital with a high-grade fever. She has no respiratory symptoms. Physical examination reveals a body temperature of 40.2 C, BP 100/70 mmHg, PR 90 bpm. Complete blood count shows Hct 28%, Hb 9 g/dL, WBC 1240 cells/mm³ (neutrophil 40%, lymphocyte 35, Monocyte 20%), with adequate platelets. The blood smear is shown in the picture. What should be the most appropriate treatment for this patient?",
+        img: "https://drive.google.com/open?id=1EwZwszI6L4MSfV0sysQxypcx2OwMXjDq&usp=drive_copy",
+        choices: "Paracetamol///Fluid resuscitation///Empirical antibiotics///Plasmapheresis///Leukocyte poor red cell transfusion",
+        answer: "Empirical antibiotics",
+        select: "",
+        explain: "ผู้ป่วยที่ได้รับยาเคมีบำบัดและมีไข้ สิ่งสำคัญที่สุดที่ต้องทำคือการประเมินภาวะนิวโทรฟิลต่ำ (neutropenia). Absolute Neutrophil Count (ANC) คำนวณได้จาก WBC x %Neutrophil = 1240 x 40% = 496 cells/mm³. เมื่อ ANC ต่ำกว่า 500 ถือว่าเป็น severe neutropenia. ภาวะไข้ในผู้ป่วยที่มีนิวโทรฟิลต่ำ (Febrile Neutropenia) เป็นภาวะฉุกเฉินทางการแพทย์ เนื่องจากเสี่ยงต่อการติดเชื้อรุนแรงสูงมาก. การรักษาที่ต้องให้โดยทันทีคือยาปฏิชีวนะแบบครอบคลุมเชื้อในวงกว้าง (Empirical broad-spectrum antibiotics) โดยไม่ต้องรอผลเพาะเชื้อ.",
+        state: false
+    }, {
         problem: "10. A 18-year-old man comes to the hospital with a complaint of sore throat for 2 days. PE: Inject pharynx. CBC: Hb= 13.5 g/dL, Hct = 41%, WBC=12,000 /mm³, and platelets = 250,000 /mm³. Neutrophils =85%, Lymphocyte =14%, Monocytes = 1%. What is the mechanism of neutrophilic leukocytosis in this case?",
         img: "",
         choices: "Decreased margination///Increased production of marrow///Increased release from marrow stores///Decreased extravasation into tissue///Decreased splenic sequestration",
@@ -3193,46 +3672,46 @@ var quizdata = {
         explain: "ในภาวะติดเชื้อแบคทีเรียเฉียบพลัน เช่น คออักเสบ (pharyngitis) ร่างกายจะตอบสนองโดยการเพิ่มจำนวน neutrophil ในกระแสเลือดอย่างรวดเร็ว. กลไกที่เกิดขึ้นเร็วที่สุดคือการกระตุ้นให้ไขกระดูกปล่อย neutrophil ที่เจริญเต็มที่แล้วซึ่งถูกเก็บสำรองไว้ใน 'storage pool' ออกมาสู่กระแสเลือด. กระบวนการนี้ทำให้จำนวน neutrophil เพิ่มขึ้นอย่างรวดเร็วภายในเวลาไม่กี่ชั่วโมงเพื่อไปต่อสู้กับเชื้อโรค. ส่วนการสร้างเพิ่ม (increased production) จะใช้เวลานานกว่า.",
         state: false
     }, {
-            problem: "1. A 65-year-old male cancer patient, recently diagnosed with diffuse large B-cell lymphoma stage IV with extensive bone marrow involvement, is undergoing 3 cycles of the R-CHOP regimen (the last cycle was 10 days ago). He presents with a fever for 1 day. The physical exam showed a body temperature of 38.6°C, mild injected pharynx and tonsils, no lymphadenopathy, and no hepatosplenomegaly. The complete blood count revealed Hb at 9 g/dL, a WBC of 1,850 (PMN 25% and L 65%), and a platelet count of 78,000. What is the most likely diagnosis?",
-            img: "",
-            choices: "Influenza///Aplastic anemia///Febrile neutropenia///Pneumonia with septicemia///Disseminated intravascular coagulation",
-            answer: "Febrile neutropenia",
-            select: "",
-            explain: "ผู้ป่วยมะเร็งต่อมน้ำเหลืองที่อยู่ระหว่างการให้เคมีบำบัด (R-CHOP) มา 10 วัน ซึ่งเป็นช่วงที่เม็ดเลือดจะต่ำที่สุด (nadir). ผู้ป่วยมีไข้ (38.6°C). การคำนวณ Absolute Neutrophil Count (ANC) = WBC x %PMN = 1,850 x 0.25 = 462.5 cells/mm³. เมื่อผู้ป่วยมีไข้ (T ≥ 38.3°C) และมี ANC < 500 cells/mm³ จะเข้าเกณฑ์การวินิจฉัยภาวะ Febrile Neutropenia. นี่เป็นภาวะฉุกเฉินทางการแพทย์ที่ต้องได้รับการรักษาด้วยยาปฏิชีวนะอย่างเร่งด่วน.",
-            state: false
-        }, {
-            problem: "2. A 45-year-old male presents to the clinic with persistent fatigue, a chronic non-productive cough, and unintentional weight loss of 6 kg over the past three months (10% from baseline). The physical exam showed a body temperature of 38°C, a right cervical node enlarged to 3 cm in diameter, and no hepatosplenomegaly. A chest X-ray revealed reticulonodular infiltration in the right upper lung. The complete blood count showed Hb at 11 g/dL, a WBC count of 8,500 (PMN 55%, L 25%, and M 20%), and a platelet count of 378,000. What is the most likely diagnosis in this patient?",
-            img: "",
-            choices: "Tuberculosis///Pulmonary aspergillosis///Pulmonary nocardiosis///Infectious mononucleosis///Chronic myeloid leukemia",
-            answer: "Tuberculosis",
-            select: "",
-            explain: "ผู้ป่วยมีกลุ่มอาการ B-symptoms (ไข้, ไอนาน, น้ำหนักลด) ซึ่งเป็นอาการที่พบบ่อยในวัณโรค. ผลการตรวจที่สำคัญคือ Chest X-ray พบฝ้าในปอดด้านบนขวา (right upper lung infiltration) ซึ่งเป็นตำแหน่งที่พบบ่อยที่สุดของวัณโรคปอดในผู้ใหญ่ (post-primary TB). นอกจากนี้ การตรวจพบต่อมน้ำเหลืองที่คอโต (cervical lymphadenopathy) ก็เป็นอีกอาการแสดงหนึ่งของวัณโรคได้ (เรียกว่า scrofula). ดังนั้น วัณโรค (Tuberculosis) จึงเป็นการวินิจฉัยที่น่าจะเป็นไปได้มากที่สุด.",
-            state: false
-        }, {
-            problem: "3. A 48-year-old woman presents with early satiety. The physical exam showed a markedly enlarged spleen (8 cm below the left costal margin), with all other parameters within normal limits. CBC revealed Hb at 12 g/dL, WBC at 87,000 (PMN 35%, L 15%, Metamyelocyte 5%, Myelocyte 10%, Eosinophil 5%, Basophil 15%), and a platelet count of 432,000. What is the most likely diagnosis?",
-            img: "",
-            choices: "Leukemoid reaction///Primary myelofibrosis///Acute myeloid leukemia///Chronic myeloid leukemia///Acute myelomonocytic leukemia",
-            answer: "Chronic myeloid leukemia",
-            select: "",
-            explain: "อาการอิ่มเร็ว (early satiety) เกิดจากม้ามที่โตมาก (markedly enlarged spleen) ไปเบียดกระเพาะอาหาร. ผลเลือดแสดงจำนวนเม็ดเลือดขาวสูงมาก (leukocytosis) และพบเซลล์ตัวอ่อนของสาย myeloid หลายระยะ (left shift) ร่วมกับ Basophil ที่สูงมากถึง 15% (marked basophilia). ภาพรวมทางคลินิกและผลเลือดทั้งหมดนี้เป็นลักษณะที่จำเพาะเจาะจงกับโรค Chronic Myeloid Leukemia (CML) อย่างยิ่ง.",
-            state: false
-        }, {
-            problem: "4. A 28-year-old female presents to the emergency department with a high fever for 3 days. She also complains of a severe headache, joint pain, and muscle pain. The physical exam showed a body temperature of 39°C, a mildly injected pharynx and tonsils, no lymphadenopathy, no hepatosplenomegaly, and discrete petechial hemorrhages on both legs. The CBC showed Hct 48%, WBC 3,100 , N 35 %, L50 %, abnormal cell as seen in the figure 15%. What is the most likely diagnosis?",
-            img: "https://drive.google.com/open?id=1NkImbE89vd0KnZ77toN4DA-_FL23VgCa&usp=drive_copy",
-            choices: "Systemic infection///Dengue hemorrhagic fever///Acute monocytic leukemia///Systemic lupus erythematosus///Acute lymphoblastic leukemia",
-            answer: "Dengue hemorrhagic fever",
-            select: "",
-            explain: "ผู้ป่วยมีอาการไข้สูงเฉียบพลัน ปวดศีรษะ ปวดกล้ามเนื้อ และมีจุดเลือดออก (petechial hemorrhages). ผลเลือดที่สำคัญคือ ภาวะเลือดข้น (hemoconcentration) จากค่า Hct ที่สูงถึง 48%, เม็ดเลือดขาวต่ำ (leukopenia), และพบ atypical lymphocytes. กลุ่มอาการและผลการตรวจทางห้องปฏิบัติการทั้งหมดนี้เป็นลักษณะคลาสสิกของโรคไข้เลือดออกเดงกี. การพบจุดเลือดออกและภาวะเลือดข้นเป็นสัญญาณเตือนของภาวะ Dengue Hemorrhagic Fever.",
-            state: false
-        }, {
-            problem: "5. A 65-year-old male presents with a history of abnormal CBC from annual checkup. He denied consuming raw food, but he often walks barefoot in his garden. There is no history of allergies. He sometimes uses diclofenac for myalgia (the last dose was 2 weeks ago). The physical exam showed that he is afebrile, with no rash or hepatosplenomegaly. CBC revealed Hb at 13 g/dl, WBC at 7,800 (PMN 55%, L 20%, E 25%), and a platelet count of 375,000. What is the most likely causes of the abnormality?",
-            img: "",
-            choices: "Drug allergy///Parasitic infection///Allergic dermatitis///Autoimmune disease///Idiopathic eosinophilia",
-            answer: "Parasitic infection",
-            select: "",
-            explain: "ความผิดปกติในผลเลือดคือมีจำนวน Eosinophil สูงถึง 25% (Eosinophilia). ประวัติที่สำคัญที่สุดคือผู้ป่วยเดินเท้าเปล่าในสวนเป็นประจำ. พฤติกรรมนี้เป็นความเสี่ยงสูงต่อการติดเชื้อพยาธิที่สามารถไชเข้าทางผิวหนังได้ เช่น พยาธิปากขอ (hookworm) หรือพยาธิเส้นด้าย (Strongyloides). การติดเชื้อพยาธิเป็นสาเหตุที่พบบ่อยที่สุดอย่างหนึ่งของภาวะ Eosinophilia. ดังนั้น การติดเชื้อพยาธิจึงเป็นสาเหตุที่น่าสงสัยที่สุดในผู้ป่วยรายนี้.",
-            state: false
-        }],
+        problem: "1. A 65-year-old male cancer patient, recently diagnosed with diffuse large B-cell lymphoma stage IV with extensive bone marrow involvement, is undergoing 3 cycles of the R-CHOP regimen (the last cycle was 10 days ago). He presents with a fever for 1 day. The physical exam showed a body temperature of 38.6°C, mild injected pharynx and tonsils, no lymphadenopathy, and no hepatosplenomegaly. The complete blood count revealed Hb at 9 g/dL, a WBC of 1,850 (PMN 25% and L 65%), and a platelet count of 78,000. What is the most likely diagnosis?",
+        img: "",
+        choices: "Influenza///Aplastic anemia///Febrile neutropenia///Pneumonia with septicemia///Disseminated intravascular coagulation",
+        answer: "Febrile neutropenia",
+        select: "",
+        explain: "ผู้ป่วยมะเร็งต่อมน้ำเหลืองที่อยู่ระหว่างการให้เคมีบำบัด (R-CHOP) มา 10 วัน ซึ่งเป็นช่วงที่เม็ดเลือดจะต่ำที่สุด (nadir). ผู้ป่วยมีไข้ (38.6°C). การคำนวณ Absolute Neutrophil Count (ANC) = WBC x %PMN = 1,850 x 0.25 = 462.5 cells/mm³. เมื่อผู้ป่วยมีไข้ (T ≥ 38.3°C) และมี ANC < 500 cells/mm³ จะเข้าเกณฑ์การวินิจฉัยภาวะ Febrile Neutropenia. นี่เป็นภาวะฉุกเฉินทางการแพทย์ที่ต้องได้รับการรักษาด้วยยาปฏิชีวนะอย่างเร่งด่วน.",
+        state: false
+    }, {
+        problem: "2. A 45-year-old male presents to the clinic with persistent fatigue, a chronic non-productive cough, and unintentional weight loss of 6 kg over the past three months (10% from baseline). The physical exam showed a body temperature of 38°C, a right cervical node enlarged to 3 cm in diameter, and no hepatosplenomegaly. A chest X-ray revealed reticulonodular infiltration in the right upper lung. The complete blood count showed Hb at 11 g/dL, a WBC count of 8,500 (PMN 55%, L 25%, and M 20%), and a platelet count of 378,000. What is the most likely diagnosis in this patient?",
+        img: "",
+        choices: "Tuberculosis///Pulmonary aspergillosis///Pulmonary nocardiosis///Infectious mononucleosis///Chronic myeloid leukemia",
+        answer: "Tuberculosis",
+        select: "",
+        explain: "ผู้ป่วยมีกลุ่มอาการ B-symptoms (ไข้, ไอนาน, น้ำหนักลด) ซึ่งเป็นอาการที่พบบ่อยในวัณโรค. ผลการตรวจที่สำคัญคือ Chest X-ray พบฝ้าในปอดด้านบนขวา (right upper lung infiltration) ซึ่งเป็นตำแหน่งที่พบบ่อยที่สุดของวัณโรคปอดในผู้ใหญ่ (post-primary TB). นอกจากนี้ การตรวจพบต่อมน้ำเหลืองที่คอโต (cervical lymphadenopathy) ก็เป็นอีกอาการแสดงหนึ่งของวัณโรคได้ (เรียกว่า scrofula). ดังนั้น วัณโรค (Tuberculosis) จึงเป็นการวินิจฉัยที่น่าจะเป็นไปได้มากที่สุด.",
+        state: false
+    }, {
+        problem: "3. A 48-year-old woman presents with early satiety. The physical exam showed a markedly enlarged spleen (8 cm below the left costal margin), with all other parameters within normal limits. CBC revealed Hb at 12 g/dL, WBC at 87,000 (PMN 35%, L 15%, Metamyelocyte 5%, Myelocyte 10%, Eosinophil 5%, Basophil 15%), and a platelet count of 432,000. What is the most likely diagnosis?",
+        img: "",
+        choices: "Leukemoid reaction///Primary myelofibrosis///Acute myeloid leukemia///Chronic myeloid leukemia///Acute myelomonocytic leukemia",
+        answer: "Chronic myeloid leukemia",
+        select: "",
+        explain: "อาการอิ่มเร็ว (early satiety) เกิดจากม้ามที่โตมาก (markedly enlarged spleen) ไปเบียดกระเพาะอาหาร. ผลเลือดแสดงจำนวนเม็ดเลือดขาวสูงมาก (leukocytosis) และพบเซลล์ตัวอ่อนของสาย myeloid หลายระยะ (left shift) ร่วมกับ Basophil ที่สูงมากถึง 15% (marked basophilia). ภาพรวมทางคลินิกและผลเลือดทั้งหมดนี้เป็นลักษณะที่จำเพาะเจาะจงกับโรค Chronic Myeloid Leukemia (CML) อย่างยิ่ง.",
+        state: false
+    }, {
+        problem: "4. A 28-year-old female presents to the emergency department with a high fever for 3 days. She also complains of a severe headache, joint pain, and muscle pain. The physical exam showed a body temperature of 39°C, a mildly injected pharynx and tonsils, no lymphadenopathy, no hepatosplenomegaly, and discrete petechial hemorrhages on both legs. The CBC showed Hct 48%, WBC 3,100 , N 35 %, L50 %, abnormal cell as seen in the figure 15%. What is the most likely diagnosis?",
+        img: "https://drive.google.com/open?id=1NkImbE89vd0KnZ77toN4DA-_FL23VgCa&usp=drive_copy",
+        choices: "Systemic infection///Dengue hemorrhagic fever///Acute monocytic leukemia///Systemic lupus erythematosus///Acute lymphoblastic leukemia",
+        answer: "Dengue hemorrhagic fever",
+        select: "",
+        explain: "ผู้ป่วยมีอาการไข้สูงเฉียบพลัน ปวดศีรษะ ปวดกล้ามเนื้อ และมีจุดเลือดออก (petechial hemorrhages). ผลเลือดที่สำคัญคือ ภาวะเลือดข้น (hemoconcentration) จากค่า Hct ที่สูงถึง 48%, เม็ดเลือดขาวต่ำ (leukopenia), และพบ atypical lymphocytes. กลุ่มอาการและผลการตรวจทางห้องปฏิบัติการทั้งหมดนี้เป็นลักษณะคลาสสิกของโรคไข้เลือดออกเดงกี. การพบจุดเลือดออกและภาวะเลือดข้นเป็นสัญญาณเตือนของภาวะ Dengue Hemorrhagic Fever.",
+        state: false
+    }, {
+        problem: "5. A 65-year-old male presents with a history of abnormal CBC from annual checkup. He denied consuming raw food, but he often walks barefoot in his garden. There is no history of allergies. He sometimes uses diclofenac for myalgia (the last dose was 2 weeks ago). The physical exam showed that he is afebrile, with no rash or hepatosplenomegaly. CBC revealed Hb at 13 g/dl, WBC at 7,800 (PMN 55%, L 20%, E 25%), and a platelet count of 375,000. What is the most likely causes of the abnormality?",
+        img: "",
+        choices: "Drug allergy///Parasitic infection///Allergic dermatitis///Autoimmune disease///Idiopathic eosinophilia",
+        answer: "Parasitic infection",
+        select: "",
+        explain: "ความผิดปกติในผลเลือดคือมีจำนวน Eosinophil สูงถึง 25% (Eosinophilia). ประวัติที่สำคัญที่สุดคือผู้ป่วยเดินเท้าเปล่าในสวนเป็นประจำ. พฤติกรรมนี้เป็นความเสี่ยงสูงต่อการติดเชื้อพยาธิที่สามารถไชเข้าทางผิวหนังได้ เช่น พยาธิปากขอ (hookworm) หรือพยาธิเส้นด้าย (Strongyloides). การติดเชื้อพยาธิเป็นสาเหตุที่พบบ่อยที่สุดอย่างหนึ่งของภาวะ Eosinophilia. ดังนั้น การติดเชื้อพยาธิจึงเป็นสาเหตุที่น่าสงสัยที่สุดในผู้ป่วยรายนี้.",
+        state: false
+    }],
     "HL49MCQ1": [
         {
             "problem": "1. What cell structure does B cell reside in ?",
@@ -5358,93 +5837,93 @@ var quizdata = {
             "state": false
         },
         {
-            "problem": "39) patient's CBCshows WBC 54,000 /uL, PMN 55%, Lymphocyte 35% ,monocyte 6%, eosinophil 4%. NRC 170/ 100 WBC . Please calculate patien’ANC",
-            "img": "",
-            "choices": "A. 11,000/mm^3///B. 18,900/mm^3///C. 20,000/mm^3///D. 29,700/mm^3///E. 32,400/mm^3",
-            "answer": "D. 29,700/mm^3",
-            "select": "",
-            "explain": "Absolute Neutrophil Count (ANC) คือจำนวนของเซลล์ Neutrophil ทั้งหมดในเลือด คำนวณได้จากสูตร: ANC = Total WBC count × (% Neutrophils) โดย Neutrophils ในที่นี้หมายถึงเซลล์ในระยะ ώριμη ทั้งหมด (segmented neutrophil หรือ PMN) จากโจทย์ Total WBC = 54,000 /uL และ %PMN = 55% ดังนั้น ANC = 54,000 × (55 / 100) = 29,700 /mm^3 (หรือ /uL)",
-            "state": false
-        },
-        {
-            "problem": "40) male patient Hb 7.5 Hct 15% reticulocyte 10% .Which one is correct?",
-            "img": "",
-            "choices": "A. Corrected reticulocyte 6.5%///B. Reticulocyte Index = 2.5///C. Anemia in this patient caused by hemolysis///D. Bone marrow response is normal///E. Production more than normal 3 เท่า",
-            "answer": "C. Anemia in this patient caused by hemolysis",
-            "select": "",
-            "explain": "ผู้ป่วยมีภาวะโลหิตจางรุนแรง (Hb 7.5, Hct 15%) และมีค่า reticulocyte count สูงถึง 10% การมี reticulocyte count ที่สูงมาก (reticulocytosis) ในภาวะโลหิตจางเป็นสัญญาณบ่งบอกว่าไขกระดูกกำลังตอบสนองอย่างเต็มที่เพื่อชดเชยการสูญเสียเม็ดเลือดแดง ซึ่งสาเหตุหลักของการสูญเสียเม็ดเลือดแดงที่กระตุ้นการตอบสนองเช่นนี้คือภาวะเม็ดเลือดแดงแตก (hemolysis) หรือการเสียเลือดอย่างเฉียบพลัน (acute blood loss) ดังนั้นข้อสรุปที่เป็นไปได้มากที่สุดจากข้อมูลนี้คือผู้ป่วยมีภาวะโลหิตจางจาก hemolysis",
-            "state": false
-        },
-        {
-            "problem": "42) A 65-year-old woman with type 2 diabetes mellitus admitted at ICU with pneumonia. Sputum culture : Streptococcus pneumoniae CBC : Hb 9 g/dL, Hct 27%, WBC 24,300/dL, Platelet 85,000 dL Which of the following is the most likely finding of WBC in this patient?",
-            "img": "",
-            "choices": "A. Neutrophilia///B. Lymphocytosis///C. Atypical lymphocyte///D. Hypersegmented neutrophils///E. Pseudo-Pelger-Huet anomaly",
-            "answer": "A. Neutrophilia",
-            "select": "",
-            "explain": "ผู้ป่วยมีการติดเชื้อแบคทีเรียที่ปอด (pneumonia) ซึ่งเกิดจากเชื้อ Streptococcus pneumoniae การติดเชื้อแบคทีเรียเฉียบพลันจะกระตุ้นให้ไขกระดูกปล่อยเม็ดเลือดขาวชนิด Neutrophil ออกมาในกระแสเลือดจำนวนมากเพื่อต่อสู้กับเชื้อโรค ทำให้ค่าเม็ดเลือดขาวรวม (WBC) สูงขึ้น โดยมีสัดส่วนของ Neutrophil เพิ่มขึ้นเป็นหลัก ภาวะนี้เรียกว่า Neutrophilia หรือ neutrophilic leukocytosis ซึ่งตรงกับผล CBC ที่ WBC สูงถึง 24,300/dL",
-            "state": false
-        },
-        {
-            "problem": "43) 49 year old came with fever, no hepatosplenomegaly, no lymphadenopathy, เป็น Large B-cell lymphoma stage II, history of chemotherapy 12 days CBC : Hb 7g/dL WBC : 1900 cell/uL Platelet : 69000 cell/uL",
-            "img": "",
-            "choices": "A. Eosinophilia///B. Basophilia///C. Neutropenia///D. Lymphocytosis///E. Atypical lymphocyte",
-            "answer": "C. Neutropenia",
-            "select": "",
-            "explain": "ผู้ป่วยได้รับเคมีบำบัด (chemotherapy) ซึ่งยาเคมีบำบัดมีผลข้างเคียงที่สำคัญคือการกดไขกระดูก (myelosuppression) ทำให้การสร้างเซลล์เม็ดเลือดทุกชนิดลดลง โดยเฉพาะ Neutrophil ซึ่งมีอายุขัยสั้นจะได้รับผลกระทบเร็วที่สุด ภาวะที่จำนวน Neutrophil ในเลือดต่ำกว่าปกติเรียกว่า Neutropenia ซึ่งจะทำให้ค่าเม็ดเลือดขาวรวม (WBC) ต่ำลงไปด้วย (leukopenia) ดังที่พบในผล CBC ของผู้ป่วย (WBC 1,900) ภาวะนี้ทำให้ผู้ป่วยมีความเสี่ยงสูงต่อการติดเชื้อและอาจเป็นสาเหตุของไข้ได้",
-            "state": false
-        },
-        {
-            "problem": "44) Which of the following is defined as relative lymphocytosis?",
-            "img": "",
-            "choices": "A. wbc > 4,000; lymphocytes predominate///B. wbc > 4,000; neutrophils predominate///C. wbc < 4,000; lymphocytes predominate///D. wbc < 4,000; neutrophils predominate///E. wbc is normal, lymphocyte count > 4,000",
-            "answer": "C. wbc < 4,000; lymphocytes predominate",
-            "select": "",
-            "explain": "Relative lymphocytosis คือภาวะที่สัดส่วน (percentage) ของ lymphocyte สูงกว่าปกติ แต่จำนวน lymphocyte ทั้งหมด (absolute lymphocyte count) อาจจะปกติหรือต่ำกว่าปกติก็ได้ ภาวะนี้มักเกิดขึ้นเมื่อจำนวนเม็ดเลือดขาวชนิดอื่น โดยเฉพาะ Neutrophil ลดลง (neutropenia) ทำให้เปอร์เซ็นต์ของ lymphocyte ดูสูงขึ้นเมื่อเทียบกับเม็ดเลือดขาวทั้งหมด ซึ่งมักจะพบในภาวะที่เม็ดเลือดขาวรวมต่ำ (WBC < 4,000) จากภาวะ neutropenia",
-            "state": false
-        },
-        {
-            "problem": "46) What is the mechanism of endothelin-1 in hemostasis?",
-            "img": "",
-            "choices": "A. Vasoconstriction///B. Platelet adhesion///C. Platelet aggregation///D. Fibrinolysis///E. Anticoagulation",
-            "answer": "A. Vasoconstriction",
-            "select": "",
-            "explain": "Endothelin-1 เป็นสารที่หลั่งออกมาจากเซลล์เยื่อบุหลอดเลือด (endothelial cells) เมื่อเกิดการบาดเจ็บ มันเป็นสารที่ทำให้หลอดเลือดหดตัว (vasoconstrictor) ที่รุนแรงที่สุดตัวหนึ่งในร่างกาย การหดตัวของหลอดเลือดเป็นกลไกแรกสุดในกระบวนการห้ามเลือด (hemostasis) เพื่อลดปริมาณเลือดที่ไหลออกจากบาดแผล",
-            "state": false
-        },
-        {
-            "problem": "47) Mechanism of platelet adhesion?",
-            "img": "",
-            "choices": "A. vWF binds to subendothelial layer///B. Gp2b/3a binds to fibrinogen///C. Change to be pseudopods///D. Gp1b binds to Ca2+///E. Thromboxane A2 release",
-            "answer": "A. vWF binds to subendothelial layer",
-            "select": "",
-            "explain": "Platelet adhesion เป็นขั้นตอนแรกของการสร้าง platelet plug เมื่อหลอดเลือดบาดเจ็บ เนื้อเยื่อใต้ endothelium ที่มีคอลลาเจนจะถูกเปิดออก von Willebrand factor (vWF) ซึ่งเป็นโปรตีนในพลาสมาจะเข้ามาจับกับคอลลาเจนนี้ จากนั้น vWF จะทำหน้าที่เป็นสะพานเชื่อมให้เกล็ดเลือด (platelet) ผ่านทางตัวรับ Glycoprotein Ib (GpIb) บนผิวของมัน เข้ามาเกาะติดกับผนังหลอดเลือดบริเวณที่บาดเจ็บ",
-            "state": false
-        },
-        {
-            "problem": "49) Which factor initiates extrinsic pathway cascade?",
-            "img": "",
-            "choices": "A. Factor III///B. Factor V and Ca2+///C. Factor Xa///D. Contact of Factor XII///E. HMWK",
-            "answer": "A. Factor III",
-            "select": "",
-            "explain": "Extrinsic pathway ของกระบวนการแข็งตัวของเลือดเริ่มต้นเมื่อเกิดการบาดเจ็บของหลอดเลือด ทำให้เนื้อเยื่อที่อยู่ภายนอกหลอดเลือดปล่อยสารที่เรียกว่า Tissue Factor (TF) หรือ Factor III ออกมา Tissue Factor นี้จะเข้าไปจับกับ Factor VIIa ที่มีอยู่ในเลือด กลายเป็น complex (TF-VIIa) ที่สามารถกระตุ้น Factor X ให้เป็น Factor Xa ได้โดยตรง ซึ่งเป็นจุดเริ่มต้นของ common pathway ต่อไป",
-            "state": false
-        },
-        {
-            "problem": "51) Anticoagulant ใดที่ส่งผลต่อ extrinsic pathway?",
-            "img": "",
-            "choices": "A. TFPI///B. AT III///C. Heparin///D. Thrombin///E. Thrombomodulin",
-            "answer": "A. TFPI",
-            "select": "",
-            "explain": "Tissue Factor Pathway Inhibitor (TFPI) เป็นสารยับยั้งการแข็งตัวของเลือดตามธรรมชาติ (natural anticoagulant) ที่ออกฤทธิ์โดยตรงต่อ extrinsic pathway โดย TFPI จะเข้าไปจับและยับยั้งการทำงานของ complex ระหว่าง Tissue Factor (Factor III) กับ Factor VIIa (TF-VIIa complex) ทำให้ไม่สามารถไปกระตุ้น Factor X ได้ เป็นการยับยั้งขั้นตอนเริ่มต้นของ extrinsic pathway",
-            "state": false
-        },
-        {
-            "problem": "52) 60 years old man มาด้วย chest pain with coronary obstruction อะไรดีต่อ fibrinolysis cascade?",
-            "img": "",
-            "choices": "A. Alpha-2 antiplasmin///B. thrombomodulin-thrombin///C. factor X///D. tissue plasminogen inhibitor///E. fibrin",
-            "answer": "D. tissue plasminogen inhibitor",
-            "select": "",
-            "explain": "ผู้ป่วยมีภาวะหลอดเลือดหัวใจอุดตัน (coronary obstruction) ซึ่งเกิดจากลิ่มเลือด (thrombus) การรักษาคือการสลายลิ่มเลือดนี้ผ่านกระบวนการ Fibrinolysis cascade สารที่มีบทบาทสำคัญในการกระตุ้นกระบวนการนี้คือ tissue plasminogen activator (tPA) หรือ tissue plasminogen inhibitor ในตัวเลือก ซึ่ง tPA จะทำหน้าที่เปลี่ยน plasminogen ให้เป็น plasmin เอนไซม์ plasmin นี้จะไปย่อยสลาย Fibrin ซึ่งเป็นโครงสร้างหลักของลิ่มเลือด ทำให้ลิ่มเลือดสลายไป",
+                        "problem": "39) ผล CBC ของผู้ป่วยรายหนึ่งพบ: WBC 54,000 /uL, PMN 55%, Lymphocyte 35%, Monocyte 6%, Eosinophil 4%. ตรวจสเมียร์เลือดพบ NRBC 170 / 100 WBC. กรุณาคำนวณค่า Absolute Neutrophil Count (ANC) ของผู้ป่วยรายนี้",
+                        "img": "",
+                        "choices": "11,000/mm^3///18,900/mm^3///20,000/mm^3///29,700/mm^3///32,400/mm^3",
+                        "answer": "A. 11,000/mm^3",
+                        "select": "",
+                        "explain": "เนื่องจากพบ NRBC จำนวนมาก (170 NRBC per 100 WBC) ค่า WBC ที่ได้จากเครื่องจะสูงกว่าความเป็นจริง (falsely elevated) เพราะเครื่องนับ NRBC รวมเป็น WBC ด้วย จึงต้องคำนวณหา Corrected WBC ก่อน\n\n**Step 1: คำนวณ Corrected WBC**\nสูตร: Corrected WBC = Uncorrected WBC x [100 / (100 + จำนวน NRBC)]\nCorrected WBC = 54,000 x [100 / (100 + 170)]\nCorrected WBC = 54,000 x (100 / 270)\nCorrected WBC = 20,000 /uL\n\n**Step 2: คำนวณ ANC จาก Corrected WBC**\nสูตร: ANC = Corrected WBC x (% Neutrophils / 100)\nANC = 20,000 x (55 / 100)\nANC = 11,000 /uL (หรือ /mm^3)\n\nดังนั้นค่า ANC ที่แท้จริงของผู้ป่วยคือ 11,000 /mm^3",
+                        "state": false
+                    },
+                    {
+                        "problem": "40) male patient Hb 7.5 Hct 15% reticulocyte 10% .Which one is correct?",
+                        "img": "",
+                        "choices": "A. Corrected reticulocyte 6.5%///B. Reticulocyte Index = 2.5///C. Anemia in this patient caused by hemolysis///D. Bone marrow response is normal///E. Production more than normal 3 เท่า",
+                        "answer": "C. Anemia in this patient caused by hemolysis",
+                        "select": "",
+                        "explain": "ผู้ป่วยมีภาวะโลหิตจางรุนแรง (Hb 7.5, Hct 15%) และมีค่า reticulocyte count สูงถึง 10% การมี reticulocyte count ที่สูงมาก (reticulocytosis) ในภาวะโลหิตจางเป็นสัญญาณบ่งบอกว่าไขกระดูกกำลังตอบสนองอย่างเต็มที่เพื่อชดเชยการสูญเสียเม็ดเลือดแดง ซึ่งสาเหตุหลักของการสูญเสียเม็ดเลือดแดงที่กระตุ้นการตอบสนองเช่นนี้คือภาวะเม็ดเลือดแดงแตก (hemolysis) หรือการเสียเลือดอย่างเฉียบพลัน (acute blood loss) ดังนั้นข้อสรุปที่เป็นไปได้มากที่สุดจากข้อมูลนี้คือผู้ป่วยมีภาวะโลหิตจางจาก hemolysis",
+                        "state": false
+                    },
+                    {
+                        "problem": "42) A 65-year-old woman with type 2 diabetes mellitus admitted at ICU with pneumonia. Sputum culture : Streptococcus pneumoniae CBC : Hb 9 g/dL, Hct 27%, WBC 24,300/dL, Platelet 85,000 dL Which of the following is the most likely finding of WBC in this patient?",
+                        "img": "",
+                        "choices": "A. Neutrophilia///B. Lymphocytosis///C. Atypical lymphocyte///D. Hypersegmented neutrophils///E. Pseudo-Pelger-Huet anomaly",
+                        "answer": "A. Neutrophilia",
+                        "select": "",
+                        "explain": "ผู้ป่วยมีการติดเชื้อแบคทีเรียที่ปอด (pneumonia) ซึ่งเกิดจากเชื้อ Streptococcus pneumoniae การติดเชื้อแบคทีเรียเฉียบพลันจะกระตุ้นให้ไขกระดูกปล่อยเม็ดเลือดขาวชนิด Neutrophil ออกมาในกระแสเลือดจำนวนมากเพื่อต่อสู้กับเชื้อโรค ทำให้ค่าเม็ดเลือดขาวรวม (WBC) สูงขึ้น โดยมีสัดส่วนของ Neutrophil เพิ่มขึ้นเป็นหลัก ภาวะนี้เรียกว่า Neutrophilia หรือ neutrophilic leukocytosis ซึ่งตรงกับผล CBC ที่ WBC สูงถึง 24,300/dL",
+                        "state": false
+                    },
+                    {
+                        "problem": "43) 49 year old came with fever, no hepatosplenomegaly, no lymphadenopathy, เป็น Large B-cell lymphoma stage II, history of chemotherapy 12 days CBC : Hb 7g/dL WBC : 1900 cell/uL Platelet : 69000 cell/uL",
+                        "img": "",
+                        "choices": "A. Eosinophilia///B. Basophilia///C. Neutropenia///D. Lymphocytosis///E. Atypical lymphocyte",
+                        "answer": "C. Neutropenia",
+                        "select": "",
+                        "explain": "ผู้ป่วยได้รับเคมีบำบัด (chemotherapy) ซึ่งยาเคมีบำบัดมีผลข้างเคียงที่สำคัญคือการกดไขกระดูก (myelosuppression) ทำให้การสร้างเซลล์เม็ดเลือดทุกชนิดลดลง โดยเฉพาะ Neutrophil ซึ่งมีอายุขัยสั้นจะได้รับผลกระทบเร็วที่สุด ภาวะที่จำนวน Neutrophil ในเลือดต่ำกว่าปกติเรียกว่า Neutropenia ซึ่งจะทำให้ค่าเม็ดเลือดขาวรวม (WBC) ต่ำลงไปด้วย (leukopenia) ดังที่พบในผล CBC ของผู้ป่วย (WBC 1,900) ภาวะนี้ทำให้ผู้ป่วยมีความเสี่ยงสูงต่อการติดเชื้อและอาจเป็นสาเหตุของไข้ได้",
+                        "state": false
+                    },
+                    {
+                        "problem": "44) Which of the following is defined as relative lymphocytosis?",
+                        "img": "",
+                        "choices": "A. wbc > 4,000; lymphocytes predominate///B. wbc > 4,000; neutrophils predominate///C. wbc < 4,000; lymphocytes predominate///D. wbc < 4,000; neutrophils predominate///E. wbc is normal, lymphocyte count > 4,000",
+                        "answer": "C. wbc < 4,000; lymphocytes predominate",
+                        "select": "",
+                        "explain": "Relative lymphocytosis คือภาวะที่สัดส่วน (percentage) ของ lymphocyte สูงกว่าปกติ แต่จำนวน lymphocyte ทั้งหมด (absolute lymphocyte count) อาจจะปกติหรือต่ำกว่าปกติก็ได้ ภาวะนี้มักเกิดขึ้นเมื่อจำนวนเม็ดเลือดขาวชนิดอื่น โดยเฉพาะ Neutrophil ลดลง (neutropenia) ทำให้เปอร์เซ็นต์ของ lymphocyte ดูสูงขึ้นเมื่อเทียบกับเม็ดเลือดขาวทั้งหมด ซึ่งมักจะพบในภาวะที่เม็ดเลือดขาวรวมต่ำ (WBC < 4,000) จากภาวะ neutropenia",
+                        "state": false
+                    },
+                    {
+                        "problem": "46) What is the mechanism of endothelin-1 in hemostasis?",
+                        "img": "",
+                        "choices": "A. Vasoconstriction///B. Platelet adhesion///C. Platelet aggregation///D. Fibrinolysis///E. Anticoagulation",
+                        "answer": "A. Vasoconstriction",
+                        "select": "",
+                        "explain": "Endothelin-1 เป็นสารที่หลั่งออกมาจากเซลล์เยื่อบุหลอดเลือด (endothelial cells) เมื่อเกิดการบาดเจ็บ มันเป็นสารที่ทำให้หลอดเลือดหดตัว (vasoconstrictor) ที่รุนแรงที่สุดตัวหนึ่งในร่างกาย การหดตัวของหลอดเลือดเป็นกลไกแรกสุดในกระบวนการห้ามเลือด (hemostasis) เพื่อลดปริมาณเลือดที่ไหลออกจากบาดแผล",
+                        "state": false
+                    },
+                    {
+                        "problem": "47) Mechanism of platelet adhesion?",
+                        "img": "",
+                        "choices": "A. vWF binds to subendothelial layer///B. Gp2b/3a binds to fibrinogen///C. Change to be pseudopods///D. Gp1b binds to Ca2+///E. Thromboxane A2 release",
+                        "answer": "A. vWF binds to subendothelial layer",
+                        "select": "",
+                        "explain": "Platelet adhesion เป็นขั้นตอนแรกของการสร้าง platelet plug เมื่อหลอดเลือดบาดเจ็บ เนื้อเยื่อใต้ endothelium ที่มีคอลลาเจนจะถูกเปิดออก von Willebrand factor (vWF) ซึ่งเป็นโปรตีนในพลาสมาจะเข้ามาจับกับคอลลาเจนนี้ จากนั้น vWF จะทำหน้าที่เป็นสะพานเชื่อมให้เกล็ดเลือด (platelet) ผ่านทางตัวรับ Glycoprotein Ib (GpIb) บนผิวของมัน เข้ามาเกาะติดกับผนังหลอดเลือดบริเวณที่บาดเจ็บ",
+                        "state": false
+                    },
+                    {
+                        "problem": "49) Which factor initiates extrinsic pathway cascade?",
+                        "img": "",
+                        "choices": "A. Factor III///B. Factor V and Ca2+///C. Factor Xa///D. Contact of Factor XII///E. HMWK",
+                        "answer": "A. Factor III",
+                        "select": "",
+                        "explain": "Extrinsic pathway ของกระบวนการแข็งตัวของเลือดเริ่มต้นเมื่อเกิดการบาดเจ็บของหลอดเลือด ทำให้เนื้อเยื่อที่อยู่ภายนอกหลอดเลือดปล่อยสารที่เรียกว่า Tissue Factor (TF) หรือ Factor III ออกมา Tissue Factor นี้จะเข้าไปจับกับ Factor VIIa ที่มีอยู่ในเลือด กลายเป็น complex (TF-VIIa) ที่สามารถกระตุ้น Factor X ให้เป็น Factor Xa ได้โดยตรง ซึ่งเป็นจุดเริ่มต้นของ common pathway ต่อไป",
+                        "state": false
+                    },
+                    {
+                        "problem": "51) Anticoagulant ใดที่ส่งผลต่อ extrinsic pathway?",
+                        "img": "",
+                        "choices": "A. TFPI///B. AT III///C. Heparin///D. Thrombin///E. Thrombomodulin",
+                        "answer": "A. TFPI",
+                        "select": "",
+                        "explain": "Tissue Factor Pathway Inhibitor (TFPI) เป็นสารยับยั้งการแข็งตัวของเลือดตามธรรมชาติ (natural anticoagulant) ที่ออกฤทธิ์โดยตรงต่อ extrinsic pathway โดย TFPI จะเข้าไปจับและยับยั้งการทำงานของ complex ระหว่าง Tissue Factor (Factor III) กับ Factor VIIa (TF-VIIa complex) ทำให้ไม่สามารถไปกระตุ้น Factor X ได้ เป็นการยับยั้งขั้นตอนเริ่มต้นของ extrinsic pathway",
+                        "state": false
+                    },
+                    {
+                        "problem": "52) ชายอายุ 60 ปี มาด้วยอาการเจ็บแน่นหน้าอก ได้รับการวินิจฉัยว่ามีภาวะหลอดเลือดหัวใจอุดตัน (coronary obstruction) สารในข้อใดต่อไปนี้มีบทบาทสำคัญในการกระตุ้นกระบวนการสลายลิ่มเลือด (Fibrinolysis)?",
+                        "img": "",
+                        "choices": "Alpha-2 antiplasmin///Thrombomodulin-thrombin complex///Factor Xa///Tissue plasminogen activator (tPA)///Fibrin",
+                        "answer": "Tissue plasminogen activator (tPA)",
+                        "select": "",
+            "explain": "ผู้ป่วยมีภาวะหลอดเลือดหัวใจอุดตัน ซึ่งมักเกิดจากลิ่มเลือด (thrombus) ที่มี Fibrin เป็นองค์ประกอบหลัก การสลายลิ่มเลือด (Fibrinolysis) เป็นกระบวนการสำคัญที่เกิดขึ้นในร่างกายเพื่อสลายลิ่มเลือดนี้ สารที่ทำหน้าที่เป็น 'ตัวกระตุ้นหลัก' (key activator) ของกระบวนการนี้คือ **Tissue plasminogen activator (tPA)** โดย tPA จะเปลี่ยน Plasminogen ที่อยู่ในกระแสเลือดให้กลายเป็น **Plasmin** ซึ่งเป็นเอนไซม์ที่แอคทีฟและมีฤทธิ์ย่อยสลาย Fibrin โดยตรง ทำให้ลิ่มเลือดสลายไปและเปิดหลอดเลือดอีกครั้ง ยาละลายลิ่มเลือดกลุ่ม Fibrinolytic drug (เช่น Alteplase, Tenecteplase) ก็เป็นการสังเคราะห์ tPA ขึ้นมาเพื่อใช้ในการรักษาภาวะนี้",
             "state": false
         },
         {
@@ -5927,12 +6406,12 @@ var quizdata = {
             "state": false
         },
         {
-            "problem": "60) A patient's peripheral blood smear shows a cell with the morphology seen in the image (a blast cell containing an Auer rod). What is the diagnosis?",
-            "img": "https://drive.google.com/open?id=1EW__ULcMhA5iwcaw8xD_KXp-z99Xi-kj&usp=drive_copy",
-            "choices": "A. Polycythemia vera///B. Myelodysplastic syndrome///C. Acute Myeloid Leukemia (AML)///D. Primary myelofibrosis///E. Chronic Myeloid Leukemia (CML)",
-            "answer": "C. Acute Myeloid Leukemia (AML)",
-            "select": "",
-            "explain": "ภาพแสดงเซลล์ตัวอ่อน (blast cell) ที่มีลักษณะของแท่งสีชมพูแดงอยู่ในไซโทพลาสซึม เรียกว่า Auer rod ซึ่งเป็นลักษณะจำเพาะ (pathognomonic) ที่พบได้ในเซลล์ตัวอ่อนของสาย myeloid และใช้ในการวินิจฉัยโรคมะเร็งเม็ดเลือดขาวชนิดเฉียบพลันมัยอิลอยด์ (Acute Myeloid Leukemia, AML)",
+                        "problem": "60) A patient's peripheral blood smear shows a cell with the morphology seen in the image. What is the diagnosis?",
+                        "img": "https://drive.google.com/open?id=1EW__ULcMhA5iwcaw8xD_KXp-z99Xi-kj&usp=drive_copy",
+                        "choices": "A. Polycythemia vera///B. Myelodysplastic syndrome///C. Acute Myeloid Leukemia (AML)///D. Primary myelofibrosis///E. Chronic Myeloid Leukemia (CML)",
+                        "answer": "B. Myelodysplastic syndrome",
+                        "select": "",
+            "explain": "ภาพแสดงเซลล์เม็ดเลือดขาวชนิดนิวโทรฟิลที่มีลักษณะนิวเคลียสผิดปกติ (dysplastic neutrophil) คือมี Pelger-Huët anomaly ซึ่งนิวเคลียสมีลักษณะเป็น 2 แฉกคล้ายรูปแว่นตา (hyposegmented neutrophil) และมีไซโทพลาสซึมที่มีลักษณะเป็นเม็ดหยาบ (hypogranular neutrophil) ลักษณะเหล่านี้เป็นลักษณะเฉพาะของโรค Myelodysplastic Syndrome (MDS) ซึ่งเป็นกลุ่มโรคที่เกิดจากความผิดปกติในการสร้างเม็ดเลือดในไขกระดูก",
             "state": false
         },
         {

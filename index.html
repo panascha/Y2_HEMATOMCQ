@@ -11,6 +11,9 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/th-sarabun-new-4" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <!-- jsPDF and Thai Font for PDF Export -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -55,6 +58,8 @@
     /* --- Base & Body Styles --- */
     html {
         font-size: 16px;
+        scroll-behavior: smooth;
+        /* Added for smoother scrolling */
     }
 
     body {
@@ -470,6 +475,47 @@
         text-decoration: underline;
     }
 
+    /* --- [เพิ่มใหม่] Floating Action Buttons --- */
+    .fab-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fab {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: white;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .fab:hover {
+        background-color: var(--color-primary-hover);
+        transform: scale(1.05);
+    }
+
+    #scroll-to-quiz-btn {
+        background-color: var(--color-dark);
+    }
+
+    #scroll-to-quiz-btn:hover {
+        background-color: var(--color-dark-hover);
+    }
+
+
     /* --- Responsive Adjustments --- */
     @media (max-width: 768px) {
         body {
@@ -550,14 +596,17 @@
         <div class="checkbox-container">
             <div><input type="checkbox" id="hbtyping" name="hbtyping" value="hbtyping"><label for="hbtyping">Hb Typing
                     Practice</label></div>
-            <div><input type="checkbox" id="hl52fmt" name="hl52fmt" value="hl52fmt"><label for="hl52fmt">HL52FMT</label></div>
+            <div><input type="checkbox" id="hl52fmt" name="hl52fmt" value="hl52fmt"><label for="hl52fmt">HL52FMT</label>
+            </div>
             <div><input type="checkbox" id="hl51mcq1" name="hl51mcq1" value="hl51mcq1"><label for="hl51mcq1">HL51MCQ1</label></div>
             <div><input type="checkbox" id="hl51mcq2" name="hl51mcq2" value="hl51mcq2"><label for="hl51mcq2">HL51MCQ2</label></div>
-            <div><input type="checkbox" id="hl51lab" name="hl51lab" value="hl51lab"><label for="hl51lab">HL51LAB</label></div>
+            <div><input type="checkbox" id="hl51lab" name="hl51lab" value="hl51lab"><label for="hl51lab">HL51LAB</label>
+            </div>
             <div><input type="checkbox" id="hl50mcq1" name="hl50mcq1" value="hl50mcq1"><label for="hl50mcq1">HL50MCQ1</label></div>
             <div><input type="checkbox" id="hl50mcq2" name="hl50mcq2" value="hl50mcq2"><label for="hl50mcq2">HL50MCQ2</label></div>
             <div><input type="checkbox" id="hl50quiz" name="hl50quiz" value="hl50quiz"><label for="hl50quiz">HL50QUIZ</label></div>
-            <div><input type="checkbox" id="hl50tbl" name="hl50tbl" value="hl50tbl"><label for="hl50tbl">HL50TBL</label></div>
+            <div><input type="checkbox" id="hl50tbl" name="hl50tbl" value="hl50tbl"><label for="hl50tbl">HL50TBL</label>
+            </div>
             <div><input type="checkbox" id="hl49mcq1" name="hl49mcq1" value="hl49mcq1"><label for="hl49mcq1">HL49MCQ1</label></div>
             <div><input type="checkbox" id="hl49mcq2" name="hl49mcq2" value="hl49mcq2"><label for="hl49mcq2">HL49MCQ2</label></div>
             <div><input type="checkbox" id="hl48mcq1" name="hl48mcq1" value="hl48mcq1"><label for="hl48mcq1">HL48MCQ1</label></div>
@@ -634,6 +683,16 @@
                 <!-- Search results will be displayed here as a table -->
             </div>
         </section>
+    </div>
+
+    <!-- [เพิ่มใหม่] Floating Action Buttons -->
+    <div class="fab-container">
+        <button id="scroll-to-search-btn" class="fab" title="เลื่อนไปส่วนค้นหา">
+            <i class="fas fa-search"></i>
+        </button>
+        <button id="scroll-to-quiz-btn" class="fab" title="เลื่อนไปส่วนคำถาม">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </div>
 
     <script>
@@ -6479,12 +6538,12 @@
                         "state": false
                     },
                     {
-                        "problem": "39) patient's CBCshows WBC 54,000 /uL, PMN 55%, Lymphocyte 35% ,monocyte 6%, eosinophil 4%. NRC 170/ 100 WBC . Please calculate patien’ANC",
+                        "problem": "39) ผล CBC ของผู้ป่วยรายหนึ่งพบ: WBC 54,000 /uL, PMN 55%, Lymphocyte 35%, Monocyte 6%, Eosinophil 4%. ตรวจสเมียร์เลือดพบ NRBC 170 / 100 WBC. กรุณาคำนวณค่า Absolute Neutrophil Count (ANC) ของผู้ป่วยรายนี้",
                         "img": "",
-                        "choices": "A. 11,000/mm^3///B. 18,900/mm^3///C. 20,000/mm^3///D. 29,700/mm^3///E. 32,400/mm^3",
-                        "answer": "D. 29,700/mm^3",
+                        "choices": "11,000/mm^3///18,900/mm^3///20,000/mm^3///29,700/mm^3///32,400/mm^3",
+                        "answer": "A. 11,000/mm^3",
                         "select": "",
-                        "explain": "Absolute Neutrophil Count (ANC) คือจำนวนของเซลล์ Neutrophil ทั้งหมดในเลือด คำนวณได้จากสูตร: ANC = Total WBC count × (% Neutrophils) โดย Neutrophils ในที่นี้หมายถึงเซลล์ในระยะ ώριμη ทั้งหมด (segmented neutrophil หรือ PMN) จากโจทย์ Total WBC = 54,000 /uL และ %PMN = 55% ดังนั้น ANC = 54,000 × (55 / 100) = 29,700 /mm^3 (หรือ /uL)",
+                        "explain": "เนื่องจากพบ NRBC จำนวนมาก (170 NRBC per 100 WBC) ค่า WBC ที่ได้จากเครื่องจะสูงกว่าความเป็นจริง (falsely elevated) เพราะเครื่องนับ NRBC รวมเป็น WBC ด้วย จึงต้องคำนวณหา Corrected WBC ก่อน\n\n**Step 1: คำนวณ Corrected WBC**\nสูตร: Corrected WBC = Uncorrected WBC x [100 / (100 + จำนวน NRBC)]\nCorrected WBC = 54,000 x [100 / (100 + 170)]\nCorrected WBC = 54,000 x (100 / 270)\nCorrected WBC = 20,000 /uL\n\n**Step 2: คำนวณ ANC จาก Corrected WBC**\nสูตร: ANC = Corrected WBC x (% Neutrophils / 100)\nANC = 20,000 x (55 / 100)\nANC = 11,000 /uL (หรือ /mm^3)\n\nดังนั้นค่า ANC ที่แท้จริงของผู้ป่วยคือ 11,000 /mm^3",
                         "state": false
                     },
                     {
@@ -6560,7 +6619,7 @@
                         "state": false
                     },
                     {
-                        "problem": "ชายอายุ 60 ปี มาด้วยอาการเจ็บแน่นหน้าอก ได้รับการวินิจฉัยว่ามีภาวะหลอดเลือดหัวใจอุดตัน (coronary obstruction) สารในข้อใดต่อไปนี้มีบทบาทสำคัญในการกระตุ้นกระบวนการสลายลิ่มเลือด (Fibrinolysis)?",
+                        "problem": "52) ชายอายุ 60 ปี มาด้วยอาการเจ็บแน่นหน้าอก ได้รับการวินิจฉัยว่ามีภาวะหลอดเลือดหัวใจอุดตัน (coronary obstruction) สารในข้อใดต่อไปนี้มีบทบาทสำคัญในการกระตุ้นกระบวนการสลายลิ่มเลือด (Fibrinolysis)?",
                         "img": "",
                         "choices": "Alpha-2 antiplasmin///Thrombomodulin-thrombin complex///Factor Xa///Tissue plasminogen activator (tPA)///Fibrin",
                         "answer": "Tissue plasminogen activator (tPA)",
@@ -7909,7 +7968,6 @@
                 ]
             };
 
-
             // --- CACHED JQUERY SELECTORS ---
             const $question = $('#question');
             const $choices = $('#choices');
@@ -8470,6 +8528,20 @@
                     $(document.activeElement).trigger('click');
                 }
             });
+
+            // --- [เพิ่มใหม่] Floating Action Button Logic ---
+            $('#scroll-to-search-btn').on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $("#search-section").offset().top
+                }, 800); // 800ms scroll speed
+            });
+
+            $('#scroll-to-quiz-btn').on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $("#quiz-container").offset().top
+                }, 800); // 800ms scroll speed
+            });
+            
 
             // --- INITIALIZATION ---
             updateQuestionSet();
