@@ -8452,13 +8452,14 @@
                 // --- 9. SAVE THE DOCUMENT ---
                 doc.save('MDKKU-Quiz-Questions.pdf');
             }
-            function saveReportToGoogleSheet(from, topic, question, report) {
-                const url = "https://script.google.com/macros/s/AKfycbxe7wqLsPP6W9dM5RZAj9qs37Rp3mlHC-1eNywEnAQGgNqCtnL77t5xpSWgjq4Wcdh3/exec";
+            function saveReportToGoogleSheet(from, topic, question, report, time) {
+                const url = "https://script.google.com/macros/s/AKfycbz355W5ND5AWjuK74vccfU4eeQpIU9z5d9VLZCvn51ERz5lRRbncUCPQ16gXcW4LYzp/exec";
                 const data = {
                     from: from,
                     topic: topic.join(", "),
                     question: question,
-                    report: report
+                    report: report,
+                    time: time
                 };
 
                 fetch(url, {
@@ -8517,7 +8518,7 @@
                 const reportTextValue = $reportText.val();
 
                 if (reportTextValue) {
-                    saveReportToGoogleSheet("hematomcq", topic, $question.text(), reportTextValue);
+                    saveReportToGoogleSheet("hematomcq", topic, $question.text(), reportTextValue, new Date().toLocaleString("en-US", { timeZone: "Asia/Bangkok" }));
                     $reportCard.fadeOut();
                     alert("ขอบคุณสำหรับรายงานครับ!");
                 } else {
