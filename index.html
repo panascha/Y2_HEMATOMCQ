@@ -9382,8 +9382,10 @@
                         // If Clipboard API is not available, use a fallback
                         const textarea = document.createElement('textarea');
                         textarea.value = code;
-                        textarea.style.position = 'fixed';  // Avoid scrolling to bottom of page in MS Edge.
+                        textarea.style.position = 'fixed';
                         document.body.appendChild(textarea);
+
+                        // Ensure the textarea is focused and selected
                         textarea.focus();
                         textarea.select();
 
@@ -9395,12 +9397,12 @@
                             } else {
                                 alert('คัดลอก Code สำเร็จ!');
                             }
-                        } catch (err) {
+                        } catch (copyErr) {
                             alert('ไม่สามารถคัดลอกได้');
-                            console.error('Fallback: Could not copy text: ', err);
+                            console.error('Fallback: Could not copy text: ', copyErr);
+                        } finally {
+                            document.body.removeChild(textarea);
                         }
-
-                        document.body.removeChild(textarea);
                     });
                 } catch (err) {
                     console.error('Could not copy text: ', err);
