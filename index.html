@@ -662,6 +662,7 @@
                 <div class="modal-section">
                     <h6>ส่งออกความคืบหน้าปัจจุบัน</h6>
                     <p class="small-text" style="margin-bottom: 1rem;">บันทึกคำตอบและลำดับคำถามปัจจุบัน</p>
+                                    <div id="feedback-save" class="small-text" style="margin-top: 10px;"></div>
                     <div class="controls-container">
                         <button id="modal-export-txt-btn" class="quiz-button btn-export">Export to TXT</button>
                         <button id="modal-export-copy-btn" class="quiz-button btn-export">Copy Code</button>
@@ -8738,6 +8739,7 @@
             };
 
             // --- CACHED JQUERY SELECTORS ---
+            const $feedbackSave = $('#feedback-save');
             const $question = $('#question');
             const $choices = $('#choices');
             const $feedback = $('#feedback');
@@ -9341,9 +9343,9 @@
                 if (reportTextValue) {
                     saveReportToGoogleSheet("hematomcq", topic, $question.text(), reportTextValue, new Date().toLocaleString("en-US", { timeZone: "Asia/Bangkok" }));
                     $reportCard.fadeOut();
-                    alert("ขอบคุณสำหรับรายงานครับ!");
+                    $feedbackSave.text("ขอบคุณสำหรับรายงานครับ!").show().fadeOut(2000);
                 } else {
-                    alert("กรุณาใส่รายละเอียดของปัญหา");
+                    $feedbackSave.text("กรุณาใส่รายละเอียดของปัญหา").show().fadeOut(2000);
                 }
             });
             $('#cancel-report').on('click', () => $reportCard.fadeOut());
@@ -9369,7 +9371,7 @@
                 a.click();
                 document.body.removeChild(a);
                 URL.revokeObjectURL(url);
-                alert('ไฟล์ .txt ได้ถูกดาวน์โหลดแล้ว');
+                $feedbackSave.text('ไฟล์ .txt ได้ถูกดาวน์โหลดแล้ว').show().fadeOut(2000);
             });
 
             $('#modal-export-copy-btn').on('click', function () {
@@ -9377,7 +9379,7 @@
                 if (!code) return;
                 try {
                     navigator.clipboard.writeText(code).then(() => {
-                        alert('คัดลอก Code สำเร็จ!');
+                        $feedbackSave.text('คัดลอก Code สำเร็จ!').show().fadeOut(2000);
                     }, (err) => {
                         // If Clipboard API is not available, use a fallback
                         const textarea = document.createElement('textarea');
@@ -9393,12 +9395,12 @@
                             const successful = document.execCommand('copy');
                             const msg = successful ? 'successful' : 'unsuccessful';
                             if (!successful) {
-                                alert('การคัดลอกอัตโนมัติไม่สำเร็จ โปรดคัดลอกด้วยตนเอง');
+                                $feedbackSave.text('ไม่สามารถคัดลอก Code ได้! โปรดลองอีกครั้ง').show().fadeOut(2000);
                             } else {
-                                alert('คัดลอก Code สำเร็จ!');
+                                $feedbackSave.text('คัดลอก Code สำเร็จ!').show().fadeOut(2000);
                             }
                         } catch (copyErr) {
-                            alert('ไม่สามารถคัดลอกได้');
+                            $feedbackSave.text('ไม่สามารถคัดลอกได้').show().fadeOut(2000);
                             console.error('Fallback: Could not copy text: ', copyErr);
                         } finally {
                             document.body.removeChild(textarea);
@@ -9406,7 +9408,7 @@
                     });
                 } catch (err) {
                     console.error('Could not copy text: ', err);
-                    alert('การคัดลอกอัตโนมัติไม่สำเร็จ โปรดคัดลอกด้วยตนเอง');
+                    $feedbackSave.text('การคัดลอกอัตโนมัติไม่สำเร็จ โปรดคัดลอกด้วยตนเอง').show().fadeOut(2000);
                 }
             });
 
