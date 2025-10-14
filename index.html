@@ -9375,13 +9375,40 @@
             $('#modal-export-copy-btn').on('click', function () {
                 const code = generateExportCode();
                 if (!code) return;
-                navigator.clipboard.writeText(code).then(() => {
-                    alert('คัดลอก Code สำเร็จ!');
-                }, (err) => {
-                    alert('ไม่สามารถคัดลอกได้');
+                try {
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('คัดลอก Code สำเร็จ!');
+                    }, (err) => {
+                        // If Clipboard API is not available, use a fallback
+                        const textarea = document.createElement('textarea');
+                        textarea.value = code;
+                        textarea.style.position = 'fixed';  // Avoid scrolling to bottom of page in MS Edge.
+                        document.body.appendChild(textarea);
+                        textarea.focus();
+                        textarea.select();
+
+                        try {
+                            const successful = document.execCommand('copy');
+                            const msg = successful ? 'successful' : 'unsuccessful';
+                            if (!successful) {
+                                alert('การคัดลอกอัตโนมัติไม่สำเร็จ โปรดคัดลอกด้วยตนเอง');
+                            } else {
+                                alert('คัดลอก Code สำเร็จ!');
+                            }
+                        } catch (err) {
+                            alert('ไม่สามารถคัดลอกได้');
+                            console.error('Fallback: Could not copy text: ', err);
+                        }
+
+                        document.body.removeChild(textarea);
+                    });
+                } catch (err) {
                     console.error('Could not copy text: ', err);
-                });
+                    alert('การคัดลอกอัตโนมัติไม่สำเร็จ โปรดคัดลอกด้วยตนเอง');
+                }
             });
+
+
 
             $('#modal-import-btn').on('click', function () {
                 const code = $('#modal-import-code').val().trim();
