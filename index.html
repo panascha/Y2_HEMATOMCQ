@@ -8828,9 +8828,15 @@
 
                 // Try to find the previous question index in the new set
                 const previousQuestionId = previouslySelected[questionIndex];
-                const newIndex = currentQuestions.findIndex(q => q.uniqueId === previousQuestionId);
 
-                questionIndex = newIndex !== -1 ? newIndex : 0;
+                // Set questionIndex to 0 when a new topic is selected
+                if (previouslySelected.length === 0 && currentQuestions.length > 0) {
+                    questionIndex = 0;
+                } else {
+                    const newIndex = currentQuestions.findIndex(q => q.uniqueId === previousQuestionId);
+                    //questionIndex = newIndex !== -1 ? newIndex : 0;
+                    questionIndex = 0;
+                }
 
                 if (currentQuestions.length > 0) {
                     showQuestion();
@@ -8841,6 +8847,7 @@
                     $imageContainer.hide();
                 }
             };
+
 
 
             const sortCurrentQuestions = () => {
