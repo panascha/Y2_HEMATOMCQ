@@ -1,4 +1,679 @@
 var quizdata = {
+    "DRUG": [{
+        "problem": "1. A 65-year-old male with a history of myocardial infarction is prescribed low-dose aspirin for secondary prevention. What is the primary mechanism of action of this drug?",
+        "img": "",
+        "choices": "Reversibly inhibits cyclooxygenase-2///Irreversibly inhibits cyclooxygenase-1///Reversibly blocks the P2Y12 receptor///Irreversibly blocks the GPIIb/IIIa receptor///Potentiates the activity of antithrombin III",
+        "answer": "Irreversibly inhibits cyclooxygenase-1",
+        "select": "",
+        "explain": "Aspirin ในขนาดต่ำออกฤทธิ์โดยการเข้ายับยั้งเอนไซม์ Cyclooxygenase-1 (COX-1) อย่างถาวรแบบ irreversible ผ่านกระบวนการ acetylation ทำให้เกล็ดเลือด (platelet) ไม่สามารถสังเคราะห์ Thromboxane A2 (TXA2) ได้ ซึ่ง TXA2 เป็นสารสำคัญที่กระตุ้นการเกาะกลุ่มของเกล็ดเลือด ฤทธิ์นี้จะคงอยู่ตลอดอายุขัยของเกล็ดเลือดนั้นๆ",
+        "state": false
+    },
+    {
+        "problem": "2. A patient who recently had a coronary stent placed is prescribed dual antiplatelet therapy with aspirin and clopidogrel. If this patient also takes omeprazole for GERD, which drug's efficacy may be significantly reduced?",
+        "img": "",
+        "choices": "Aspirin///Ticagrelor///Abciximab///Clopidogrel///Prasugrel",
+        "answer": "Clopidogrel",
+        "select": "",
+        "explain": "Clopidogrel เป็นยาในกลุ่ม prodrug ซึ่งต้องถูกเปลี่ยนให้อยู่ในรูป active form โดยเอนไซม์ CYP2C19 ที่ตับจึงจะออกฤทธิ์ยับยั้ง P2Y12 receptor ได้ ยา Omeprazole เป็น potent inhibitor ของเอนไซม์ CYP2C19 การใช้ร่วมกันจึงลดการสร้าง active metabolite ของ Clopidogrel ทำให้ประสิทธิภาพของยาลดลง",
+        "state": false
+    },
+    {
+        "problem": "3. A patient with acute coronary syndrome requires a rapid-acting, reversible P2Y12 inhibitor that is not a prodrug. Which of the following agents best fits this description?",
+        "img": "",
+        "choices": "Clopidogrel///Prasugrel///Ticagrelor///Ticlopidine///Aspirin",
+        "answer": "Ticagrelor",
+        "select": "",
+        "explain": "Ticagrelor เป็นยาในกลุ่ม direct-acting P2Y12 inhibitors ซึ่งแตกต่างจาก Clopidogrel และ Prasugrel ที่เป็น prodrugs โดย Ticagrelor สามารถออกฤทธิ์ได้โดยตรงและจับกับ P2Y12 receptor แบบผันกลับได้ (reversible) ทำให้มี onset of action ที่รวดเร็วและระยะเวลาหมดฤทธิ์ที่สั้นกว่า",
+        "state": false
+    },
+    {
+        "problem": "4. During a high-risk percutaneous coronary intervention (PCI), a potent intravenous antiplatelet agent is administered. It is a monoclonal antibody fragment that blocks the final common pathway of platelet aggregation. Which drug is this?",
+        "img": "",
+        "choices": "Eptifibatide///Tirofiban///Cilostazol///Dipyridamole///Abciximab",
+        "answer": "Abciximab",
+        "select": "",
+        "explain": "Abciximab เป็นยาในกลุ่ม Glycoprotein (GP) IIb/IIIa inhibitors ซึ่งเป็นตัวรับบนผิวเกล็ดเลือดที่ทำหน้าที่เป็น final common pathway สำหรับ platelet aggregation โดยการจับกับ fibrinogen ยา Abciximab เป็น Fab fragment ของ monoclonal antibody ที่เข้าจับและยับยั้ง receptor นี้อย่างมีประสิทธิภาพสูง มักใช้ในหัตถการ PCI ที่มีความเสี่ยงสูง",
+        "state": false
+    },
+    {
+        "problem": "5. A patient on heparin therapy for deep vein thrombosis (DVT) develops a sudden, significant drop in platelet count and a new arterial thrombus in their leg. This paradoxical condition is most likely:",
+        "img": "",
+        "choices": "Protamine toxicity///Disseminated Intravascular Coagulation///Warfarin-induced skin necrosis///Heparin-Induced Thrombocytopenia///Thrombotic Thrombocytopenic Purpura",
+        "answer": "Heparin-Induced Thrombocytopenia",
+        "select": "",
+        "explain": "ภาวะนี้คือ Heparin-Induced Thrombocytopenia (HIT) ซึ่งเป็นภาวะแทรกซ้อนที่รุนแรงจากการใช้ heparin ร่างกายสร้าง IgG antibody ต่อ Heparin-PF4 complex ซึ่ง antibody นี้จะไปกระตุ้นเกล็ดเลือด ทำให้เกิดภาวะลิ่มเลือดอุดตัน (thrombosis) ในขณะเดียวกันก็ทำให้เกล็ดเลือดถูกทำลายจนมีจำนวนลดลง (thrombocytopenia)",
+        "state": false
+    },
+    {
+        "problem": "6. A patient stabilized on warfarin with a target INR of 2.5 is prescribed rifampin for tuberculosis. What is the expected effect on the patient's warfarin therapy?",
+        "img": "",
+        "choices": "INR will increase due to protein binding displacement///INR will decrease due to induction of CYP2C9 metabolism///INR will not change as they use different pathways///INR will increase due to inhibition of VKORC1///INR will decrease due to increased Vitamin K absorption",
+        "answer": "INR will decrease due to induction of CYP2C9 metabolism",
+        "select": "",
+        "explain": "Rifampin เป็น potent inducer ของเอนไซม์ในกลุ่ม Cytochrome P450 โดยเฉพาะ CYP2C9 ซึ่งเป็นเอนไซม์หลักที่ใช้ในการเมตาบอลิซึม S-warfarin (active form) การให้ Rifampin จะเร่งการกำจัด warfarin ออกจากร่างกาย ทำให้ระดับยาลดลงและฤทธิ์ต้านการแข็งตัวของเลือดลดลง ส่งผลให้ค่า INR ลดต่ำลงและเพิ่มความเสี่ยงต่อการเกิดลิ่มเลือด",
+        "state": false
+    },
+    {
+        "problem": "7. A 70-year-old female with non-valvular atrial fibrillation is prescribed an oral anticoagulant that is a direct thrombin inhibitor. Which drug was she prescribed?",
+        "img": "",
+        "choices": "Rivaroxaban///Apixaban///Warfarin///Dabigatran///Enoxaparin",
+        "answer": "Dabigatran",
+        "select": "",
+        "explain": "Dabigatran เป็นยาในกลุ่ม Novel Oral Anticoagulants (NOACs) ที่ออกฤทธิ์โดยการยับยั้ง Thrombin (Factor IIa) โดยตรง (direct thrombin inhibitor) ส่วน Rivaroxaban และ Apixaban เป็น direct Factor Xa inhibitors และ Warfarin เป็น Vitamin K antagonist",
+        "state": false
+    },
+    {
+        "problem": "8. A patient on Dabigatran presents to the emergency room with life-threatening bleeding after a major trauma. Which of the following is the specific reversal agent for this drug?",
+        "img": "",
+        "choices": "Protamine sulfate///Vitamin K (Phytonadione)///Fresh Frozen Plasma///Tranexamic acid///Idarucizumab",
+        "answer": "Idarucizumab",
+        "select": "",
+        "explain": "Idarucizumab เป็น monoclonal antibody fragment ที่ถูกพัฒนาขึ้นมาเพื่อเป็น antidote หรือยาแก้พิษที่จำเพาะเจาะจงสำหรับ Dabigatran เท่านั้น โดยมันจะเข้าจับกับ Dabigatran ด้วย affinity ที่สูงมาก ทำให้ยาไม่สามารถไปยับยั้ง thrombin ได้ และฤทธิ์ต้านการแข็งตัวของเลือดจะหมดไปอย่างรวดเร็ว",
+        "state": false
+    },
+    {
+        "problem": "9. A patient with acute myocardial infarction is treated with a fibrinolytic drug that is a recombinant form of a human enzyme and is considered 'clot-selective'. Which drug was likely used?",
+        "img": "",
+        "choices": "Streptokinase///Tranexamic acid///Warfarin///Alteplase///Heparin",
+        "answer": "Alteplase",
+        "select": "",
+        "explain": "Alteplase เป็นยาละลายลิ่มเลือด (fibrinolytic) ที่เป็น recombinant tissue plasminogen activator (t-PA) มีคุณสมบัติเด่นคือมีความจำเพาะต่อ fibrin (clot-selective) โดยจะออกฤทธิ์เปลี่ยน plasminogen เป็น plasmin ได้ดีกว่าเมื่อจับอยู่กับ fibrin ในลิ่มเลือด ทำให้ยาออกฤทธิ์ได้ค่อนข้างจำเพาะที่ตำแหน่งของลิ่มเลือด",
+        "state": false
+    },
+    {
+        "problem": "10. A patient undergoing major surgery experiences significant bleeding. The surgeon requests a drug to inhibit fibrinolysis and stabilize clots. Which medication serves this purpose?",
+        "img": "",
+        "choices": "Alteplase///Streptokinase///Dipyridamole///Tranexamic acid///Reteplase",
+        "answer": "Tranexamic acid",
+        "select": "",
+        "explain": "Tranexamic acid เป็นยาในกลุ่ม antifibrinolytic agents ออกฤทธิ์โดยการจับกับ lysine binding sites บน plasminogen ทำให้ plasminogen ไม่สามารถจับกับ fibrin ได้ จึงยับยั้งการเปลี่ยน plasminogen ไปเป็น plasmin ส่งผลให้กระบวนการสลายลิ่มเลือด (fibrinolysis) ถูกยับยั้งและลิ่มเลือดมีความคงตัวมากขึ้น ช่วยลดการเสียเลือด",
+        "state": false
+    },
+    {
+        "problem": "11. A 68-year-old patient with end-stage renal disease on hemodialysis has anemia with an Hb of 8.2 g/dL. What is the most appropriate pharmacological treatment to stimulate red blood cell production?",
+        "img": "",
+        "choices": "Ferrous sulfate///Epoetin alfa///Filgrastim///Oprelvekin///Vitamin B12 injection",
+        "answer": "Epoetin alfa",
+        "select": "",
+        "explain": "ภาวะโลหิตจางในผู้ป่วยโรคไตวายเรื้อรัง (Anemia of chronic renal failure) มีสาเหตุหลักมาจากการที่ไตไม่สามารถสร้างฮอร์โmon Erythropoietin (EPO) ได้เพียงพอ การรักษาที่ตรงจุดคือการให้ยาในกลุ่ม Erythropoiesis-Stimulating Agents (ESA) เช่น Epoetin alfa ซึ่งเป็น recombinant human EPO เพื่อกระตุ้นไขกระดูกให้สร้างเม็ดเลือดแดง",
+        "state": false
+    },
+    {
+        "problem": "12. A patient with thalassemia major receiving chronic blood transfusions is found to have a serum ferritin level of 3,500 ng/mL. Which oral medication is used to treat this complication?",
+        "img": "",
+        "choices": "Deferasirox///Ferrous fumarate///Epoetin alfa///Luspatercept///Deferoxamine",
+        "answer": "Deferasirox",
+        "select": "",
+        "explain": "ภาวะธาตุเหล็กเกิน (iron overload) หรือ secondary hemochromatosis เป็นภาวะแทรกซ้อนที่สำคัญจากการรับเลือดเป็นประจำ การรักษาคือการให้ยาขับธาตุเหล็ก (iron chelators) Deferasirox เป็นยาขับธาตุเหล็กชนิดรับประทานที่นิยมใช้ในปัจจุบันเพื่อจัดการกับภาวะนี้ Deferoxamine ก็ใช้ได้แต่เป็นยาฉีด",
+        "state": false
+    },
+    {
+        "problem": "13. A patient who underwent gastrectomy two years ago develops macrocytic anemia and peripheral neuropathy. A deficiency of which vitamin is the most likely cause?",
+        "img": "",
+        "choices": "Vitamin K///Folic acid (Vitamin B9)///Vitamin B12 (Cobalamin)///Vitamin C (Ascorbic acid)///Iron",
+        "answer": "Vitamin B12 (Cobalamin)",
+        "select": "",
+        "explain": "การผ่าตัดกระเพาะอาหาร (gastrectomy) ทำให้ร่างกายขาด Intrinsic Factor (IF) ซึ่งสร้างจาก parietal cells และจำเป็นต่อการดูดซึม Vitamin B12 ที่ลำไส้เล็กส่วนปลาย การขาด B12 จะนำไปสู่ภาวะ megaloblastic anemia (macrocytic) และอาการทางระบบประสาท (peripheral neuropathy) เนื่องจาก B12 จำเป็นต่อการสร้าง myelin sheath",
+        "state": false
+    },
+    {
+        "problem": "14. A cancer patient develops severe neutropenia (ANC < 500/μL) following a cycle of chemotherapy. Which hematopoietic growth factor specifically stimulates the production and differentiation of neutrophils?",
+        "img": "",
+        "choices": "Sargramostim (GM-CSF)///Epoetin alfa (EPO)///Oprelvekin (IL-11)///Romiplostim (TPO-RA)///Filgrastim (G-CSF)",
+        "answer": "Filgrastim (G-CSF)",
+        "select": "",
+        "explain": "Filgrastim เป็น recombinant Granulocyte Colony-Stimulating Factor (G-CSF) ซึ่งเป็น growth factor ที่ออกฤทธิ์จำเพาะในการกระตุ้นการเจริญเติบโต การแบ่งตัว และการพัฒนาของเซลล์ต้นกำเนิดในสาย neutrophil ในไขกระดูก ใช้เพื่อรักษาและป้องกันภาวะ neutropenia ที่เกิดจากเคมีบำบัด",
+        "state": false
+    },
+    {
+        "problem": "15. A patient with chronic immune thrombocytopenia (ITP) has a persistently low platelet count despite corticosteroid treatment. Which drug acts as a thrombopoietin receptor agonist to increase platelet production?",
+        "img": "",
+        "choices": "Filgrastim///Oprelvekin///Sargramostim///Eltrombopag///Luspatercept",
+        "answer": "Eltrombopag",
+        "select": "",
+        "explain": "Eltrombopag เป็นยาในกลุ่ม Thrombopoietin Receptor Agonists (TRAs) ชนิด small molecule ที่ไม่ใช่โปรตีน ออกฤทธิ์โดยการจับและกระตุ้น Thrombopoietin receptor (TPO-R) บน megakaryocytes ทำให้ไขกระดูกสร้างเกล็ดเลือดเพิ่มขึ้น ใช้เป็น second-line therapy ในผู้ป่วย chronic ITP",
+        "state": false
+    },
+    {
+        "problem": "16. A patient with β-thalassemia has transfusion-dependent anemia. A new drug, Luspatercept, is prescribed to reduce transfusion frequency. What is its mechanism of action?",
+        "img": "",
+        "choices": "Stimulates the EPO receptor///Acts as a TPO receptor agonist///Inhibits the TGF-β signaling pathway///Increases iron absorption from the gut///Chelates excess iron from tissues",
+        "answer": "Inhibits the TGF-β signaling pathway",
+        "select": "",
+        "explain": "Luspatercept เป็นยาใหม่ที่ออกฤทธิ์โดยการเป็น ligand trap สำหรับโปรตีนในกลุ่ม Transforming Growth Factor-β (TGF-β) superfamily ซึ่งโปรตีนเหล่านี้จะไปยับยั้งการเจริญเติบโตของเม็ดเลือดแดงในระยะท้าย (late-stage erythropoiesis) การดักจับโปรตีนเหล่านี้จะช่วยลดการยับยั้งดังกล่าว ทำให้ ineffective erythropoiesis ลดลงและเม็ดเลือดแดงสามารถเจริญเติบโตได้ดีขึ้น",
+        "state": false
+    },
+    {
+        "problem": "17. A patient with asthma develops bronchospasm after taking a drug for headache. This drug is known to cause this reaction by shunting arachidonic acid metabolism towards leukotriene production. Which drug is it?",
+        "img": "",
+        "choices": "Acetaminophen///Ibuprofen///Aspirin///Clopidogrel///Morphine",
+        "answer": "Aspirin",
+        "select": "",
+        "explain": "Aspirin และ NSAIDs อื่นๆ ยับยั้งเอนไซม์ COX-1 ในผู้ป่วยบางรายโดยเฉพาะผู้ที่เป็นโรคหอบหืด การยับยั้งนี้จะทำให้ arachidonic acid ถูกเปลี่ยนไปทาง 5-lipoxygenase (5-LOX) pathway มากขึ้น ส่งผลให้มีการสร้าง leukotrienes ซึ่งเป็นสารก่อการหดตัวของหลอดลม (bronchoconstrictor) อย่างรุนแรง ทำให้เกิดอาการหอบหืดกำเริบ",
+        "state": false
+    },
+    {
+        "problem": "18. Which antimalarial drug acts by accumulating in the parasite's food vacuole and inhibiting heme polymerase, leading to toxic heme buildup?",
+        "img": "",
+        "choices": "Artesunate///Primaquine///Atovaquone///Doxycycline///Chloroquine",
+        "answer": "Chloroquine",
+        "select": "",
+        "explain": "Chloroquine เป็น weak base ที่สามารถสะสมตัวใน food vacuole ของเชื้อมาลาเรียซึ่งมีสภาวะเป็นกรดได้ในปริมาณสูง ที่นั่นมันจะเข้าไปขัดขวางกระบวนการ detoxification ของ heme โดยยับยั้งเอนไซม์ heme polymerase ทำให้ heme ที่เป็นพิษต่อเชื้อเกิดการสะสมและฆ่าเชื้อในที่สุด",
+        "state": false
+    },
+    {
+        "problem": "19. A traveler requires radical cure for a P. vivax infection to eliminate dormant liver stages (hypnozoites). Which drug is essential for this purpose but requires G6PD screening before use?",
+        "img": "",
+        "choices": "Chloroquine///Mefloquine///Artemether///Primaquine///Doxycycline",
+        "answer": "Primaquine",
+        "select": "",
+        "explain": "Primaquine เป็นยาเพียงชนิดเดียวที่สามารถกำจัดเชื้อมาลาเรียระยะ hypnozoite ที่ซ่อนตัวอยู่ในเซลล์ตับได้ จึงจำเป็นสำหรับการป้องกันการกลับเป็นซ้ำ (relapse) ของ P. vivax และ P. ovale อย่างไรก็ตาม Primaquine เป็น potent oxidizing agent ที่สามารถกระตุ้นให้เกิดภาวะเม็ดเลือดแดงแตกอย่างรุนแรงในผู้ป่วยที่พร่องเอนไซม์ G6PD จึงต้องมีการตรวจคัดกรองก่อนให้ยา",
+        "state": false
+    },
+    {
+        "problem": "20. The first-line treatment for uncomplicated P. falciparum malaria in many parts of the world involves a drug combination that includes a potent, rapid-acting agent activated by heme iron. Which class of drug is this?",
+        "img": "",
+        "choices": "Quinolines (e.g., Chloroquine)///Antifolates (e.g., Pyrimethamine)///Artemisinin derivatives (e.g., Artesunate)///Tetracyclines (e.g., Doxycycline)///Electron transport inhibitors (e.g., Atovaquone)",
+        "answer": "Artemisinin derivatives (e.g., Artesunate)",
+        "select": "",
+        "explain": "Artemisinin derivatives เป็นยาหลักใน Artemisinin-based Combination Therapies (ACTs) ซึ่งเป็น first-line treatment สำหรับ P. falciparum ยาในกลุ่มนี้มีโครงสร้าง endoperoxide bridge ที่จะถูก activate โดย heme iron ภายในตัวเชื้อ ทำให้เกิด free radicals ที่เป็นพิษและฆ่าเชื้ออย่างรวดเร็ว",
+        "state": false
+    },
+    {
+        "problem": "21. A patient with HIV is prescribed a regimen including Tenofovir disoproxil fumarate (TDF). Which organ function must be closely monitored due to a known major adverse effect of this specific drug?",
+        "img": "",
+        "choices": "Liver function///Pancreatic enzymes///Cardiac function///Renal function///Bone marrow density",
+        "answer": "Renal function",
+        "select": "",
+        "explain": "Tenofovir disoproxil fumarate (TDF) เป็นยาในกลุ่ม NtRTI ที่มีผลข้างเคียงที่สำคัญคือความเป็นพิษต่อไต (nephrotoxicity) โดยอาจทำให้เกิด proximal renal tubulopathy หรือที่เรียกว่า Fanconi syndrome และอาจนำไปสู่ภาวะไตวายเฉียบพลันหรือเรื้อรังได้ จึงจำเป็นต้องมีการติดตามการทำงานของไต (renal function) อย่างสม่ำเสมอในผู้ป่วยที่ได้รับยานี้",
+        "state": false
+    },
+    {
+        "problem": "22. A patient with a specific genetic marker, HLA-B*57:01, has a very high risk of a severe, potentially fatal hypersensitivity reaction to which antiretroviral drug?",
+        "img": "",
+        "choices": "Zidovudine (AZT)///Efavirenz (EFV)///Tenofovir (TDF)///Dolutegravir (DTG)///Abacavir (ABC)",
+        "answer": "Abacavir (ABC)",
+        "select": "",
+        "explain": "การมี allele HLA-B*57:01 เป็นข้อห้ามใช้ที่สำคัญสำหรับยา Abacavir (ABC) เนื่องจากมีความสัมพันธ์อย่างยิ่งกับการเกิดปฏิกิริยาภูมิไวเกินที่รุนแรง (hypersensitivity reaction) ซึ่งอาจเป็นอันตรายถึงชีวิตได้ ดังนั้นจึงต้องมีการตรวจคัดกรอง genetic marker นี้ก่อนเริ่มให้ยา Abacavir ทุกครั้ง",
+        "state": false
+    },
+    {
+        "problem": "23. Why is low-dose Ritonavir often included in antiretroviral regimens that contain other protease inhibitors (PIs) like Lopinavir or Atazanavir?",
+        "img": "",
+        "choices": "It directly inhibits viral integrase///It acts as a pharmacokinetic enhancer by inhibiting CYP3A4///It blocks the CCR5 co-receptor to prevent viral entry///It is a potent NNRTI that provides synergistic activity///It prevents the development of lipodystrophy",
+        "answer": "It acts as a pharmacokinetic enhancer by inhibiting CYP3A4",
+        "select": "",
+        "explain": "Ritonavir ในขนาดต่ำทำหน้าที่เป็น 'booster' หรือ pharmacokinetic (PK) enhancer มันเป็น potent inhibitor ของเอนไซม์ CYP3A4 ซึ่งเป็นเอนไซม์หลักที่ใช้เมตาบอลิซึมยาในกลุ่ม protease inhibitors (PIs) ตัวอื่น การยับยั้ง CYP3A4 จะทำให้ระดับยา PI ตัวหลักในเลือดสูงขึ้นและอยู่นานขึ้น เพิ่มประสิทธิภาพในการกดไวรัส",
+        "state": false
+    },
+    {
+        "problem": "24. A patient with HIV experiences vivid dreams, dizziness, and difficulty concentrating shortly after starting a new antiretroviral regimen. Which drug is most notoriously associated with these CNS side effects?",
+        "img": "",
+        "choices": "Lamivudine (3TC)///Tenofovir (TDF)///Efavirenz (EFV)///Lopinavir/ritonavir///Dolutegravir (DTG)",
+        "answer": "Efavirenz (EFV)",
+        "select": "",
+        "explain": "Efavirenz (EFV) เป็นยาในกลุ่ม Non-Nucleoside Reverse Transcriptase Inhibitors (NNRTI) ที่มีชื่อเสียงในเรื่องผลข้างเคียงต่อระบบประสาทส่วนกลาง (CNS side effects) โดยเฉพาะในช่วงแรกของการรักษา อาการที่พบบ่อยได้แก่ เวียนศีรษะ ฝันร้ายหรือฝันชัดเจนผิดปกติ นอนไม่หลับ และอาการทางจิตประสาทอื่นๆ",
+        "state": false
+    },
+    {
+        "problem": "25. Which class of antiretroviral drugs works by preventing the viral DNA from being incorporated into the host cell's genome?",
+        "img": "",
+        "choices": "Protease Inhibitors (PIs)///Nucleoside Reverse Transcriptase Inhibitors (NRTIs)///Fusion Inhibitors///Integrase Strand Transfer Inhibitors (INSTIs)///Non-Nucleoside Reverse Transcriptase Inhibitors (NNRTIs)",
+        "answer": "Integrase Strand Transfer Inhibitors (INSTIs)",
+        "select": "",
+        "explain": "ยากลุ่ม Integrase Strand Transfer Inhibitors (INSTIs) เช่น Dolutegravir (DTG) ออกฤทธิ์โดยการยับยั้งเอนไซม์ integrase ของเชื้อ HIV ซึ่งเป็นเอนไซม์ที่จำเป็นในขั้นตอนการนำสารพันธุกรรมของไวรัส (viral DNA) เข้าไปแทรกตัวรวมกับสารพันธุกรรมของเซลล์เจ้าบ้าน (host cell genome) การยับยั้งขั้นตอนนี้เป็นการตัดวงจรการเพิ่มจำนวนของไวรัสอย่างถาวรในเซลล์นั้น",
+        "state": false
+    },
+    {
+        "problem": "1. A patient with a VKORC1 gene variant (1639 G>A) is started on warfarin. What is the clinical implication of this genetic polymorphism?",
+        "img": "",
+        "choices": "Increased risk of heparin-induced thrombocytopenia///Requires higher doses of warfarin for therapeutic effect///Increased sensitivity to warfarin, requiring lower doses///Resistance to the effects of direct thrombin inhibitors///Rapid metabolism of warfarin leading to ineffectiveness",
+        "answer": "Increased sensitivity to warfarin, requiring lower doses",
+        "select": "",
+        "explain": "VKORC1 (Vitamin K epoxide reductase complex 1) เป็นเอนไซม์เป้าหมายของยา warfarin การมี polymorphism ชนิด -1639 G>A ทำให้การสร้างเอนไซม์นี้ลดลง ส่งผลให้ผู้ป่วยมีความไวต่อยา (increased sensitivity) มากขึ้นและต้องการขนาดยา warfarin ที่ต่ำกว่าคนทั่วไปเพื่อควบคุมระดับ INR ให้อยู่ในเป้าหมายการรักษา",
+        "state": false
+    },
+    {
+        "problem": "2. A patient with STEMI undergoing PCI is given Prasugrel instead of Clopidogrel. What is a key pharmacokinetic advantage of Prasugrel?",
+        "img": "",
+        "choices": "It does not require any metabolic activation///It has a reversible binding to the P2Y12 receptor///It undergoes a more rapid and consistent one-step activation///It is not affected by CYP2C19 genetic polymorphisms///It can be administered intravenously for faster effect",
+        "answer": "It undergoes a more rapid and consistent one-step activation",
+        "select": "",
+        "explain": "Prasugrel และ Clopidogrel เป็นยาในกลุ่ม prodrugs ที่ต้องถูกเมตาบอไลซ์ให้เป็น active form ก่อนจึงจะออกฤทธิ์ได้ แต่ Prasugrel มีข้อดีคือผ่านกระบวนการ activation เพียงขั้นตอนเดียว (one-step metabolism) ทำให้การออกฤทธิ์ยับยั้งเกล็ดเลือดรวดเร็วและแน่นอนกว่า (more rapid and consistent) Clopidogrel ซึ่งต้องผ่าน 2-step metabolism",
+        "state": false
+    },
+    {
+        "problem": "3. A patient with DVT is treated with enoxaparin (LMWH). How does its primary mechanism differ from unfractionated heparin (UFH)?",
+        "img": "",
+        "choices": "It exclusively inhibits thrombin (Factor IIa)///It has a greater inhibitory effect on Factor Xa than on Factor IIa///It directly binds and inhibits the vitamin K epoxide reductase enzyme///It does not require antithrombin III for its anticoagulant activity///It has an equal inhibitory effect on both Factor Xa and Factor IIa",
+        "answer": "It has a greater inhibitory effect on Factor Xa than on Factor IIa",
+        "select": "",
+        "explain": "ทั้ง LMWH และ UFH ออกฤทธิ์โดยการจับกับ Antithrombin III (ATIII) แต่มีความแตกต่างกันที่สัดส่วนการยับยั้ง clotting factor โดย LMWH (Enoxaparin) จะมีผลยับยั้ง Factor Xa ได้ดีกว่า Factor IIa (Thrombin) ในอัตราส่วนประมาณ 3:1 ถึง 4:1 ในขณะที่ UFH จะยับยั้ง Factor Xa และ Factor IIa ได้ในสัดส่วนที่เท่าๆกัน (1:1)",
+        "state": false
+    },
+    {
+        "problem": "4. A patient with non-valvular atrial fibrillation is switched from warfarin to rivaroxaban. What is the direct molecular target of rivaroxaban?",
+        "img": "",
+        "choices": "Thrombin (Factor IIa)///Factor Xa///Vitamin K epoxide reductase///Glycoprotein IIb/IIIa receptor///The P2Y12 ADP receptor",
+        "answer": "Factor Xa",
+        "select": "",
+        "explain": "Rivaroxaban เป็นยาในกลุ่ม Novel Oral Anticoagulants (NOACs) หรือ Direct Oral Anticoagulants (DOACs) ที่ออกฤทธิ์โดยการเป็น direct inhibitor ของ Factor Xa ซึ่งเป็นจุดร่วมของ intrinsic และ extrinsic pathway ทำให้ยับยั้งการเปลี่ยน prothrombin ไปเป็น thrombin ได้",
+        "state": false
+    },
+    {
+        "problem": "5. A 2-year-old child presents with vomiting, abdominal pain, and bloody diarrhea after ingesting a bottle of his mother's prenatal vitamins. This acute overdose is known to cause:",
+        "img": "",
+        "choices": "Severe metabolic alkalosis///Aplastic anemia///Necrotizing gastroenteritis///Fanconi syndrome///Megaloblastic crisis",
+        "answer": "Necrotizing gastroenteritis",
+        "select": "",
+        "explain": "วิตามินสำหรับหญิงตั้งครรภ์มีธาตุเหล็กในปริมาณสูง การที่เด็กรับประทานเข้าไปในปริมาณมากจะทำให้เกิดภาวะพิษจากธาตุเหล็กเฉียบพลัน (acute iron toxicity) ซึ่งธาตุเหล็กมีความเป็นพิษโดยตรงต่อเยื่อบุทางเดินอาหาร ทำให้เกิดภาวะ Necrotizing gastroenteritis ซึ่งมีอาการปวดท้องรุนแรง อาเจียนเป็นเลือด และถ่ายเป็นเลือดได้",
+        "state": false
+    },
+    {
+        "problem": "6. A pregnant woman is diagnosed with megaloblastic anemia. Supplementation with which vitamin is crucial to prevent neural tube defects in the fetus?",
+        "img": "",
+        "choices": "Vitamin B12 (Cobalamin)///Vitamin K (Phytonadione)///Vitamin C (Ascorbic Acid)///Vitamin B9 (Folic Acid)///Vitamin B6 (Pyridoxine)",
+        "answer": "Vitamin B9 (Folic Acid)",
+        "select": "",
+        "explain": "Folic acid (Vitamin B9) มีความสำคัญอย่างยิ่งต่อการสังเคราะห์ DNA และการแบ่งเซลล์ ซึ่งจำเป็นต่อการเจริญเติบโตของทารกในครรภ์ โดยเฉพาะการพัฒนาระบบประสาทส่วนกลาง การขาดโฟเลตในช่วงแรกของการตั้งครรภ์เป็นสาเหตุสำคัญของความผิดปกติของท่อระบบประสาท (Neural Tube Defects) เช่น spina bifida",
+        "state": false
+    },
+    {
+        "problem": "7. A patient with breast cancer receiving chemotherapy develops febrile neutropenia. In addition to antibiotics, the physician prescribes Sargramostim. What is the advantage of Sargramostim over Filgrastim?",
+        "img": "",
+        "choices": "It can be administered orally///It has a much longer half-life///It stimulates a broader range of myeloid cells including monocytes///It specifically inhibits tumor cell growth///It does not cause bone pain as a side effect",
+        "answer": "It stimulates a broader range of myeloid cells including monocytes",
+        "select": "",
+        "explain": "Sargramostim คือ Granulocyte-Macrophage Colony-Stimulating Factor (GM-CSF) ซึ่งออกฤทธิ์กว้างกว่า Filgrastim (G-CSF) โดย GM-CSF สามารถกระตุ้นได้ทั้งเซลล์ต้นกำเนิดของ granulocytes (เช่น neutrophils) และ monocytes/macrophages ในขณะที่ G-CSF จะจำเพาะต่อสาย neutrophils มากกว่า",
+        "state": false
+    },
+    {
+        "problem": "8. A patient is treated with heparin for a pulmonary embolism. He starts to bleed excessively, and his aPTT is >150 seconds. Which substance is the specific antidote for heparin overdose?",
+        "img": "",
+        "choices": "Idarucizumab///Andexanet alfa///Protamine sulfate///Vitamin K///Tranexamic acid",
+        "answer": "Protamine sulfate",
+        "select": "",
+        "explain": "Protamine sulfate เป็นยาแก้พิษ (antidote) ที่จำเพาะสำหรับ heparin โดย Protamine ซึ่งมีประจุบวกจะเข้าไปจับกับ Heparin ซึ่งมีประจุลบอย่างรวดเร็ว เกิดเป็น stable complex ที่ไม่มีฤทธิ์ต้านการแข็งตัวของเลือด ทำให้สามารถหยุดยั้งฤทธิ์ของ heparin ได้",
+        "state": false
+    },
+    {
+        "problem": "9. Which antiretroviral drug is a nucleoside analog that competitively inhibits reverse transcriptase but is well-known for causing dose-dependent bone marrow suppression, leading to anemia?",
+        "img": "",
+        "choices": "Lamivudine (3TC)///Tenofovir (TDF)///Zidovudine (AZT)///Efavirenz (EFV)///Dolutegravir (DTG)",
+        "answer": "Zidovudine (AZT)",
+        "select": "",
+        "explain": "Zidovudine (AZT) หรือ Azidothymidine เป็นยาต้านไวรัส HIV ในกลุ่ม NRTI ตัวแรกๆ ผลข้างเคียงที่สำคัญและเป็น dose-limiting toxicity ของ AZT คือการกดไขกระดูก (bone marrow suppression) ซึ่งทำให้เกิดภาวะโลหิตจางชนิดเม็ดเลือดแดงตัวโต (macrocytic anemia) และภาวะเม็ดเลือดขาวต่ำ (neutropenia)",
+        "state": false
+    },
+    {
+        "problem": "10. A patient with a history of intermittent claudication is prescribed Cilostazol. What is the mechanism of action of this drug?",
+        "img": "",
+        "choices": "Irreversibly inhibits COX-1///Blocks the P2Y12 ADP receptor///Inhibits phosphodiesterase type 3 (PDE3)///Blocks the GPIIb/IIIa receptor///Directly inhibits Factor Xa",
+        "answer": "Inhibits phosphodiesterase type 3 (PDE3)",
+        "select": "",
+        "explain": "Cilostazol เป็นยาที่ใช้รักษาอาการปวดขาจากโรคหลอดเลือดแดงส่วนปลายตีบ (intermittent claudication) ออกฤทธิ์โดยการยับยั้งเอนไซม์ Phosphodiesterase type 3 (PDE3) ทำให้มีระดับ cAMP เพิ่มขึ้นในเกล็ดเลือดและกล้ามเนื้อเรียบของหลอดเลือด ส่งผลให้เกิดฤทธิ์ต้านเกล็ดเลือด (antiplatelet) และขยายหลอดเลือด (vasodilation)",
+        "state": false
+    },
+    {
+        "problem": "11. A patient with chronic ITP is prescribed Oprelvekin to increase platelet counts. What is a characteristic and potentially serious side effect of this drug?",
+        "img": "",
+        "choices": "Severe bone marrow suppression///Fluid retention and edema///Acute renal failure///Neuropsychiatric disturbances///Hepatotoxicity",
+        "answer": "Fluid retention and edema",
+        "select": "",
+        "explain": "Oprelvekin คือ recombinant Interleukin-11 (IL-11) ซึ่งใช้กระตุ้นการสร้างเกล็ดเลือด ผลข้างเคียงที่พบบ่อยและมีความสำคัญทางคลินิกคือการทำให้เกิดการคั่งของสารน้ำ (fluid retention) ซึ่งอาจนำไปสู่ภาวะบวมน้ำ (peripheral edema) น้ำในช่องเยื่อหุ้มปอด (pleural effusion) และอาจทำให้ภาวะหัวใจล้มเหลวแย่ลงได้",
+        "state": false
+    },
+    {
+        "problem": "12. A patient is being treated with a combination antimalarial drug containing an agent that inhibits dihydropteroate synthase and another that inhibits dihydrofolate reductase. Which drug combination is this?",
+        "img": "",
+        "choices": "Artesunate + Mefloquine///Atovaquone + Proguanil///Quinine + Doxycycline///Sulfadoxine + Pyrimethamine///Chloroquine + Primaquine",
+        "answer": "Sulfadoxine + Pyrimethamine",
+        "select": "",
+        "explain": "ยานี้คือ Fansidar ซึ่งเป็นการใช้ยา 2 ชนิดร่วมกันเพื่อยับยั้งกระบวนการสังเคราะห์ folic acid ของเชื้อมาลาเรียใน 2 ขั้นตอน (sequential blockade) โดย Sulfadoxine ยับยั้งเอนไซม์ dihydropteroate synthase และ Pyrimethamine ยับยั้งเอนไซม์ dihydrofolate reductase ทำให้เกิดฤทธิ์เสริมกัน (synergistic effect)",
+        "state": false
+    },
+    {
+        "problem": "13. A patient with uncomplicated malaria is treated with a drug known to cause neuropsychiatric side effects, such as vivid dreams, anxiety, and psychosis. Which drug is most likely responsible?",
+        "img": "",
+        "choices": "Artesunate///Primaquine///Mefloquine///Doxycycline///Chloroquine",
+        "answer": "Mefloquine",
+        "select": "",
+        "explain": "Mefloquine เป็นยาต้านมาลาเรียที่มีประสิทธิภาพ แต่มีผลข้างเคียงที่สำคัญและเป็นที่รู้จักกันดีคือผลต่อระบบประสาทส่วนกลาง (neuropsychiatric side effects) ซึ่งอาจมีตั้งแต่อาการเล็กน้อย เช่น ฝันร้าย นอนไม่หลับ ไปจนถึงอาการรุนแรง เช่น วิตกกังวล ซึมเศร้า หรือโรคจิต (psychosis)",
+        "state": false
+    },
+    {
+        "problem": "14. Which antiretroviral drug class prevents HIV from entering the host cell by binding to the CCR5 co-receptor on the CD4+ T-cell surface?",
+        "img": "",
+        "choices": "Fusion inhibitors (e.g., Enfuvirtide)///Protease inhibitors (e.g., Lopinavir)///CCR5 antagonists (e.g., Maraviroc)///Integrase inhibitors (e.g., Dolutegravir)///NRTIs (e.g., Lamivudine)",
+        "answer": "CCR5 antagonists (e.g., Maraviroc)",
+        "select": "",
+        "explain": "Maraviroc เป็นยาในกลุ่ม entry inhibitors ที่ออกฤทธิ์โดยการจับกับ CCR5 co-receptor บนผิวของเซลล์ CD4+ ทำให้โปรตีน gp120 ของเชื้อ HIV ไม่สามารถจับกับ co-receptor นี้ได้ เป็นการขัดขวางขั้นตอนการเข้าสู่เซลล์ของเชื้อไวรัสชนิดที่ใช้ CCR5 (R5-tropic virus)",
+        "state": false
+    },
+    {
+        "problem": "15. A healthcare worker sustains a high-risk needlestick injury from a patient with a high HIV viral load. What is the recommended course of action regarding Post-Exposure Prophylaxis (PEP)?",
+        "img": "",
+        "choices": "Wait for the worker's baseline HIV test results before starting PEP///Start a two-drug PEP regimen immediately///Start a three-drug PEP regimen as soon as possible///No action is needed as the risk is minimal///Administer a single dose of Tenofovir and Emtricitabine",
+        "answer": "Start a three-drug PEP regimen as soon as possible",
+        "select": "",
+        "explain": "กรณีนี้ถือเป็นการสัมผัสเชื้อที่มีความเสี่ยงสูง (high-risk exposure) ตามแนวทางปฏิบัติจะต้องเริ่มให้ยาต้านไวรัสเพื่อป้องกัน (PEP) โดยเร็วที่สุดเท่าที่จะทำได้ (ภายใน 72 ชั่วโมง) และเนื่องจากเป็นความเสี่ยงสูง จึงแนะนำให้ใช้สูตรยา 3 ชนิด (three-drug regimen) ซึ่งมักประกอบด้วย 2 NRTIs + 1 INSTI เป็นเวลา 28 วัน",
+        "state": false
+    },
+    {
+        "problem": "16. A patient is treated with a combination of Atovaquone and Proguanil for malaria. What are their respective mechanisms of action?",
+        "img": "",
+        "choices": "Inhibits heme polymerase and increases ROS///Inhibits electron transport and inhibits dihydrofolate reductase///Increases ROS and inhibits protein synthesis///Inhibits protein synthesis and inhibits heme polymerase///Inhibits dihydrofolate reductase and inhibits electron transport",
+        "answer": "Inhibits electron transport and inhibits dihydrofolate reductase",
+        "select": "",
+        "explain": "Atovaquone-Proguanil (Malarone) เป็นยาสูตรผสมที่ออกฤทธิ์เสริมกัน โดย Atovaquone ยับยั้งกระบวนการ electron transport chain ในไมโทคอนเดรียของเชื้อ ส่วน Proguanil (ซึ่งจะถูกเปลี่ยนเป็น active form คือ cycloguanil) จะยับยั้งเอนไซม์ dihydrofolate reductase (DHFR) ขัดขวางการสังเคราะห์ folic acid ของเชื้อ",
+        "state": false
+    },
+    {
+        "problem": "17. A patient with atrial fibrillation has been on long-term warfarin therapy. He develops a severe infection and is treated with trimethoprim-sulfamethoxazole. What effect is this antibiotic likely to have on his INR?",
+        "img": "",
+        "choices": "It will decrease the INR by inducing warfarin metabolism///It will significantly increase the INR by inhibiting CYP2C9///It will have no effect on the INR///It will decrease the INR by providing excess Vitamin K///It will slightly increase the INR by displacing warfarin from albumin",
+        "answer": "It will significantly increase the INR by inhibiting CYP2C9",
+        "select": "",
+        "explain": "Trimethoprim-sulfamethoxazole (Bactrim) เป็นที่รู้จักกันดีในเรื่องปฏิกิริยาระหว่างยากับ warfarin โดยเฉพาะ Sulfamethoxazole เป็น potent inhibitor ของเอนไซม์ CYP2C9 ซึ่งเป็นเอนไซม์หลักในการกำจัด S-warfarin การยับยั้งนี้จะทำให้ระดับยา warfarin ในเลือดสูงขึ้นอย่างมาก ส่งผลให้ค่า INR เพิ่มสูงขึ้นและเพิ่มความเสี่ยงต่อการเกิดเลือดออกรุนแรง",
+        "state": false
+    },
+    {
+        "problem": "18. A patient is receiving an intravenous infusion of a GPIIb/IIIa inhibitor that is a synthetic heptapeptide, specifically blocking the RGD binding site. Which drug is being administered?",
+        "img": "",
+        "choices": "Aspirin///Abciximab///Clopidogrel///Eptifibatide///Ticagrelor",
+        "answer": "Eptifibatide",
+        "select": "",
+        "explain": "Eptifibatide เป็นยาในกลุ่ม GPIIb/IIIa inhibitors ที่มีโครงสร้างเป็น cyclic heptapeptide ออกฤทธิ์โดยการจำลองลำดับกรดอะมิโน Arg-Gly-Asp (RGD) ซึ่งเป็นตำแหน่งที่ fibrinogen ใช้จับกับ GPIIb/IIIa receptor จึงเข้าแข่งขันและยับยั้งการจับของ fibrinogen ได้อย่างจำเพาะเจาะจง",
+        "state": false
+    },
+    {
+        "problem": "19. Which antimalarial drug's mechanism involves inhibiting protein synthesis by binding to the 30S ribosomal subunit in the parasite's apicoplast?",
+        "img": "",
+        "choices": "Chloroquine///Artesunate///Doxycycline///Primaquine///Mefloquine",
+        "answer": "Doxycycline",
+        "select": "",
+        "explain": "Doxycycline ซึ่งเป็นยาในกลุ่ม tetracycline ออกฤทธิ์ต้านมาลาเรียโดยการเข้าไปยับยั้งกระบวนการสังเคราะห์โปรตีนของเชื้อ โดยจับกับ 30S ribosomal subunit ใน apicoplast ซึ่งเป็นออร์แกเนลล์ที่สำคัญของเชื้อมาลาเรีย ทำให้เชื้อไม่สามารถสร้างโปรตีนที่จำเป็นและตายในที่สุด",
+        "state": false
+    },
+    {
+        "problem": "20. A patient on warfarin develops 'purple toe syndrome'. This rare complication is thought to be caused by microemboli and is associated with a transient hypercoagulable state due to the inhibition of which proteins?",
+        "img": "",
+        "choices": "Factor II and Factor VII///Factor IX and Factor X///Protein C and Protein S///Antithrombin III///Plasminogen and Plasmin",
+        "answer": "Protein C and Protein S",
+        "select": "",
+        "explain": "Warfarin ยับยั้งการสร้าง clotting factor ที่ต้องพึ่ง Vitamin K ทั้งหมด (II, VII, IX, X) และยังยับยั้ง natural anticoagulants คือ Protein C และ S ด้วย เนื่องจาก Protein C มี half-life สั้นที่สุด ในช่วงแรกของการให้ยา warfarin ระดับ Protein C จะลดลงเร็วกว่า clotting factor ตัวอื่น ทำให้เกิดภาวะที่เลือดแข็งตัวง่ายชั่วคราว (transient hypercoagulable state) ซึ่งอาจทำให้เกิดลิ่มเลือดขนาดเล็กไปอุดตันหลอดเลือดที่ผิวหนังได้",
+        "state": false
+    },
+    {
+        "problem": "21. A patient with chronic myeloid leukemia (CML) is treated with imatinib. What is the molecular target of this drug?",
+        "img": "",
+        "choices": "The JAK2 kinase///The FLT3 receptor///The BCR-ABL tyrosine kinase///The TGF-β receptor///The TPO receptor",
+        "answer": "The BCR-ABL tyrosine kinase",
+        "select": "",
+        "explain": "โรค CML มีสาเหตุมาจากการเกิด Philadelphia chromosome หรือ t(9;22) ซึ่งสร้างโปรตีนลูกผสมที่ผิดปกติคือ BCR-ABL tyrosine kinase โปรตีนนี้จะทำงานตลอดเวลาและเป็นตัวการที่ทำให้เซลล์มะเร็งแบ่งตัวไม่หยุด Imatinib เป็นยาในกลุ่ม tyrosine kinase inhibitor (TKI) ที่ออกฤทธิ์โดยการเข้าไปจับและยับยั้ง BCR-ABL kinase โดยตรง",
+        "state": false
+    },
+    {
+        "problem": "22. Which adverse effect is specifically associated with high doses of quinine, leading to a syndrome called 'cinchonism'?",
+        "img": "",
+        "choices": "Severe skin rash and photosensitivity///Tinnitus, vertigo, and blurred vision///Bone marrow suppression and anemia///Acute renal failure and tubulopathy///Neuropsychiatric effects and psychosis",
+        "answer": "Tinnitus, vertigo, and blurred vision",
+        "select": "",
+        "explain": "Cinchonism เป็นกลุ่มอาการที่เกิดจากพิษของยา quinine ซึ่งมีอาการแสดงที่จำเพาะ ได้แก่ อาการทางหู (tinnitus, hearing loss), อาการทางตา (blurred vision, disturbed color vision), และอาการทางระบบประสาท (headache, vertigo, confusion)",
+        "state": false
+    },
+    {
+        "problem": "23. A patient with anemia of chronic kidney disease does not respond adequately to epoetin alfa. Iron studies are normal. Which statement best explains this lack of response?",
+        "img": "",
+        "choices": "The patient has developed antibodies against epoetin alfa///The patient is likely deficient in Vitamin B12 and folate///The patient requires a switch to a G-CSF like filgrastim///The underlying chronic inflammation is inhibiting erythropoiesis///The dose of epoetin alfa is likely too high causing feedback inhibition",
+        "answer": "The underlying chronic inflammation is inhibiting erythropoiesis",
+        "select": "",
+        "explain": "ภาวะดื้อต่อยา ESA (ESA hyporesponsiveness) ในผู้ป่วยโรคไตมีได้หลายสาเหตุ แต่สาเหตุที่พบบ่อยที่สุดคือภาวะอักเสบเรื้อรัง (chronic inflammation) และภาวะขาดธาตุเหล็ก (functional iron deficiency) การอักเสบจะทำให้มีการสร้าง hepcidin สูง ซึ่งจะไปขัดขวางการใช้ธาตุเหล็ก ทำให้ไขกระดูกไม่สามารถสร้างเม็ดเลือดแดงได้อย่างมีประสิทธิภาพแม้จะได้รับ EPO ก็ตาม",
+        "state": false
+    },
+    {
+        "problem": "24. A patient taking an antiretroviral regimen containing a protease inhibitor develops symptoms of peripheral gangrene after taking an ergotamine-containing migraine medication. This severe interaction is due to:",
+        "img": "",
+        "choices": "Induction of CYP3A4 by the protease inhibitor///Inhibition of CYP3A4 by the protease inhibitor///Direct competition at the P-glycoprotein transporter///Synergistic vasoconstrictive effects at the receptor level///Displacement of ergotamine from plasma proteins",
+        "answer": "Inhibition of CYP3A4 by the protease inhibitor",
+        "select": "",
+        "explain": "ยาในกลุ่ม Protease inhibitors (PIs) โดยเฉพาะ Ritonavir เป็น potent inhibitors ของเอนไซม์ CYP3A4 ยา Ergotamine ซึ่งเป็นยาแก้ปวดไมเกรนและมีฤทธิ์ทำให้หลอดเลือดหดตัว ถูกเมตาบอลิซึมโดย CYP3A4 เป็นหลัก การใช้ร่วมกับ PI จะทำให้ระดับยา ergotamine ในเลือดสูงขึ้นอย่างมาก นำไปสู่ภาวะหลอดเลือดหดตัวที่รุนแรงและยาวนาน (prolonged vasospasm) จนอาจทำให้เกิดเนื้อตายส่วนปลาย (gangrene) ได้",
+        "state": false
+    },
+    {
+        "problem": "25. Which antiplatelet drug works by blocking the thrombin receptor PAR-1 on platelets, thus preventing thrombin-mediated platelet activation?",
+        "img": "",
+        "choices": "Aspirin///Clopidogrel///Abciximab///Dipyridamole///Vorapaxar",
+        "answer": "Vorapaxar",
+        "select": "",
+        "explain": "Vorapaxar เป็นยาต้านเกล็ดเลือดในกลุ่มใหม่ที่ออกฤทธิ์โดยการเป็น competitive antagonist ของ Protease-Activated Receptor-1 (PAR-1) ซึ่งเป็น thrombin receptor หลักบนผิวของเกล็ดเลือด ทำให้ thrombin ไม่สามารถมาจับและกระตุ้นเกล็ดเลือดได้ เป็นการยับยั้งการทำงานของเกล็ดเลือดผ่าน pathway ที่สำคัญอีกทางหนึ่ง",
+        "state": false
+    },
+    {
+        "problem": "1. A patient with a history of DVT is treated with Fondaparinux. What is the precise mechanism of action for this synthetic anticoagulant?",
+        "img": "",
+        "choices": "Directly inhibits thrombin///Binds to antithrombin to selectively inhibit Factor Xa///Directly inhibits Factor Xa without a cofactor///Inhibits the synthesis of Vitamin K-dependent factors///Reversibly blocks the P2Y12 receptor on platelets",
+        "answer": "Binds to antithrombin to selectively inhibit Factor Xa",
+        "select": "",
+        "explain": "Fondaparinux เป็น synthetic pentasaccharide ที่เลียนแบบตำแหน่งการจับของ heparin บน Antithrombin III (ATIII) เมื่อจับกับ ATIII แล้วจะเกิด conformational change ที่ทำให้ ATIII สามารถยับยั้ง Factor Xa ได้อย่างจำเพาะเจาะจงและมีประสิทธิภาพสูง แต่ไม่มีผลต่อ Thrombin (Factor IIa) เลย",
+        "state": false
+    },
+    {
+        "problem": "2. A patient develops Heparin-Induced Thrombocytopenia (HIT) and requires an alternative intravenous anticoagulant. Which drug is a direct thrombin inhibitor suitable for this situation?",
+        "img": "",
+        "choices": "Warfarin///Fondaparinux///Protamine Sulfate///Rivaroxaban///Argatroban",
+        "answer": "Argatroban",
+        "select": "",
+        "explain": "ในผู้ป่วย HIT การให้ heparin ทุกชนิดถือเป็นข้อห้าม ยาที่เหมาะสมคือ direct thrombin inhibitor ชนิดฉีด เช่น Argatroban หรือ Bivalirudin ยาเหล่านี้จะเข้าไปยับยั้ง thrombin โดยตรงโดยไม่ต้องอาศัย ATIII จึงปลอดภัยและมีประสิทธิภาพในการรักษาภาวะลิ่มเลือดอุดตันในผู้ป่วย HIT",
+        "state": false
+    },
+    {
+        "problem": "3. Which first-generation fibrinolytic drug is highly antigenic and its repeated use is limited due to the development of neutralizing antibodies?",
+        "img": "",
+        "choices": "Alteplase///Reteplase///Tenecteplase///Streptokinase///Tranexamic acid",
+        "answer": "Streptokinase",
+        "select": "",
+        "explain": "Streptokinase เป็นโปรตีนที่สกัดจากเชื้อแบคทีเรีย β-hemolytic streptococci จึงมีคุณสมบัติเป็นสิ่งแปลกปลอมและกระตุ้นให้ร่างกายสร้าง antibody ได้สูง (highly antigenic) การให้ยาครั้งแรกอาจทำให้เกิดอาการแพ้ และการให้ซ้ำหลังจาก 4 วันไปแล้วอาจไม่ได้ผลเนื่องจากถูก antibody neutralize",
+        "state": false
+    },
+    {
+        "problem": "4. A patient with ST-elevation MI is given a fibrinolytic that has a long half-life and can be administered as a single IV bolus. Which of the following drugs fits this description?",
+        "img": "",
+        "choices": "Alteplase///Streptokinase///Tenecteplase///Warfarin///Heparin",
+        "answer": "Tenecteplase",
+        "select": "",
+        "explain": "Tenecteplase เป็น 3rd generation tissue plasminogen activator (t-PA) ที่ถูกดัดแปลงโครงสร้างให้มีความจำเพาะต่อ fibrin สูงขึ้น และมี half-life ยาวนานกว่า Alteplase มาก ทำให้สามารถบริหารยาโดยการฉีดเข้าหลอดเลือดดำครั้งเดียว (single IV bolus) ได้ ซึ่งสะดวกในการใช้งานในสถานการณ์ฉุกเฉิน",
+        "state": false
+    },
+    {
+        "problem": "5. A patient with anemia of CKD is switched from epoetin alfa to darbepoetin alfa. What is the primary advantage of darbepoetin alfa?",
+        "img": "",
+        "choices": "It can be administered orally///It has a significantly longer half-life///It also stimulates platelet production///It has a lower risk of hypertension///It is less expensive than epoetin alfa",
+        "answer": "It has a significantly longer half-life",
+        "select": "",
+        "explain": "Darbepoetin alfa เป็น 2nd generation Erythropoiesis-Stimulating Agent (ESA) ที่มีการดัดแปลงโครงสร้างโดยการเพิ่ม sialic acid side chains ทำให้มี half-life ยาวนานกว่า Epoetin alfa ประมาณ 3 เท่า ส่งผลให้สามารถลดความถี่ในการฉีดยาลงได้ เช่น จากสัปดาห์ละ 3 ครั้ง เหลือเพียงสัปดาห์ละ 1 ครั้ง หรือทุก 2-4 สัปดาห์",
+        "state": false
+    },
+    {
+        "problem": "6. A patient is treated with Pegfilgrastim after a chemotherapy cycle. What is the main benefit of using this 'pegylated' form of G-CSF?",
+        "img": "",
+        "choices": "It has a broader spectrum of activity///It can be taken as a tablet///It has a reduced incidence of bone pain///It has a greatly extended duration of action///It can be reversed with a specific antidote",
+        "answer": "It has a greatly extended duration of action",
+        "select": "",
+        "explain": "Pegfilgrastim คือ Filgrastim (G-CSF) ที่ถูกนำไปเชื่อมต่อกับ polyethylene glycol (PEG) หรือเรียกว่า pegylation กระบวนการนี้จะเพิ่มขนาดโมเลกุลและลดการกำจัดยาผ่านไต ทำให้ยาอยู่ในร่างกายนานขึ้นมาก (extended duration) จึงสามารถให้ยาเพียงครั้งเดียวต่อ 1 รอบของเคมีบำบัด (once per cycle) แทนที่จะต้องฉีดทุกวันเหมือน Filgrastim",
+        "state": false
+    },
+    {
+        "problem": "7. A patient with chronic ITP is started on Romiplostim. What is the nature and route of administration for this TPO receptor agonist?",
+        "img": "",
+        "choices": "Oral small molecule///Subcutaneous recombinant glycoprotein///Intravenous monoclonal antibody///Oral non-peptide agonist///Intramuscular synthetic peptide",
+        "answer": "Subcutaneous recombinant glycoprotein",
+        "select": "",
+        "explain": "Romiplostim เป็นยาในกลุ่ม TPO receptor agonist ที่มีโครงสร้างเป็น recombinant fusion protein (peptibody) ซึ่งไม่สามารถให้โดยการรับประทานได้ ต้องบริหารยาโดยการฉีดเข้าใต้ผิวหนัง (subcutaneous) สัปดาห์ละ 1 ครั้ง เพื่อกระตุ้นการสร้างเกล็ดเลือด",
+        "state": false
+    },
+    {
+        "problem": "8. The use of which first-generation P2Y12 inhibitor is now highly restricted due to a significant risk of severe neutropenia and thrombotic thrombocytopenic purpura (TTP)?",
+        "img": "",
+        "choices": "Prasugrel///Clopidogrel///Ticlopidine///Ticagrelor///Cangrelor",
+        "answer": "Ticlopidine",
+        "select": "",
+        "explain": "Ticlopidine เป็นยาต้านเกล็ดเลือดในกลุ่ม thienopyridine รุ่นแรก แต่ปัจจุบันมีการใช้งานที่จำกัดมากเนื่องจากมีผลข้างเคียงที่รุนแรงและอาจถึงแก่ชีวิตได้ คือ ภาวะเม็ดเลือดขาวต่ำ (severe neutropenia) และเพิ่มความเสี่ยงต่อการเกิด Thrombotic Thrombocytopenic Purpura (TTP)",
+        "state": false
+    },
+    {
+        "problem": "9. A patient is being treated for malaria with a drug combination that includes an agent with a very long half-life (~28 days) known to be associated with QT prolongation. Which agent is this?",
+        "img": "",
+        "choices": "Artesunate///Primaquine///Lumefantrine///Piperaquine///Proguanil",
+        "answer": "Piperaquine",
+        "select": "",
+        "explain": "Piperaquine เป็นยาต้านมาลาเรียที่ใช้เป็น partner drug คู่กับ Dihydroartemisinin (DHA-PIP) มีคุณสมบัติเด่นคือมี half-life ที่ยาวนานมาก (ประมาณ 28 วัน) ซึ่งช่วยกำจัดเชื้อที่ยังหลงเหลืออยู่ได้ แต่ก็มีข้อควรระวังสำคัญคือความเสี่ยงในการทำให้ QT interval บน EKG ยาวออกไป (QT prolongation)",
+        "state": false
+    },
+    {
+        "problem": "10. Which antimalarial drug, often paired with artemether, requires administration with a high-fat meal to ensure adequate absorption?",
+        "img": "",
+        "choices": "Mefloquine///Lumefantrine///Piperaquine///Pyronaridine///Amodiaquine",
+        "answer": "Lumefantrine",
+        "select": "",
+        "explain": "Lumefantrine เป็นยาต้านมาลาเรียที่มีคุณสมบัติละลายในไขมันได้ดี (highly lipophilic) การดูดซึมของยาจากทางเดินอาหารจึงต่ำมากหากรับประทานตอนท้องว่าง ดังนั้นจึงจำเป็นต้องรับประทานยาพร้อมหรือหลังอาหารที่มีไขมันสูง (high-fat meal) เพื่อเพิ่มการดูดซึมและประสิทธิภาพของยา",
+        "state": false
+    },
+    {
+        "problem": "11. A new single-dose drug has been approved for the radical cure of P. vivax malaria, offering an alternative to a 14-day course of primaquine. What is this long-acting drug?",
+        "img": "",
+        "choices": "Artesunate///Tafenoquine///Atovaquone///Pyronaridine///Mefloquine",
+        "answer": "Tafenoquine",
+        "select": "",
+        "explain": "Tafenoquine เป็นยาในกลุ่ม 8-aminoquinoline เช่นเดียวกับ primaquine แต่ออกฤทธิ์ได้ยาวนานกว่ามาก (long half-life) ทำให้สามารถใช้เป็น single-dose regimen สำหรับการกำจัดเชื้อระยะ hypnozoite ในตับ (radical cure) ของ P. vivax ได้ ซึ่งสะดวกกว่าการใช้ primaquine ที่ต้องรับประทานนาน 14 วัน แต่ยังคงมีข้อห้ามใช้ในผู้ป่วย G6PD deficiency เช่นกัน",
+        "state": false
+    },
+    {
+        "problem": "12. A patient is treated for leprosy and also receives prophylaxis for Pneumocystis pneumonia (PCP) with a drug that acts as a folate antagonist and carries a risk of hemolysis in G6PD deficient individuals. Which drug is this?",
+        "img": "",
+        "choices": "Isoniazid///Rifampin///Pyrimethamine///Dapsone///Clindamycin",
+        "answer": "Dapsone",
+        "select": "",
+        "explain": "Dapsone เป็นยาในกลุ่ม sulfone ที่มีฤทธิ์ยับยั้งการสังเคราะห์ folic acid (dihydropteroate synthase inhibitor) ใช้ในการรักษาโรคเรื้อน (leprosy) และยังใช้ป้องกัน PCP ได้ด้วย อย่างไรก็ตาม Dapsone เป็น potent oxidizing agent ซึ่งเป็นข้อห้ามใช้ในผู้ป่วย G6PD deficiency เพราะจะกระตุ้นให้เกิดภาวะเม็ดเลือดแดงแตกอย่างรุนแรง (hemolysis)",
+        "state": false
+    },
+    {
+        "problem": "13. A patient with toxoplasmosis who is allergic to sulfonamides is treated with a combination of pyrimethamine and an alternative drug that works by inhibiting protein synthesis. Which drug is this alternative?",
+        "img": "",
+        "choices": "Doxycycline///Azithromycin///Atovaquone///Clindamycin///Primaquine",
+        "answer": "Clindamycin",
+        "select": "",
+        "explain": "การรักษามาตรฐานสำหรับ toxoplasmosis คือ Pyrimethamine + Sulfadiazine ในกรณีที่ผู้ป่วยแพ้ยาในกลุ่ม sulfa ยาทางเลือกที่นิยมใช้คู่กับ Pyrimethamine คือ Clindamycin ซึ่งเป็นยาปฏิชีวนะที่ออกฤทธิ์โดยการยับยั้งการสังเคราะห์โปรตีนของเชื้อปรสิต",
+        "state": false
+    },
+    {
+        "problem": "14. A patient's HIV regimen includes a fixed-dose combination of Tenofovir/Emtricitabine. What is a characteristic, though generally benign, side effect associated with Emtricitabine (FTC)?",
+        "img": "",
+        "choices": "Severe skin hypersensitivity///Renal tubular acidosis///Pancreatitis///Hyperpigmentation of palms and soles///Neuropsychiatric disturbances",
+        "answer": "Hyperpigmentation of palms and soles",
+        "select": "",
+        "explain": "Emtricitabine (FTC) เป็นยาในกลุ่ม NRTI ที่มีโครงสร้างและกลไกคล้ายกับ Lamivudine (3TC) มาก ผลข้างเคียงที่จำเพาะกับ FTC แม้จะพบไม่บ่อยและไม่รุนแรง คือการเกิด Hyperpigmentation หรือผิวหนังมีสีคล้ำขึ้น โดยเฉพาะบริเวณฝ่ามือและฝ่าเท้า",
+        "state": false
+    },
+    {
+        "problem": "15. Which first-generation NNRTI is known for a high incidence of severe rash (including SJS/TEN) and hepatotoxicity, particularly if initiated in women with high CD4 counts?",
+        "img": "",
+        "choices": "Efavirenz///Rilpivirine///Doravirine///Etravirine///Nevirapine",
+        "answer": "Nevirapine",
+        "select": "",
+        "explain": "Nevirapine เป็นยาต้านไวรัสในกลุ่ม NNRTI รุ่นแรกที่มีข้อจำกัดในการใช้เนื่องจากความเสี่ยงสูงต่อการเกิดผลข้างเคียงที่รุนแรง ได้แก่ ผื่นแพ้ยารุนแรง (SJS/TEN) และภาวะตับอักเสบรุนแรง (hepatotoxicity) โดยเฉพาะในผู้หญิงที่มีระดับ CD4 count >250 cells/mm³",
+        "state": false
+    },
+    {
+        "problem": "16. A patient on an HIV regimen containing Rilpivirine is prescribed a proton pump inhibitor (PPI) for heartburn. Why is this combination contraindicated?",
+        "img": "",
+        "choices": "Rilpivirine inhibits the metabolism of the PPI, leading to toxicity///The PPI induces the metabolism of Rilpivirine, reducing its efficacy///Rilpivirine requires an acidic gastric environment for adequate absorption///Both drugs compete for the same renal transporter, causing kidney injury///The PPI can cause a severe hypersensitivity reaction when taken with Rilpivirine",
+        "answer": "Rilpivirine requires an acidic gastric environment for adequate absorption",
+        "select": "",
+        "explain": "Rilpivirine (RPV) ซึ่งเป็น NNRTI รุ่นที่สอง มีคุณสมบัติในการละลายน้ำที่ขึ้นกับ pH การดูดซึมของยาจะดีในสภาวะที่เป็นกรด การใช้ร่วมกับยาที่ลดกรดในกระเพาะอาหารอย่างรุนแรง เช่น Proton Pump Inhibitors (PPIs) จะทำให้ระดับยา RPV ในเลือดลดลงอย่างมากจนอาจไม่เพียงพอต่อการควบคุมไวรัส",
+        "state": false
+    },
+    {
+        "problem": "17. A patient on Atazanavir develops scleral icterus, but his liver function tests are normal. This benign side effect is caused by the inhibition of which enzyme?",
+        "img": "",
+        "choices": "CYP3A4///Glucuronyl transferase (UGT1A1)///CYP2C19///Alcohol dehydrogenase///Alanine aminotransferase (ALT)",
+        "answer": "Glucuronyl transferase (UGT1A1)",
+        "select": "",
+        "explain": "Atazanavir ซึ่งเป็นยาในกลุ่ม Protease Inhibitor มีผลข้างเคียงที่จำเพาะคือการทำให้เกิดภาวะ indirect hyperbilirubinemia ซึ่งเกิดจากการที่ยาเข้าไปยับยั้งเอนไซม์ UDP-glucuronosyltransferase (UGT1A1) ในตับ ซึ่งเป็นเอนไซม์ที่ใช้ในการ conjugate bilirubin ทำให้ผู้ป่วยมีอาการตัวเหลืองตาเหลือง (jaundice) ได้โดยที่ตับไม่ได้อักเสบ",
+        "state": false
+    },
+    {
+        "problem": "18. Which novel antiretroviral agent is a long-acting injectable integrase inhibitor, suitable for both treatment in combination and for pre-exposure prophylaxis (PrEP)?",
+        "img": "",
+        "choices": "Dolutegravir///Elvitegravir///Bictegravir///Cabotegravir///Raltegravir",
+        "answer": "Cabotegravir",
+        "select": "",
+        "explain": "Cabotegravir (CAB) เป็นยาในกลุ่ม INSTI ที่ถูกพัฒนาขึ้นมาในรูปแบบยาฉีดออกฤทธิ์นาน (long-acting injectable) สามารถใช้ร่วมกับ Rilpivirine ชนิดฉีดเพื่อการรักษา (ฉีดทุก 1-2 เดือน) หรือใช้ฉีดเดี่ยวๆ เพื่อป้องกันการติดเชื้อ (PrEP) ได้",
+        "state": false
+    },
+    {
+        "problem": "19. An HIV-positive patient with multidrug resistance is started on Enfuvirtide. What is the mechanism of this fusion inhibitor?",
+        "img": "",
+        "choices": "It binds to the CCR5 co-receptor on the CD4 cell///It binds to the CD4 receptor on the T-cell///It binds to gp120 on the virus, preventing attachment///It binds to gp41 on the virus, preventing membrane fusion///It inhibits the reverse transcriptase enzyme",
+        "answer": "It binds to gp41 on the virus, preventing membrane fusion",
+        "select": "",
+        "explain": "Enfuvirtide (T-20) เป็นยาในกลุ่ม fusion inhibitor ที่มีโครงสร้างเป็น peptide ออกฤทธิ์โดยการจับกับโปรตีน gp41 บนผิวของเชื้อ HIV ซึ่งเป็นโปรตีนที่ทำหน้าที่ในการหลอมรวมเยื่อหุ้มเซลล์ของไวรัสเข้ากับเยื่อหุ้มเซลล์ของ CD4 cell การจับนี้จะขัดขวางการเปลี่ยนแปลงโครงสร้างของ gp41 ทำให้กระบวนการ fusion ไม่สามารถเกิดขึ้นได้",
+        "state": false
+    },
+    {
+        "problem": "20. A patient with HIV who has developed resistance to multiple drug classes is a candidate for a new drug, Lenacapavir. What is its unique mechanism of action?",
+        "img": "",
+        "choices": "It inhibits the HIV capsid protein at multiple stages of the viral lifecycle///It acts as a broadly neutralizing antibody against the HIV envelope///It prevents the maturation of the virus by inhibiting the protease enzyme///It blocks the integration of viral DNA by binding to integrase///It is a potent inhibitor of the reverse transcriptase enzyme",
+        "answer": "It inhibits the HIV capsid protein at multiple stages of the viral lifecycle",
+        "select": "",
+        "explain": "Lenacapavir เป็นยาในกลุ่มใหม่ล่าสุดคือ capsid inhibitor ออกฤทธิ์โดยการจับกับ capsid protein (p24) ของเชื้อ HIV ซึ่งเป็นโปรตีนสำคัญที่ประกอบกันเป็นแกนรูปกรวยของไวรัส การจับนี้จะไปรบกวนการทำงานของ capsid ในหลายขั้นตอนของวงจรชีวิตไวรัส ทั้งขั้นตอนการปลดเปลือก (uncoating) การขนส่งเข้าสู่นิวเคลียส และการประกอบร่างของไวรัสตัวใหม่ (assembly)",
+        "state": false
+    },
+    {
+        "problem": "21. A patient with intermittent claudication experiences significant relief with Dipyridamole. Besides PDE inhibition, what other mechanism contributes to its antiplatelet and vasodilatory effects?",
+        "img": "",
+        "choices": "Blocks thrombin receptors///Inhibits adenosine uptake///Irreversibly acetylates COX-1///Blocks ADP P2Y12 receptors///Inhibits Factor Xa directly",
+        "answer": "Inhibits adenosine uptake",
+        "select": "",
+        "explain": "Dipyridamole มีกลไกการออกฤทธิ์ 2 ทางหลัก คือ 1) เป็น phosphodiesterase (PDE) inhibitor ทำให้ cAMP เพิ่มขึ้น และ 2) ยับยั้งการนำ Adenosine กลับเข้าเซลล์ (inhibits adenosine uptake) ทำให้มี Adenosine นอกเซลล์เพิ่มขึ้น ซึ่ง Adenosine จะไปกระตุ้น A2 receptors ทำให้เกิด vasodilation และยับยั้งการทำงานของเกล็ดเลือด",
+        "state": false
+    },
+    {
+        "problem": "22. An IV formulation of a P2Y12 inhibitor with a very rapid onset and offset of action is used during a complex PCI procedure. Which drug is this?",
+        "img": "",
+        "choices": "Ticlopidine///Prasugrel///Ticagrelor///Cangrelor///Clopidogrel",
+        "answer": "Cangrelor",
+        "select": "",
+        "explain": "Cangrelor เป็น direct-acting, reversible P2Y12 inhibitor เพียงตัวเดียวที่อยู่ในรูปแบบยาฉีดเข้าหลอดเลือดดำ (intravenous) มีคุณสมบัติเด่นคือออกฤทธิ์และหมดฤทธิ์เร็วมาก (rapid onset and offset) ทำให้สามารถควบคุมระดับการยับยั้งเกล็ดเลือดได้อย่างแม่นยำระหว่างทำหัตถการ PCI",
+        "state": false
+    },
+    {
+        "problem": "23. A patient with severe iron overload from thalassemia requires continuous chelation. Which iron chelator is administered via a subcutaneous infusion pump over 8-12 hours daily?",
+        "img": "",
+        "choices": "Deferasirox///Deferiprone///Vitamin C///Ferrous sulfate///Deferoxamine",
+        "answer": "Deferoxamine",
+        "select": "",
+        "explain": "Deferoxamine เป็นยาขับธาตุเหล็กตัวแรกที่ถูกนำมาใช้ มี half-life สั้นมาก จึงต้องให้ยาอย่างต่อเนื่องเพื่อให้ได้ประสิทธิภาพสูงสุด วิธีมาตรฐานคือการให้ยาผ่านปั๊มฉีดยาแบบพกพาเข้าใต้ผิวหนัง (subcutaneous infusion) อย่างช้าๆ เป็นเวลา 8-12 ชั่วโมงต่อวัน ซึ่งเป็นวิธีที่ยุ่งยากสำหรับผู้ป่วย",
+        "state": false
+    },
+    {
+        "problem": "24. A patient with a history of stroke is prescribed a combination of aspirin and extended-release dipyridamole. This combination is intended to provide what therapeutic effect?",
+        "img": "",
+        "choices": "Synergistic inhibition of platelet aggregation via different pathways///Reversal of fibrin clots that have already formed in cerebral arteries///Potent anticoagulation by inhibiting the synthesis of clotting factors///Stimulation of red blood cell production to improve oxygen delivery///Reduction of blood viscosity and improvement of cerebral blood flow",
+        "answer": "Synergistic inhibition of platelet aggregation via different pathways",
+        "select": "",
+        "explain": "การใช้ยาสองชนิดนี้ร่วมกันมีเป้าหมายเพื่อเสริมฤทธิ์ในการยับยั้งเกล็ดเลือด (synergistic inhibition) โดย Aspirin ยับยั้งการสร้าง TXA2 ผ่าน COX-1 pathway ในขณะที่ Dipyridamole ยับยั้ง PDE และการดูดซึม adenosine ซึ่งเป็น pathway ที่แตกต่างกัน การยับยั้งคนละกลไกทำให้ได้ผลลัพธ์ในการป้องกันการเกิดลิ่มเลือดได้ดีกว่าการใช้ยาตัวเดียว",
+        "state": false
+    },
+    {
+        "problem": "25. A patient on warfarin therapy with a supratherapeutic INR of 12.0 and active bleeding is given Fresh Frozen Plasma (FFP). What is the primary reason for administering FFP in this acute setting?",
+        "img": "",
+        "choices": "To provide a source of Vitamin K///To directly bind and neutralize warfarin///To rapidly replenish all vitamin K-dependent clotting factors///To reverse heparin-induced thrombocytopenia///To inhibit fibrinolysis and stabilize existing clots",
+        "answer": "To rapidly replenish all vitamin K-dependent clotting factors",
+        "select": "",
+        "explain": "ในภาวะที่เลือดออกจาก warfarin เกินขนาดอย่างรุนแรง การให้ Vitamin K จะใช้เวลาหลายชั่วโมงกว่าจะออกฤทธิ์สร้าง clotting factor ใหม่ได้ การให้ Fresh Frozen Plasma (FFP) จึงมีความจำเป็นเร่งด่วน เพราะ FFP เป็นผลิตภัณฑ์ที่มีปัจจัยการแข็งตัวของเลือดที่ยังทำงานได้ดีอยู่ครบทุกตัว (II, VII, IX, X) เป็นการเติมปัจจัยที่ขาดหายไปกลับเข้าร่างกายโดยตรง ทำให้สามารถควบคุมภาวะเลือดออกได้อย่างรวดเร็ว",
+        "state": false
+    }],
     "Hbtyping": [
         {
             "problem": "1. ผู้ป่วยชายอายุ 30 ปี ตรวจสุขภาพประจำปี ไม่มีอาการผิดปกติ CBC: Hb 14.5 g/dL, MCV 89 fL. ผล Hb typing คือ: Hb A2: 2.7%, Hb F: 0.8%, Hb A: 96.5%. ผลนี้เข้าได้กับภาวะใดมากที่สุด?",
@@ -64,8 +739,8 @@ var quizdata = {
             "state": false
         },
         {
-                        "problem": "9. เด็กชายอายุ 2 ปี มีประวัติซีดรุนแรงตั้งแต่ 6 เดือนแรก ตับม้ามโตมาก ต้องรับเลือดทุกเดือน ผล Hb typing (ก่อนรับเลือด) คือ: Hb F: 98%, Hb A2: 2.0%, Hb A: 0%. ผลนี้คือโรคอะไร?",
-                        "img": "",
+            "problem": "9. เด็กชายอายุ 2 ปี มีประวัติซีดรุนแรงตั้งแต่ 6 เดือนแรก ตับม้ามโตมาก ต้องรับเลือดทุกเดือน ผล Hb typing (ก่อนรับเลือด) คือ: Hb F: 98%, Hb A2: 2.0%, Hb A: 0%. ผลนี้คือโรคอะไร?",
+            "img": "",
             "choices": "β-thalassemia major///β-thalassemia/Hb E disease///Homozygous Hb E///Hb H disease///Hereditary persistence of fetal hemoglobin (HPFH)",
             "answer": "β-thalassemia major",
             "select": "",
@@ -552,92 +1227,92 @@ var quizdata = {
             "state": false
         },
         {
-                        "problem": "49. Which of the following is the cause of eosinophilia?",
-                        "img": "",
-                        "choices": "Myelodysplastic syndrome///Cytomegalovirus retinitis///Pulmonary tuberculosis///Pulmonary nocardiasis///Strongyloides infestation",
-                        "answer": "Strongyloides infestation",
-                        "select": "",
-                        "explain": "ภาวะ Eosinophilia หรือการมีจำนวนเม็ดเลือดขาวชนิด Eosinophil สูงในเลือด มีสาเหตุได้หลายอย่าง แต่สาเหตุที่พบบ่อยและสำคัญที่สุดอย่างหนึ่งคือการติดเชื้อพยาธิ โดยเฉพาะพยาธิที่บุกรุกเนื้อเยื่อ (tissue-invasive helminths) เช่น พยาธิเส้นด้าย Strongyloides stercoralis",
-                        "state": false
-                    },
-                    {
-                        "problem": "50. A 12-year-old boy from Surat Thani Province presented with a high fever (39°C). Physical examination revealed neck stiffness, heart and lungs sounded normal. The clinician suspected for filaria infection. What is the best time to collect blood for detection of microfilariae?",
-                        "img": "",
-                        "choices": "10.00 a.m. - 02.00 p.m.///10.00 p.m. – 02.00 a.m.///06.00 a.m. - 10.00 a.m.///01.00 p.m. – 05.00 p.m.///10.00 a.m. - 01.00 a.m.",
-                        "answer": "10.00 p.m. – 02.00 a.m.",
-                        "select": "",
-                        "explain": "เชื้อพยาธิฟิลาเรียหรือพยาธิโรคเท้าช้าง (Wuchereria bancrofti และ Brugia malayi) ที่เป็นสาเหตุส่วนใหญ่ในภูมิภาคเอเชียตะวันออกเฉียงใต้ มีลักษณะพิเศษคือตัวอ่อน (microfilariae) จะออกมาปรากฏในกระแสเลือดส่วนปลาย (peripheral blood) เป็นจำนวนมากที่สุดในช่วงเวลากลางคืน หรือที่เรียกว่า nocturnal periodicity ดังนั้นช่วงเวลาที่ดีที่สุดในการเจาะเลือดเพื่อตรวจหาเชื้อคือช่วงกลางดึก ประมาณ 22.00 น. ถึง 02.00 น.",
-                        "state": false
-                    },
-                    {
-                        "problem": "51. A 65-year-old receives incompatible PRBCs and develops DIC within an hour. Which is the most common cause of acute hemolytic transfusion reaction (AHTR)?",
-                        "img": "",
-                        "choices": "Bacterial contamination of unit///Alloantibody to Kidd (Jk) antigen///Clerical/identification error///Storage lesion of RBCs///IgA deficiency with anti-IgA",
-                        "answer": "Clerical/identification error",
-                        "select": "",
-                        "explain": "สาเหตุที่พบบ่อยที่สุดของ Acute Hemolytic Transfusion Reaction (AHTR) ซึ่งเป็นภาวะแทรกซ้อนที่รุนแรงที่สุดจากการให้เลือด คือความผิดพลาดของมนุษย์ (human error) เช่น การระบุตัวผู้ป่วยผิดพลาด การติดป้ายชื่อที่ถุงเลือดผิด หรือการหยิบเลือดผิดถุงให้ผู้ป่วยผิดคน ซึ่งนำไปสู่การให้เลือดที่เข้ากันไม่ได้ตามระบบ ABO (ABO incompatibility)",
-                        "state": false
-                    },
-                    {
-                        "problem": "52. A 45-year-old man had high grade of fever, headache myalgia for 5 days. Physical exam. Black crust at perineum. BT 39 C, BP 110/60 mmHg, PR 109/min, RR 20/min CBC: Hct 40%, WBC 6,500 cells/mm PMN 65%, L 23%, mo 2% platelet count 170,000/mm What is the pathogenesis of this disease ?",
-                        "img": "",
-                        "choices": "Vascular injury///Autoantibody///Direct invasion///T-cell apoptosis///Antibody enhancement",
-                        "answer": "Vascular injury",
-                        "select": "",
-                        "explain": "อาการของผู้ป่วย โดยเฉพาะไข้สูงและแผล eschar (black crust) บ่งชี้ถึงโรคในกลุ่ม Rickettsial disease เช่น Scrub typhus พยาธิกำเนิดหลักของโรคกลุ่มนี้คือเชื้อจะเข้าไปเจริญในเซลล์บุผนังหลอดเลือด (endothelial cells) ทำให้เกิดการอักเสบของหลอดเลือดขนาดเล็กทั่วร่างกาย (systemic vasculitis) ซึ่งนำไปสู่การรั่วของสารน้ำออกนอกหลอดเลือดและอาการแสดงต่างๆ ของโรค",
-                        "state": false
-                    },
-                    {
-                        "problem": "53. A 16-year-old boy is brought to the clinic by his mother because of repeated episodes of painful swelling in his knees and elbows over the past year. The mother reports that minor trauma often leads to prolonged bleeding. His maternal uncle had a history of frequent joint bleeds requiring hospitalization. On examination, the patient has swollen, tender knees with decreased range of motion. There is no petechiae or splenomegaly. Laboratory results show normal platelet count and normal bleeding time, but markedly prolonged activated partial thromboplastin time (aPTT). Which of the following is the most likely diagnosis in this patient?",
-                        "img": "",
-                        "choices": "Vitamin K deficiency///Immune thrombocytopenic purpura (ITP)///Hemophilia///Acquired factor VIII inhibitor///von Willebrand disease",
-                        "answer": "Hemophilia",
-                        "select": "",
-                        "explain": "ผู้ป่วยมีลักษณะที่บ่งชี้ถึงโรค Hemophilia อย่างชัดเจน ได้แก่ 1. ประวัติเลือดออกในข้อ (hemarthrosis) ซ้ำๆ 2. ประวัติครอบครัวที่สอดคล้องกับการถ่ายทอดทางพันธุกรรมแบบ X-linked (มีประวัติในลุงฝั่งแม่) 3. ผลการตรวจทางห้องปฏิบัติการที่แสดงความผิดปกติของ secondary hemostasis ใน intrinsic pathway (aPTT ยาวนานผิดปกติ) โดยที่ primary hemostasis ปกติ (platelet count และ bleeding time ปกติ)",
-                        "state": false
-                    },
-                    {
-                        "problem": "54. Which of the following pair of drug and ADR are correct?",
-                        "img": "",
-                        "choices": "AZT - Peripheral neuropathy///Abacavir - Bone marrow suppression///Efavirenz - Lipodystrophy///TDF - Nephrotoxicity///Saquinavir - Cardiotoxicity",
-                        "answer": "TDF - Nephrotoxicity",
-                        "select": "",
-                        "explain": "Tenofovir disoproxil fumarate (TDF) เป็นยาต้านไวรัสในกลุ่ม NRTI ที่มีผลข้างเคียงที่สำคัญและเป็นที่รู้จักกันดีคือความเป็นพิษต่อไต (Nephrotoxicity) ซึ่งอาจทำให้เกิดภาวะ Fanconi syndrome หรือไตวายเฉียบพลันได้ จึงต้องมีการติดตามการทำงานของไตในผู้ที่ใช้ยานี้ ส่วน AZT (Zidovudine) ทำให้เกิด bone marrow suppression และ Efavirenz ทำให้เกิดอาการทางระบบประสาท",
-                        "state": false
-                    },
-                    {
-                        "problem": "55. Which one of the following substances need heparin to accelerate its anticoagulant effect?",
-                        "img": "",
-                        "choices": "Thrombomodulin///Tissue factor pathway inhibitor///Prostacyclin///Antithrombin III///Nitric oxide",
-                        "answer": "Antithrombin III",
-                        "select": "",
-                        "explain": "Heparin ออกฤทธิ์ต้านการแข็งตัวของเลือดโดยการไปจับกับ Antithrombin III (AT III) ซึ่งเป็นโปรตีนยับยั้งการแข็งตัวของเลือดตามธรรมชาติ การจับกันนี้จะทำให้โครงสร้างของ AT III เปลี่ยนแปลงไปและสามารถยับยั้ง clotting factors ต่างๆ (โดยเฉพาะ Thrombin (Factor IIa) และ Factor Xa) ได้รวดเร็วและมีประสิทธิภาพมากขึ้นหลายพันเท่า ดังนั้น heparin จึงทำหน้าที่เป็น catalyst หรือตัวเร่งปฏิกิริยาของ Antithrombin III",
-                        "state": false
-                    },
-                    {
-                        "problem": "56. Which myeloproliferative neoplasm has the highest incidence of JAK2 V617F mutation?",
-                        "img": "",
-                        "choices": "Primary myelofibrosis///Polycythemia vera///Chronic myelogenous leukemia///Essential thrombocythemia///Chronic neutrophilic leukemia",
-                        "answer": "Polycythemia vera",
-                        "select": "",
-                        "explain": "JAK2 V617F mutation เป็นการกลายพันธุ์ที่สำคัญในกลุ่มโรค Myeloproliferative Neoplasms (MPNs) โดยพบได้บ่อยที่สุดในโรค Polycythemia vera (PV) ซึ่งพบได้มากกว่า 95% ของผู้ป่วย นอกจากนี้ยังพบได้ประมาณ 50-60% ในผู้ป่วย Essential thrombocythemia (ET) และ Primary myelofibrosis (PMF) ส่วน CML เกี่ยวข้องกับ BCR-ABL1 fusion gene",
-                        "state": false
-                    },
-                    {
-                        "problem": "57. A 32-year-old woman presents with recurrent miscarriages at 12–14 weeks of gestation. She also reports a past history of deep vein thrombosis. Laboratory studies reveal isolated aPTT prolonged and mixing test uncorrectable. Which of the following is the most likely diagnosis?",
-                        "img": "",
-                        "choices": "Dysregulation of female sex hormone///Inherited thrombophilia///Intrauterine tumor///Antiphospholipid syndrome (APS)///Systemic lupus erythematosus (SLE)",
-                        "answer": "Antiphospholipid syndrome (APS)",
-                        "select": "",
-                        "explain": "ผู้ป่วยมีประวัติที่เข้าได้กับเกณฑ์การวินิจฉัย Antiphospholipid syndrome (APS) ทั้งทางคลินิก (ภาวะลิ่มเลือดอุดตัน DVT และภาวะแทรกซ้อนทางสูติกรรม recurrent miscarriages) และทางห้องปฏิบัติการ โดยการพบ aPTT ที่ยาวนานผิดปกติและไม่สามารถแก้ไขได้ด้วยการทำ mixing test (uncorrectable) บ่งชี้ว่ามี inhibitor อยู่ในเลือด ซึ่งในบริบทนี้คือ lupus anticoagulant ซึ่งเป็นหนึ่งใน antiphospholipid antibodies",
-                        "state": false
-                    },
-                    {
-                        "problem": "58. Which of the following is the condition associated with hypochromic microcytic anemia?",
-                        "img": "",
-                        "choices": "Hereditary spherocytosis///Myelodysplastic anemia///G6PD deficiency///Acute leukemia///Homozygous hemoglobin E disease",
-                        "answer": "Homozygous hemoglobin E disease",
-                        "select": "",
+            "problem": "49. Which of the following is the cause of eosinophilia?",
+            "img": "",
+            "choices": "Myelodysplastic syndrome///Cytomegalovirus retinitis///Pulmonary tuberculosis///Pulmonary nocardiasis///Strongyloides infestation",
+            "answer": "Strongyloides infestation",
+            "select": "",
+            "explain": "ภาวะ Eosinophilia หรือการมีจำนวนเม็ดเลือดขาวชนิด Eosinophil สูงในเลือด มีสาเหตุได้หลายอย่าง แต่สาเหตุที่พบบ่อยและสำคัญที่สุดอย่างหนึ่งคือการติดเชื้อพยาธิ โดยเฉพาะพยาธิที่บุกรุกเนื้อเยื่อ (tissue-invasive helminths) เช่น พยาธิเส้นด้าย Strongyloides stercoralis",
+            "state": false
+        },
+        {
+            "problem": "50. A 12-year-old boy from Surat Thani Province presented with a high fever (39°C). Physical examination revealed neck stiffness, heart and lungs sounded normal. The clinician suspected for filaria infection. What is the best time to collect blood for detection of microfilariae?",
+            "img": "",
+            "choices": "10.00 a.m. - 02.00 p.m.///10.00 p.m. – 02.00 a.m.///06.00 a.m. - 10.00 a.m.///01.00 p.m. – 05.00 p.m.///10.00 a.m. - 01.00 a.m.",
+            "answer": "10.00 p.m. – 02.00 a.m.",
+            "select": "",
+            "explain": "เชื้อพยาธิฟิลาเรียหรือพยาธิโรคเท้าช้าง (Wuchereria bancrofti และ Brugia malayi) ที่เป็นสาเหตุส่วนใหญ่ในภูมิภาคเอเชียตะวันออกเฉียงใต้ มีลักษณะพิเศษคือตัวอ่อน (microfilariae) จะออกมาปรากฏในกระแสเลือดส่วนปลาย (peripheral blood) เป็นจำนวนมากที่สุดในช่วงเวลากลางคืน หรือที่เรียกว่า nocturnal periodicity ดังนั้นช่วงเวลาที่ดีที่สุดในการเจาะเลือดเพื่อตรวจหาเชื้อคือช่วงกลางดึก ประมาณ 22.00 น. ถึง 02.00 น.",
+            "state": false
+        },
+        {
+            "problem": "51. A 65-year-old receives incompatible PRBCs and develops DIC within an hour. Which is the most common cause of acute hemolytic transfusion reaction (AHTR)?",
+            "img": "",
+            "choices": "Bacterial contamination of unit///Alloantibody to Kidd (Jk) antigen///Clerical/identification error///Storage lesion of RBCs///IgA deficiency with anti-IgA",
+            "answer": "Clerical/identification error",
+            "select": "",
+            "explain": "สาเหตุที่พบบ่อยที่สุดของ Acute Hemolytic Transfusion Reaction (AHTR) ซึ่งเป็นภาวะแทรกซ้อนที่รุนแรงที่สุดจากการให้เลือด คือความผิดพลาดของมนุษย์ (human error) เช่น การระบุตัวผู้ป่วยผิดพลาด การติดป้ายชื่อที่ถุงเลือดผิด หรือการหยิบเลือดผิดถุงให้ผู้ป่วยผิดคน ซึ่งนำไปสู่การให้เลือดที่เข้ากันไม่ได้ตามระบบ ABO (ABO incompatibility)",
+            "state": false
+        },
+        {
+            "problem": "52. A 45-year-old man had high grade of fever, headache myalgia for 5 days. Physical exam. Black crust at perineum. BT 39 C, BP 110/60 mmHg, PR 109/min, RR 20/min CBC: Hct 40%, WBC 6,500 cells/mm PMN 65%, L 23%, mo 2% platelet count 170,000/mm What is the pathogenesis of this disease ?",
+            "img": "",
+            "choices": "Vascular injury///Autoantibody///Direct invasion///T-cell apoptosis///Antibody enhancement",
+            "answer": "Vascular injury",
+            "select": "",
+            "explain": "อาการของผู้ป่วย โดยเฉพาะไข้สูงและแผล eschar (black crust) บ่งชี้ถึงโรคในกลุ่ม Rickettsial disease เช่น Scrub typhus พยาธิกำเนิดหลักของโรคกลุ่มนี้คือเชื้อจะเข้าไปเจริญในเซลล์บุผนังหลอดเลือด (endothelial cells) ทำให้เกิดการอักเสบของหลอดเลือดขนาดเล็กทั่วร่างกาย (systemic vasculitis) ซึ่งนำไปสู่การรั่วของสารน้ำออกนอกหลอดเลือดและอาการแสดงต่างๆ ของโรค",
+            "state": false
+        },
+        {
+            "problem": "53. A 16-year-old boy is brought to the clinic by his mother because of repeated episodes of painful swelling in his knees and elbows over the past year. The mother reports that minor trauma often leads to prolonged bleeding. His maternal uncle had a history of frequent joint bleeds requiring hospitalization. On examination, the patient has swollen, tender knees with decreased range of motion. There is no petechiae or splenomegaly. Laboratory results show normal platelet count and normal bleeding time, but markedly prolonged activated partial thromboplastin time (aPTT). Which of the following is the most likely diagnosis in this patient?",
+            "img": "",
+            "choices": "Vitamin K deficiency///Immune thrombocytopenic purpura (ITP)///Hemophilia///Acquired factor VIII inhibitor///von Willebrand disease",
+            "answer": "Hemophilia",
+            "select": "",
+            "explain": "ผู้ป่วยมีลักษณะที่บ่งชี้ถึงโรค Hemophilia อย่างชัดเจน ได้แก่ 1. ประวัติเลือดออกในข้อ (hemarthrosis) ซ้ำๆ 2. ประวัติครอบครัวที่สอดคล้องกับการถ่ายทอดทางพันธุกรรมแบบ X-linked (มีประวัติในลุงฝั่งแม่) 3. ผลการตรวจทางห้องปฏิบัติการที่แสดงความผิดปกติของ secondary hemostasis ใน intrinsic pathway (aPTT ยาวนานผิดปกติ) โดยที่ primary hemostasis ปกติ (platelet count และ bleeding time ปกติ)",
+            "state": false
+        },
+        {
+            "problem": "54. Which of the following pair of drug and ADR are correct?",
+            "img": "",
+            "choices": "AZT - Peripheral neuropathy///Abacavir - Bone marrow suppression///Efavirenz - Lipodystrophy///TDF - Nephrotoxicity///Saquinavir - Cardiotoxicity",
+            "answer": "TDF - Nephrotoxicity",
+            "select": "",
+            "explain": "Tenofovir disoproxil fumarate (TDF) เป็นยาต้านไวรัสในกลุ่ม NRTI ที่มีผลข้างเคียงที่สำคัญและเป็นที่รู้จักกันดีคือความเป็นพิษต่อไต (Nephrotoxicity) ซึ่งอาจทำให้เกิดภาวะ Fanconi syndrome หรือไตวายเฉียบพลันได้ จึงต้องมีการติดตามการทำงานของไตในผู้ที่ใช้ยานี้ ส่วน AZT (Zidovudine) ทำให้เกิด bone marrow suppression และ Efavirenz ทำให้เกิดอาการทางระบบประสาท",
+            "state": false
+        },
+        {
+            "problem": "55. Which one of the following substances need heparin to accelerate its anticoagulant effect?",
+            "img": "",
+            "choices": "Thrombomodulin///Tissue factor pathway inhibitor///Prostacyclin///Antithrombin III///Nitric oxide",
+            "answer": "Antithrombin III",
+            "select": "",
+            "explain": "Heparin ออกฤทธิ์ต้านการแข็งตัวของเลือดโดยการไปจับกับ Antithrombin III (AT III) ซึ่งเป็นโปรตีนยับยั้งการแข็งตัวของเลือดตามธรรมชาติ การจับกันนี้จะทำให้โครงสร้างของ AT III เปลี่ยนแปลงไปและสามารถยับยั้ง clotting factors ต่างๆ (โดยเฉพาะ Thrombin (Factor IIa) และ Factor Xa) ได้รวดเร็วและมีประสิทธิภาพมากขึ้นหลายพันเท่า ดังนั้น heparin จึงทำหน้าที่เป็น catalyst หรือตัวเร่งปฏิกิริยาของ Antithrombin III",
+            "state": false
+        },
+        {
+            "problem": "56. Which myeloproliferative neoplasm has the highest incidence of JAK2 V617F mutation?",
+            "img": "",
+            "choices": "Primary myelofibrosis///Polycythemia vera///Chronic myelogenous leukemia///Essential thrombocythemia///Chronic neutrophilic leukemia",
+            "answer": "Polycythemia vera",
+            "select": "",
+            "explain": "JAK2 V617F mutation เป็นการกลายพันธุ์ที่สำคัญในกลุ่มโรค Myeloproliferative Neoplasms (MPNs) โดยพบได้บ่อยที่สุดในโรค Polycythemia vera (PV) ซึ่งพบได้มากกว่า 95% ของผู้ป่วย นอกจากนี้ยังพบได้ประมาณ 50-60% ในผู้ป่วย Essential thrombocythemia (ET) และ Primary myelofibrosis (PMF) ส่วน CML เกี่ยวข้องกับ BCR-ABL1 fusion gene",
+            "state": false
+        },
+        {
+            "problem": "57. A 32-year-old woman presents with recurrent miscarriages at 12–14 weeks of gestation. She also reports a past history of deep vein thrombosis. Laboratory studies reveal isolated aPTT prolonged and mixing test uncorrectable. Which of the following is the most likely diagnosis?",
+            "img": "",
+            "choices": "Dysregulation of female sex hormone///Inherited thrombophilia///Intrauterine tumor///Antiphospholipid syndrome (APS)///Systemic lupus erythematosus (SLE)",
+            "answer": "Antiphospholipid syndrome (APS)",
+            "select": "",
+            "explain": "ผู้ป่วยมีประวัติที่เข้าได้กับเกณฑ์การวินิจฉัย Antiphospholipid syndrome (APS) ทั้งทางคลินิก (ภาวะลิ่มเลือดอุดตัน DVT และภาวะแทรกซ้อนทางสูติกรรม recurrent miscarriages) และทางห้องปฏิบัติการ โดยการพบ aPTT ที่ยาวนานผิดปกติและไม่สามารถแก้ไขได้ด้วยการทำ mixing test (uncorrectable) บ่งชี้ว่ามี inhibitor อยู่ในเลือด ซึ่งในบริบทนี้คือ lupus anticoagulant ซึ่งเป็นหนึ่งใน antiphospholipid antibodies",
+            "state": false
+        },
+        {
+            "problem": "58. Which of the following is the condition associated with hypochromic microcytic anemia?",
+            "img": "",
+            "choices": "Hereditary spherocytosis///Myelodysplastic anemia///G6PD deficiency///Acute leukemia///Homozygous hemoglobin E disease",
+            "answer": "Homozygous hemoglobin E disease",
+            "select": "",
             "explain": "Hypochromic microcytic anemia คือภาวะโลหิตจางที่เม็ดเลือดแดงมีขนาดเล็ก (microcytic, MCV < 80) และติดสีจาง (hypochromic, MCH/MCHC ต่ำ) ซึ่งเกิดจากความผิดปกติในการสังเคราะห์ฮีโมโกลบิน สาเหตุที่พบบ่อยได้แก่ การขาดธาตุเหล็ก, ธาลัสซีเมีย, และภาวะโลหิตจางจากโรคเรื้อรัง Homozygous hemoglobin E disease เป็น hemoglobinopathy ชนิดหนึ่งซึ่งจัดอยู่ในกลุ่มธาลัสซีเมีย ทำให้มีการสร้างเม็ดเลือดแดงที่มีลักษณะเป็น hypochromic microcytic",
             "state": false
         }
@@ -1531,9 +2206,9 @@ var quizdata = {
             problem: "35. A patient presents with dyspnea. Vitals: BT 39°C, BP 80/120 mmHg (unclear), PR 120/min, RR high. The doctor diagnoses clinical sepsis. Which finding most strongly supports a rapid diagnosis of sepsis?",
             img: "",
             choices: "Tachycardia (PR > 100/min)///PR 120/min///BT 39°C///Oliguria///Hypotension (e.g., SBP < 100 mmHg)",
-            answer: "Tachycardia (PR > 100/min)",
+            answer: "Hypotension (e.g., SBP < 100 mmHg)",
             select: "",
-            explain: "ตามเกณฑ์การวินิจฉัย Sepsis โดยใช้ qSOFA (quick SOFA) score จะพิจารณา 3 อย่างคือ 1) Altered mental status 2) Respiratory rate ≥ 22/min 3) Systolic BP ≤ 100 mmHg แต่ตามเกณฑ์ Systemic Inflammatory Response Syndrome (SIRS) ซึ่งใช้ในการคัดกรองเบื้องต้นอย่างรวดเร็ว จะประกอบด้วย 1) อุณหภูมิ >38°C หรือ <36°C 2) อัตราการเต้นของหัวใจ >90/min 3) อัตราการหายใจ >20/min 4) WBC >12,000 หรือ <4,000 ในตัวเลือกที่ให้มา Tachycardia (อัตราการเต้นของหัวใจสูง) เป็นหนึ่งในเกณฑ์ของ SIRS ที่บ่งชี้ถึงการตอบสนองของร่างกายต่อการติดเชื้อ",
+            explain: "qSOFA(quick Sequential Organ Failure Assessment) score เป็นเครื่องมือที่ใช้ประเมินความเสี่ยงของผู้ป่วยที่สงสัยการติดเชื้อได้อย่างรวดเร็วข้างเตียง ประกอบด้วย 3 เกณฑ์หลัก ได้แก่: \n\n1.  ** Altered Mental Status(GCS < 15):** ผู้ป่วยมีภาวะสับสน ซึมลง หรือการรับรู้เปลี่ยนแปลง\n2.  ** Fast Respiratory Rate:** อัตราการหายใจ(RR) ≥ 22 ครั้ง / นาที\n3.  ** Low Blood Pressure(Hypotension):** ความดันโลหิตตัวบน(Systolic BP) ≤ 100 mmHg\n\nจากโจทย์ ผู้ป่วยมี RR 28 / min, SBP 90 mmHg และมีอาการสับสน ซึ่งเข้าเกณฑ์ qSOFA ทั้ง 3 ข้อ(qSOFA score = 3) แสดงว่ามีความเสี่ยงสูงมาก\n\n *   ** ความดันโลหิตตัวบน ≤ 100 mmHg(SBP ≤ 100 mmHg) ** เป็นหนึ่งในสามเกณฑ์ของ qSOFA จึงเป็นคำตอบที่ถูกต้อง\n\nส่วนตัวเลือกอื่นๆ แม้จะพบในผู้ป่วย Sepsis แต่ไม่ได้อยู่ในเกณฑ์ของ qSOFA: \n * ไข้สูงและหัวใจเต้นเร็ว เป็นเกณฑ์ของ ** SIRS(Systemic Inflammatory Response Syndrome) ** ซึ่งเป็นเกณฑ์ที่เคยใช้ในอดีต\n * เม็ดเลือดขาวสูง เป็นเกณฑ์ของ SIRS เช่นกัน\n * ปัสสาวะออกน้อย(Oliguria) เป็นสัญญาณของอวัยวะล้มเหลว(Organ dysfunction) ซึ่งใช้ในการประเมิน ** SOFA score ** ตัวเต็ม แต่ไม่ใช่ qSOFA",
             state: false
         },
         {
@@ -1722,9 +2397,9 @@ var quizdata = {
             "problem": "2. A 19-year-old woman comes with easy bruising. She has mild nose bleeding and heavy menstrual period more frequently after aspirin ingestion. Her mother and brother don't have the same symptoms. What is the first appropriate screening test?",
             "img": "",
             "choices": "PT checks for coagulation defect///aPTT check for coagulation defect///Complete blood count///Mixing test///Bleeding time checking",
-            "answer": "Bleeding time checking",
+            "answer": "Complete blood count",
             "select": "",
-            "explain": "อาการของผู้ป่วย เช่น เลือดออกง่าย ประจำเดือนมามาก และอาการเป็นมากขึ้นหลังได้รับยา aspirin บ่งชี้ถึงความผิดปกติของการทำงานของเกล็ดเลือด (platelet function disorder) หรือ von Willebrand disease การตรวจ Bleeding time เป็นการทดสอบเพื่อประเมินการทำงานของเกล็ดเลือดในการสร้าง primary hemostatic plug ซึ่งเหมาะสมที่สุดในการเป็น screening test สำหรับภาวะนี้",
+            "explain": "ผู้ป่วยมีอาการเลือดออกผิดปกติที่เยื่อบุ (mucocutaneous bleeding) เช่น เลือดกำเดาไหล ประจำเดือนมามาก ซึ่งแย่ลงหลังทานยา aspirin ลักษณะเหล่านี้บ่งชี้ถึงความผิดปกติของเกล็ดเลือด (platelet disorder) หรือ von Willebrand disease การตรวจคัดกรองเบื้องต้นที่เหมาะสมที่สุดคือการตรวจนับเม็ดเลือด (Complete blood count) เพื่อดูจำนวนเกล็ดเลือดก่อน หากจำนวนเกล็ดเลือดปกติจึงจะตรวจเพิ่มเติมด้วยการวัดเวลาเลือดออก (Bleeding time) หรือ Platelet Function Analyzer (PFA-100) เพื่อประเมินการทำงานของเกล็ดเลือด",
             "state": false
         },
         {
@@ -2066,18 +2741,18 @@ var quizdata = {
             "problem": "22. Which of the following could be in supravital stain of hemoglobin H disease?",
             "img": "",
             "choices": "Pappenheimer body///Howel jelly bodies///Inclusion body///Basophilic stippling///Heinz body",
-            "answer": "Heinz body",
+            "answer": "Inclusion body",
             "select": "",
-            "explain": "Hemoglobin H (HbH) disease เป็น alpha-thalassemia ชนิดหนึ่ง เกิดจากการมีสาย beta-globin ส่วนเกินจับกันเป็น tetramer (β4) ซึ่งเรียกว่า HbH. HbH นี้ไม่เสถียรและจะตกตะกอนภายในเซลล์เม็ดเลือดแดง เมื่อนำไปย้อมด้วยสี supravital stain (เช่น brilliant cresyl blue) จะเห็นตะกอนเหล่านี้เป็นจุดๆ เล็กๆ กระจายทั่วเซลล์ คล้ายลูกกอล์ฟ (golf ball appearance) ซึ่งตะกอนของฮีโมโกลบินที่ผิดปกติเหล่านี้เรียกว่า Heinz body",
+            "explain": "Hemoglobin H disease เป็นภาวะที่เกิดจากการขาดสาย alpha-globin อย่างรุนแรง ทำให้มีการสร้างสาย beta-globin เกินความจำเป็น สาย beta ที่เกินมาจะจับกันเป็น tetramer (β4) เรียกว่า Hemoglobin H (HbH) HbH มีความไม่เสถียรและจะตกตะกอน (precipitate) ภายในเม็ดเลือดแดง ทำให้เกิด Inclusion bodies ซึ่งสามารถตรวจพบได้โดยการย้อมสี supravital stain เช่น new methylene blue หรือ brilliant cresyl blue",
             "state": false
         },
         {
-            "problem": "24. Father Hb13 MCV67 Hb typing AE (E21%) Mother Hb 11.5 MCV70 Hb typing AA2 (A2 2.5%) What is the severe possible case of their child?",
+            "problem": "24. A couple is seeking genetic counseling. The father has Hb 13 g/dL, MCV 67 fL, and Hb typing of AE with 21% Hb E. The mother has Hb 11.5 g/dL, MCV 70 fL, and Hb typing of AA2 with 2.5% Hb A2. What is the most severe possible condition for their child?",
             "img": "",
-            "choices": "Beta thalassemia E///Homozygous hemoglobin E///Beta thalassemia major///Hemoglobin Bart's hydrop fetalis///Hemoglobin H thalassemia",
-            "answer": "Hemoglobin Bart's hydrop fetalis",
+            "choices": "Beta thalassemia/Hb E disease///Homozygous hemoglobin E///Beta thalassemia major///Hemoglobin Bart's hydrops fetalis///Hemoglobin H disease",
+            "answer": "Hemoglobin Bart's hydrops fetalis",
             "select": "",
-            "explain": "จากข้อมูล พ่อมีภาวะ HbE trait (HbAE) ร่วมกับเม็ดเลือดแดงขนาดเล็ก (MCV 67) ส่วนแม่มีเม็ดเลือดแดงขนาดเล็ก (MCV 70) แต่มี Hb typing ปกติ (HbA2 2.5%) ลักษณะของแม่บ่งชี้ชัดว่าเป็นพาหะของ alpha-thalassemia 1 (--/αα) ส่วนพ่อที่มี HbE trait และ MCV ต่ำมาก ก็มีความเป็นไปได้สูงที่จะเป็นพาหะของ alpha-thalassemia ร่วมด้วย เมื่อพ่อและแม่ที่เป็นพาหะของ alpha-thalassemia มามีลูกด้วยกัน กรณีที่รุนแรงที่สุด (severe possible case) ที่อาจเกิดขึ้นได้คือลูกได้รับยีน alpha-thalassemia ที่ผิดปกติจากทั้งพ่อและแม่ ทำให้ไม่สามารถสร้างสาย alpha-globin ได้เลย (genotype --/--) ซึ่งจะเกิดภาวะที่เรียกว่า Hemoglobin Bart's hydrops fetalis ทำให้ทารกเสียชีวิตในครรภ์หรือหลังคลอดไม่นาน",
+            "explain": "การวินิจฉัยจีโนไทป์ของพ่อแม่เป็นขั้นตอนแรกที่สำคัญที่สุด:\n\n*   **บิดา (Father):** มีภาวะ Microcytic (MCV 67) ร่วมกับ Hb typing แบบ AE แต่มี %Hb E เพียง 21% (ต่ำกว่าค่าปกติของ Hb E trait ที่ ~25-30%) ลักษณะนี้บ่งชี้ชัดเจนว่าบิดาเป็นพาหะ Hb E ที่มี **พาหะ α-thalassemia 1 (--/αα)** อยู่ร่วมด้วย (Co-inheritance) ทำให้การสร้างสาย α ลดลง ส่งผลให้ %Hb E ลดลงตามไปด้วย\n    *   **Genotype ของบิดา:** EA; --/αα\n\n*   **มารดา (Mother):** มีภาวะ Microcytic (MCV 70) แต่ Hb A2 อยู่ในระดับปกติ (2.5%) ซึ่งตัดภาวะพาหะ β-thalassemia ออกไปได้ ดังนั้นสาเหตุของ Microcytosis ที่เป็นไปได้มากที่สุดคือการเป็น **พาหะ α-thalassemia 1 (--/αα)**\n    *   **Genotype ของมารดา:** AA; --/αα\n\n**การประเมินความเสี่ยงของบุตร:** เมื่อพ่อและแม่ต่างเป็นพาหะ α-thalassemia 1 (--/αα) ทั้งคู่ จะมีความเสี่ยงที่บุตรจะได้รับยีน α-thalassemia ที่ผิดปกติจากทั้งสองฝ่าย:\n\n*   **โอกาส 25% ที่บุตรจะมีจีโนไทป์เป็น --/-- (Homozygous α-thalassemia 1)**\n\n*   จีโนไทป์ --/-- หมายถึงการขาดหายไปของยีน α-globin ทั้งหมด ทำให้ร่างกายไม่สามารถสร้างสาย α-globin ได้เลย ส่งผลให้ไม่สามารถสร้างฮีโมโกลบินที่ใช้งานได้ (เช่น Hb F (α2γ2) หรือ Hb A (α2β2)) ฮีโมโกลบินที่สร้างได้จะเป็น **Hb Bart's (γ4)** ซึ่งไม่สามารถขนส่งออกซิเจนได้ ทำให้เกิดภาวะทารกบวมน้ำอย่างรุนแรงและเสียชีวิตในครรภ์หรือหลังคลอดไม่นาน เรียกว่า **Hemoglobin Bart's hydrops fetalis** ซึ่งเป็นภาวะที่รุนแรงที่สุดในกลุ่มโรคธาลัสซีเมีย",
             "state": false
         },
         {
@@ -2102,9 +2777,9 @@ var quizdata = {
             "problem": "27. Given various patient histories, a blood smear found numerous spherocytes. What is the cause? (ให้ประวัติมาต่างๆ แล้วบอกว่า blood smear found numerous spherocyte เกิดจากอะไร)",
             "img": "",
             "choices": "Band 3///Protein 4.1///Glycolipid///Glucocerebroside///Spectrin",
-            "answer": "Band 3",
+            "answer": "Spectrin",
             "select": "",
-            "explain": "Spherocyte คือเม็ดเลือดแดงที่มีรูปร่างกลมซึ่งปกติควรจะเว้าสองด้าน (biconcave) การพบ Spherocyte จำนวนมากมักเกี่ยวข้องกับโรค Hereditary Spherocytosis (HS) ซึ่งเกิดจากความผิดปกติทางพันธุกรรมของโปรตีนที่เป็นโครงสร้างของเยื่อหุ้มเซลล์เม็ดเลือดแดง (RBC membrane skeleton) เช่น ankyrin, spectrin, และ Band 3 การกลายพันธุ์ของโปรตีนเหล่านี้ทำให้เยื่อหุ้มเซลล์ไม่เสถียร เสียพื้นที่ผิว และกลายเป็นทรงกลมในที่สุด ซึ่ง Band 3 และ Protein 4.1 เป็นสาเหตุที่พบบ่อย แต่ Band 3 เป็นหนึ่งในตัวเลือกที่ถูกต้อง",
+            "explain": "การพบ Spherocytes จำนวนมากเป็นลักษณะเด่นของโรค Hereditary Spherocytosis (HS) ซึ่งเป็นโรคเลือดจางจากเม็ดเลือดแดงแตกที่ถ่ายทอดทางพันธุกรรม เกิดจากการกลายพันธุ์ของโปรตีนที่เป็นโครงสร้างของเยื่อหุ้มเซลล์เม็ดเลือดแดง (RBC membrane cytoskeleton) ทำให้สูญเสียความแข็งแรงและพื้นที่ผิวของเยื่อหุ้มเซลล์ จนเปลี่ยนรูปทรงเป็นทรงกลมและถูกทำลายที่ม้ามได้ง่าย\n\nโปรตีนที่เกี่ยวข้องและความผิดปกติ:\n*   **Spectrin (คำตอบ):** เป็นโปรตีนหลักของโครงสร้างเยื่อหุ้มเซลล์ การกลายพันธุ์ของ Spectrin (ทั้ง α และ β) เป็นสาเหตุที่ **พบบ่อยที่สุด** ของ HS (พบได้ประมาณ 60% ของเคสทั้งหมด)\n*   **Ankyrin:** ทำหน้าที่เชื่อม Spectrin เข้ากับ Band 3 (Vertical interaction) การกลายพันธุ์เป็นสาเหตุที่พบบ่อยรองลงมา\n*   **Band 3:** เป็นโปรตีนที่ทอดผ่านเยื่อหุ้มเซลล์และเป็นจุดยึดของ Ankyrin การกลายพันธุ์ก็เป็นสาเหตุที่พบบ่อยเช่นกัน\n*   **Protein 4.1:** มีหน้าที่หลักในการยึดโครงสร้างในแนวระนาบ (Horizontal interaction) การกลายพันธุ์ของโปรตีนนี้มักทำให้เกิดโรค **Hereditary Elliptocytosis** (เม็ดเลือดแดงรูปไข่) มากกว่า\n*   **Glucocerebroside:** คือไขมันที่สะสมผิดปกติในโรค **Gaucher disease** ไม่เกี่ยวข้องโดยตรงกับโครงสร้างเม็ดเลือดแดง",
             "state": false
         },
         {
@@ -2174,9 +2849,9 @@ var quizdata = {
             "problem": "36. Influenza infection, BT 38.T, RR 20, PR 90, 120/80 mmHg. Which is most likely to be found in the blood test?",
             "img": "",
             "choices": "Monocytosis///Eosinophilia///Neutropenia///Leukopenia///Basophilia",
-            "answer": "Leukopenia",
+            "answer": "Neutropenia",
             "select": "",
-            "explain": "การติดเชื้อไวรัสส่วนใหญ่ รวมถึงไข้หวัดใหญ่ (Influenza infection) มักจะทำให้จำนวนเม็ดเลือดขาวโดยรวมลดลง (Leukopenia) โดยเฉพาะในช่วงแรกของการติดเชื้อ ซึ่งอาจพบร่วมกับภาวะ lymphocytosis (จำนวน lymphocyte สูงขึ้นเมื่อเทียบเป็นสัดส่วน) หรือ neutropenia (จำนวน neutrophil ต่ำ) ได้ ในขณะที่การติดเชื้อแบคทีเรียมักทำให้เม็ดเลือดขาวสูงขึ้น (leukocytosis) โดยเฉพาะ neutrophil",
+            "explain": "การติดเชื้อไวรัส เช่น Influenza มักทำให้เกิดภาวะเม็ดเลือดขาวต่ำ (Leukopenia) โดยเฉพาะอย่างยิ่ง neutropenia เนื่องจากไวรัสสามารถทำลายไขกระดูกหรือมีการกระตุ้นให้ neutrophil ออกไปยังเนื้อเยื่อที่ติดเชื้อมากขึ้น ทำให้ระดับ neutrophil ในเลือดลดลง นอกจากนี้ การติดเชื้อไวรัสยังสามารถทำให้เกิด lymphocytosis ได้ในบางกรณี แต่ neutropenia เป็นลักษณะที่พบบ่อยกว่าในการติดเชื้อไวรัสเฉียบพลัน",
             "state": false
         },
         {
@@ -2509,9 +3184,9 @@ var quizdata = {
             "problem": "32. Srisaket patient is infected by Plasmodium vivax, which of the following is the first line of treating.",
             "img": "",
             "choices": "DHA-PIP + Primaquine///Artesunate + pyronaridine///Chloroquine + Primaquine///Artesunate IV",
-            "answer": "Chloroquine + Primaquine",
+            "answer": "DHA-PIP + Primaquine",
             "select": "",
-            "explain": "การรักษาการติดเชื้อ Plasmodium vivax ต้องมีองค์ประกอบ 2 ส่วน คือ 1. กำจัดเชื้อในระยะเม็ดเลือดแดง (blood schizonticide) เพื่อรักษาอาการป่วย และ 2. กำจัดเชื้อในระยะที่แฝงตัวในตับที่เรียกว่า hypnozoite (radical cure) เพื่อป้องกันการกลับเป็นซ้ำ (relapse) สำหรับพื้นที่ที่เชื้อ P. vivax ยังไม่ดื้อยา Chloroquine (รวมถึงประเทศไทยส่วนใหญ่) ยา Chloroquine เป็นยาหลักสำหรับกำจัดเชื้อในเลือด และใช้ยา Primaquine เพื่อกำจัดเชื้อในตับ ดังนั้นสูตรยาที่เป็น first line คือ Chloroquine + Primaquine",
+            "explain": "การรักษามาลาเรียชนิด Plasmodium vivax ในประเทศไทยปัจจุบัน แนะนำให้ใช้ยาคู่ (combination therapy) ที่ประกอบด้วยยาต้านมาลาเรียกลุ่ม artemisinin-based combination therapy (ACT) เช่น Dihydroartemisinin-piperaquine (DHA-PIP) ร่วมกับ Primaquine เพื่อกำจัดเชื้อในเม็ดเลือดแดง (blood schizonticide) และเชื้อในตับที่เป็น hypnozoite (tissue schizonticide) ซึ่ง Primaquine มีบทบาทสำคัญในการป้องกันการกลับมาเป็นซ้ำของโรค (relapse) จาก hypnozoite ที่หลงเหลืออยู่ในตับ",
             "state": false
         },
         {
@@ -4112,10 +4787,10 @@ var quizdata = {
         {
             "problem": "45. thrombin สามารถย้อนกลับกระตุ้น factor อะไรได้บ้าง",
             "img": "",
-            "choices": "V, VIII, XI///V, VIII, XIII///II, VII, IX, X///I, II, V///IX, X, XI",
+            "choices": "V, VIII, XI///V, VIII, XIII///II, VII, IX, X///I, II, V///IX, X, XI///V, VIII, XI, XIII",
             "answer": "V, VIII, XI",
             "select": "",
-            "explain": "Thrombin (Factor IIa) นอกจากจะทำหน้าที่หลักในการเปลี่ยน Fibrinogen (Factor I) ไปเป็น Fibrin แล้ว ยังมีบทบาทสำคัญในกลไก Positive Feedback โดยการย้อนกลับไปกระตุ้น (activate) factor อื่นๆ เพื่อเร่งปฏิกิริยาการแข็งตัวของเลือดให้เร็วขึ้น ได้แก่ Factor V, Factor VIII (ซึ่งเป็น co-factor ที่สำคัญ) และ Factor XI ทำให้เกิด Thrombin burst หรือการสร้าง Thrombin จำนวนมากในเวลาอันรวดเร็ว",
+            "explain": "Thrombin (Factor IIa) เป็นเอนไซม์ที่มีบทบาทสำคัญในกระบวนการแข็งตัวของเลือด นอกจากจะทำหน้าที่เปลี่ยน fibrinogen เป็น fibrin แล้ว Thrombin ยังสามารถย้อนกลับไปกระตุ้นปัจจัยการแข็งตัวอื่นๆ ได้แก่ Factor V, Factor VIII และ Factor XI ซึ่งการกระตุ้นเหล่านี้ช่วยเพิ่มประสิทธิภาพและความรวดเร็วของกระบวนการแข็งตัวของเลือด ทำให้เกิดลิ่มเลือดได้อย่างมีประสิทธิภาพมากขึ้น",
             "state": false
         },
         {
@@ -4347,9 +5022,9 @@ var quizdata = {
             "problem": "4??. ผู้ป่วยนอนติดเตียงจะเกิดอะไร (ข้อสอบเก่า)",
             "img": "",
             "choices": "Pulmonary embolism///Coronary occlusion///Cerebral infarction///Deep vein thrombosis///Myocardial infarction",
-            "answer": "Pulmonary embolism",
+            "answer": "Deep vein thrombosis",
             "select": "",
-            "explain": "ผู้ป่วยนอนติดเตียงมีความเสี่ยงสูงมากต่อการเกิดลิ่มเลือดอุดตันที่หลอดเลือดดำส่วนลึกของขา (Deep Vein Thrombosis - DVT) เนื่องจากเลือดไหลเวียนช้า และภาวะแทรกซ้อนที่อันตรายที่สุดที่ตามมาคือ Pulmonary Embolism (PE) ซึ่งเกิดจากลิ่มเลือดที่ขาหลุดลอยไปอุดตันที่หลอดเลือดในปอด (แม้ว่า DVT จะเป็นสาเหตุ แต่ PE เป็นผลลัพธ์ที่รุนแรงกว่าและมักเป็นตัวเลือกในข้อสอบ)",
+            "explain": "ผู้ป่วยที่นอนติดเตียงเป็นเวลานานมีความเสี่ยงสูงที่จะเกิดภาวะเลือดคั่งในหลอดเลือดดำ (venous stasis) ซึ่งเป็นปัจจัยสำคัญที่ทำให้เกิดลิ่มเลือดอุดตันในหลอดเลือดดำส่วนลึก (Deep Vein Thrombosis - DVT) โดยเฉพาะที่ขา หากลิ่มเลือดนี้หลุดลอยไปตามกระแสเลือดก็อาจไปอุดตันที่ปอดกลายเป็น Pulmonary Embolism ได้ ซึ่งเป็นภาวะฉุกเฉินทางการแพทย์ที่อันตรายถึงชีวิต",
             "state": false
         },
         {
@@ -4715,12 +5390,12 @@ var quizdata = {
             state: false
         },
         {
-            problem: "??. ให้รูป starry sky pattern, t(15;17). What is the diagnosis?",
+            problem: "??. ให้รูป starry sky pattern, t(8;14). What is the diagnosis?",
             img: "",
             choices: "Burkitt lymphoma///Mantle cell lymphoma///Follicular lymphoma///Acute promyelocytic leukemia///Diffuse large B-cell lymphoma",
             answer: "Burkitt lymphoma",
             select: "",
-            explain: "ลักษณะ 'starry sky' ที่เห็นจากกล้องจุลทรรศน์เป็นลักษณะจำเพาะของ Burkitt Lymphoma เกิดจากเซลล์มะเร็ง (sky) ที่มี tangible body macrophage (stars) แทรกอยู่ (หมายเหตุ: โจทย์ให้ข้อมูลขัดแย้งกัน t(15;17) เป็นของ Acute Promyelocytic Leukemia แต่ starry sky pattern เป็นของ Burkitt lymphoma คำตอบนี้ยึดตามลักษณะทางพยาธิวิทยาที่จำเพาะกว่า)",
+            explain: "ลักษณะทางพยาธิวิทยาแบบ 'starry sky pattern' เป็นลักษณะเฉพาะของ Burkitt lymphoma ซึ่งเกิดจากการที่เซลล์มะเร็งแบ่งตัวอย่างรวดเร็วและมี macrophage มาจับกินเซลล์ที่ตายแล้ว ทำให้เห็นเป็นจุดสว่าง (star) บนพื้นหลังของเซลล์มะเร็ง (sky) นอกจากนี้ การเกิด translocation t(8;14) ที่นำยีน c-MYC ไปอยู่ภายใต้การควบคุมของยีน Immunoglobulin heavy chain เป็นลักษณะทางพันธุกรรมที่จำเพาะของ Burkitt lymphoma",
             state: false
         }
     ],
@@ -4873,9 +5548,9 @@ var quizdata = {
             problem: "22. What is found in supravital stain blood film of Hb H?",
             img: "",
             choices: "Inclusion body///Basophilic stippling///Howell Jolly body///Cabot ring///Heinz body",
-            answer: "Heinz body",
+            answer: "Inclusion body",
             select: "",
-            explain: "HbH disease เป็น alpha-thalassemia ชนิดหนึ่งที่ทำให้เกิดการสร้าง beta-globin tetramers (HbH) ซึ่งเป็นฮีโมโกลบินที่ไม่มีความเสถียรและจะตกตะกอนภายในเซลล์เม็ดเลือดแดงได้ง่าย โดยเฉพาะเมื่อเจอภาวะ oxidative stress ตะกอนของ HbH นี้ก็คือ Heinz body ชนิดหนึ่ง เมื่อนำไปย้อมด้วยสีย้อมพิเศษกลุ่ม supravital stain เช่น brilliant cresyl blue จะเห็นเป็นเม็ดเล็กๆ สีน้ำเงินเข้มกระจายอยู่ทั่วเซลล์ มีลักษณะคล้ายลูกกอล์ฟ (golf ball appearance)",
+            explain: "HbH disease เป็นภาวะที่มีการขาดหายไปของยีน alpha-globin อย่างน้อย 3 ตำแหน่ง ทำให้มีการสร้างสาย beta-globin เกินมาและเกิดการรวมตัวเป็น tetramer (beta4) ซึ่งเรียกว่า HbH HbH มีความไม่เสถียรและตกตะกอนภายในเม็ดเลือดแดง ทำให้เกิด inclusion bodies ที่มองเห็นได้ชัดเจนเมื่อย้อมด้วย supravital stain เช่น Brilliant cresyl blue หรือ New methylene blue",
             state: false
         },
         {
@@ -4987,13 +5662,13 @@ var quizdata = {
             state: false
         },
         {
-            problem: "39. CBC shows WBC 150×10^9 /L. Neu45% Lym45% Mono6% Eo4%. NRC/WBC 2400/100. What is the absolute neutrophil count?",
-            img: "",
-            choices: "2550 cells/µL///2650 cells/µL///2750 cells/µL///2850 cells/µL///2950 cells/µL",
-            answer: "2750 cells/µL",
-            select: "",
-            explain: "การคำนวณ Absolute Neutrophil Count (ANC) ในกรณีที่มี Nucleated RBC (NRBC) จำนวนมาก ต้องทำการปรับแก้ค่า WBC ที่เครื่องนับอัตโนมัติรายงานมาก่อน เพราะเครื่องจะนับ NRBC ปนไปกับ WBC. สูตรคือ Corrected WBC = Uncorrected WBC x [100 / (100 + จำนวน NRBC ต่อ WBC 100 ตัว)]. จากโจทย์ Uncorrected WBC = 150,000/µL และ NRBC = 2400/100 WBC. ดังนั้น Corrected WBC = 150,000 x [100 / (100 + 2400)] = 150,000 x (100/2500) = 6,000 cells/µL. จากนั้นคำนวณ ANC = Corrected WBC x %Neutrophil = 6,000 x 0.45 = 2,700 cells/µL ซึ่งใกล้เคียงกับตัวเลือก 2750 cells/µL มากที่สุด",
-            state: false
+            "problem": "39. CBC results show: WBC 150×10^9 /L, Neutrophil 45%, Lymphocyte 45%, Monocyte 6%, Eosinophil 4%. The peripheral blood smear shows 240 NRBCs per 100 WBCs. What is the absolute neutrophil count?",
+            "img": "",
+            "choices": "2,550 cells/µL///2,650 cells/µL///2,700 cells/µL///2,850 cells/µL///2,950 cells/µL",
+            "answer": "2,700 cells/µL",
+            "select": "",
+            "explain": "เมื่อมี Nucleated Red Blood Cells (NRBC) จำนวนมากในเลือด เครื่องนับเม็ดเลือดอัตโนมัติ (automated hematology analyzer) จะนับ NRBC ปนไปกับ White Blood Cells (WBC) ทำให้ค่า WBC ที่ได้สูงกว่าความเป็นจริง (falsely elevated) จึงต้องทำการปรับแก้ค่า WBC ก่อน\n\n1.  **ปรับแก้ค่า WBC (Corrected WBC):** \n    *   สูตร: Corrected WBC = Uncorrected WBC x [100 / (100 + จำนวน NRBC ต่อ 100 WBC)]\n    *   จากโจทย์: Uncorrected WBC = 150,000 cells/µL และ NRBC = 240. \n    *   Corrected WBC = 150,000 x [100 / (100 + 240)] \n    *   Corrected WBC = 150,000 x [100 / 340] ≈ 44,117 cells/µL\n\n2.  **คำนวณ Absolute Neutrophil Count (ANC):**\n    *   สูตร: ANC = Corrected WBC x (% Neutrophil / 100)\n    *   ANC = 44,117 x (45 / 100)\n    *   ANC = 44,117 x 0.45 ≈ 19,852 cells/µL\n\n**ข้อสังเกต:** การคำนวณของคุณในตอนแรกมีข้อผิดพลาดเล็กน้อยในการอ่านโจทย์ครับ `NRC/WBC 240/100` หมายถึง **240 NRBC ต่อ 100 WBC** ไม่ใช่ 2400. เมื่อคำนวณใหม่จะได้ค่า ANC ประมาณ 19,852 cells/µL ซึ่งไม่ตรงกับตัวเลือกใดๆ เลย อาจเป็นไปได้ว่าโจทย์หรือตัวเลือกมีข้อผิดพลาด\n\n**อย่างไรก็ตาม หากเราลองสมมติว่าโจทย์ตั้งใจให้คำนวณแล้วได้คำตอบตามตัวเลือก** โดยอาจจะพิมพ์เลข WBC ผิด เช่นถ้า WBC ที่ถูกต้องคือ 15 x 10^9/L (15,000) ไม่ใช่ 150,000 จะคำนวณได้ดังนี้:\n*   Corrected WBC = 15,000 x [100 / (100 + 240)] = 15,000 x (100/340) ≈ 4,411 cells/µL.\n*   ANC = 4,411 x 0.45 ≈ **1,985 cells/µL** ซึ่งก็ยังไม่ตรงกับตัวเลือก\n\n**ดังนั้นน่าจะมีความผิดพลาดที่โจทย์อย่างแน่นอนครับ** หากเรายึดตามคำอธิบายเดิมของคุณที่คำนวณได้ 2,700 ซึ่งตรงกับตัวเลือก จะต้องเกิดจากการตีความ 'NRBC 240/100 WBC' ที่แตกต่างออกไป ซึ่งไม่เป็นไปตามมาตรฐานการรายงานผลทางห้องปฏิบัติการครับ",
+            "state": false
         },
         {
             problem: "40. CBC of a female is shown as follow. Hb: 7.5, Hct: 25, reticulocyte count :8. Which of the following is correct?",
@@ -5837,92 +6512,92 @@ var quizdata = {
             "state": false
         },
         {
-                        "problem": "39) ผล CBC ของผู้ป่วยรายหนึ่งพบ: WBC 54,000 /uL, PMN 55%, Lymphocyte 35%, Monocyte 6%, Eosinophil 4%. ตรวจสเมียร์เลือดพบ NRBC 170 / 100 WBC. กรุณาคำนวณค่า Absolute Neutrophil Count (ANC) ของผู้ป่วยรายนี้",
-                        "img": "",
-                        "choices": "11,000/mm^3///18,900/mm^3///20,000/mm^3///29,700/mm^3///32,400/mm^3",
-                        "answer": "A. 11,000/mm^3",
-                        "select": "",
-                        "explain": "เนื่องจากพบ NRBC จำนวนมาก (170 NRBC per 100 WBC) ค่า WBC ที่ได้จากเครื่องจะสูงกว่าความเป็นจริง (falsely elevated) เพราะเครื่องนับ NRBC รวมเป็น WBC ด้วย จึงต้องคำนวณหา Corrected WBC ก่อน\n\n**Step 1: คำนวณ Corrected WBC**\nสูตร: Corrected WBC = Uncorrected WBC x [100 / (100 + จำนวน NRBC)]\nCorrected WBC = 54,000 x [100 / (100 + 170)]\nCorrected WBC = 54,000 x (100 / 270)\nCorrected WBC = 20,000 /uL\n\n**Step 2: คำนวณ ANC จาก Corrected WBC**\nสูตร: ANC = Corrected WBC x (% Neutrophils / 100)\nANC = 20,000 x (55 / 100)\nANC = 11,000 /uL (หรือ /mm^3)\n\nดังนั้นค่า ANC ที่แท้จริงของผู้ป่วยคือ 11,000 /mm^3",
-                        "state": false
-                    },
-                    {
-                        "problem": "40) male patient Hb 7.5 Hct 15% reticulocyte 10% .Which one is correct?",
-                        "img": "",
-                        "choices": "A. Corrected reticulocyte 6.5%///B. Reticulocyte Index = 2.5///C. Anemia in this patient caused by hemolysis///D. Bone marrow response is normal///E. Production more than normal 3 เท่า",
-                        "answer": "C. Anemia in this patient caused by hemolysis",
-                        "select": "",
-                        "explain": "ผู้ป่วยมีภาวะโลหิตจางรุนแรง (Hb 7.5, Hct 15%) และมีค่า reticulocyte count สูงถึง 10% การมี reticulocyte count ที่สูงมาก (reticulocytosis) ในภาวะโลหิตจางเป็นสัญญาณบ่งบอกว่าไขกระดูกกำลังตอบสนองอย่างเต็มที่เพื่อชดเชยการสูญเสียเม็ดเลือดแดง ซึ่งสาเหตุหลักของการสูญเสียเม็ดเลือดแดงที่กระตุ้นการตอบสนองเช่นนี้คือภาวะเม็ดเลือดแดงแตก (hemolysis) หรือการเสียเลือดอย่างเฉียบพลัน (acute blood loss) ดังนั้นข้อสรุปที่เป็นไปได้มากที่สุดจากข้อมูลนี้คือผู้ป่วยมีภาวะโลหิตจางจาก hemolysis",
-                        "state": false
-                    },
-                    {
-                        "problem": "42) A 65-year-old woman with type 2 diabetes mellitus admitted at ICU with pneumonia. Sputum culture : Streptococcus pneumoniae CBC : Hb 9 g/dL, Hct 27%, WBC 24,300/dL, Platelet 85,000 dL Which of the following is the most likely finding of WBC in this patient?",
-                        "img": "",
-                        "choices": "A. Neutrophilia///B. Lymphocytosis///C. Atypical lymphocyte///D. Hypersegmented neutrophils///E. Pseudo-Pelger-Huet anomaly",
-                        "answer": "A. Neutrophilia",
-                        "select": "",
-                        "explain": "ผู้ป่วยมีการติดเชื้อแบคทีเรียที่ปอด (pneumonia) ซึ่งเกิดจากเชื้อ Streptococcus pneumoniae การติดเชื้อแบคทีเรียเฉียบพลันจะกระตุ้นให้ไขกระดูกปล่อยเม็ดเลือดขาวชนิด Neutrophil ออกมาในกระแสเลือดจำนวนมากเพื่อต่อสู้กับเชื้อโรค ทำให้ค่าเม็ดเลือดขาวรวม (WBC) สูงขึ้น โดยมีสัดส่วนของ Neutrophil เพิ่มขึ้นเป็นหลัก ภาวะนี้เรียกว่า Neutrophilia หรือ neutrophilic leukocytosis ซึ่งตรงกับผล CBC ที่ WBC สูงถึง 24,300/dL",
-                        "state": false
-                    },
-                    {
-                        "problem": "43) 49 year old came with fever, no hepatosplenomegaly, no lymphadenopathy, เป็น Large B-cell lymphoma stage II, history of chemotherapy 12 days CBC : Hb 7g/dL WBC : 1900 cell/uL Platelet : 69000 cell/uL",
-                        "img": "",
-                        "choices": "A. Eosinophilia///B. Basophilia///C. Neutropenia///D. Lymphocytosis///E. Atypical lymphocyte",
-                        "answer": "C. Neutropenia",
-                        "select": "",
-                        "explain": "ผู้ป่วยได้รับเคมีบำบัด (chemotherapy) ซึ่งยาเคมีบำบัดมีผลข้างเคียงที่สำคัญคือการกดไขกระดูก (myelosuppression) ทำให้การสร้างเซลล์เม็ดเลือดทุกชนิดลดลง โดยเฉพาะ Neutrophil ซึ่งมีอายุขัยสั้นจะได้รับผลกระทบเร็วที่สุด ภาวะที่จำนวน Neutrophil ในเลือดต่ำกว่าปกติเรียกว่า Neutropenia ซึ่งจะทำให้ค่าเม็ดเลือดขาวรวม (WBC) ต่ำลงไปด้วย (leukopenia) ดังที่พบในผล CBC ของผู้ป่วย (WBC 1,900) ภาวะนี้ทำให้ผู้ป่วยมีความเสี่ยงสูงต่อการติดเชื้อและอาจเป็นสาเหตุของไข้ได้",
-                        "state": false
-                    },
-                    {
-                        "problem": "44) Which of the following is defined as relative lymphocytosis?",
-                        "img": "",
-                        "choices": "A. wbc > 4,000; lymphocytes predominate///B. wbc > 4,000; neutrophils predominate///C. wbc < 4,000; lymphocytes predominate///D. wbc < 4,000; neutrophils predominate///E. wbc is normal, lymphocyte count > 4,000",
-                        "answer": "C. wbc < 4,000; lymphocytes predominate",
-                        "select": "",
-                        "explain": "Relative lymphocytosis คือภาวะที่สัดส่วน (percentage) ของ lymphocyte สูงกว่าปกติ แต่จำนวน lymphocyte ทั้งหมด (absolute lymphocyte count) อาจจะปกติหรือต่ำกว่าปกติก็ได้ ภาวะนี้มักเกิดขึ้นเมื่อจำนวนเม็ดเลือดขาวชนิดอื่น โดยเฉพาะ Neutrophil ลดลง (neutropenia) ทำให้เปอร์เซ็นต์ของ lymphocyte ดูสูงขึ้นเมื่อเทียบกับเม็ดเลือดขาวทั้งหมด ซึ่งมักจะพบในภาวะที่เม็ดเลือดขาวรวมต่ำ (WBC < 4,000) จากภาวะ neutropenia",
-                        "state": false
-                    },
-                    {
-                        "problem": "46) What is the mechanism of endothelin-1 in hemostasis?",
-                        "img": "",
-                        "choices": "A. Vasoconstriction///B. Platelet adhesion///C. Platelet aggregation///D. Fibrinolysis///E. Anticoagulation",
-                        "answer": "A. Vasoconstriction",
-                        "select": "",
-                        "explain": "Endothelin-1 เป็นสารที่หลั่งออกมาจากเซลล์เยื่อบุหลอดเลือด (endothelial cells) เมื่อเกิดการบาดเจ็บ มันเป็นสารที่ทำให้หลอดเลือดหดตัว (vasoconstrictor) ที่รุนแรงที่สุดตัวหนึ่งในร่างกาย การหดตัวของหลอดเลือดเป็นกลไกแรกสุดในกระบวนการห้ามเลือด (hemostasis) เพื่อลดปริมาณเลือดที่ไหลออกจากบาดแผล",
-                        "state": false
-                    },
-                    {
-                        "problem": "47) Mechanism of platelet adhesion?",
-                        "img": "",
-                        "choices": "A. vWF binds to subendothelial layer///B. Gp2b/3a binds to fibrinogen///C. Change to be pseudopods///D. Gp1b binds to Ca2+///E. Thromboxane A2 release",
-                        "answer": "A. vWF binds to subendothelial layer",
-                        "select": "",
-                        "explain": "Platelet adhesion เป็นขั้นตอนแรกของการสร้าง platelet plug เมื่อหลอดเลือดบาดเจ็บ เนื้อเยื่อใต้ endothelium ที่มีคอลลาเจนจะถูกเปิดออก von Willebrand factor (vWF) ซึ่งเป็นโปรตีนในพลาสมาจะเข้ามาจับกับคอลลาเจนนี้ จากนั้น vWF จะทำหน้าที่เป็นสะพานเชื่อมให้เกล็ดเลือด (platelet) ผ่านทางตัวรับ Glycoprotein Ib (GpIb) บนผิวของมัน เข้ามาเกาะติดกับผนังหลอดเลือดบริเวณที่บาดเจ็บ",
-                        "state": false
-                    },
-                    {
-                        "problem": "49) Which factor initiates extrinsic pathway cascade?",
-                        "img": "",
-                        "choices": "A. Factor III///B. Factor V and Ca2+///C. Factor Xa///D. Contact of Factor XII///E. HMWK",
-                        "answer": "A. Factor III",
-                        "select": "",
-                        "explain": "Extrinsic pathway ของกระบวนการแข็งตัวของเลือดเริ่มต้นเมื่อเกิดการบาดเจ็บของหลอดเลือด ทำให้เนื้อเยื่อที่อยู่ภายนอกหลอดเลือดปล่อยสารที่เรียกว่า Tissue Factor (TF) หรือ Factor III ออกมา Tissue Factor นี้จะเข้าไปจับกับ Factor VIIa ที่มีอยู่ในเลือด กลายเป็น complex (TF-VIIa) ที่สามารถกระตุ้น Factor X ให้เป็น Factor Xa ได้โดยตรง ซึ่งเป็นจุดเริ่มต้นของ common pathway ต่อไป",
-                        "state": false
-                    },
-                    {
-                        "problem": "51) Anticoagulant ใดที่ส่งผลต่อ extrinsic pathway?",
-                        "img": "",
-                        "choices": "A. TFPI///B. AT III///C. Heparin///D. Thrombin///E. Thrombomodulin",
-                        "answer": "A. TFPI",
-                        "select": "",
-                        "explain": "Tissue Factor Pathway Inhibitor (TFPI) เป็นสารยับยั้งการแข็งตัวของเลือดตามธรรมชาติ (natural anticoagulant) ที่ออกฤทธิ์โดยตรงต่อ extrinsic pathway โดย TFPI จะเข้าไปจับและยับยั้งการทำงานของ complex ระหว่าง Tissue Factor (Factor III) กับ Factor VIIa (TF-VIIa complex) ทำให้ไม่สามารถไปกระตุ้น Factor X ได้ เป็นการยับยั้งขั้นตอนเริ่มต้นของ extrinsic pathway",
-                        "state": false
-                    },
-                    {
-                        "problem": "52) ชายอายุ 60 ปี มาด้วยอาการเจ็บแน่นหน้าอก ได้รับการวินิจฉัยว่ามีภาวะหลอดเลือดหัวใจอุดตัน (coronary obstruction) สารในข้อใดต่อไปนี้มีบทบาทสำคัญในการกระตุ้นกระบวนการสลายลิ่มเลือด (Fibrinolysis)?",
-                        "img": "",
-                        "choices": "Alpha-2 antiplasmin///Thrombomodulin-thrombin complex///Factor Xa///Tissue plasminogen activator (tPA)///Fibrin",
-                        "answer": "Tissue plasminogen activator (tPA)",
-                        "select": "",
+            "problem": "39) ผล CBC ของผู้ป่วยรายหนึ่งพบ: WBC 54,000 /uL, PMN 55%, Lymphocyte 35%, Monocyte 6%, Eosinophil 4%. ตรวจสเมียร์เลือดพบ NRBC 170 / 100 WBC. กรุณาคำนวณค่า Absolute Neutrophil Count (ANC) ของผู้ป่วยรายนี้",
+            "img": "",
+            "choices": "11,000/mm^3///18,900/mm^3///20,000/mm^3///29,700/mm^3///32,400/mm^3",
+            "answer": "11,000/mm^3",
+            "select": "",
+            "explain": "เนื่องจากพบ NRBC จำนวนมาก (170 NRBC per 100 WBC) ค่า WBC ที่ได้จากเครื่องจะสูงกว่าความเป็นจริง (falsely elevated) เพราะเครื่องนับ NRBC รวมเป็น WBC ด้วย จึงต้องคำนวณหา Corrected WBC ก่อน\n\n**Step 1: คำนวณ Corrected WBC**\nสูตร: Corrected WBC = Uncorrected WBC x [100 / (100 + จำนวน NRBC)]\nCorrected WBC = 54,000 x [100 / (100 + 170)]\nCorrected WBC = 54,000 x (100 / 270)\nCorrected WBC = 20,000 /uL\n\n**Step 2: คำนวณ ANC จาก Corrected WBC**\nสูตร: ANC = Corrected WBC x (% Neutrophils / 100)\nANC = 20,000 x (55 / 100)\nANC = 11,000 /uL (หรือ /mm^3)\n\nดังนั้นค่า ANC ที่แท้จริงของผู้ป่วยคือ 11,000 /mm^3",
+            "state": false
+        },
+        {
+            "problem": "40) male patient Hb 7.5 Hct 15% reticulocyte 10% .Which one is correct?",
+            "img": "",
+            "choices": "A. Corrected reticulocyte 6.5%///B. Reticulocyte Index = 2.5///C. Anemia in this patient caused by hemolysis///D. Bone marrow response is normal///E. Production more than normal 3 เท่า",
+            "answer": "C. Anemia in this patient caused by hemolysis",
+            "select": "",
+            "explain": "ผู้ป่วยมีภาวะโลหิตจางรุนแรง (Hb 7.5, Hct 15%) และมีค่า reticulocyte count สูงถึง 10% การมี reticulocyte count ที่สูงมาก (reticulocytosis) ในภาวะโลหิตจางเป็นสัญญาณบ่งบอกว่าไขกระดูกกำลังตอบสนองอย่างเต็มที่เพื่อชดเชยการสูญเสียเม็ดเลือดแดง ซึ่งสาเหตุหลักของการสูญเสียเม็ดเลือดแดงที่กระตุ้นการตอบสนองเช่นนี้คือภาวะเม็ดเลือดแดงแตก (hemolysis) หรือการเสียเลือดอย่างเฉียบพลัน (acute blood loss) ดังนั้นข้อสรุปที่เป็นไปได้มากที่สุดจากข้อมูลนี้คือผู้ป่วยมีภาวะโลหิตจางจาก hemolysis",
+            "state": false
+        },
+        {
+            "problem": "42) A 65-year-old woman with type 2 diabetes mellitus admitted at ICU with pneumonia. Sputum culture : Streptococcus pneumoniae CBC : Hb 9 g/dL, Hct 27%, WBC 24,300/dL, Platelet 85,000 dL Which of the following is the most likely finding of WBC in this patient?",
+            "img": "",
+            "choices": "A. Neutrophilia///B. Lymphocytosis///C. Atypical lymphocyte///D. Hypersegmented neutrophils///E. Pseudo-Pelger-Huet anomaly",
+            "answer": "A. Neutrophilia",
+            "select": "",
+            "explain": "ผู้ป่วยมีการติดเชื้อแบคทีเรียที่ปอด (pneumonia) ซึ่งเกิดจากเชื้อ Streptococcus pneumoniae การติดเชื้อแบคทีเรียเฉียบพลันจะกระตุ้นให้ไขกระดูกปล่อยเม็ดเลือดขาวชนิด Neutrophil ออกมาในกระแสเลือดจำนวนมากเพื่อต่อสู้กับเชื้อโรค ทำให้ค่าเม็ดเลือดขาวรวม (WBC) สูงขึ้น โดยมีสัดส่วนของ Neutrophil เพิ่มขึ้นเป็นหลัก ภาวะนี้เรียกว่า Neutrophilia หรือ neutrophilic leukocytosis ซึ่งตรงกับผล CBC ที่ WBC สูงถึง 24,300/dL",
+            "state": false
+        },
+        {
+            "problem": "43) 49 year old came with fever, no hepatosplenomegaly, no lymphadenopathy, เป็น Large B-cell lymphoma stage II, history of chemotherapy 12 days CBC : Hb 7g/dL WBC : 1900 cell/uL Platelet : 69000 cell/uL",
+            "img": "",
+            "choices": "A. Eosinophilia///B. Basophilia///C. Neutropenia///D. Lymphocytosis///E. Atypical lymphocyte",
+            "answer": "C. Neutropenia",
+            "select": "",
+            "explain": "ผู้ป่วยได้รับเคมีบำบัด (chemotherapy) ซึ่งยาเคมีบำบัดมีผลข้างเคียงที่สำคัญคือการกดไขกระดูก (myelosuppression) ทำให้การสร้างเซลล์เม็ดเลือดทุกชนิดลดลง โดยเฉพาะ Neutrophil ซึ่งมีอายุขัยสั้นจะได้รับผลกระทบเร็วที่สุด ภาวะที่จำนวน Neutrophil ในเลือดต่ำกว่าปกติเรียกว่า Neutropenia ซึ่งจะทำให้ค่าเม็ดเลือดขาวรวม (WBC) ต่ำลงไปด้วย (leukopenia) ดังที่พบในผล CBC ของผู้ป่วย (WBC 1,900) ภาวะนี้ทำให้ผู้ป่วยมีความเสี่ยงสูงต่อการติดเชื้อและอาจเป็นสาเหตุของไข้ได้",
+            "state": false
+        },
+        {
+            "problem": "44) Which of the following is defined as relative lymphocytosis?",
+            "img": "",
+            "choices": "A. wbc > 4,000; lymphocytes predominate///B. wbc > 4,000; neutrophils predominate///C. wbc < 4,000; lymphocytes predominate///D. wbc < 4,000; neutrophils predominate///E. wbc is normal, lymphocyte count > 4,000",
+            "answer": "C. wbc < 4,000; lymphocytes predominate",
+            "select": "",
+            "explain": "Relative lymphocytosis คือภาวะที่สัดส่วน (percentage) ของ lymphocyte สูงกว่าปกติ แต่จำนวน lymphocyte ทั้งหมด (absolute lymphocyte count) อาจจะปกติหรือต่ำกว่าปกติก็ได้ ภาวะนี้มักเกิดขึ้นเมื่อจำนวนเม็ดเลือดขาวชนิดอื่น โดยเฉพาะ Neutrophil ลดลง (neutropenia) ทำให้เปอร์เซ็นต์ของ lymphocyte ดูสูงขึ้นเมื่อเทียบกับเม็ดเลือดขาวทั้งหมด ซึ่งมักจะพบในภาวะที่เม็ดเลือดขาวรวมต่ำ (WBC < 4,000) จากภาวะ neutropenia",
+            "state": false
+        },
+        {
+            "problem": "46) What is the mechanism of endothelin-1 in hemostasis?",
+            "img": "",
+            "choices": "A. Vasoconstriction///B. Platelet adhesion///C. Platelet aggregation///D. Fibrinolysis///E. Anticoagulation",
+            "answer": "A. Vasoconstriction",
+            "select": "",
+            "explain": "Endothelin-1 เป็นสารที่หลั่งออกมาจากเซลล์เยื่อบุหลอดเลือด (endothelial cells) เมื่อเกิดการบาดเจ็บ มันเป็นสารที่ทำให้หลอดเลือดหดตัว (vasoconstrictor) ที่รุนแรงที่สุดตัวหนึ่งในร่างกาย การหดตัวของหลอดเลือดเป็นกลไกแรกสุดในกระบวนการห้ามเลือด (hemostasis) เพื่อลดปริมาณเลือดที่ไหลออกจากบาดแผล",
+            "state": false
+        },
+        {
+            "problem": "47) Mechanism of platelet adhesion?",
+            "img": "",
+            "choices": "A. vWF binds to subendothelial layer///B. Gp2b/3a binds to fibrinogen///C. Change to be pseudopods///D. Gp1b binds to Ca2+///E. Thromboxane A2 release",
+            "answer": "A. vWF binds to subendothelial layer",
+            "select": "",
+            "explain": "Platelet adhesion เป็นขั้นตอนแรกของการสร้าง platelet plug เมื่อหลอดเลือดบาดเจ็บ เนื้อเยื่อใต้ endothelium ที่มีคอลลาเจนจะถูกเปิดออก von Willebrand factor (vWF) ซึ่งเป็นโปรตีนในพลาสมาจะเข้ามาจับกับคอลลาเจนนี้ จากนั้น vWF จะทำหน้าที่เป็นสะพานเชื่อมให้เกล็ดเลือด (platelet) ผ่านทางตัวรับ Glycoprotein Ib (GpIb) บนผิวของมัน เข้ามาเกาะติดกับผนังหลอดเลือดบริเวณที่บาดเจ็บ",
+            "state": false
+        },
+        {
+            "problem": "49) Which factor initiates extrinsic pathway cascade?",
+            "img": "",
+            "choices": "A. Factor III///B. Factor V and Ca2+///C. Factor Xa///D. Contact of Factor XII///E. HMWK",
+            "answer": "A. Factor III",
+            "select": "",
+            "explain": "Extrinsic pathway ของกระบวนการแข็งตัวของเลือดเริ่มต้นเมื่อเกิดการบาดเจ็บของหลอดเลือด ทำให้เนื้อเยื่อที่อยู่ภายนอกหลอดเลือดปล่อยสารที่เรียกว่า Tissue Factor (TF) หรือ Factor III ออกมา Tissue Factor นี้จะเข้าไปจับกับ Factor VIIa ที่มีอยู่ในเลือด กลายเป็น complex (TF-VIIa) ที่สามารถกระตุ้น Factor X ให้เป็น Factor Xa ได้โดยตรง ซึ่งเป็นจุดเริ่มต้นของ common pathway ต่อไป",
+            "state": false
+        },
+        {
+            "problem": "51) Anticoagulant ใดที่ส่งผลต่อ extrinsic pathway?",
+            "img": "",
+            "choices": "A. TFPI///B. AT III///C. Heparin///D. Thrombin///E. Thrombomodulin",
+            "answer": "A. TFPI",
+            "select": "",
+            "explain": "Tissue Factor Pathway Inhibitor (TFPI) เป็นสารยับยั้งการแข็งตัวของเลือดตามธรรมชาติ (natural anticoagulant) ที่ออกฤทธิ์โดยตรงต่อ extrinsic pathway โดย TFPI จะเข้าไปจับและยับยั้งการทำงานของ complex ระหว่าง Tissue Factor (Factor III) กับ Factor VIIa (TF-VIIa complex) ทำให้ไม่สามารถไปกระตุ้น Factor X ได้ เป็นการยับยั้งขั้นตอนเริ่มต้นของ extrinsic pathway",
+            "state": false
+        },
+        {
+            "problem": "52) ชายอายุ 60 ปี มาด้วยอาการเจ็บแน่นหน้าอก ได้รับการวินิจฉัยว่ามีภาวะหลอดเลือดหัวใจอุดตัน (coronary obstruction) สารในข้อใดต่อไปนี้มีบทบาทสำคัญในการกระตุ้นกระบวนการสลายลิ่มเลือด (Fibrinolysis)?",
+            "img": "",
+            "choices": "Alpha-2 antiplasmin///Thrombomodulin-thrombin complex///Factor Xa///Tissue plasminogen activator (tPA)///Fibrin",
+            "answer": "Tissue plasminogen activator (tPA)",
+            "select": "",
             "explain": "ผู้ป่วยมีภาวะหลอดเลือดหัวใจอุดตัน ซึ่งมักเกิดจากลิ่มเลือด (thrombus) ที่มี Fibrin เป็นองค์ประกอบหลัก การสลายลิ่มเลือด (Fibrinolysis) เป็นกระบวนการสำคัญที่เกิดขึ้นในร่างกายเพื่อสลายลิ่มเลือดนี้ สารที่ทำหน้าที่เป็น 'ตัวกระตุ้นหลัก' (key activator) ของกระบวนการนี้คือ **Tissue plasminogen activator (tPA)** โดย tPA จะเปลี่ยน Plasminogen ที่อยู่ในกระแสเลือดให้กลายเป็น **Plasmin** ซึ่งเป็นเอนไซม์ที่แอคทีฟและมีฤทธิ์ย่อยสลาย Fibrin โดยตรง ทำให้ลิ่มเลือดสลายไปและเปิดหลอดเลือดอีกครั้ง ยาละลายลิ่มเลือดกลุ่ม Fibrinolytic drug (เช่น Alteplase, Tenecteplase) ก็เป็นการสังเคราะห์ tPA ขึ้นมาเพื่อใช้ในการรักษาภาวะนี้",
             "state": false
         },
@@ -6406,11 +7081,11 @@ var quizdata = {
             "state": false
         },
         {
-                        "problem": "60) A patient's peripheral blood smear shows a cell with the morphology seen in the image. What is the diagnosis?",
-                        "img": "https://drive.google.com/open?id=1EW__ULcMhA5iwcaw8xD_KXp-z99Xi-kj&usp=drive_copy",
-                        "choices": "A. Polycythemia vera///B. Myelodysplastic syndrome///C. Acute Myeloid Leukemia (AML)///D. Primary myelofibrosis///E. Chronic Myeloid Leukemia (CML)",
-                        "answer": "B. Myelodysplastic syndrome",
-                        "select": "",
+            "problem": "60) A patient's peripheral blood smear shows a cell with the morphology seen in the image. What is the diagnosis?",
+            "img": "https://drive.google.com/open?id=1EW__ULcMhA5iwcaw8xD_KXp-z99Xi-kj&usp=drive_copy",
+            "choices": "A. Polycythemia vera///B. Myelodysplastic syndrome///C. Acute Myeloid Leukemia (AML)///D. Primary myelofibrosis///E. Chronic Myeloid Leukemia (CML)",
+            "answer": "B. Myelodysplastic syndrome",
+            "select": "",
             "explain": "ภาพแสดงเซลล์เม็ดเลือดขาวชนิดนิวโทรฟิลที่มีลักษณะนิวเคลียสผิดปกติ (dysplastic neutrophil) คือมี Pelger-Huët anomaly ซึ่งนิวเคลียสมีลักษณะเป็น 2 แฉกคล้ายรูปแว่นตา (hyposegmented neutrophil) และมีไซโทพลาสซึมที่มีลักษณะเป็นเม็ดหยาบ (hypogranular neutrophil) ลักษณะเหล่านี้เป็นลักษณะเฉพาะของโรค Myelodysplastic Syndrome (MDS) ซึ่งเป็นกลุ่มโรคที่เกิดจากความผิดปกติในการสร้างเม็ดเลือดในไขกระดูก",
             "state": false
         },
@@ -6683,7 +7358,7 @@ var quizdata = {
             choices: "Splenomegaly///Absence haptoglobin///Unconjugated bilirubin///Increased reticulocyte count///Spherocyte cells seen in blood smear",
             answer: "Absence haptoglobin",
             select: "",
-            explain: "ในภาวะเม็ดเลือดแดงแตกในหลอดเลือด (intravascular hemolysis) ฮีโมโกลบินจะถูกปล่อยออกมาในพลาสมาโดยตรงและจะจับกับโปรตีน Haptoglobin ซึ่งสารประกอบ Hb-Haptoglobin complex นี้จะถูกกำจัดที่ตับอย่างรวดเร็ว หากการแตกของเม็ดเลือดแดงรุนแรงมาก Haptoglobin จะถูกใช้ไปจนหมด ทำให้ตรวจไม่พบหรือพบในระดับที่ต่ำมาก (Absence haptoglobin) ซึ่งเป็นลักษณะที่จำเพาะกับ intravascular hemolysis ส่วน extravascular hemolysis (การแตกของเม็ดเลือดแดงในม้ามหรือตับ) จะไม่ทำให้ Haptoglobin ลดลงรุนแรงเท่า",
+            explain: "ทั้ง Intravascular (IVH) และ Extravascular (EVH) hemolysis คือภาวะที่เม็ดเลือดแดงแตก แต่มีกลไกและผลลัพธ์ทางห้องปฏิบัติการที่แตกต่างกัน\n\n*   **Absent haptoglobin (คำตอบ):** ใน IVH, เม็ดเลือดแดงแตกและปล่อยฮีโมโกลบิน (Hb) ออกมาในพลาสมาโดยตรง โปรตีน Haptoglobin จะเข้ามาจับกับ Hb อิสระนี้เพื่อนำไปกำจัด การเกิด IVH ที่รุนแรงจะทำให้ Haptoglobin ถูกใช้ไปอย่างรวดเร็วจนระดับในเลือดต่ำมากหรือวัดไม่ได้ (undetectable/absent) ซึ่งเป็นลักษณะจำเพาะของ IVH ในทางกลับกัน EVH ซึ่งเม็ดเลือดแดงถูกทำลายในม้าม จะมี Hb รั่วไหลออกมาในพลาสมาน้อยกว่า ทำให้ระดับ Haptoglobin ลดลงเพียงเล็กน้อยหรือไม่ลดลงเลย\n\n*   **Splenomegaly:** เป็นลักษณะเด่นของ EVH เนื่องจากม้ามทำงานหนักในการดักจับและทำลายเม็ดเลือดแดงที่ผิดปกติ ไม่ใช่ลักษณะของ IVH\n\n*   **Increased unconjugated bilirubin:** การสลายตัวของ Hb ทำให้เกิด Unconjugated bilirubin เพิ่มขึ้น ซึ่งพบได้ใน **ทั้งสองภาวะ** จึงไม่ใช่จุดที่ใช้แยกกันอย่างชัดเจน\n\n*   **Increased reticulocyte count:** เป็นการตอบสนองของไขกระดูกที่พยายามสร้างเม็ดเลือดแดงใหม่ชดเชย ซึ่งพบได้ใน **ทั้งสองภาวะ** เช่นกัน\n\n*   **Presence of spherocytes:** Spherocytes คือเม็ดเลือดแดงที่สูญเสียความยืดหยุ่นและมักจะถูกทำลายโดยกลไก **EVH** ที่ม้าม จึงเป็นตัวบ่งชี้ของ EVH มากกว่า",
             state: false
         },
         {
@@ -7079,9 +7754,9 @@ var quizdata = {
             "problem": "17. Which drugs for chloroquine-resistant of acute attack P. vivax but doesn't eradicate erythrocytic forms of the parasite?",
             "img": "",
             "choices": "Tetracycline///Primaquine///Quinidine///Pyrimethamine + Sulfadoxine///Quinine sulfate + Doxycycline",
-            "answer": "Quinine sulfate + Doxycycline",
+            "answer": "Primaquine",
             "select": "",
-            "explain": "โจทย์น่าจะหมายถึง doesn't eradicate hypnozoite forms (ระยะในตับ) เพราะยาฆ่าเชื้อมาลาเรียทุกตัวจะฆ่าระยะในเม็ดเลือดแดง (erythrocytic forms) เพื่อรักษาอาการเฉียบพลัน สำหรับ P. vivax ที่ดื้อยา Chloroquine การรักษาอาการเฉียบพลัน (acute attack) จะใช้ยาที่ออกฤทธิ์ต่อเชื้อในกระแสเลือด เช่น Quinine sulfate + Doxycycline แต่ยานี้ไม่สามารถกำจัดเชื้อระยะ hypnozoite ในตับได้ ซึ่งต้องใช้ยา Primaquine เพื่อป้องกันการกลับเป็นซ้ำ",
+            "explain": "ยา Primaquine เป็นยาที่ใช้ในการรักษาเชื้อมาลาเรียชนิด P. vivax และ P. ovale ที่ดื้อยา Chloroquine ได้ดี โดยเฉพาะในระยะเม็ดเลือดแดง (schizont) และยังสามารถกำจัดเชื้อในระยะที่แฝงอยู่ในเซลล์ตับ (hypnozoite) ซึ่งเป็นสาเหตุของการกลับเป็นซ้ำของโรคได้ อย่างไรก็ตาม Primaquine ไม่ได้มีฤทธิ์ในการกำจัดเชื้อในระยะเม็ดเลือดแดง (erythrocytic forms) อย่างเดียว",
             "state": false
         },
         {
@@ -7240,10 +7915,10 @@ var quizdata = {
         {
             "problem": "35. ข้อใดถูกต้องเกี่ยวกับ Bleeding time",
             "img": "",
-            "choices": "สามารถเจาะ bleeding timeในคนทีthrombocytopenia กับคนปกติ///ใช้BP 80 ในการทำ bt ท าให้ test false positive มี petechiae///Hct<30 ท าให้low bt///vertical>horizontal///ต้องงดยา Aspirin อย่างน้อย 1 เดือนก่อนตรวจ",
-            "answer": "Hct<30 ท าให้low bt",
+            "choices": "It is indicated for patients with severe thrombocytopenia.///The pressure cuff must be maintained at 80 mmHg.///Severe anemia (Hct < 30%) can cause a prolonged BT.///Aspirin must be discontinued for at least one month prior to the test.///A vertical incision provides more accurate results than a horizontal one.",
+            "answer": "Severe anemia (Hct < 30%) can cause a prolonged BT.",
             "select": "",
-            "explain": "โจทย์น่าจะหมายถึง Hct < 30 ทำให้ high bt (prolonged bleeding time) ซึ่งเป็นข้อเท็จจริงที่ถูกต้อง ภาวะโลหิตจาง (anemia) ที่มี Hematocrit ต่ำกว่า 30-35% สามารถทำให้ระยะเวลาเลือดออก (Bleeding Time) นานขึ้นได้ เนื่องจากเม็ดเลือดแดงมีส่วนช่วยในการทำงานของเกล็ดเลือดและการสร้างลิ่มเลือดในระยะแรก เมื่อมีเม็ดเลือดแดงน้อยลงจึงส่งผลให้เลือดหยุดช้าลงได้",
+            "explain": "Bleeding Time (BT) เป็นการทดสอบเพื่อประเมินการทำงานของกระบวนการห้ามเลือดปฐมภูมิ (Primary Hemostasis) โดยรวม\n\n*   **ภาวะเลือดจางรุนแรง (Hct < 30%) ทำให้ BT ยาวนานขึ้น (คำตอบ):** ในภาวะปกติ เม็ดเลือดแดง (RBCs) มีส่วนช่วยผลักดันให้เกล็ดเลือดไปชิดกับผนังหลอดเลือด (rheological effect) เพื่อสร้าง platelet plug เมื่อมีภาวะเลือดจางรุนแรง (severe anemia) ประสิทธิภาพของกระบวนการนี้จะลดลง ทำให้ Bleeding Time ยาวนานขึ้น (prolonged)\n\n*   **Thrombocytopenia:** ภาวะเกล็ดเลือดต่ำรุนแรงเป็น **ข้อห้าม (contraindication)** ในการทำ BT เพราะผลจะยาวนานขึ้นอย่างแน่นอนและเพิ่มความเสี่ยงให้ผู้ป่วย\n\n*   **ความดันที่ใช้:** ต้องรักษาระดับความดันที่รัดแขนไว้ที่ **40 mmHg** ตลอดการทดสอบ เพื่อให้ความดันในหลอดเลือดฝอยคงที่\n\n*   **การงดยา:** ควรงดยาที่มีผลต่อการทำงานของเกล็ดเลือด เช่น Aspirin และ NSAIDs เป็นเวลา **7-10 วัน** ก่อนตรวจ เนื่องจากเป็นระยะเวลาที่ร่างกายใช้สร้างเกล็ดเลือดชุดใหม่\n\n*   **ทิศทางการกรีด:** ไม่มีหลักฐานว่าการกรีดแนวตั้ง (vertical) หรือแนวราบ (horizontal) ให้ผลแม่นยำกว่ากัน แต่โดยทั่วไปนิยมกรีดแนวราบเพื่อลดการเกิดแผลเป็น (scarring)",
             "state": false
         },
         {
