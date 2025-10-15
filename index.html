@@ -370,8 +370,10 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         width: 90%;
         max-width: 500px;
-        height: 80vh; /* Fixed height */
-        overflow-y: auto; /* Enable scroll if content overflows */
+        height: 80vh;
+        /* Fixed height */
+        overflow-y: auto;
+        /* Enable scroll if content overflows */
     }
 
     .modal-body {
@@ -657,18 +659,18 @@
                     <button id="close-progress-modal" class="quiz-button btn-light">ปิด</button>
                 </div>
                 <h5 class="modal-title">บันทึก / ทำต่อจากครั้งก่อน</h5>
-        
+
                 <!-- Export Section -->
                 <div class="modal-section">
                     <h6>ส่งออกความคืบหน้าปัจจุบัน</h6>
                     <p class="small-text" style="margin-bottom: 1rem;">บันทึกคำตอบและลำดับคำถามปัจจุบัน</p>
-                                    <div id="feedback-save" class="small-text" style="margin-top: 10px;"></div>
+                    <div id="feedback-save" class="small-text" style="margin-top: 10px;"></div>
                     <div class="controls-container">
                         <button id="modal-export-txt-btn" class="quiz-button btn-export">Export to TXT</button>
                         <button id="modal-export-copy-btn" class="quiz-button btn-export">Copy Code</button>
                     </div>
                 </div>
-        
+
                 <!-- Import Section -->
                 <div class="modal-section">
                     <h6>โหลดความคืบหน้า</h6>
@@ -682,8 +684,8 @@
                         <button id="modal-import-btn" class="quiz-button btn-import">Load</button>
                     </div>
                 </div>
-        
-        
+
+
             </div>
         </div>
 
@@ -717,7 +719,7 @@
             <div class="controls-container">
                 <button id="save" class="quiz-button">Save to PDF</button>
                 <button id="toggle-random-btn" class="quiz-button">สลับโหมดสุ่ม/เรียงลำดับ</button>
-                <!-- NEW Button to show the modal -->
+                <button id="show-all-answers-btn" class="quiz-button btn-light">แสดงเฉลย (Screening)</button>
                 <button id="show-progress-modal-btn" class="quiz-button btn-import">บันทึก / ทำต่อจากครั้งก่อน</button>
             </div>
             <div class="small-text" style="margin-top: 10px;">
@@ -8750,6 +8752,8 @@
             const $reportCard = $('#report-card');
             const $reportText = $('#report_text');
             const $toggleRandomBtn = $('#toggle-random-btn');
+            const $showAllAnswersBtn = $('#show-all-answers-btn'); // New selector
+            const $submitBtn = $('#submit-btn');
             const $tableBody = $('table tbody');
             const $searchInput = $('#search-input');
             const $searchBtn = $('#search-btn');
@@ -8763,6 +8767,7 @@
             let allQuestions = [];
             let currentQuestions = [];
             let isRandomized = true;
+            let isShowingAllAnswers = false; // New state
 
             const questionSets = [];
             for (const key in quizdata) {
@@ -8778,7 +8783,7 @@
             allQuestions.forEach((q, index) => {
                 q.uniqueId = index;
             });
-            
+
 
             // --- CORE FUNCTIONS ---
             const updateQuestionSet = (shouldSort = true) => {
@@ -8789,7 +8794,7 @@
                         previouslyAnswered[q.uniqueId] = { select: q.select, state: q.state };
                     }
                 });
-            
+
 
                 currentQuestions = [];
                 checkboxIds.forEach((id, index) => {
@@ -8881,6 +8886,7 @@
                 const choicesHtml = choicesArray.map(choice => `<button>${choice}</button>`).join('');
                 $choices.html(choicesHtml);
 
+                // If question is already answered, show the result
                 if (current_question.state) {
                     if (current_question.select === current_question.answer) {
                         $feedback.addClass("correct").html(`ถูกต้อง!: ${current_question.answer}`);
@@ -8889,6 +8895,17 @@
                     }
                     highlightAnswers();
                 }
+                // Else if we are in screening mode, show the answer
+                else if (isShowingAllAnswers) {
+                    const correctAnswer = current_question.answer;
+                    $feedback.addClass("correct").html(`เฉลย: ${correctAnswer}`); // Using 'correct' class for styling
+                    $choices.find("button").each(function () {
+                        if ($(this).text() === correctAnswer) {
+                            $(this).addClass("correct");
+                        }
+                    });
+                }
+
 
                 $questionIndex.text(`${questionIndex + 1}/${currentQuestions.length}`);
                 showSubmission();
@@ -8933,7 +8950,7 @@
             };
 
             const nextQuestion = () => {
-                if (!currentQuestions[questionIndex]?.state) {
+                if (!currentQuestions[questionIndex]?.state && !isShowingAllAnswers) {
                     alert("กรุณาส่งคำตอบก่อน");
                     return;
                 }
@@ -9176,7 +9193,7 @@
                     alert("ไม่สามารถโหลดข้อมูลได้ อาจเป็นเพราะ Code ไม่ถูกต้อง");
                 }
             };
-            
+
 
             async function saveToPdf() {
                 if (currentQuestions.length === 0) {
@@ -9314,6 +9331,20 @@
                 $(this).text(isRandomized ? 'โหมดสุ่ม (คลิกเพื่อเรียงลำดับ)' : 'โหมดเรียงลำดับ (คลิกเพื่อสุ่ม)');
                 sortCurrentQuestions();
                 questionIndex = 0;
+                showQuestion();
+            });
+
+            // New: Show All Answers Button Handler
+            $showAllAnswersBtn.on('click', function () {
+                isShowingAllAnswers = !isShowingAllAnswers;
+                if (isShowingAllAnswers) {
+                    $(this).text('ซ่อนเฉลย (Screening)');
+                    $submitBtn.hide();
+                } else {
+                    $(this).text('แสดงเฉลย (Screening)');
+                    $submitBtn.show();
+                }
+                // Refresh the view
                 showQuestion();
             });
 
